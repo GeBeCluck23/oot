@@ -120,7 +120,7 @@ static SceneSelectEntry sScenes[] = {
     // "46: Back Alley House"
     { "46:" GFXP_HIRAGANA "ｳﾗﾛｼﾞﾉ ｲｴ", MapSelect_LoadGame, ENTR_BACK_ALLEY_HOUSE_0 },
     // "47: Kokiri Village - Know-It-All Brothers' House"
-    { "47:" GFXP_HIRAGANA "ｺｷﾘﾉﾑﾗ ﾓﾉｼﾘｷｮｳﾀﾞｲﾉｲｴ", MapSelect_LoadGame, ENTR_KNOW_IT_ALL_BROS_HOUSE_0 },
+    { "47:Waluigi Cavern", MapSelect_LoadGame, ENTR_KNOW_IT_ALL_BROS_HOUSE_0 },
     // "48: Kokiri Village - Twins' House"
     { "48:" GFXP_HIRAGANA "ｺｷﾘﾉﾑﾗ ﾌﾀｺﾞﾉｲｴ", MapSelect_LoadGame, ENTR_TWINS_HOUSE_0 },
     // "49: Kokiri Village - Mido's House"
@@ -156,7 +156,7 @@ static SceneSelectEntry sScenes[] = {
     // "64: Mask Shop"
     { "64:" GFXP_HIRAGANA "ｵﾒﾝﾔ", MapSelect_LoadGame, ENTR_HAPPY_MASK_SHOP_0 },
     // "65: Gerudo Training Area"
-    { "65:" GFXP_KATAKANA "ｹﾞﾙﾄﾞ" GFXP_HIRAGANA "ﾉｼｭｳﾚﾝｼﾞｮｳ", MapSelect_LoadGame, ENTR_GERUDO_TRAINING_GROUND_0 },
+    { "65:Gerudo Training Area", MapSelect_LoadGame, ENTR_GERUDO_TRAINING_GROUND_0 },
     // "66: Fairy Tree Dungeon"
     { "66:" GFXP_HIRAGANA "ﾖｳｾｲﾉｷﾉ " GFXP_KATAKANA "ﾀﾞﾝｼﾞｮﾝ", MapSelect_LoadGame, ENTR_DEKU_TREE_0 },
     // "67: Fairy Tree Dungeon - Boss"
@@ -283,6 +283,8 @@ static SceneSelectEntry sScenes[] = {
     { "124:depth" GFXP_KATAKANA "ﾃｽﾄ", MapSelect_LoadGame, ENTR_DEPTH_TEST_0 },
     // "125: Hyrule Garden Game 2" (Early Hyrule Garden Game)
     { "125:" GFXP_KATAKANA "ﾊｲﾗﾙ" GFXP_HIRAGANA "ﾆﾜ" GFXP_KATAKANA "ｹﾞｰﾑ2", MapSelect_LoadGame, ENTR_HAIRAL_NIWA2_0 },
+    { "126:Tutorial Scene", MapSelect_LoadGame, ENTR_TUTORIAL_01_0 },
+    { "127:Waluigi Cavern", MapSelect_LoadGame, ENTR_KNOW_IT_ALL_BROS_HOUSE_0 },
     // "title" (Title Screen)
     { "title", (void*)MapSelect_LoadTitle, 0 },
 };

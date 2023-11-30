@@ -1,0 +1,57 @@
+- Scene:
+Default Global Object
+Skybox
+Music Track
+Nighttime Sound Effects
+	(For a Dungeon, always select Day Music Always...)
+Map Location
+Draw Config
+
+
+
+
+- Collision:
+
+- Cameras:
+Stick with Normal0 for awhile
+
+- Lights:
+Light_0 (Morning)
+Light_1 (Afternoon)
+Light_2 (Evening)
+Light_3 (Night)
+
+- Entrances:
+Spawn points
+Actor Param 0x0FFF (Preserve previous velocity for smooth transition)
+
+- Exits:
+Transition between scene, either in code, or when Link walks on a particular polygon
+
+- Cutscenes:
+
+- Transition_Actor_List *:
+
+- Rooms:
+
+Every Scene is composed of multiple rooms
+
+	- Render:
+	
+	- Actor List:
+	Code related, drawn every frame, etc.
+	Collectible Item (EN_ITEM00)
+	
+	- Object List:
+	Static info, such as anim data, etc.
+	Each Actor must have an object attached to it.
+	*Fast64 Automatically attaches objects for vanilla actors!!!*
+	
+	
+	
+	
+	
+	
+
+
+

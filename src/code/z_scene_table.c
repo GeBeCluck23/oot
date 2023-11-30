@@ -750,8 +750,8 @@ void Scene_DrawConfigCalmWater(PlayState* play) {
 }
 
 void* sGTGEntranceTextures[] = {
-    gGTGDayEntranceTex,
-    gGTGNightEntranceTex,
+    men_dl_day_entrance_ia16_png_001_ia16,
+    men_dl_night_entrance_ia16_png_001_ia16,
 };
 
 void Scene_DrawConfigGerudoTrainingGround(PlayState* play) {
