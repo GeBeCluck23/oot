@@ -285,6 +285,7 @@ static SceneSelectEntry sScenes[] = {
     { "125:" GFXP_KATAKANA "ﾊｲﾗﾙ" GFXP_HIRAGANA "ﾆﾜ" GFXP_KATAKANA "ｹﾞｰﾑ2", MapSelect_LoadGame, ENTR_HAIRAL_NIWA2_0 },
     { "126:Tutorial Scene", MapSelect_LoadGame, ENTR_TUTORIAL_01_0 },
     { "127:Waluigi Cavern", MapSelect_LoadGame, ENTR_KNOW_IT_ALL_BROS_HOUSE_0 },
+    { "128:My Dungeon", MapSelect_LoadGame, ENTR_MY_DUNGEON_0 },
     // "title" (Title Screen)
     { "title", (void*)MapSelect_LoadTitle, 0 },
 };

@@ -49,9 +49,43 @@ Every Scene is composed of multiple rooms
 	
 	
 	
-	
-	
-	
+
+When adding scenes and rooms, it requires adding the data into 3 (or 4) files.
+
+- spec, add:
+(Add a new seg for each scene and room)
+(Also, run "make clean" after editing the spec file.)
+
+beginseg
+    name "example"
+    romalign 0x1000
+    include "build/assets/scenes/examples/example_scene.o"
+    number 2
+endseg
+
+beginseg
+    name "example_room_0"
+    romalign 0x1000
+    include "build/assets/scenes/examples/example_room_0.o"
+    number 3
+endseg	
+
+- scene_table.h, add:
+/* 0x6E */ DEFINE_SCENE(example, none, SCENE_EXAMPLE, SDC_DEFAULT, 0, 0)
+
+- entrance_table.h, add:
+(Must be 4 of them, named appropriately. The game knows which one to use for; child/day, child/night, adult/day, adult/night)
+/* 0x618 */ DEFINE_ENTRANCE(ENTR_EXAMPLE_0,   SCENE_EXAMPLE, 0, false, false, TRANS_TYPE_FADE_BLACK, TRANS_TYPE_FADE_BLACK)
+/* 0x619 */ DEFINE_ENTRANCE(ENTR_EXAMPLE_0_1, SCENE_EXAMPLE, 0, false, false, TRANS_TYPE_FADE_BLACK, TRANS_TYPE_FADE_BLACK)
+/* 0x61A */ DEFINE_ENTRANCE(ENTR_EXAMPLE_0_2, SCENE_EXAMPLE, 0, false, false, TRANS_TYPE_FADE_BLACK, TRANS_TYPE_FADE_BLACK)
+/* 0x61B */ DEFINE_ENTRANCE(ENTR_EXAMPLE_0_3, SCENE_EXAMPLE, 0, false, false, TRANS_TYPE_FADE_BLACK, TRANS_TYPE_FADE_BLACK)
+
+- z_select.c
+For debug testing, add the level into the debug menu by adding before { "title", ...}
+{ "126:Example", MapSelect_LoadGame, ENTR_EXAMPLE_0 },
 
 
+
+
+Proper width of a door in OOT is 6 units wide, by 10 units tall, by 2 deep
 

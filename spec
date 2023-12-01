@@ -10491,3 +10491,31 @@ beginseg
     include "build/assets/scenes/tutorial_scenes/tutorial_01/tutorial_01_room_0.o"
     number 3
 endseg
+
+beginseg
+    name "my_dungeon"
+    romalign 0x1000
+    include "build/assets/scenes/tutorial_scenes/my_dungeon/my_dungeon_scene.o"
+    number 2
+endseg
+
+beginseg
+    name "my_dungeon_room_0"
+    romalign 0x1000
+    include "build/assets/scenes/tutorial_scenes/my_dungeon/my_dungeon_room_0.o"
+    number 3
+endseg
+
+beginseg
+    name "my_dungeon_room_1"
+    romalign 0x1000
+    include "build/assets/scenes/tutorial_scenes/my_dungeon/my_dungeon_room_1.o"
+    number 3
+endseg
+
+beginseg
+    name "my_dungeon_room_2"
+    romalign 0x1000
+    include "build/assets/scenes/tutorial_scenes/my_dungeon/my_dungeon_room_2.o"
+    number 3
+endseg

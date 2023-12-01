@@ -122,3 +122,4 @@
 /* 0x6D */ DEFINE_SCENE(testroom_scene, none, SCENE_TESTROOM, SDC_DEFAULT, 0, 0)
 // Added scenes
 /* 0x6E */ DEFINE_SCENE(tutorial_01, none, SCENE_TUTORIAL_01, SDC_DEFAULT, 0, 0)
+/* 0x6F */ DEFINE_SCENE(my_dungeon, none, SCENE_MY_DUNGEON, SDC_CALM_WATER, 0, 0)
