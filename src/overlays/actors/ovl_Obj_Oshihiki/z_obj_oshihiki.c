@@ -50,12 +50,14 @@ static Color_RGB8 sColors[][4] = {
     { { 135, 125, 95 }, { 135, 125, 95 }, { 135, 125, 95 }, { 135, 125, 95 } },     // shadow temple
     { { 255, 255, 255 }, { 255, 255, 255 }, { 255, 255, 255 }, { 255, 255, 255 } }, // ganons castle
     { { 232, 210, 176 }, { 232, 210, 176 }, { 232, 210, 176 }, { 232, 210, 176 } }, // gerudo training grounds
+    { { 110, 86, 40 }, { 110, 86, 40 }, { 110, 86, 40 }, { 110, 86, 40 } },         // my dungeon
 };
 
 static s16 sSceneIds[] = {
     SCENE_DEKU_TREE,     SCENE_DODONGOS_CAVERN, SCENE_FOREST_TEMPLE,
     SCENE_FIRE_TEMPLE,   SCENE_WATER_TEMPLE,    SCENE_SPIRIT_TEMPLE,
     SCENE_SHADOW_TEMPLE, SCENE_GANONS_TOWER,    SCENE_GERUDO_TRAINING_GROUND,
+    SCENE_MY_DUNGEON,
 };
 
 static InitChainEntry sInitChain[] = {
@@ -650,6 +652,7 @@ void ObjOshihiki_Draw(Actor* thisx, PlayState* play) {
               G_MTX_NOPUSH | G_MTX_LOAD | G_MTX_MODELVIEW);
 
     switch (play->sceneId) {
+        case SCENE_MY_DUNGEON:
         case SCENE_DEKU_TREE:
         case SCENE_DODONGOS_CAVERN:
         case SCENE_FOREST_TEMPLE:
