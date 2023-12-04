@@ -86,7 +86,7 @@ For debug testing, add the level into the debug menu by adding before { "title",
 
 - Doors
 Proper width of a door in OOT is 6 units wide, by 10 units tall, by 2 deep
-A Boss Door is 12x16, and is hardcoded to use flag 14, which, when or'd with the boss door param, (0x0140 | 0x14) = 0x0154
+A Boss Door is 12x14, and is hardcoded to use flag 14, which, when or'd with the boss door param, (0x0140 | 0x14) = 0x0154
 
 
 - z_scene_table.c
