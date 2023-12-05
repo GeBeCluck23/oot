@@ -6846,6 +6846,69 @@ beginseg
 endseg
 
 beginseg
+    name "ydan_room_3"
+    romalign 0x1000
+    include "build/assets/scenes/dungeons/ydan/ydan_room_3.o"
+    number 3
+endseg
+
+beginseg
+    name "ydan_room_4"
+    romalign 0x1000
+    include "build/assets/scenes/dungeons/ydan/ydan_room_4.o"
+    number 3
+endseg
+
+beginseg
+    name "ydan_room_5"
+    romalign 0x1000
+    include "build/assets/scenes/dungeons/ydan/ydan_room_5.o"
+    number 3
+endseg
+
+beginseg
+    name "ydan_room_6"
+    romalign 0x1000
+    include "build/assets/scenes/dungeons/ydan/ydan_room_6.o"
+    number 3
+endseg
+
+beginseg
+    name "ydan_room_7"
+    romalign 0x1000
+    include "build/assets/scenes/dungeons/ydan/ydan_room_7.o"
+    number 3
+endseg
+
+beginseg
+    name "ydan_room_8"
+    romalign 0x1000
+    include "build/assets/scenes/dungeons/ydan/ydan_room_8.o"
+    number 3
+endseg
+
+beginseg
+    name "ydan_room_9"
+    romalign 0x1000
+    include "build/assets/scenes/dungeons/ydan/ydan_room_9.o"
+    number 3
+endseg
+
+beginseg
+    name "ydan_room_10"
+    romalign 0x1000
+    include "build/assets/scenes/dungeons/ydan/ydan_room_10.o"
+    number 3
+endseg
+
+beginseg
+    name "ydan_room_11"
+    romalign 0x1000
+    include "build/assets/scenes/dungeons/ydan/ydan_room_11.o"
+    number 3
+endseg
+
+beginseg
     name "ddan_scene"
     romalign 0x1000
     include "build/assets/scenes/dungeons/ddan/ddan_scene.o"
