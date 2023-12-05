@@ -10416,20 +10416,6 @@ beginseg
 endseg
 
 beginseg
-    name "tutorial_01"
-    romalign 0x1000
-    include "build/assets/scenes/tutorial_scenes/tutorial_01/tutorial_01_scene.o"
-    number 2
-endseg
-
-beginseg
-    name "tutorial_01_room_0"
-    romalign 0x1000
-    include "build/assets/scenes/tutorial_scenes/tutorial_01/tutorial_01_room_0.o"
-    number 3
-endseg
-
-beginseg
     name "my_dungeon"
     romalign 0x1000
     include "build/assets/scenes/tutorial_scenes/my_dungeon/my_dungeon_scene.o"
