@@ -38,8 +38,8 @@ RoomShapeDListsEntry my_dungeon_room_0_shapeDListEntry[1] = {
 
 Gfx my_dungeon_room_0_entry_0_opaque[] = {
 	gsSPDisplayList(my_dungeon_dl_Floor_mesh_layer_Opaque),
+	gsSPDisplayList(my_dungeon_dl_metal_vines_mesh_layer_Opaque),
 	gsSPDisplayList(my_dungeon_dl_Plane_mesh_layer_Opaque),
-	gsSPDisplayList(my_dungeon_dl_Plane_001_mesh_layer_Opaque),
 	gsSPDisplayList(my_dungeon_dl_wahh_largeMesh_mesh_layer_Opaque),
 	gsSPDisplayList(my_dungeon_dl_wahh_largeMesh_001_mesh_layer_Opaque),
 	gsSPEndDisplayList(),
@@ -87,6 +87,31 @@ u64 my_dungeon_dl_men_room_0Tex_00B538_ci8_pal_rgba16[] = {
 	0x93076acb828b82c9, 0x5a078b4dabcd9b89, 0xb3cbbc0d9bcbab8b, 0x8b85b3cfbc51c44d, 0x624d8b0babcb5a8b, 0x8c0d93d383477b0d, 0x528b6b0f934dac19, 0x7b136b0bc451c40f, 
 	0xab8f73499bcfac93, 0x5ac993cd838b838f, 0x93d7bc0f62499bcd, 0xbc93dd55ccd9bc4f, 0xbc97fddddd99ab09, 0xfe5feddfbc4d930b, 0xb3c9ab89c391dc57, 0xbb073a87824bab8d, 
 	0xdb89834f8bcb9c11, 0x8b4b9b8d824d8b0f, 0xab9172d172cf51c9, 0x830f720972cd9351, 0xab0f628bf5599bd3, 0x9b91bc8d6b4f844d, 0x6b89000000000000
+};
+
+u64 my_dungeon_dl_men_room_8Tex_005D30_rgba16_ci8[] = {
+	0x0000000000000102, 0x0304000000000000, 0x0000000000040502, 0x0603040000000000, 0x0000000004030708, 0x090a030400000000, 0x0000000403070b00, 0x00090c0304000000, 
+	0x00000403070b0000, 0x00000d0c03040000, 0x000403070b000000, 0x0000000d0c030400, 0x0403070b00000000, 0x000000000d0c0304, 0x03070b0000000000, 0x00000000000d0a03, 
+	0x030e000000000000, 0x0000000000000f10, 0x07030e0000000000, 0x0000000000040307, 0x0b07030e00000000, 0x000000000403070b, 0x001112030e000000, 0x0000001303070b00, 
+	0x00000b07030e0000, 0x00000414150b0000, 0x0000000b07030e00, 0x000103070b000000, 0x000000000b07030e, 0x0415070b00000000, 0x00000000000b0703, 0x030a0b0000000000, 
+	0x0000000000000403, 0x160e170000000000, 0x0000000000000307, 0x0a030e1700000000, 0x000000000003070b, 0x0007030e17000000, 0x0000000003070b00, 0x000b07030e170000, 
+	0x00000003070b0000, 0x00000b07030e1700, 0x000003070b000000, 0x0000000b07030e17, 0x0003070b00000000, 0x000000000b07030e, 0x03070b0000000000, 0x0000000000000703, 
+	0x030e171800000000, 0x0000000000000403, 0x07030e1718000000, 0x0000000000040307, 0x0007030e17180000, 0x000000000403070b, 0x000007030e171800, 0x0000000403070b00, 
+	0x00000007030e1718, 0x0000040312110000, 0x0000000007030e17, 0x180403070b000000, 0x000000000007030e, 0x0403070b00000000, 0x0000000000000703, 0x03070b0000000000, 
+	0x0000000000000403, 0x030e170000000000, 0x0000000000040307, 0x07030e1700000000, 0x000000000403070b, 0x0b07030e17000000, 0x0000000403070b00, 0x000b07030e170000, 
+	0x00000403070b0000, 0x00000b07030e1700, 0x000403070b000000, 0x0000000b07030e17, 0x0403070b00000000, 0x000000000b07030e, 0x03070b0000000000, 0x00000000000b0703, 
+	0x030e171800000000, 0x0000000000110403, 0x07030e1718000000, 0x0000000011040307, 0x0115030e17180000, 0x000000110403070b, 0x000107030e171800, 0x0000110403070b00, 
+	0x00000b07030e1718, 0x00110403070b0000, 0x0000000b07030e17, 0x180403070b000000, 0x000000000b07030e, 0x0403070b00000000, 0x00000000000b0703, 0x03070b0000000000, 
+	0x0000000000000403, 0x030e171800000000, 0x0000000000040307, 0x07030e1700000000, 0x000000000403070b, 0x0b07030e17000000, 0x0000000403070b00, 0x000b07030e170000, 
+	0x00000403070b0000, 0x00000b07030e1700, 0x000403070d000000, 0x0000000b07030e17, 0x0403070b11000000, 0x000000000b07030e, 0x03070b0000000000, 0x00000000000b0703, 
+	0x150b000000000000, 0x0000000000001112, 0x1919191919191919, 0x1919191919191919, 0x1a1a1a1a1a1a1a1a, 0x1a1a1a1a1a1a1a1a, 0x1b1b1a1a1a1a1a1c, 0x1d1e1a1a1a1a1a1a, 
+	0x1a1a1a1a1a1a1a1f, 0x20211a1a1a1a1b22, 0x221b1a1a1a1a1a23, 0x241e1a1a1a1a1a1a, 0x1a1a1a1a1a1a1a1a, 0x1a1a1a1a1a1a1a1a, 0x2525252525252525, 0x2525252525252525, 
+	
+};
+
+u64 my_dungeon_dl_men_room_8Tex_005D30_rgba16_pal_rgba16[] = {
+	0x000018c66b596b5b, 0x29085295739d4211, 0x210818844a531082, 0x73dd294aad6a4a52, 0x8c630800294b4a50, 0x631952d584214210, 0x10847a534949494b, 0x5253731b5213398d, 
+	0x6ad79421514b1887, 0x290b284300000000
 };
 
 u64 my_dungeon_dl_squidward32_ci8[] = {
@@ -389,43 +414,7 @@ Vtx my_dungeon_dl_Floor_mesh_layer_Opaque_vtx_cull[8] = {
 	{{ {1037, -120, -836}, 0, {0, 0}, {0, 0, 0, 0} }},
 };
 
-Vtx my_dungeon_dl_Floor_mesh_layer_Opaque_vtx_0[20] = {
-	{{ {456, -120, -192}, 0, {3678, -840}, {255, 255, 255, 255} }},
-	{{ {456, -120, -504}, 0, {3678, -3023}, {255, 255, 255, 255} }},
-	{{ {38, -120, -504}, 0, {758, -3023}, {255, 255, 255, 255} }},
-	{{ {-82, -120, -504}, 0, {-79, -3023}, {232, 232, 232, 255} }},
-	{{ {-300, -120, -432}, 0, {-1597, -2517}, {255, 255, 255, 255} }},
-	{{ {-300, -120, -504}, 0, {-1597, -3023}, {255, 255, 255, 255} }},
-	{{ {-300, -120, -372}, 0, {-1597, -2099}, {255, 255, 255, 255} }},
-	{{ {-300, -120, -192}, 0, {-1597, -840}, {255, 255, 255, 255} }},
-	{{ {-300, -120, 112}, 0, {-1597, 1279}, {255, 255, 255, 255} }},
-	{{ {456, -120, 112}, 0, {3678, 1279}, {255, 255, 255, 255} }},
-	{{ {456, -120, 407}, 0, {3678, 3336}, {255, 255, 255, 255} }},
-	{{ {-300, -120, 249}, 0, {-1597, 2232}, {255, 255, 255, 255} }},
-	{{ {-300, -120, 309}, 0, {-1597, 2650}, {255, 255, 255, 255} }},
-	{{ {-300, -120, 407}, 0, {-1597, 3336}, {255, 255, 255, 255} }},
-	{{ {1037, -120, 112}, 0, {7729, 1279}, {255, 255, 255, 255} }},
-	{{ {1037, -120, -192}, 0, {7729, -840}, {255, 255, 255, 255} }},
-	{{ {-82, -120, -504}, 0, {310, 934}, {232, 232, 232, 255} }},
-	{{ {38, -120, -504}, 0, {682, 934}, {255, 255, 255, 255} }},
-	{{ {38, -120, -524}, 0, {682, 873}, {74, 74, 74, 255} }},
-	{{ {-82, -120, -524}, 0, {310, 873}, {52, 52, 52, 255} }},
-};
-
-Gfx my_dungeon_dl_Floor_mesh_layer_Opaque_tri_0[] = {
-	gsSPVertex(my_dungeon_dl_Floor_mesh_layer_Opaque_vtx_0 + 0, 20, 0),
-	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
-	gsSP2Triangles(0, 3, 4, 0, 3, 5, 4, 0),
-	gsSP2Triangles(4, 6, 0, 0, 6, 7, 0, 0),
-	gsSP2Triangles(8, 0, 7, 0, 8, 9, 0, 0),
-	gsSP2Triangles(10, 9, 8, 0, 10, 8, 11, 0),
-	gsSP2Triangles(11, 12, 10, 0, 12, 13, 10, 0),
-	gsSP2Triangles(0, 9, 14, 0, 0, 14, 15, 0),
-	gsSP2Triangles(16, 17, 18, 0, 16, 18, 19, 0),
-	gsSPEndDisplayList(),
-};
-
-Vtx my_dungeon_dl_Floor_mesh_layer_Opaque_vtx_1[102] = {
+Vtx my_dungeon_dl_Floor_mesh_layer_Opaque_vtx_0[105] = {
 	{{ {38, -120, -504}, 0, {3779, 3686}, {255, 255, 255, 255} }},
 	{{ {456, -120, -504}, 0, {5807, 3686}, {255, 255, 255, 255} }},
 	{{ {456, 357, -504}, 0, {5807, 594}, {255, 255, 255, 255} }},
@@ -444,28 +433,31 @@ Vtx my_dungeon_dl_Floor_mesh_layer_Opaque_vtx_1[102] = {
 	{{ {-300, -20, 249}, 0, {-1504, 3038}, {255, 255, 255, 255} }},
 	{{ {-300, -120, 249}, 0, {-1504, 3686}, {255, 255, 255, 255} }},
 	{{ {-300, -120, 112}, 0, {-842, 3686}, {255, 255, 255, 255} }},
-	{{ {-300, -120, -192}, 0, {629, 3686}, {255, 255, 255, 255} }},
-	{{ {-300, 357, -192}, 0, {629, 594}, {255, 255, 255, 255} }},
-	{{ {-300, -20, -372}, 0, {1502, 3038}, {255, 255, 255, 255} }},
-	{{ {-300, -120, -372}, 0, {1502, 3686}, {255, 255, 255, 255} }},
-	{{ {-320, -120, -372}, 0, {1502, 3686}, {255, 255, 255, 255} }},
-	{{ {-320, -20, -372}, 0, {1502, 3038}, {255, 255, 255, 255} }},
-	{{ {-300, -20, -432}, 0, {1793, 3038}, {255, 255, 255, 255} }},
-	{{ {-320, -20, -432}, 0, {1793, 3038}, {255, 255, 255, 255} }},
-	{{ {-300, -120, -432}, 0, {1793, 3686}, {255, 255, 255, 255} }},
-	{{ {-320, -120, -432}, 0, {1793, 3686}, {255, 255, 255, 255} }},
-	{{ {-300, -120, -504}, 0, {2144, 3686}, {255, 255, 255, 255} }},
 	{{ {-300, 357, 407}, 0, {-2270, 594}, {255, 255, 255, 255} }},
 	{{ {456, 357, 407}, 0, {-5933, 594}, {255, 255, 255, 255} }},
 	{{ {456, -120, 407}, 0, {-5933, 3686}, {255, 255, 255, 255} }},
-	{{ {456, -120, 407}, 0, {-5933, 3686}, {255, 255, 255, 255} }},
-	{{ {456, 357, 407}, 0, {-5933, 594}, {255, 255, 255, 255} }},
 	{{ {456, 357, 112}, 0, {-7360, 594}, {255, 255, 255, 255} }},
 	{{ {456, -120, 112}, 0, {-7360, 3686}, {255, 255, 255, 255} }},
 	{{ {1037, 129, 112}, 0, {-10172, 2069}, {255, 255, 255, 255} }},
 	{{ {1037, -120, 112}, 0, {-10172, 3686}, {255, 255, 255, 255} }},
 	{{ {1037, 129, -192}, 0, {-11644, 2069}, {255, 255, 255, 255} }},
 	{{ {1037, -120, -192}, 0, {-11644, 3686}, {255, 255, 255, 255} }},
+	{{ {-300, -120, -432}, 0, {1793, 3686}, {255, 255, 255, 255} }},
+	{{ {-300, -120, -504}, 0, {2144, 3686}, {255, 255, 255, 255} }},
+	{{ {-300, -20, -432}, 0, {1793, 3038}, {255, 255, 255, 255} }},
+	{{ {-300, -20, -372}, 0, {1502, 3038}, {255, 255, 255, 255} }},
+	{{ {-300, -120, -192}, 0, {629, 3686}, {255, 255, 255, 255} }},
+	{{ {-300, 357, -504}, 0, {2144, 594}, {255, 255, 255, 255} }},
+	{{ {-300, 357, -192}, 0, {629, 594}, {255, 255, 255, 255} }},
+	{{ {-300, -120, -192}, 0, {629, 3686}, {255, 255, 255, 255} }},
+	{{ {-300, -120, -372}, 0, {1502, 3686}, {255, 255, 255, 255} }},
+	{{ {-300, -20, -372}, 0, {1502, 3038}, {255, 255, 255, 255} }},
+	{{ {-320, -120, -372}, 0, {1502, 3686}, {255, 255, 255, 255} }},
+	{{ {-320, -20, -372}, 0, {1502, 3038}, {255, 255, 255, 255} }},
+	{{ {-300, -20, -432}, 0, {1793, 3038}, {255, 255, 255, 255} }},
+	{{ {-320, -20, -432}, 0, {1793, 3038}, {255, 255, 255, 255} }},
+	{{ {-300, -120, -432}, 0, {1793, 3686}, {255, 255, 255, 255} }},
+	{{ {-320, -120, -432}, 0, {1793, 3686}, {255, 255, 255, 255} }},
 	{{ {456, 357, -192}, 0, {988, 594}, {255, 255, 255, 255} }},
 	{{ {456, -120, -192}, 0, {988, 3686}, {255, 255, 255, 255} }},
 	{{ {1037, -120, -192}, 0, {3800, 3686}, {255, 255, 255, 255} }},
@@ -491,9 +483,9 @@ Vtx my_dungeon_dl_Floor_mesh_layer_Opaque_vtx_1[102] = {
 	{{ {-320, -120, 309}, 0, {-2771, 3686}, {255, 255, 255, 255} }},
 	{{ {-320, -20, 309}, 0, {-2771, 3038}, {255, 255, 255, 255} }},
 	{{ {-300, -120, -372}, 0, {-1597, -4181}, {255, 255, 255, 255} }},
-	{{ {-300, -120, -432}, 0, {-1597, -5018}, {255, 255, 255, 255} }},
 	{{ {-320, -120, -432}, 0, {-1736, -5018}, {255, 255, 255, 255} }},
 	{{ {-320, -120, -372}, 0, {-1736, -4181}, {255, 255, 255, 255} }},
+	{{ {-300, -120, -432}, 0, {-1597, -5018}, {255, 255, 255, 255} }},
 	{{ {38, -120, -504}, 0, {58, 1662}, {255, 255, 255, 255} }},
 	{{ {38, 40, -504}, 0, {58, 672}, {246, 246, 246, 255} }},
 	{{ {38, 40, -524}, 0, {119, 672}, {0, 0, 0, 255} }},
@@ -530,59 +522,131 @@ Vtx my_dungeon_dl_Floor_mesh_layer_Opaque_vtx_1[102] = {
 	{{ {38, 81, -524}, 0, {682, 420}, {1, 1, 1, 255} }},
 };
 
-Gfx my_dungeon_dl_Floor_mesh_layer_Opaque_tri_1[] = {
-	gsSPVertex(my_dungeon_dl_Floor_mesh_layer_Opaque_vtx_1 + 0, 32, 0),
+Gfx my_dungeon_dl_Floor_mesh_layer_Opaque_tri_0[] = {
+	gsSPVertex(my_dungeon_dl_Floor_mesh_layer_Opaque_vtx_0 + 0, 32, 0),
 	gsSP2Triangles(0, 1, 2, 0, 3, 0, 2, 0),
 	gsSP2Triangles(2, 4, 3, 0, 4, 5, 3, 0),
 	gsSP2Triangles(4, 6, 5, 0, 4, 7, 6, 0),
 	gsSP2Triangles(8, 9, 2, 0, 8, 2, 10, 0),
 	gsSP2Triangles(11, 12, 13, 0, 14, 11, 13, 0),
 	gsSP2Triangles(14, 13, 15, 0, 15, 16, 14, 0),
-	gsSP2Triangles(16, 17, 14, 0, 18, 14, 17, 0),
-	gsSP2Triangles(18, 19, 14, 0, 4, 19, 18, 0),
-	gsSP2Triangles(4, 18, 20, 0, 18, 21, 20, 0),
-	gsSP2Triangles(20, 21, 22, 0, 20, 22, 23, 0),
-	gsSP2Triangles(24, 20, 23, 0, 24, 23, 25, 0),
-	gsSP2Triangles(26, 24, 25, 0, 26, 25, 27, 0),
-	gsSP2Triangles(24, 26, 4, 0, 26, 28, 4, 0),
-	gsSP2Triangles(4, 20, 24, 0, 14, 29, 11, 0),
-	gsSP2Triangles(11, 29, 30, 0, 11, 30, 31, 0),
-	gsSPVertex(my_dungeon_dl_Floor_mesh_layer_Opaque_vtx_1 + 32, 32, 0),
+	gsSP2Triangles(16, 17, 14, 0, 14, 18, 11, 0),
+	gsSP2Triangles(11, 18, 19, 0, 11, 19, 20, 0),
+	gsSP2Triangles(20, 19, 21, 0, 20, 21, 22, 0),
+	gsSP2Triangles(22, 21, 23, 0, 22, 23, 24, 0),
+	gsSP2Triangles(24, 23, 25, 0, 24, 25, 26, 0),
+	gsSP2Triangles(27, 28, 4, 0, 29, 27, 4, 0),
+	gsSP2Triangles(4, 30, 29, 0, 4, 31, 30, 0),
+	gsSPVertex(my_dungeon_dl_Floor_mesh_layer_Opaque_vtx_0 + 32, 31, 0),
+	gsSP2Triangles(0, 1, 2, 0, 2, 3, 4, 0),
+	gsSP2Triangles(4, 3, 5, 0, 4, 5, 6, 0),
+	gsSP2Triangles(7, 4, 6, 0, 7, 6, 8, 0),
+	gsSP2Triangles(9, 7, 8, 0, 9, 8, 10, 0),
+	gsSP2Triangles(11, 12, 13, 0, 11, 13, 14, 0),
+	gsSP2Triangles(15, 16, 17, 0, 15, 17, 18, 0),
+	gsSP2Triangles(19, 20, 21, 0, 19, 21, 22, 0),
+	gsSP2Triangles(23, 24, 25, 0, 23, 25, 26, 0),
+	gsSP2Triangles(27, 28, 29, 0, 27, 29, 30, 0),
+	gsSPVertex(my_dungeon_dl_Floor_mesh_layer_Opaque_vtx_0 + 63, 30, 0),
 	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
-	gsSP2Triangles(3, 2, 4, 0, 3, 4, 5, 0),
-	gsSP2Triangles(5, 4, 6, 0, 5, 6, 7, 0),
+	gsSP2Triangles(4, 5, 6, 0, 4, 7, 5, 0),
 	gsSP2Triangles(8, 9, 10, 0, 8, 10, 11, 0),
-	gsSP2Triangles(12, 13, 14, 0, 12, 14, 15, 0),
-	gsSP2Triangles(16, 17, 18, 0, 16, 18, 19, 0),
-	gsSP2Triangles(20, 21, 22, 0, 20, 22, 23, 0),
-	gsSP2Triangles(24, 25, 26, 0, 24, 26, 27, 0),
-	gsSP2Triangles(28, 29, 30, 0, 28, 30, 31, 0),
-	gsSPVertex(my_dungeon_dl_Floor_mesh_layer_Opaque_vtx_1 + 64, 30, 0),
+	gsSP2Triangles(11, 10, 12, 0, 12, 10, 13, 0),
+	gsSP2Triangles(12, 13, 14, 0, 15, 11, 12, 0),
+	gsSP2Triangles(16, 17, 18, 0, 16, 19, 17, 0),
+	gsSP2Triangles(20, 19, 16, 0, 20, 16, 21, 0),
+	gsSP2Triangles(22, 23, 24, 0, 22, 24, 25, 0),
+	gsSP2Triangles(25, 24, 26, 0, 24, 27, 26, 0),
+	gsSP2Triangles(25, 26, 28, 0, 25, 28, 29, 0),
+	gsSPVertex(my_dungeon_dl_Floor_mesh_layer_Opaque_vtx_0 + 93, 12, 0),
 	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
 	gsSP2Triangles(4, 5, 6, 0, 4, 6, 7, 0),
-	gsSP2Triangles(7, 6, 8, 0, 8, 6, 9, 0),
-	gsSP2Triangles(8, 9, 10, 0, 11, 7, 8, 0),
-	gsSP2Triangles(12, 13, 14, 0, 12, 15, 13, 0),
-	gsSP2Triangles(16, 15, 12, 0, 16, 12, 17, 0),
-	gsSP2Triangles(18, 19, 20, 0, 18, 20, 21, 0),
-	gsSP2Triangles(21, 20, 22, 0, 20, 23, 22, 0),
-	gsSP2Triangles(21, 22, 24, 0, 21, 24, 25, 0),
-	gsSP2Triangles(26, 27, 28, 0, 26, 28, 29, 0),
-	gsSPVertex(my_dungeon_dl_Floor_mesh_layer_Opaque_vtx_1 + 94, 8, 0),
-	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
-	gsSP2Triangles(4, 5, 6, 0, 4, 6, 7, 0),
+	gsSP2Triangles(8, 9, 10, 0, 8, 10, 11, 0),
 	gsSPEndDisplayList(),
 };
 
-Vtx my_dungeon_dl_Floor_mesh_layer_Opaque_vtx_2[4] = {
-	{{ {-82, -120, -524}, 0, {310, 873}, {52, 52, 52, 255} }},
+Vtx my_dungeon_dl_Floor_mesh_layer_Opaque_vtx_1[4] = {
+	{{ {-300, -120, -192}, 0, {629, 3686}, {255, 255, 255, 255} }},
+	{{ {-300, 357, -192}, 0, {629, 594}, {255, 255, 255, 255} }},
+	{{ {-300, 357, 112}, 0, {-842, 594}, {255, 255, 255, 255} }},
+	{{ {-300, -120, 112}, 0, {-842, 3686}, {255, 255, 255, 255} }},
+};
+
+Gfx my_dungeon_dl_Floor_mesh_layer_Opaque_tri_1[] = {
+	gsSPVertex(my_dungeon_dl_Floor_mesh_layer_Opaque_vtx_1 + 0, 4, 0),
+	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
+	gsSPEndDisplayList(),
+};
+
+Vtx my_dungeon_dl_Floor_mesh_layer_Opaque_vtx_2[20] = {
+	{{ {456, -120, 112}, 0, {3678, 1279}, {255, 255, 255, 255} }},
+	{{ {1037, -120, 112}, 0, {7729, 1279}, {255, 255, 255, 255} }},
+	{{ {1037, -120, -192}, 0, {7729, -840}, {255, 255, 255, 255} }},
+	{{ {456, -120, -192}, 0, {3678, -840}, {255, 255, 255, 255} }},
+	{{ {38, -120, -504}, 0, {758, -3023}, {255, 255, 255, 255} }},
+	{{ {456, -120, -504}, 0, {3678, -3023}, {255, 255, 255, 255} }},
+	{{ {-82, -120, -504}, 0, {-79, -3023}, {232, 232, 232, 255} }},
+	{{ {-300, -120, -432}, 0, {-1597, -2517}, {255, 255, 255, 255} }},
+	{{ {-300, -120, -504}, 0, {-1597, -3023}, {255, 255, 255, 255} }},
+	{{ {-300, -120, -372}, 0, {-1597, -2099}, {255, 255, 255, 255} }},
+	{{ {-300, -120, -192}, 0, {-1597, -840}, {255, 255, 255, 255} }},
+	{{ {-300, -120, 112}, 0, {-1597, 1279}, {255, 255, 255, 255} }},
+	{{ {-300, -120, 249}, 0, {-1597, 2232}, {255, 255, 255, 255} }},
+	{{ {-300, -120, 309}, 0, {-1597, 2650}, {255, 255, 255, 255} }},
+	{{ {-300, -120, 407}, 0, {-1597, 3336}, {255, 255, 255, 255} }},
+	{{ {456, -120, 407}, 0, {3678, 3336}, {255, 255, 255, 255} }},
+	{{ {-82, -120, -504}, 0, {310, 934}, {232, 232, 232, 255} }},
+	{{ {38, -120, -504}, 0, {682, 934}, {255, 255, 255, 255} }},
 	{{ {38, -120, -524}, 0, {682, 873}, {74, 74, 74, 255} }},
-	{{ {38, -120, -836}, 0, {682, -90}, {0, 0, 0, 255} }},
-	{{ {-82, -120, -836}, 0, {310, -90}, {1, 1, 1, 255} }},
+	{{ {-82, -120, -524}, 0, {310, 873}, {52, 52, 52, 255} }},
 };
 
 Gfx my_dungeon_dl_Floor_mesh_layer_Opaque_tri_2[] = {
-	gsSPVertex(my_dungeon_dl_Floor_mesh_layer_Opaque_vtx_2 + 0, 4, 0),
+	gsSPVertex(my_dungeon_dl_Floor_mesh_layer_Opaque_vtx_2 + 0, 20, 0),
+	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
+	gsSP2Triangles(0, 3, 4, 0, 3, 5, 4, 0),
+	gsSP2Triangles(0, 4, 6, 0, 0, 6, 7, 0),
+	gsSP2Triangles(6, 8, 7, 0, 0, 7, 9, 0),
+	gsSP2Triangles(0, 9, 10, 0, 10, 11, 0, 0),
+	gsSP2Triangles(11, 12, 0, 0, 12, 13, 0, 0),
+	gsSP2Triangles(13, 14, 0, 0, 14, 15, 0, 0),
+	gsSP2Triangles(16, 17, 18, 0, 16, 18, 19, 0),
+	gsSPEndDisplayList(),
+};
+
+Vtx my_dungeon_dl_Floor_mesh_layer_Opaque_vtx_3[4] = {
+	{{ {-82, -120, -524}, 0, {-1156, 4675}, {52, 52, 52, 255} }},
+	{{ {38, -120, -524}, 0, {2148, 4675}, {74, 74, 74, 255} }},
+	{{ {38, -120, -836}, 0, {2148, -3892}, {0, 0, 0, 255} }},
+	{{ {-82, -120, -836}, 0, {-1156, -3892}, {1, 1, 1, 255} }},
+};
+
+Gfx my_dungeon_dl_Floor_mesh_layer_Opaque_tri_3[] = {
+	gsSPVertex(my_dungeon_dl_Floor_mesh_layer_Opaque_vtx_3 + 0, 4, 0),
+	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
+	gsSPEndDisplayList(),
+};
+
+Vtx my_dungeon_dl_metal_vines_mesh_layer_Opaque_vtx_cull[8] = {
+	{{ {-298, -120, 112}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {-298, 357, 112}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {-298, 357, -192}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {-298, -120, -192}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {-298, -120, 112}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {-298, 357, 112}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {-298, 357, -192}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {-298, -120, -192}, 0, {0, 0}, {0, 0, 0, 0} }},
+};
+
+Vtx my_dungeon_dl_metal_vines_mesh_layer_Opaque_vtx_0[4] = {
+	{{ {-298, -120, -192}, 0, {1962, 2039}, {255, 255, 255, 255} }},
+	{{ {-298, 357, -192}, 0, {1962, -179}, {255, 255, 255, 255} }},
+	{{ {-298, 357, 112}, 0, {-2084, -179}, {255, 255, 255, 255} }},
+	{{ {-298, -120, 112}, 0, {-2084, 2039}, {255, 255, 255, 255} }},
+};
+
+Gfx my_dungeon_dl_metal_vines_mesh_layer_Opaque_tri_0[] = {
+	gsSPVertex(my_dungeon_dl_metal_vines_mesh_layer_Opaque_vtx_0 + 0, 4, 0),
 	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
 	gsSPEndDisplayList(),
 };
@@ -627,55 +691,6 @@ Vtx my_dungeon_dl_Plane_mesh_layer_Opaque_vtx_0[24] = {
 
 Gfx my_dungeon_dl_Plane_mesh_layer_Opaque_tri_0[] = {
 	gsSPVertex(my_dungeon_dl_Plane_mesh_layer_Opaque_vtx_0 + 0, 24, 0),
-	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
-	gsSP2Triangles(4, 5, 6, 0, 4, 6, 7, 0),
-	gsSP2Triangles(8, 9, 10, 0, 8, 10, 11, 0),
-	gsSP2Triangles(12, 13, 14, 0, 12, 14, 15, 0),
-	gsSP2Triangles(16, 17, 18, 0, 16, 18, 19, 0),
-	gsSP2Triangles(20, 21, 22, 0, 20, 22, 23, 0),
-	gsSPEndDisplayList(),
-};
-
-Vtx my_dungeon_dl_Plane_001_mesh_layer_Opaque_vtx_cull[8] = {
-	{{ {-81, -120, -60}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {-81, -77, -60}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {-81, -77, -129}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {-81, -120, -129}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {-12, -120, -60}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {-12, -77, -60}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {-12, -77, -129}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {-12, -120, -129}, 0, {0, 0}, {0, 0, 0, 0} }},
-};
-
-Vtx my_dungeon_dl_Plane_001_mesh_layer_Opaque_vtx_0[24] = {
-	{{ {-81, -120, -60}, 0, {-16, 1008}, {0, 129, 0, 255} }},
-	{{ {-81, -120, -129}, 0, {-16, -16}, {0, 129, 0, 255} }},
-	{{ {-12, -120, -129}, 0, {1008, -16}, {0, 129, 0, 255} }},
-	{{ {-12, -120, -60}, 0, {1008, 1008}, {0, 129, 0, 255} }},
-	{{ {-81, -120, -129}, 0, {1008, 810}, {129, 0, 0, 255} }},
-	{{ {-81, -120, -60}, 0, {-16, 810}, {129, 0, 0, 255} }},
-	{{ {-81, -77, -60}, 0, {-16, 182}, {129, 0, 0, 255} }},
-	{{ {-81, -77, -129}, 0, {1008, 182}, {129, 0, 0, 255} }},
-	{{ {-12, -120, -129}, 0, {1008, 810}, {0, 0, 129, 255} }},
-	{{ {-81, -120, -129}, 0, {-16, 810}, {0, 0, 129, 255} }},
-	{{ {-81, -77, -129}, 0, {-16, 182}, {0, 0, 129, 255} }},
-	{{ {-12, -77, -129}, 0, {1008, 182}, {0, 0, 129, 255} }},
-	{{ {-81, -120, -60}, 0, {-16, 810}, {0, 0, 127, 255} }},
-	{{ {-12, -120, -60}, 0, {1008, 810}, {0, 0, 127, 255} }},
-	{{ {-12, -77, -60}, 0, {1008, 182}, {0, 0, 127, 255} }},
-	{{ {-81, -77, -60}, 0, {-16, 182}, {0, 0, 127, 255} }},
-	{{ {-12, -120, -60}, 0, {-16, 810}, {127, 0, 0, 255} }},
-	{{ {-12, -120, -129}, 0, {1008, 810}, {127, 0, 0, 255} }},
-	{{ {-12, -77, -129}, 0, {1008, 182}, {127, 0, 0, 255} }},
-	{{ {-12, -77, -60}, 0, {-16, 182}, {127, 0, 0, 255} }},
-	{{ {-12, -77, -60}, 0, {1008, 1008}, {0, 127, 0, 255} }},
-	{{ {-12, -77, -129}, 0, {1008, -16}, {0, 127, 0, 255} }},
-	{{ {-81, -77, -129}, 0, {-16, -16}, {0, 127, 0, 255} }},
-	{{ {-81, -77, -60}, 0, {-16, 1008}, {0, 127, 0, 255} }},
-};
-
-Gfx my_dungeon_dl_Plane_001_mesh_layer_Opaque_tri_0[] = {
-	gsSPVertex(my_dungeon_dl_Plane_001_mesh_layer_Opaque_vtx_0 + 0, 24, 0),
 	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
 	gsSP2Triangles(4, 5, 6, 0, 4, 6, 7, 0),
 	gsSP2Triangles(8, 9, 10, 0, 8, 10, 11, 0),
@@ -818,6 +833,44 @@ Gfx mat_my_dungeon_dl_wall_stone_layerOpaque[] = {
 	gsSPEndDisplayList(),
 };
 
+Gfx mat_my_dungeon_dl_wall_stone_climbable_layerOpaque[] = {
+	gsDPPipeSync(),
+	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, 1, COMBINED, 0, PRIMITIVE, 0, 0, 0, 0, COMBINED),
+	gsSPLoadGeometryMode(G_ZBUFFER | G_SHADE | G_CULL_BACK | G_FOG | G_SHADING_SMOOTH),
+	gsSPSetOtherMode(G_SETOTHERMODE_H, 4, 20, G_AD_NOISE | G_CD_MAGICSQ | G_CK_NONE | G_TC_FILT | G_TF_BILERP | G_TT_RGBA16 | G_TL_TILE | G_TD_CLAMP | G_TP_PERSP | G_CYC_2CYCLE | G_PM_NPRIMITIVE),
+	gsSPSetOtherMode(G_SETOTHERMODE_L, 0, 32, G_AC_NONE | G_ZS_PIXEL | G_RM_FOG_SHADE_A | G_RM_AA_ZB_OPA_SURF2),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetPrimColor(0, 0, 255, 255, 255, 255),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, my_dungeon_dl_men_room_0Tex_00B538_ci8_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 152),
+	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, my_dungeon_dl_men_room_0Tex_00B538_ci8_ci8),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadBlock(7, 0, 0, 1023, 512),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_WRAP | G_TX_MIRROR, 6, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTileSize(0, 0, 0, 124, 252),
+	gsSPEndDisplayList(),
+};
+
+Gfx mat_my_dungeon_dl_metal_vines_layerOpaque[] = {
+	gsDPPipeSync(),
+	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, TEXEL0, COMBINED, 0, PRIMITIVE, 0, 0, 0, 0, COMBINED),
+	gsSPLoadGeometryMode(G_ZBUFFER | G_SHADE | G_FOG | G_SHADING_SMOOTH),
+	gsSPSetOtherMode(G_SETOTHERMODE_H, 4, 20, G_AD_NOISE | G_CD_MAGICSQ | G_CK_NONE | G_TC_FILT | G_TF_BILERP | G_TT_RGBA16 | G_TL_TILE | G_TD_CLAMP | G_TP_PERSP | G_CYC_2CYCLE | G_PM_NPRIMITIVE),
+	gsSPSetOtherMode(G_SETOTHERMODE_L, 0, 32, G_AC_NONE | G_ZS_PIXEL | G_RM_FOG_SHADE_A | G_RM_AA_ZB_TEX_EDGE2),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetPrimColor(0, 0, 255, 255, 255, 255),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, my_dungeon_dl_men_room_8Tex_005D30_rgba16_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 37),
+	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, my_dungeon_dl_men_room_8Tex_005D30_rgba16_ci8),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadBlock(7, 0, 0, 511, 1024),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 2, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 6, 0, G_TX_WRAP | G_TX_NOMIRROR, 4, 0),
+	gsDPSetTileSize(0, 0, 0, 60, 252),
+	gsSPEndDisplayList(),
+};
+
 Gfx mat_my_dungeon_dl_handsome_squid_layerOpaque[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, 1, COMBINED, 0, PRIMITIVE, 0, 0, 0, 0, COMBINED),
@@ -853,12 +906,24 @@ Gfx my_dungeon_dl_Floor_mesh_layer_Opaque[] = {
 	gsSPVertex(my_dungeon_dl_Floor_mesh_layer_Opaque_vtx_cull + 0, 8, 0),
 	gsSPSetGeometryMode(G_LIGHTING),
 	gsSPCullDisplayList(0, 7),
-	gsSPDisplayList(mat_my_dungeon_dl_floor_mat_layerOpaque),
-	gsSPDisplayList(my_dungeon_dl_Floor_mesh_layer_Opaque_tri_0),
 	gsSPDisplayList(mat_my_dungeon_dl_wall_stone_layerOpaque),
+	gsSPDisplayList(my_dungeon_dl_Floor_mesh_layer_Opaque_tri_0),
+	gsSPDisplayList(mat_my_dungeon_dl_wall_stone_climbable_layerOpaque),
 	gsSPDisplayList(my_dungeon_dl_Floor_mesh_layer_Opaque_tri_1),
-	gsSPDisplayList(mat_my_dungeon_dl_floor_2_layerOpaque),
+	gsSPDisplayList(mat_my_dungeon_dl_floor_mat_layerOpaque),
 	gsSPDisplayList(my_dungeon_dl_Floor_mesh_layer_Opaque_tri_2),
+	gsSPDisplayList(mat_my_dungeon_dl_floor_2_layerOpaque),
+	gsSPDisplayList(my_dungeon_dl_Floor_mesh_layer_Opaque_tri_3),
+	gsSPEndDisplayList(),
+};
+
+Gfx my_dungeon_dl_metal_vines_mesh_layer_Opaque[] = {
+	gsSPClearGeometryMode(G_LIGHTING),
+	gsSPVertex(my_dungeon_dl_metal_vines_mesh_layer_Opaque_vtx_cull + 0, 8, 0),
+	gsSPSetGeometryMode(G_LIGHTING),
+	gsSPCullDisplayList(0, 7),
+	gsSPDisplayList(mat_my_dungeon_dl_metal_vines_layerOpaque),
+	gsSPDisplayList(my_dungeon_dl_metal_vines_mesh_layer_Opaque_tri_0),
 	gsSPEndDisplayList(),
 };
 
@@ -869,16 +934,6 @@ Gfx my_dungeon_dl_Plane_mesh_layer_Opaque[] = {
 	gsSPCullDisplayList(0, 7),
 	gsSPDisplayList(mat_my_dungeon_dl_handsome_squid_layerOpaque),
 	gsSPDisplayList(my_dungeon_dl_Plane_mesh_layer_Opaque_tri_0),
-	gsSPEndDisplayList(),
-};
-
-Gfx my_dungeon_dl_Plane_001_mesh_layer_Opaque[] = {
-	gsSPClearGeometryMode(G_LIGHTING),
-	gsSPVertex(my_dungeon_dl_Plane_001_mesh_layer_Opaque_vtx_cull + 0, 8, 0),
-	gsSPSetGeometryMode(G_LIGHTING),
-	gsSPCullDisplayList(0, 7),
-	gsSPDisplayList(mat_my_dungeon_dl_handsome_squid_layerOpaque),
-	gsSPDisplayList(my_dungeon_dl_Plane_001_mesh_layer_Opaque_tri_0),
 	gsSPEndDisplayList(),
 };
 
