@@ -9,7 +9,7 @@
  *    - Argument 5: ? (Unknown)
  *    - Argument 6: ? (Unknown)
  */
-/* 0x00 */ DEFINE_SCENE(ydan_scene, g_pn_06, SCENE_DEKU_TREE, SDC_DEFAULT, 1, 2)
+/* 0x00 */ DEFINE_SCENE(ydan_scene, g_pn_06, SCENE_DEKU_TREE, SDC_DEKU_TREE, 1, 2)
 /* 0x01 */ DEFINE_SCENE(ddan_scene, g_pn_08, SCENE_DODONGOS_CAVERN, SDC_DODONGOS_CAVERN, 1, 3)
 /* 0x02 */ DEFINE_SCENE(bdan_scene, g_pn_07, SCENE_JABU_JABU, SDC_JABU_JABU, 1, 4)
 /* 0x03 */ DEFINE_SCENE(Bmori1_scene, g_pn_01, SCENE_FOREST_TEMPLE, SDC_FOREST_TEMPLE, 2, 5)
@@ -121,5 +121,4 @@
 /* 0x6C */ DEFINE_SCENE(sasatest_scene, none, SCENE_SASATEST, SDC_DEFAULT, 0, 0)
 /* 0x6D */ DEFINE_SCENE(testroom_scene, none, SCENE_TESTROOM, SDC_DEFAULT, 0, 0)
 // Added scenes
-/* 0x6E */ DEFINE_SCENE(tutorial_01, none, SCENE_TUTORIAL_01, SDC_DEFAULT, 0, 0)
 /* 0x6F */ DEFINE_SCENE(my_dungeon, none, SCENE_MY_DUNGEON, SDC_CALM_WATER, 0, 0)

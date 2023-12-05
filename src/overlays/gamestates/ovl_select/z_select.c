@@ -120,7 +120,7 @@ static SceneSelectEntry sScenes[] = {
     // "46: Back Alley House"
     { "46:" GFXP_HIRAGANA "ｳﾗﾛｼﾞﾉ ｲｴ", MapSelect_LoadGame, ENTR_BACK_ALLEY_HOUSE_0 },
     // "47: Kokiri Village - Know-It-All Brothers' House"
-    { "47:Waluigi Cavern", MapSelect_LoadGame, ENTR_KNOW_IT_ALL_BROS_HOUSE_0 },
+    { "47:Know-It-All Bros House", MapSelect_LoadGame, ENTR_KNOW_IT_ALL_BROS_HOUSE_0 },
     // "48: Kokiri Village - Twins' House"
     { "48:" GFXP_HIRAGANA "ｺｷﾘﾉﾑﾗ ﾌﾀｺﾞﾉｲｴ", MapSelect_LoadGame, ENTR_TWINS_HOUSE_0 },
     // "49: Kokiri Village - Mido's House"
@@ -283,9 +283,7 @@ static SceneSelectEntry sScenes[] = {
     { "124:depth" GFXP_KATAKANA "ﾃｽﾄ", MapSelect_LoadGame, ENTR_DEPTH_TEST_0 },
     // "125: Hyrule Garden Game 2" (Early Hyrule Garden Game)
     { "125:" GFXP_KATAKANA "ﾊｲﾗﾙ" GFXP_HIRAGANA "ﾆﾜ" GFXP_KATAKANA "ｹﾞｰﾑ2", MapSelect_LoadGame, ENTR_HAIRAL_NIWA2_0 },
-    { "126:Tutorial Scene", MapSelect_LoadGame, ENTR_TUTORIAL_01_0 },
-    { "127:Waluigi Cavern", MapSelect_LoadGame, ENTR_KNOW_IT_ALL_BROS_HOUSE_0 },
-    { "128:My Dungeon", MapSelect_LoadGame, ENTR_MY_DUNGEON_0 },
+    { "126:My Dungeon", MapSelect_LoadGame, ENTR_MY_DUNGEON_0 },
     // "title" (Title Screen)
     { "title", (void*)MapSelect_LoadTitle, 0 },
 };
