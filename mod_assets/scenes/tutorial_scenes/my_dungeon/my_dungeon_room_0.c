@@ -40,6 +40,7 @@ Gfx my_dungeon_room_0_entry_0_opaque[] = {
 	gsSPDisplayList(my_dungeon_dl_Floor_mesh_layer_Opaque),
 	gsSPDisplayList(my_dungeon_dl_hsquid_largeMesh_mesh_layer_Opaque),
 	gsSPDisplayList(my_dungeon_dl_Plane_mesh_layer_Opaque),
+	gsSPDisplayList(my_dungeon_dl_Plane_001_mesh_layer_Opaque),
 	gsSPEndDisplayList(),
 };
 
@@ -691,6 +692,55 @@ Gfx my_dungeon_dl_Plane_mesh_layer_Opaque_tri_0[] = {
 	gsSPEndDisplayList(),
 };
 
+Vtx my_dungeon_dl_Plane_001_mesh_layer_Opaque_vtx_cull[8] = {
+	{{ {-81, -120, -60}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {-81, -77, -60}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {-81, -77, -129}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {-81, -120, -129}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {-12, -120, -60}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {-12, -77, -60}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {-12, -77, -129}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {-12, -120, -129}, 0, {0, 0}, {0, 0, 0, 0} }},
+};
+
+Vtx my_dungeon_dl_Plane_001_mesh_layer_Opaque_vtx_0[24] = {
+	{{ {-81, -120, -60}, 0, {-16, 1008}, {0, 129, 0, 255} }},
+	{{ {-81, -120, -129}, 0, {-16, -16}, {0, 129, 0, 255} }},
+	{{ {-12, -120, -129}, 0, {1008, -16}, {0, 129, 0, 255} }},
+	{{ {-12, -120, -60}, 0, {1008, 1008}, {0, 129, 0, 255} }},
+	{{ {-81, -120, -129}, 0, {1008, 810}, {129, 0, 0, 255} }},
+	{{ {-81, -120, -60}, 0, {-16, 810}, {129, 0, 0, 255} }},
+	{{ {-81, -77, -60}, 0, {-16, 182}, {129, 0, 0, 255} }},
+	{{ {-81, -77, -129}, 0, {1008, 182}, {129, 0, 0, 255} }},
+	{{ {-12, -120, -129}, 0, {1008, 810}, {0, 0, 129, 255} }},
+	{{ {-81, -120, -129}, 0, {-16, 810}, {0, 0, 129, 255} }},
+	{{ {-81, -77, -129}, 0, {-16, 182}, {0, 0, 129, 255} }},
+	{{ {-12, -77, -129}, 0, {1008, 182}, {0, 0, 129, 255} }},
+	{{ {-81, -120, -60}, 0, {-16, 810}, {0, 0, 127, 255} }},
+	{{ {-12, -120, -60}, 0, {1008, 810}, {0, 0, 127, 255} }},
+	{{ {-12, -77, -60}, 0, {1008, 182}, {0, 0, 127, 255} }},
+	{{ {-81, -77, -60}, 0, {-16, 182}, {0, 0, 127, 255} }},
+	{{ {-12, -120, -60}, 0, {-16, 810}, {127, 0, 0, 255} }},
+	{{ {-12, -120, -129}, 0, {1008, 810}, {127, 0, 0, 255} }},
+	{{ {-12, -77, -129}, 0, {1008, 182}, {127, 0, 0, 255} }},
+	{{ {-12, -77, -60}, 0, {-16, 182}, {127, 0, 0, 255} }},
+	{{ {-12, -77, -60}, 0, {1008, 1008}, {0, 127, 0, 255} }},
+	{{ {-12, -77, -129}, 0, {1008, -16}, {0, 127, 0, 255} }},
+	{{ {-81, -77, -129}, 0, {-16, -16}, {0, 127, 0, 255} }},
+	{{ {-81, -77, -60}, 0, {-16, 1008}, {0, 127, 0, 255} }},
+};
+
+Gfx my_dungeon_dl_Plane_001_mesh_layer_Opaque_tri_0[] = {
+	gsSPVertex(my_dungeon_dl_Plane_001_mesh_layer_Opaque_vtx_0 + 0, 24, 0),
+	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
+	gsSP2Triangles(4, 5, 6, 0, 4, 6, 7, 0),
+	gsSP2Triangles(8, 9, 10, 0, 8, 10, 11, 0),
+	gsSP2Triangles(12, 13, 14, 0, 12, 14, 15, 0),
+	gsSP2Triangles(16, 17, 18, 0, 16, 18, 19, 0),
+	gsSP2Triangles(20, 21, 22, 0, 20, 22, 23, 0),
+	gsSPEndDisplayList(),
+};
+
 Gfx mat_my_dungeon_dl_wall_stone_layerOpaque[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, 1, COMBINED, 0, PRIMITIVE, 0, 0, 0, 0, COMBINED),
@@ -771,6 +821,16 @@ Gfx my_dungeon_dl_Plane_mesh_layer_Opaque[] = {
 	gsSPCullDisplayList(0, 7),
 	gsSPDisplayList(mat_my_dungeon_dl_handsome_squid_layerOpaque),
 	gsSPDisplayList(my_dungeon_dl_Plane_mesh_layer_Opaque_tri_0),
+	gsSPEndDisplayList(),
+};
+
+Gfx my_dungeon_dl_Plane_001_mesh_layer_Opaque[] = {
+	gsSPClearGeometryMode(G_LIGHTING),
+	gsSPVertex(my_dungeon_dl_Plane_001_mesh_layer_Opaque_vtx_cull + 0, 8, 0),
+	gsSPSetGeometryMode(G_LIGHTING),
+	gsSPCullDisplayList(0, 7),
+	gsSPDisplayList(mat_my_dungeon_dl_handsome_squid_layerOpaque),
+	gsSPDisplayList(my_dungeon_dl_Plane_001_mesh_layer_Opaque_tri_0),
 	gsSPEndDisplayList(),
 };
 
