@@ -30,20 +30,12 @@ s16 my_dungeon_room_1_header00_objectList[LENGTH_MY_DUNGEON_ROOM_1_HEADER00_OBJE
 };
 
 ActorEntry my_dungeon_room_1_header00_actorList[LENGTH_MY_DUNGEON_ROOM_1_HEADER00_ACTORLIST] = {
-    // Keese
+    // Treasure Chest
     {
-        /* Actor ID   */ ACTOR_EN_FIREFLY,
-        /* Position   */ { -549, 37, 340 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0002
-    },
-
-    // Lizalfos
-    {
-        /* Actor ID   */ ACTOR_EN_ZF,
-        /* Position   */ { -606, -120, 513 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x00FE
+        /* Actor ID   */ ACTOR_EN_BOX,
+        /* Position   */ { -856, -120, 414 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(270.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x7841
     },
 
     // Keese
@@ -57,17 +49,25 @@ ActorEntry my_dungeon_room_1_header00_actorList[LENGTH_MY_DUNGEON_ROOM_1_HEADER0
     // Keese
     {
         /* Actor ID   */ ACTOR_EN_FIREFLY,
+        /* Position   */ { -549, 37, 340 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0002
+    },
+
+    // Keese
+    {
+        /* Actor ID   */ ACTOR_EN_FIREFLY,
         /* Position   */ { -597, 11, 604 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
         /* Parameters */ 0x0002
     },
 
-    // Treasure Chest
+    // Lizalfos
     {
-        /* Actor ID   */ ACTOR_EN_BOX,
-        /* Position   */ { -856, -120, 414 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(270.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x7841
+        /* Actor ID   */ ACTOR_EN_ZF,
+        /* Position   */ { -606, -120, 513 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x00FE
     },
 };
 

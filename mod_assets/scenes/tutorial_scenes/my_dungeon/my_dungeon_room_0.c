@@ -38,9 +38,10 @@ RoomShapeDListsEntry my_dungeon_room_0_shapeDListEntry[1] = {
 
 Gfx my_dungeon_room_0_entry_0_opaque[] = {
 	gsSPDisplayList(my_dungeon_dl_Floor_mesh_layer_Opaque),
-	gsSPDisplayList(my_dungeon_dl_hsquid_largeMesh_mesh_layer_Opaque),
 	gsSPDisplayList(my_dungeon_dl_Plane_mesh_layer_Opaque),
 	gsSPDisplayList(my_dungeon_dl_Plane_001_mesh_layer_Opaque),
+	gsSPDisplayList(my_dungeon_dl_wahh_largeMesh_mesh_layer_Opaque),
+	gsSPDisplayList(my_dungeon_dl_wahh_largeMesh_001_mesh_layer_Opaque),
 	gsSPEndDisplayList(),
 };
 
@@ -86,6 +87,35 @@ u64 my_dungeon_dl_men_room_0Tex_00B538_ci8_pal_rgba16[] = {
 	0x93076acb828b82c9, 0x5a078b4dabcd9b89, 0xb3cbbc0d9bcbab8b, 0x8b85b3cfbc51c44d, 0x624d8b0babcb5a8b, 0x8c0d93d383477b0d, 0x528b6b0f934dac19, 0x7b136b0bc451c40f, 
 	0xab8f73499bcfac93, 0x5ac993cd838b838f, 0x93d7bc0f62499bcd, 0xbc93dd55ccd9bc4f, 0xbc97fddddd99ab09, 0xfe5feddfbc4d930b, 0xb3c9ab89c391dc57, 0xbb073a87824bab8d, 
 	0xdb89834f8bcb9c11, 0x8b4b9b8d824d8b0f, 0xab9172d172cf51c9, 0x830f720972cd9351, 0xab0f628bf5599bd3, 0x9b91bc8d6b4f844d, 0x6b89000000000000
+};
+
+u64 my_dungeon_dl_squidward32_ci8[] = {
+	0x0000000001020304, 0x0506070808080809, 0x090a080808070605, 0x0403020b01000000, 0x000101010203040c, 0x07080d0e0f101112, 0x1314151617080807, 0x0c0403020b010000, 
+	0x0000010203040607, 0x18191a1b1b1b1b1b, 0x1b1b1b1b1c1d1e08, 0x0706050302010100, 0x000102030406071f, 0x202122211b1b1b1b, 0x1b1b1b1b1b1b2023, 0x0a07060403020100, 
+	0x000b240406072515, 0x262728291b1b1b1b, 0x1b1b1b2a1b1b1b2b, 0x2c0a070604240b2d, 0x0102032e07082f21, 0x27301b2a1b1b1b1b, 0x1b1b1b311b1b1b32, 0x332c080734042401, 
+	0x0b030406080a1522, 0x27291b2a351b1b1b, 0x1b1b1b321b1b1b1b, 0x36370a080705030b, 0x020406070a381a39, 0x261b1b1b321b1b1b, 0x1b1b3a3b1c2a1b1b, 0x3c3d3e0a07060424, 
+	0x240406082c3f3a1b, 0x1b1b1b1b351b1b1b, 0x1b1b4032321b1b1b, 0x41423d2c08070524, 0x032e070a3e43401b, 0x1b1b1b2a441b1b1b, 0x1b1b1b32321b1b1b, 0x1c45423e0a074603, 
+	0x0406080a37471b1b, 0x1b1b1b481c1b1b1b, 0x48492a3b1c481b1b, 0x2a4a42372c080604, 0x0406082c3d4a2a1b, 0x1b1b1b1b4b1b4c4d, 0x4e4f50514d52531b, 0x5455563d2c080704, 
+	0x05070a2c4257321b, 0x1b1b1b1b51585859, 0x5a5b5c3a5d5e5f13, 0x606156423e0a072e, 0x2e070a374256621b, 0x1b1b1b401b444b63, 0x6465661b6768696a, 0x60615642370a072e, 
+	0x2e070a3742566b1c, 0x1b1b1b121b1b1b4c, 0x6c122a1b4c6d321b, 0x136e5642370a0806, 0x2e080a374256616f, 0x4c1b48321b1b1b1b, 0x3b2a1b1b1c702a1b, 0x35715642370a0806, 
+	0x46070a3742566161, 0x60132a121b1b1b1b, 0x1b3a1b1b32401b1b, 0x72615642370a080c, 0x05070a3742566161, 0x73747513122a1b1b, 0x1b351b1b44581b76, 0x77615642370a0878, 
+	0x05070a2c42566161, 0x7373791b4d12121b, 0x3212122a1c7a327b, 0x61615642370a072e, 0x05070a2c42566161, 0x737c131b501b502a, 0x321b40353b325473, 0x616156423e0a0705, 
+	0x0406082c3d425661, 0x617d3a1b501b3a32, 0x1b2a7e7e7f445473, 0x6156423d2c080704, 0x0406080a37425680, 0x81821b40581b1b2a, 0x1b83848586448761, 0x615642370a080604, 
+	0x0305070888898a8b, 0x5d4b1b3a441b1b1b, 0x1b4b8c8d8e408f61, 0x5656423e0a072e03, 0x249091929394951b, 0x481b1b323a1b1b1b, 0x1b1b32963a1b9761, 0x56423d2c08060424, 
+	0x98999a949493441b, 0x1b1b1b359b1b1b1b, 0x1b1b4c531b1b9c9d, 0x423d3e0a07060402, 0x9e949494949f401b, 0x1b1b1b2a121b1b1b, 0x1b1b9b1c8b1b1b14, 0xa0370a080604030b, 
+	0x94a194a1a1a21b1b, 0x1b1b1b1b1c4d511b, 0x1b1b1b1b3a321b7a, 0xa32c080705030201, 0xa4a59a94949e9b1b, 0x1b1b1b1b1b2a1212, 0x481b1b1b588ba6a7, 0xa8a9070604240b2d, 
+	0x949aa59f949a141b, 0x1b1b1b1b1b1b1b2a, 0x535d7a4d32aaa1a1, 0xabacad9003022d00, 0x94a194ae9e94a270, 0x1b1b1b1b1b1b1b1b, 0x514d1b1b1a93a1a1, 0xa194acaf022d0000, 
+	0x9494a194a49a94b0, 0x112a1b1b1b1b1b1b, 0x709b9bb1a794a1a1, 0xa1a194b201010000, 0x949494949aa59494, 0x9ab3b4b5b17a7ab1, 0xb5b6a59a94949494, 0x949494b700010100, 
+	
+};
+
+u64 my_dungeon_dl_squidward32_pal_rgba16[] = {
+	0xeb1feb5febdfec5f, 0xec9fecdff51df55d, 0xf59ded9df5ddeb9f, 0xf51fd4db8b9373d7, 0x63d95c195c1b645b, 0x641b6c1983d5bc57, 0xdd1b73556c9d8e69, 0x75636b95d519ccd9, 
+	0x6419966bb6efdd5b, 0xec1fe55ba6adcf35, 0xc73396ab86277bd5, 0xf61de35fecdd93d5, 0xbef3649f6cdfdd99, 0xf4dd6c9f9c55fe5d, 0xe5db9ead7da57521, 0x8c57fe5bfe1dc4d7, 
+	0x8e297c17fe9bac53, 0x6ce1c555f4dfa453, 0x7de55399acd37d63, 0x85e553d95c9d651f, 0x5c5b8e274bd9649d, 0x6c5bee99fedbde19, 0x645d84db59cd624f, 0x6bd74b555b135a51, 
+	0x9493ff197417b59f, 0xbd9f9cdb6c5d7c9d, 0xc5e19c597d21b555, 0x6d214ad1f6d98453, 0x7da3e6997415ff59, 0xe6d7634f63d5e697, 0xed1d7c975bd9de97, 0xf759bd93841b7bdb, 
+	0xf6dbd6176bd55315, 0x941d7b577b597459, 0xb4958b8f5a4b5397, 0xace1cda78c1d7c99, 0xec9d9b536a8b8b4b, 0x9bcb5b5353578497, 0xbb596a4b938b85e7, 0x74dfad1572c96ac9, 
+	0xf65b9bcd6acbc517, 0x62496a895b97730b, 0x5a49ac15628b830b, 0x834b8b117b0bb357, 0x62cb5bd77a8f6289, 0x5b0f5b95630f7a8d, 
 };
 
 u64 my_dungeon_dl_wah02_64_rgba32[] = {
@@ -348,35 +378,6 @@ u64 my_dungeon_dl_wah02_64_rgba32[] = {
 	
 };
 
-u64 my_dungeon_dl_squidward32_ci8[] = {
-	0x0000000001020304, 0x0506070808080809, 0x090a080808070605, 0x0403020b01000000, 0x000101010203040c, 0x07080d0e0f101112, 0x1314151617080807, 0x0c0403020b010000, 
-	0x0000010203040607, 0x18191a1b1b1b1b1b, 0x1b1b1b1b1c1d1e08, 0x0706050302010100, 0x000102030406071f, 0x202122211b1b1b1b, 0x1b1b1b1b1b1b2023, 0x0a07060403020100, 
-	0x000b240406072515, 0x262728291b1b1b1b, 0x1b1b1b2a1b1b1b2b, 0x2c0a070604240b2d, 0x0102032e07082f21, 0x27301b2a1b1b1b1b, 0x1b1b1b311b1b1b32, 0x332c080734042401, 
-	0x0b030406080a1522, 0x27291b2a351b1b1b, 0x1b1b1b321b1b1b1b, 0x36370a080705030b, 0x020406070a381a39, 0x261b1b1b321b1b1b, 0x1b1b3a3b1c2a1b1b, 0x3c3d3e0a07060424, 
-	0x240406082c3f3a1b, 0x1b1b1b1b351b1b1b, 0x1b1b4032321b1b1b, 0x41423d2c08070524, 0x032e070a3e43401b, 0x1b1b1b2a441b1b1b, 0x1b1b1b32321b1b1b, 0x1c45423e0a074603, 
-	0x0406080a37471b1b, 0x1b1b1b481c1b1b1b, 0x48492a3b1c481b1b, 0x2a4a42372c080604, 0x0406082c3d4a2a1b, 0x1b1b1b1b4b1b4c4d, 0x4e4f50514d52531b, 0x5455563d2c080704, 
-	0x05070a2c4257321b, 0x1b1b1b1b51585859, 0x5a5b5c3a5d5e5f13, 0x606156423e0a072e, 0x2e070a374256621b, 0x1b1b1b401b444b63, 0x6465661b6768696a, 0x60615642370a072e, 
-	0x2e070a3742566b1c, 0x1b1b1b121b1b1b4c, 0x6c122a1b4c6d321b, 0x136e5642370a0806, 0x2e080a374256616f, 0x4c1b48321b1b1b1b, 0x3b2a1b1b1c702a1b, 0x35715642370a0806, 
-	0x46070a3742566161, 0x60132a121b1b1b1b, 0x1b3a1b1b32401b1b, 0x72615642370a080c, 0x05070a3742566161, 0x73747513122a1b1b, 0x1b351b1b44581b76, 0x77615642370a0878, 
-	0x05070a2c42566161, 0x7373791b4d12121b, 0x3212122a1c7a327b, 0x61615642370a072e, 0x05070a2c42566161, 0x737c131b501b502a, 0x321b40353b325473, 0x616156423e0a0705, 
-	0x0406082c3d425661, 0x617d3a1b501b3a32, 0x1b2a7e7e7f445473, 0x6156423d2c080704, 0x0406080a37425680, 0x81821b40581b1b2a, 0x1b83848586448761, 0x615642370a080604, 
-	0x0305070888898a8b, 0x5d4b1b3a441b1b1b, 0x1b4b8c8d8e408f61, 0x5656423e0a072e03, 0x249091929394951b, 0x481b1b323a1b1b1b, 0x1b1b32963a1b9761, 0x56423d2c08060424, 
-	0x98999a949493441b, 0x1b1b1b359b1b1b1b, 0x1b1b4c531b1b9c9d, 0x423d3e0a07060402, 0x9e949494949f401b, 0x1b1b1b2a121b1b1b, 0x1b1b9b1c8b1b1b14, 0xa0370a080604030b, 
-	0x94a194a1a1a21b1b, 0x1b1b1b1b1c4d511b, 0x1b1b1b1b3a321b7a, 0xa32c080705030201, 0xa4a59a94949e9b1b, 0x1b1b1b1b1b2a1212, 0x481b1b1b588ba6a7, 0xa8a9070604240b2d, 
-	0x949aa59f949a141b, 0x1b1b1b1b1b1b1b2a, 0x535d7a4d32aaa1a1, 0xabacad9003022d00, 0x94a194ae9e94a270, 0x1b1b1b1b1b1b1b1b, 0x514d1b1b1a93a1a1, 0xa194acaf022d0000, 
-	0x9494a194a49a94b0, 0x112a1b1b1b1b1b1b, 0x709b9bb1a794a1a1, 0xa1a194b201010000, 0x949494949aa59494, 0x9ab3b4b5b17a7ab1, 0xb5b6a59a94949494, 0x949494b700010100, 
-	
-};
-
-u64 my_dungeon_dl_squidward32_pal_rgba16[] = {
-	0xeb1feb5febdfec5f, 0xec9fecdff51df55d, 0xf59ded9df5ddeb9f, 0xf51fd4db8b9373d7, 0x63d95c195c1b645b, 0x641b6c1983d5bc57, 0xdd1b73556c9d8e69, 0x75636b95d519ccd9, 
-	0x6419966bb6efdd5b, 0xec1fe55ba6adcf35, 0xc73396ab86277bd5, 0xf61de35fecdd93d5, 0xbef3649f6cdfdd99, 0xf4dd6c9f9c55fe5d, 0xe5db9ead7da57521, 0x8c57fe5bfe1dc4d7, 
-	0x8e297c17fe9bac53, 0x6ce1c555f4dfa453, 0x7de55399acd37d63, 0x85e553d95c9d651f, 0x5c5b8e274bd9649d, 0x6c5bee99fedbde19, 0x645d84db59cd624f, 0x6bd74b555b135a51, 
-	0x9493ff197417b59f, 0xbd9f9cdb6c5d7c9d, 0xc5e19c597d21b555, 0x6d214ad1f6d98453, 0x7da3e6997415ff59, 0xe6d7634f63d5e697, 0xed1d7c975bd9de97, 0xf759bd93841b7bdb, 
-	0xf6dbd6176bd55315, 0x941d7b577b597459, 0xb4958b8f5a4b5397, 0xace1cda78c1d7c99, 0xec9d9b536a8b8b4b, 0x9bcb5b5353578497, 0xbb596a4b938b85e7, 0x74dfad1572c96ac9, 
-	0xf65b9bcd6acbc517, 0x62496a895b97730b, 0x5a49ac15628b830b, 0x834b8b117b0bb357, 0x62cb5bd77a8f6289, 0x5b0f5b95630f7a8d, 
-};
-
 Vtx my_dungeon_dl_Floor_mesh_layer_Opaque_vtx_cull[8] = {
 	{{ {-320, -120, 407}, 0, {0, 0}, {0, 0, 0, 0} }},
 	{{ {-320, 357, 407}, 0, {0, 0}, {0, 0, 0, 0} }},
@@ -586,63 +587,6 @@ Gfx my_dungeon_dl_Floor_mesh_layer_Opaque_tri_2[] = {
 	gsSPEndDisplayList(),
 };
 
-Vtx my_dungeon_dl_hsquid_largeMesh_mesh_layer_Opaque_vtx_cull[8] = {
-	{{ {-269, -73, 83}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {-269, -57, 83}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {-269, -57, 67}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {-269, -73, 67}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {-269, -73, 83}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {-269, -57, 83}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {-269, -57, 67}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {-269, -73, 67}, 0, {0, 0}, {0, 0, 0, 0} }},
-};
-
-Vtx my_dungeon_dl_hsquid_largeMesh_mesh_layer_Opaque_vtx_0[16] = {
-	{{ {-269, -57, 75}, 0, {992, -16}, {127, 0, 0, 255} }},
-	{{ {-269, -57, 83}, 0, {-16, -16}, {127, 0, 0, 255} }},
-	{{ {-269, -65, 83}, 0, {-16, 992}, {127, 0, 0, 255} }},
-	{{ {-269, -65, 75}, 0, {992, 992}, {127, 0, 0, 255} }},
-	{{ {-269, -57, 67}, 0, {1984, -16}, {127, 0, 0, 255} }},
-	{{ {-269, -57, 75}, 0, {992, -16}, {127, 0, 0, 255} }},
-	{{ {-269, -65, 75}, 0, {992, 992}, {127, 0, 0, 255} }},
-	{{ {-269, -65, 67}, 0, {1984, 992}, {127, 0, 0, 255} }},
-	{{ {-269, -65, 75}, 0, {992, 992}, {127, 0, 0, 255} }},
-	{{ {-269, -65, 83}, 0, {-16, 992}, {127, 0, 0, 255} }},
-	{{ {-269, -73, 83}, 0, {-16, 1984}, {127, 0, 0, 255} }},
-	{{ {-269, -73, 75}, 0, {992, 1984}, {127, 0, 0, 255} }},
-	{{ {-269, -65, 67}, 0, {1984, 992}, {127, 0, 0, 255} }},
-	{{ {-269, -65, 75}, 0, {992, 992}, {127, 0, 0, 255} }},
-	{{ {-269, -73, 75}, 0, {992, 1984}, {127, 0, 0, 255} }},
-	{{ {-269, -73, 67}, 0, {1984, 1984}, {127, 0, 0, 255} }},
-};
-
-Gfx my_dungeon_dl_hsquid_largeMesh_mesh_layer_Opaque_tri_0[] = {
-	gsDPLoadSync(),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_32b, 64, my_dungeon_dl_wah02_64_rgba32),
-	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_32b, 8, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTile(7, 0, 0, 124, 124),
-	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_32b, 8, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 0, 0),
-	gsDPSetTileSize(0, 0, 0, 124, 124),
-	gsSPVertex(my_dungeon_dl_hsquid_largeMesh_mesh_layer_Opaque_vtx_0 + 0, 4, 0),
-	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
-	gsDPLoadSync(),
-	gsDPLoadTile(7, 124, 0, 248, 124),
-	gsDPSetTileSize(0, 124, 0, 248, 124),
-	gsSPVertex(my_dungeon_dl_hsquid_largeMesh_mesh_layer_Opaque_vtx_0 + 4, 4, 0),
-	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
-	gsDPLoadSync(),
-	gsDPLoadTile(7, 0, 124, 124, 248),
-	gsDPSetTileSize(0, 0, 124, 124, 248),
-	gsSPVertex(my_dungeon_dl_hsquid_largeMesh_mesh_layer_Opaque_vtx_0 + 8, 4, 0),
-	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
-	gsDPLoadSync(),
-	gsDPLoadTile(7, 124, 124, 248, 248),
-	gsDPSetTileSize(0, 124, 124, 248, 248),
-	gsSPVertex(my_dungeon_dl_hsquid_largeMesh_mesh_layer_Opaque_vtx_0 + 12, 4, 0),
-	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
-	gsSPEndDisplayList(),
-};
-
 Vtx my_dungeon_dl_Plane_mesh_layer_Opaque_vtx_cull[8] = {
 	{{ {-62, -120, -167}, 0, {0, 0}, {0, 0, 0, 0} }},
 	{{ {-62, -77, -167}, 0, {0, 0}, {0, 0, 0, 0} }},
@@ -741,6 +685,120 @@ Gfx my_dungeon_dl_Plane_001_mesh_layer_Opaque_tri_0[] = {
 	gsSPEndDisplayList(),
 };
 
+Vtx my_dungeon_dl_wahh_largeMesh_mesh_layer_Opaque_vtx_cull[8] = {
+	{{ {-269, -73, 83}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {-269, -57, 83}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {-269, -57, 67}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {-269, -73, 67}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {-269, -73, 83}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {-269, -57, 83}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {-269, -57, 67}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {-269, -73, 67}, 0, {0, 0}, {0, 0, 0, 0} }},
+};
+
+Vtx my_dungeon_dl_wahh_largeMesh_mesh_layer_Opaque_vtx_0[16] = {
+	{{ {-269, -57, 75}, 0, {992, -16}, {127, 0, 0, 255} }},
+	{{ {-269, -57, 83}, 0, {-16, -16}, {127, 0, 0, 255} }},
+	{{ {-269, -65, 83}, 0, {-16, 992}, {127, 0, 0, 255} }},
+	{{ {-269, -65, 75}, 0, {992, 992}, {127, 0, 0, 255} }},
+	{{ {-269, -57, 67}, 0, {1984, -16}, {127, 0, 0, 255} }},
+	{{ {-269, -57, 75}, 0, {992, -16}, {127, 0, 0, 255} }},
+	{{ {-269, -65, 75}, 0, {992, 992}, {127, 0, 0, 255} }},
+	{{ {-269, -65, 67}, 0, {1984, 992}, {127, 0, 0, 255} }},
+	{{ {-269, -65, 75}, 0, {992, 992}, {127, 0, 0, 255} }},
+	{{ {-269, -65, 83}, 0, {-16, 992}, {127, 0, 0, 255} }},
+	{{ {-269, -73, 83}, 0, {-16, 1984}, {127, 0, 0, 255} }},
+	{{ {-269, -73, 75}, 0, {992, 1984}, {127, 0, 0, 255} }},
+	{{ {-269, -65, 67}, 0, {1984, 992}, {127, 0, 0, 255} }},
+	{{ {-269, -65, 75}, 0, {992, 992}, {127, 0, 0, 255} }},
+	{{ {-269, -73, 75}, 0, {992, 1984}, {127, 0, 0, 255} }},
+	{{ {-269, -73, 67}, 0, {1984, 1984}, {127, 0, 0, 255} }},
+};
+
+Gfx my_dungeon_dl_wahh_largeMesh_mesh_layer_Opaque_tri_0[] = {
+	gsDPLoadSync(),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_32b, 64, my_dungeon_dl_wah02_64_rgba32),
+	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_32b, 8, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTile(7, 0, 0, 124, 124),
+	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_32b, 8, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 0, 0),
+	gsDPSetTileSize(0, 0, 0, 124, 124),
+	gsSPVertex(my_dungeon_dl_wahh_largeMesh_mesh_layer_Opaque_vtx_0 + 0, 4, 0),
+	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
+	gsDPLoadSync(),
+	gsDPLoadTile(7, 124, 0, 248, 124),
+	gsDPSetTileSize(0, 124, 0, 248, 124),
+	gsSPVertex(my_dungeon_dl_wahh_largeMesh_mesh_layer_Opaque_vtx_0 + 4, 4, 0),
+	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
+	gsDPLoadSync(),
+	gsDPLoadTile(7, 0, 124, 124, 248),
+	gsDPSetTileSize(0, 0, 124, 124, 248),
+	gsSPVertex(my_dungeon_dl_wahh_largeMesh_mesh_layer_Opaque_vtx_0 + 8, 4, 0),
+	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
+	gsDPLoadSync(),
+	gsDPLoadTile(7, 124, 124, 248, 248),
+	gsDPSetTileSize(0, 124, 124, 248, 248),
+	gsSPVertex(my_dungeon_dl_wahh_largeMesh_mesh_layer_Opaque_vtx_0 + 12, 4, 0),
+	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
+	gsSPEndDisplayList(),
+};
+
+Vtx my_dungeon_dl_wahh_largeMesh_001_mesh_layer_Opaque_vtx_cull[8] = {
+	{{ {-69, -48, 400}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {-69, 142, 400}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {-69, 142, 400}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {-69, -48, 400}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {121, -48, 400}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {121, 142, 400}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {121, 142, 400}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {121, -48, 400}, 0, {0, 0}, {0, 0, 0, 0} }},
+};
+
+Vtx my_dungeon_dl_wahh_largeMesh_001_mesh_layer_Opaque_vtx_0[16] = {
+	{{ {25, 142, 400}, 0, {992, -16}, {0, 0, 129, 255} }},
+	{{ {121, 142, 400}, 0, {-16, -16}, {0, 0, 129, 255} }},
+	{{ {121, 46, 400}, 0, {-16, 992}, {0, 0, 129, 255} }},
+	{{ {25, 46, 400}, 0, {992, 992}, {0, 0, 129, 255} }},
+	{{ {-69, 142, 400}, 0, {1984, -16}, {0, 0, 129, 255} }},
+	{{ {25, 142, 400}, 0, {992, -16}, {0, 0, 129, 255} }},
+	{{ {25, 46, 400}, 0, {992, 992}, {0, 0, 129, 255} }},
+	{{ {-69, 46, 400}, 0, {1984, 992}, {0, 0, 129, 255} }},
+	{{ {25, 46, 400}, 0, {992, 992}, {0, 0, 129, 255} }},
+	{{ {121, 46, 400}, 0, {-16, 992}, {0, 0, 129, 255} }},
+	{{ {121, -48, 400}, 0, {-16, 1984}, {0, 0, 129, 255} }},
+	{{ {25, -48, 400}, 0, {992, 1984}, {0, 0, 129, 255} }},
+	{{ {-69, 46, 400}, 0, {1984, 992}, {0, 0, 129, 255} }},
+	{{ {25, 46, 400}, 0, {992, 992}, {0, 0, 129, 255} }},
+	{{ {25, -48, 400}, 0, {992, 1984}, {0, 0, 129, 255} }},
+	{{ {-69, -48, 400}, 0, {1984, 1984}, {0, 0, 129, 255} }},
+};
+
+Gfx my_dungeon_dl_wahh_largeMesh_001_mesh_layer_Opaque_tri_0[] = {
+	gsDPLoadSync(),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_32b, 64, my_dungeon_dl_wah02_64_rgba32),
+	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_32b, 8, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTile(7, 0, 0, 124, 124),
+	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_32b, 8, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 0, 0),
+	gsDPSetTileSize(0, 0, 0, 124, 124),
+	gsSPVertex(my_dungeon_dl_wahh_largeMesh_001_mesh_layer_Opaque_vtx_0 + 0, 4, 0),
+	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
+	gsDPLoadSync(),
+	gsDPLoadTile(7, 124, 0, 248, 124),
+	gsDPSetTileSize(0, 124, 0, 248, 124),
+	gsSPVertex(my_dungeon_dl_wahh_largeMesh_001_mesh_layer_Opaque_vtx_0 + 4, 4, 0),
+	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
+	gsDPLoadSync(),
+	gsDPLoadTile(7, 0, 124, 124, 248),
+	gsDPSetTileSize(0, 0, 124, 124, 248),
+	gsSPVertex(my_dungeon_dl_wahh_largeMesh_001_mesh_layer_Opaque_vtx_0 + 8, 4, 0),
+	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
+	gsDPLoadSync(),
+	gsDPLoadTile(7, 124, 124, 248, 248),
+	gsDPSetTileSize(0, 124, 124, 248, 248),
+	gsSPVertex(my_dungeon_dl_wahh_largeMesh_001_mesh_layer_Opaque_vtx_0 + 12, 4, 0),
+	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
+	gsSPEndDisplayList(),
+};
+
 Gfx mat_my_dungeon_dl_wall_stone_layerOpaque[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, 1, COMBINED, 0, PRIMITIVE, 0, 0, 0, 0, COMBINED),
@@ -757,17 +815,6 @@ Gfx mat_my_dungeon_dl_wall_stone_layerOpaque[] = {
 	gsDPLoadBlock(7, 0, 0, 1023, 512),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_WRAP | G_TX_MIRROR, 6, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 252),
-	gsSPEndDisplayList(),
-};
-
-Gfx mat_my_dungeon_dl_hsquid_large_layerOpaque[] = {
-	gsDPPipeSync(),
-	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, 1, COMBINED, 0, PRIMITIVE, 0, 0, 0, 0, COMBINED),
-	gsSPLoadGeometryMode(G_ZBUFFER | G_SHADE | G_CULL_BACK | G_FOG | G_LIGHTING | G_SHADING_SMOOTH),
-	gsSPSetOtherMode(G_SETOTHERMODE_H, 4, 20, G_AD_NOISE | G_CD_MAGICSQ | G_CK_NONE | G_TC_FILT | G_TF_BILERP | G_TT_NONE | G_TL_TILE | G_TD_CLAMP | G_TP_PERSP | G_CYC_2CYCLE | G_PM_NPRIMITIVE),
-	gsSPSetOtherMode(G_SETOTHERMODE_L, 0, 32, G_AC_NONE | G_ZS_PIXEL | G_RM_FOG_SHADE_A | G_RM_AA_ZB_OPA_SURF2),
-	gsSPTexture(65535, 65535, 0, 0, 1),
-	gsDPSetPrimColor(0, 0, 255, 255, 255, 255),
 	gsSPEndDisplayList(),
 };
 
@@ -790,6 +837,17 @@ Gfx mat_my_dungeon_dl_handsome_squid_layerOpaque[] = {
 	gsSPEndDisplayList(),
 };
 
+Gfx mat_my_dungeon_dl_wahh_large_layerOpaque[] = {
+	gsDPPipeSync(),
+	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, 1, COMBINED, 0, PRIMITIVE, 0, 0, 0, 0, COMBINED),
+	gsSPLoadGeometryMode(G_ZBUFFER | G_SHADE | G_CULL_BACK | G_FOG | G_LIGHTING | G_SHADING_SMOOTH),
+	gsSPSetOtherMode(G_SETOTHERMODE_H, 4, 20, G_AD_NOISE | G_CD_MAGICSQ | G_CK_NONE | G_TC_FILT | G_TF_BILERP | G_TT_NONE | G_TL_TILE | G_TD_CLAMP | G_TP_PERSP | G_CYC_2CYCLE | G_PM_NPRIMITIVE),
+	gsSPSetOtherMode(G_SETOTHERMODE_L, 0, 32, G_AC_NONE | G_ZS_PIXEL | G_RM_FOG_SHADE_A | G_RM_AA_ZB_OPA_SURF2),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetPrimColor(0, 0, 255, 255, 255, 255),
+	gsSPEndDisplayList(),
+};
+
 Gfx my_dungeon_dl_Floor_mesh_layer_Opaque[] = {
 	gsSPClearGeometryMode(G_LIGHTING),
 	gsSPVertex(my_dungeon_dl_Floor_mesh_layer_Opaque_vtx_cull + 0, 8, 0),
@@ -801,16 +859,6 @@ Gfx my_dungeon_dl_Floor_mesh_layer_Opaque[] = {
 	gsSPDisplayList(my_dungeon_dl_Floor_mesh_layer_Opaque_tri_1),
 	gsSPDisplayList(mat_my_dungeon_dl_floor_2_layerOpaque),
 	gsSPDisplayList(my_dungeon_dl_Floor_mesh_layer_Opaque_tri_2),
-	gsSPEndDisplayList(),
-};
-
-Gfx my_dungeon_dl_hsquid_largeMesh_mesh_layer_Opaque[] = {
-	gsSPClearGeometryMode(G_LIGHTING),
-	gsSPVertex(my_dungeon_dl_hsquid_largeMesh_mesh_layer_Opaque_vtx_cull + 0, 8, 0),
-	gsSPSetGeometryMode(G_LIGHTING),
-	gsSPCullDisplayList(0, 7),
-	gsSPDisplayList(mat_my_dungeon_dl_hsquid_large_layerOpaque),
-	gsSPDisplayList(my_dungeon_dl_hsquid_largeMesh_mesh_layer_Opaque_tri_0),
 	gsSPEndDisplayList(),
 };
 
@@ -831,6 +879,26 @@ Gfx my_dungeon_dl_Plane_001_mesh_layer_Opaque[] = {
 	gsSPCullDisplayList(0, 7),
 	gsSPDisplayList(mat_my_dungeon_dl_handsome_squid_layerOpaque),
 	gsSPDisplayList(my_dungeon_dl_Plane_001_mesh_layer_Opaque_tri_0),
+	gsSPEndDisplayList(),
+};
+
+Gfx my_dungeon_dl_wahh_largeMesh_mesh_layer_Opaque[] = {
+	gsSPClearGeometryMode(G_LIGHTING),
+	gsSPVertex(my_dungeon_dl_wahh_largeMesh_mesh_layer_Opaque_vtx_cull + 0, 8, 0),
+	gsSPSetGeometryMode(G_LIGHTING),
+	gsSPCullDisplayList(0, 7),
+	gsSPDisplayList(mat_my_dungeon_dl_wahh_large_layerOpaque),
+	gsSPDisplayList(my_dungeon_dl_wahh_largeMesh_mesh_layer_Opaque_tri_0),
+	gsSPEndDisplayList(),
+};
+
+Gfx my_dungeon_dl_wahh_largeMesh_001_mesh_layer_Opaque[] = {
+	gsSPClearGeometryMode(G_LIGHTING),
+	gsSPVertex(my_dungeon_dl_wahh_largeMesh_001_mesh_layer_Opaque_vtx_cull + 0, 8, 0),
+	gsSPSetGeometryMode(G_LIGHTING),
+	gsSPCullDisplayList(0, 7),
+	gsSPDisplayList(mat_my_dungeon_dl_wahh_large_layerOpaque),
+	gsSPDisplayList(my_dungeon_dl_wahh_largeMesh_001_mesh_layer_Opaque_tri_0),
 	gsSPEndDisplayList(),
 };
 
