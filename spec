@@ -3377,6 +3377,12 @@ beginseg
 endseg
 
 beginseg
+    name "ovl_Pols_Voice"
+    include "build/src/overlays/actors/ovl_Pols_Voice/pols_voice.o"
+    include "build/src/overlays/actors/ovl_Pols_Voice/ovl_Pols_Voice_reloc.o"
+endseg
+
+beginseg
     name "gameplay_keep"
     romalign 0x1000
     include "build/assets/objects/gameplay_keep/gameplay_keep.o"
@@ -6046,6 +6052,13 @@ beginseg
     name "object_zl4"
     romalign 0x1000
     include "build/assets/objects/object_zl4/object_zl4.o"
+    number 6
+endseg
+
+beginseg
+    name "object_pols_voice"
+    romalign 0x1000
+    include "build/assets/objects/object_pols_voice/object_pols_voice.o"
     number 6
 endseg
 

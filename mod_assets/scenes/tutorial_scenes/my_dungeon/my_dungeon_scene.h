@@ -28,6 +28,7 @@ extern CollisionHeader my_dungeon_collisionHeader;
 extern SceneCmd* my_dungeon_room_0_alternateHeaders[];
 extern SceneCmd my_dungeon_room_0_header00[];
 extern s16 my_dungeon_room_0_header00_objectList[];
+extern ActorEntry my_dungeon_room_0_header00_actorList[];
 extern SceneCmd* my_dungeon_room_1_alternateHeaders[];
 extern SceneCmd my_dungeon_room_1_header00[];
 extern s16 my_dungeon_room_1_header00_objectList[];

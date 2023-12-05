@@ -99,6 +99,50 @@ Contains Pushable block data, including the color. Must decalare a new case for 
 
 
 
+______________________________________________________
+Adding actors
+
+Overlay directorys in 
+src/overlays/actors/example/example.c, example.h
+
+Objects directory in
+assets/objects/example/example.h, example_anim_idle.c, example_anim_idle.h, etc
+
+- actor_table.h
+add actor define
+/* 0x01D7 */ DEFINE_ACTOR(Example, ACTOR_EXAMPLE, ACTOROVL_ALLOC_NORMAL, "Example")
+
+- object_table.h
+add actor define
+/* 0x0191 */ DEFINE_OBJECT(object_example, OBJECT_EXAMPLE)
+
+
+- spec
+Add the object file and overlay file
+object files end around line 6050, and are like this:
+
+beginseg
+    name "object_example"
+    romalign 0x1000
+    include "build/assets/objects/object_example/object_example.o"
+    number 6
+endseg
+
+
+Overlay files end around line 3377, and are like this:
+
+beginseg
+    name "ovl_Example"
+    include "build/src/overlays/actors/ovl_Example/example.o"
+    include "build/src/overlays/actors/ovl_Example/ovl_Example_reloc.o"
+endseg
+
+(Be sure to have the proper amount of .c and .h files. You can create a new file, and fill it with #include, and include the appropriate missing files, as necessary.
+
+In fast64, to add a custom actor, choose custom actor, and the Actor ID in the enum from actor_table.h, "ACTOR_EXAMPLE"
+
+then, add the Object ID in the enum from object_table.h, "OBJECT_EXAMPLE"
+
 
 
 
