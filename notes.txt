@@ -144,5 +144,33 @@ In fast64, to add a custom actor, choose custom actor, and the Actor ID in the e
 then, add the Object ID in the enum from object_table.h, "OBJECT_EXAMPLE"
 
 
+__________________________________________________________________
+Adding Items
+Name the mesh as gGi"name"DL (the "Gi" is for Get item)
+
+Export the model from blender as a DL (Display List), into
+assets/objects/"example"
+
+
+- z_draw.c
+
+around line 80, add a new #include of your object you would like to import
+#include "assets/objects/example/example.h"
+
+go to "sDrawItemTable", and decide which item you will replace
+comment out the original, and in the same, appropriate location, put your new object in, and give it the correct DL name, as exported earlier
+
+
+- z_player.c
+Loads the item into memory
+
+go to "sGetItemTable", and go to the same item that you are replacing from earlier
+Replace the object for now. Don't worry about the other stuff
+GET_ITEM(ITEM_NAYRUS_LOVE, OBJECT_EXAMPLE, GID_NAYRUS_LOVE, 0xAF, 0x80, CHEST_ANIM_LONG),
+
+
+
+
+
 
 

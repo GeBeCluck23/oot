@@ -43,15 +43,6 @@ ActorEntry my_dungeon_scene_header00_playerEntryList[] = {
 TransitionActorEntry my_dungeon_scene_header00_transitionActors[] = {
     // Lifting Wooden Door
     {
-        /* Room & Cam Index (Front, Back) */ { 0, 0xFF, 1, 0xFF },
-        /* Actor ID                       */ ACTOR_DOOR_SHUTTER,
-        /* Position                       */ { -320, -120, 279 },
-        /* Rotation Y                     */ DEG_TO_BINANG(270.000),
-        /* Parameters                     */ 0x0040
-    },
-
-    // Lifting Wooden Door
-    {
         /* Room & Cam Index (Front, Back) */ { 255, 0x00, 0, 0x00 },
         /* Actor ID                       */ ACTOR_DOOR_SHUTTER,
         /* Position                       */ { -22, -120, -524 },
@@ -66,6 +57,15 @@ TransitionActorEntry my_dungeon_scene_header00_transitionActors[] = {
         /* Position                       */ { -320, -120, -402 },
         /* Rotation Y                     */ DEG_TO_BINANG(270.000),
         /* Parameters                     */ 0x02C1
+    },
+
+    // Lifting Wooden Door
+    {
+        /* Room & Cam Index (Front, Back) */ { 0, 0xFF, 1, 0xFF },
+        /* Actor ID                       */ ACTOR_DOOR_SHUTTER,
+        /* Position                       */ { -320, -120, 279 },
+        /* Rotation Y                     */ DEG_TO_BINANG(270.000),
+        /* Parameters                     */ 0x0040
     },
 };
 

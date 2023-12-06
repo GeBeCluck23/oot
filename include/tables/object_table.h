@@ -411,3 +411,5 @@
 /* 0x0191 */ DEFINE_OBJECT(object_zl4, OBJECT_ZL4)
 
 #include "include/tables/hm_pack/object_table.h"
+
+             DEFINE_OBJECT(object_gi_feather, OBJECT_GI_FEATHER)

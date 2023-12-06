@@ -6054,6 +6054,13 @@ endseg
 #include "spec.hm_pack_objects.inc"
 
 beginseg
+    name "object_gi_feather"
+    romalign 0x1000
+    include "build/assets/objects/object_gi_feather/object_gi_feather.o"
+    number 6
+endseg
+
+beginseg
     name "g_pn_01"
     romalign 0x1000
     include "build/assets/textures/place_title_cards/g_pn_01.o"
