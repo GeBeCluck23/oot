@@ -10,8 +10,8 @@
 /**
  * Header Child Day (Default)
 */
-#define LENGTH_MY_DUNGEON_ROOM_0_HEADER00_OBJECTLIST 2
-#define LENGTH_MY_DUNGEON_ROOM_0_HEADER00_ACTORLIST 1
+#define LENGTH_MY_DUNGEON_ROOM_0_HEADER00_OBJECTLIST 4
+#define LENGTH_MY_DUNGEON_ROOM_0_HEADER00_ACTORLIST 4
 SceneCmd my_dungeon_room_0_header00[] = {
     SCENE_CMD_ECHO_SETTINGS(0x00),
     SCENE_CMD_ROOM_BEHAVIOR(0x00, 0x00, false, false),
@@ -26,13 +26,39 @@ SceneCmd my_dungeon_room_0_header00[] = {
 s16 my_dungeon_room_0_header00_objectList[LENGTH_MY_DUNGEON_ROOM_0_HEADER00_OBJECTLIST] = {
     OBJECT_BDOOR,
     OBJECT_POLS_VOICE,
+    OBJECT_RAT,
+    OBJECT_ZOL,
 };
 
 ActorEntry my_dungeon_room_0_header00_actorList[LENGTH_MY_DUNGEON_ROOM_0_HEADER00_ACTORLIST] = {
     // Custom Actor
     {
+        /* Actor ID   */ ACTOR_EN_ZOL,
+        /* Position   */ { 957, 161, -33 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0201
+    },
+
+    // Custom Actor
+    {
+        /* Actor ID   */ ACTOR_EN_ZOL,
+        /* Position   */ { 845, -120, -145 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0100
+    },
+
+    // Custom Actor
+    {
         /* Actor ID   */ ACTOR_POLS_VOICE,
-        /* Position   */ { 117, -120, -19 },
+        /* Position   */ { -231, -120, -11 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0000
+    },
+
+    // Custom Actor
+    {
+        /* Actor ID   */ ACTOR_RAT,
+        /* Position   */ { 317, -120, 221 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
         /* Parameters */ 0x0000
     },

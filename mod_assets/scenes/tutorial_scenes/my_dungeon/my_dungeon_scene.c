@@ -34,7 +34,7 @@ RomFile my_dungeon_scene_roomList[] = {
 ActorEntry my_dungeon_scene_header00_playerEntryList[] = {
     {
         /* Actor ID   */ ACTOR_PLAYER,
-        /* Position   */ { 828, -120, -25 },
+        /* Position   */ { 582, -120, -37 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(270.000), DEG_TO_BINANG(0.000) },
         /* Parameters */ 0x0FFF
     },
@@ -43,11 +43,11 @@ ActorEntry my_dungeon_scene_header00_playerEntryList[] = {
 TransitionActorEntry my_dungeon_scene_header00_transitionActors[] = {
     // Lifting Wooden Door
     {
-        /* Room & Cam Index (Front, Back) */ { 0, 0xFF, 2, 0xFF },
+        /* Room & Cam Index (Front, Back) */ { 0, 0xFF, 1, 0xFF },
         /* Actor ID                       */ ACTOR_DOOR_SHUTTER,
-        /* Position                       */ { -320, -120, -402 },
+        /* Position                       */ { -320, -120, 279 },
         /* Rotation Y                     */ DEG_TO_BINANG(270.000),
-        /* Parameters                     */ 0x02C1
+        /* Parameters                     */ 0x0040
     },
 
     // Lifting Wooden Door
@@ -61,11 +61,11 @@ TransitionActorEntry my_dungeon_scene_header00_transitionActors[] = {
 
     // Lifting Wooden Door
     {
-        /* Room & Cam Index (Front, Back) */ { 0, 0xFF, 1, 0xFF },
+        /* Room & Cam Index (Front, Back) */ { 0, 0xFF, 2, 0xFF },
         /* Actor ID                       */ ACTOR_DOOR_SHUTTER,
-        /* Position                       */ { -320, -120, 279 },
+        /* Position                       */ { -320, -120, -402 },
         /* Rotation Y                     */ DEG_TO_BINANG(270.000),
-        /* Parameters                     */ 0x0040
+        /* Parameters                     */ 0x02C1
     },
 };
 
