@@ -10509,3 +10509,31 @@ beginseg
     include "build/assets/scenes/tutorial_scenes/my_dungeon/my_dungeon_room_2.o"
     number 3
 endseg
+
+beginseg
+    name "test_map"
+    romalign 0x1000
+    include "build/assets_hm_pack/scenes/test_map/test_map_scene.o"
+    number 2
+endseg
+
+beginseg
+    name "test_map_room_0"
+    romalign 0x1000
+    include "build/assets_hm_pack/scenes/test_map/test_map_room_0.o"
+    number 3
+endseg
+
+beginseg
+    name "test_map_room_1"
+    romalign 0x1000
+    include "build/assets_hm_pack/scenes/test_map/test_map_room_1.o"
+    number 3
+endseg
+
+beginseg
+    name "test_map_room_2"
+    romalign 0x1000
+    include "build/assets_hm_pack/scenes/test_map/test_map_room_2.o"
+    number 3
+endseg
