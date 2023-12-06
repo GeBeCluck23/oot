@@ -353,6 +353,8 @@ void Player_Action_80850C68(Player* this, PlayState* play);
 void Player_Action_80850E84(Player* this, PlayState* play);
 void Player_Action_CsAction(Player* this, PlayState* play);
 
+void Player_TryFeatherJump(Player* this, PlayState* play);
+
 // .bss part 1
 static s32 D_80858AA0;
 static s32 D_80858AA4;
@@ -3238,6 +3240,8 @@ void Player_UseItem(PlayState* play, Player* this, s32 item) {
                 // Prevent some items from being used if player is out of ammo.
                 // Also prevent explosives from being used if there are 3 or more active (outside of bombchu bowling)
                 Sfx_PlaySfxCentered(NA_SE_SY_ERROR);
+            } else if (itemAction == PLAYER_IA_NAYRUS_LOVE) {
+                Player_TryFeatherJump(this,play);
             } else if (itemAction == PLAYER_IA_LENS_OF_TRUTH) {
                 // Handle Lens of Truth
                 if (Magic_RequestChange(play, 0, MAGIC_CONSUME_LENS)) {
@@ -10926,6 +10930,10 @@ void Player_UpdateCommon(Player* this, PlayState* play, Input* input) {
         }
     }
 
+    if (this->actor.bgCheckFlags & BGCHECKFLAG_GROUND) {
+        this->featherJumpCount = 0;
+    }
+
     Math_Vec3f_Copy(&this->actor.prevPos, &this->actor.home.pos);
 
     if (this->unk_A73 != 0) {
@@ -15313,4 +15321,14 @@ void func_80853148(PlayState* play, Actor* actor) {
         this->naviActor->flags |= ACTOR_FLAG_TALK;
         func_80835EA4(play, 0xB);
     }
+}
+
+void Player_TryFeatherJump(Player* this, PlayState* play) {
+    if (this->featherJumpCount >= 1) {
+        return;
+    }
+
+    this->featherJumpCount++;
+
+    this->actor.velocity.y += 20.0f;
 }

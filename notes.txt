@@ -192,6 +192,19 @@ mod_assets/text/
 then modify it from there.
 
 
+____________________________________________
+Roc's Feather physics modding, added
+u8 featherJumpCount;
+to the end of z64player.h
+
+item info is found in
+Player_UseItem in z_player.c
+
+Added in:
+            } else if (itemAction == PLAYER_IA_NAYRUS_LOVE) {
+                Player_TryFeatherJump(this,play);
+
+
 
 
 
