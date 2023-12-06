@@ -166,7 +166,8 @@ Loads the item into memory
 
 go to "sGetItemTable", and go to the same item that you are replacing from earlier
 Replace the object for now. Don't worry about the other stuff
-GET_ITEM(ITEM_NAYRUS_LOVE, OBJECT_GI_EXAMPLE, GID_NAYRUS_LOVE, 0xAF, 0x80, CHEST_ANIM_LONG),
+GET_ITEM(ITEM_NAYRUS_LOVE, OBJECT_GI_EXAMPLE, GID_NAYRUS_LOVE, 0xAF<this value is the text ID, corresponding to the one in message_data.h>, 0x80, CHEST_ANIM_LONG),
+
 
 at line 9989, increase the default value of MallocDebug (0x3008), to 0x9000, or something.
 Then, at line 5431, modify the ASSERT inside of gObjectTable. (In the tutorial, he literally just commented it out.)
@@ -181,6 +182,14 @@ and give it the exact name of the icon as found in icon_item_static.c, gItemIcon
 file name must be the same *except* for the end. Instead of ".inc.c" ".png" is just fine. The compiler will convert it.
 
 
+
+__________________________________________________________
+
+Text
+
+Copy over message_data.h into
+mod_assets/text/
+then modify it from there.
 
 
 
