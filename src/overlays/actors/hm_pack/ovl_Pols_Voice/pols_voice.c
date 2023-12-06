@@ -5,7 +5,7 @@
  */
 
 #include "pols_voice.h"
-#include "assets/objects/object_pols_voice/object_pols_voice.h"
+#include "assets_hm_pack/objects/object_pols_voice/object_pols_voice.h"
 
 #define FLAGS (ACTOR_FLAG_0 | ACTOR_FLAG_2 | ACTOR_FLAG_4 | ACTOR_FLAG_5)
 
