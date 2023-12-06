@@ -205,6 +205,12 @@ Added in:
                 Player_TryFeatherJump(this,play);
 
 
+In code, to turn PLAYER_STATE2_ flags on and off, you use:
+ON  = |= PLAYER_STATE2_<Number>;
+OFF = &= ~PLAYER_STATE2_<Number>;
+
+
+
 
 
 

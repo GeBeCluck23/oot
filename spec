@@ -139,7 +139,9 @@ endseg
 beginseg
     name "link_animetion"
     include "build/assets/misc/link_animetion/link_animetion.o"
+    include "build/assets/misc/link_anims/link_anims.o"
     number 7
+    
 endseg
 
 beginseg
@@ -3382,6 +3384,7 @@ beginseg
     name "gameplay_keep"
     romalign 0x1000
     include "build/assets/objects/gameplay_keep/gameplay_keep.o"
+    include "build/assets/objects/mod_gameplay_keep/mod_gameplay_keep.o"
     number 4
 endseg
 

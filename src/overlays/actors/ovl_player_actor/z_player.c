@@ -22,6 +22,8 @@
 #include "overlays/effects/ovl_Effect_Ss_Fhg_Flash/z_eff_ss_fhg_flash.h"
 #include "assets/objects/gameplay_keep/gameplay_keep.h"
 #include "assets/objects/object_link_child/object_link_child.h"
+#include "assets/objects/mod_gameplay_keep/mod_gameplay_keep.h"
+
 
 // Some player animations are played at this reduced speed, for reasons yet unclear.
 // This is called "adjusted" for now.
@@ -5808,9 +5810,18 @@ s32 func_8083BC7C(Player* this, PlayState* play) {
 
     return 0;
 }
-
+// arg2 is a backflip or sidehop state. (arg2 & 1) = backflip, and not 1 is sidehop
+// arg2 = 1: sidehop left
+// arg2 = 2: backflip
+// arg2 = 3: sidehop right
+// arg2 = 4: New arg created through the tutorial
 void func_8083BCD0(Player* this, PlayState* play, s32 arg2) {
-    func_80838940(this, D_80853D4C[arg2][0], !(arg2 & 1) ? 5.8f : 3.5f, play, NA_SE_VO_LI_SWORD_N);
+    if (arg2 == 4) {
+       func_80838940(this, &gPlayerAnim_FrontFlipStart, 5.8f, play, NA_SE_VO_LI_SWORD_N);
+
+    } else {
+       func_80838940(this, D_80853D4C[arg2][0], !(arg2 & 1) ? 5.8f : 3.5f, play, NA_SE_VO_LI_SWORD_N);
+    }
 
     if (arg2) {}
 
@@ -5822,7 +5833,11 @@ void func_8083BCD0(Player* this, PlayState* play, s32 arg2) {
 
     this->stateFlags2 |= PLAYER_STATE2_19;
 
+    if (arg2 == 4) {
+    Player_PlaySfx(this, NA_SE_PL_ROLL);
+    } else {
     Player_PlaySfx(this, ((arg2 << 0xE) == 0x8000) ? NA_SE_PL_ROLL : NA_SE_PL_SKIP);
+    }
 }
 
 s32 Player_ActionChange_10(Player* this, PlayState* play) {
@@ -15324,11 +15339,17 @@ void func_80853148(PlayState* play, Actor* actor) {
 }
 
 void Player_TryFeatherJump(Player* this, PlayState* play) {
-    if (this->featherJumpCount >= 1) {
+    if (this->featherJumpCount >= 2) {
         return;
     }
 
     this->featherJumpCount++;
+    
+    this->stateFlags1 &= ~PLAYER_STATE1_20;
 
-    this->actor.velocity.y += 20.0f;
+    func_8083BCD0(this, play, 4);
+    this->actor.velocity.y += 1.7f;
+    this->stateFlags2 &= ~PLAYER_STATE2_19;
+    Actor_PlaySfx(&this->actor, NA_SE_EN_DEKU_WAKEUP);
+    EffectSsGRipple_Spawn(play, &this->actor.world.pos, 10, 800, 0);
 }
