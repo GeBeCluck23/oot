@@ -5817,8 +5817,15 @@ s32 func_8083BC7C(Player* this, PlayState* play) {
 // arg2 = 4: New arg created through the tutorial
 void func_8083BCD0(Player* this, PlayState* play, s32 arg2) {
     if (arg2 == 4) {
-       func_80838940(this, &gPlayerAnim_FrontFlipStart, 5.8f, play, NA_SE_VO_LI_SWORD_N);
-
+        s32 camMode = play->mainCamera.mode;
+        if ((camMode == CAM_MODE_Z_AIM)
+        || (camMode == CAM_MODE_AIM_ADULT)
+        || (camMode == CAM_MODE_AIM_CHILD)
+        ) {
+            func_80838940(this, D_80853D4C[2][0], !(arg2 & 1) ? 5.8f : 3.5f, play, NA_SE_VO_LI_SWORD_N);
+        } else {
+            func_80838940(this, &gPlayerAnim_FrontFlipStart, 5.8f, play, NA_SE_VO_LI_SWORD_N);
+        }
     } else {
        func_80838940(this, D_80853D4C[arg2][0], !(arg2 & 1) ? 5.8f : 3.5f, play, NA_SE_VO_LI_SWORD_N);
     }
