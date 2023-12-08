@@ -13,8 +13,8 @@
 SceneCmd escape_rm_room_4_header00[] = {
     SCENE_CMD_ECHO_SETTINGS(0x00),
     SCENE_CMD_ROOM_BEHAVIOR(0x00, 0x00, false, false),
-    SCENE_CMD_SKYBOX_DISABLES(false, false),
-    SCENE_CMD_TIME_SETTINGS(0xFF, 0xFF, 10),
+    SCENE_CMD_SKYBOX_DISABLES(true, true),
+    SCENE_CMD_TIME_SETTINGS(0xFF, 0xFF, 0),
     SCENE_CMD_ROOM_SHAPE(&escape_rm_room_4_shapeHeader),
     SCENE_CMD_END(),
 };
@@ -64,7 +64,7 @@ Gfx escape_rm_dl_floor_003_mesh_layer_Opaque[] = {
 	gsSPVertex(escape_rm_dl_floor_003_mesh_layer_Opaque_vtx_cull + 0, 8, 0),
 	gsSPSetGeometryMode(G_LIGHTING),
 	gsSPCullDisplayList(0, 7),
-	gsSPDisplayList(mat_escape_rm_dl_carpet_layerOpaque),
+	gsSPDisplayList(mat_escape_rm_dl_wood_layerOpaque),
 	gsSPDisplayList(escape_rm_dl_floor_003_mesh_layer_Opaque_tri_0),
 	gsSPEndDisplayList(),
 };

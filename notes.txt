@@ -49,6 +49,7 @@ Every Scene is composed of multiple rooms
 	
 	
 	
+__________________________________________________________________
 
 When adding scenes and rooms, it requires adding the data into 3 (or 4) files.
 
