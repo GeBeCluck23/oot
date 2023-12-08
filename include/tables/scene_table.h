@@ -121,5 +121,6 @@
 /* 0x6C */ DEFINE_SCENE(sasatest_scene, none, SCENE_SASATEST, SDC_DEFAULT, 0, 0)
 /* 0x6D */ DEFINE_SCENE(testroom_scene, none, SCENE_TESTROOM, SDC_DEFAULT, 0, 0)
 // Added scenes
-/* 0x6F */ DEFINE_SCENE(my_dungeon, none, SCENE_MY_DUNGEON, SDC_CALM_WATER, 0, 0)
-/* 0x70 */ DEFINE_SCENE(test_map, none, SCENE_TEST_MAP, SDC_DEFAULT, 0, 0)
+           DEFINE_SCENE(my_dungeon, none, SCENE_MY_DUNGEON, SDC_CALM_WATER, 0, 0)
+           DEFINE_SCENE(test_map, none, SCENE_TEST_MAP, SDC_DEFAULT, 0, 0)
+           DEFINE_SCENE(escape_rm, none, SCENE_ESCAPE_RM, SDC_DEFAULT, 0, 0)

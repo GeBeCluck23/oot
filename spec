@@ -10547,3 +10547,17 @@ beginseg
     include "build/assets_hm_pack/scenes/test_map/test_map_room_2.o"
     number 3
 endseg
+
+beginseg
+    name "escape_rm"
+    romalign 0x1000
+    include "build/assets/scenes/my_scenes/escape_rm/escape_rm_scene.o"
+    number 2
+endseg
+
+beginseg
+    name "escape_rm_room_0"
+    romalign 0x1000
+    include "build/assets/scenes/my_scenes/escape_rm/escape_rm_room_0.o"
+    number 3
+endseg
