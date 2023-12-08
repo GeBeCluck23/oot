@@ -10561,3 +10561,38 @@ beginseg
     include "build/assets/scenes/my_scenes/escape_rm/escape_rm_room_0.o"
     number 3
 endseg
+
+beginseg
+    name "escape_rm_room_1"
+    romalign 0x1000
+    include "build/assets/scenes/my_scenes/escape_rm/escape_rm_room_1.o"
+    number 3
+endseg
+
+beginseg
+    name "escape_rm_room_2"
+    romalign 0x1000
+    include "build/assets/scenes/my_scenes/escape_rm/escape_rm_room_2.o"
+    number 3
+endseg
+
+beginseg
+    name "escape_rm_room_3"
+    romalign 0x1000
+    include "build/assets/scenes/my_scenes/escape_rm/escape_rm_room_3.o"
+    number 3
+endseg
+
+beginseg
+    name "escape_rm_room_4"
+    romalign 0x1000
+    include "build/assets/scenes/my_scenes/escape_rm/escape_rm_room_4.o"
+    number 3
+endseg
+
+beginseg
+    name "escape_rm_room_5"
+    romalign 0x1000
+    include "build/assets/scenes/my_scenes/escape_rm/escape_rm_room_5.o"
+    number 3
+endseg
