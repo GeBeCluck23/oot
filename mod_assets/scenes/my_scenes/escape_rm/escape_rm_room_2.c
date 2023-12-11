@@ -141,7 +141,7 @@ Vtx escape_rm_dl_floor_002_mesh_layer_Opaque_vtx_cull[8] = {
 	{{ {437, -50, -1081}, 0, {0, 0}, {0, 0, 0, 0} }},
 };
 
-Vtx escape_rm_dl_floor_002_mesh_layer_Opaque_vtx_0[12] = {
+Vtx escape_rm_dl_floor_002_mesh_layer_Opaque_vtx_0[20] = {
 	{{ {-459, -50, -1081}, 0, {496, -7680}, {196, 196, 196, 255} }},
 	{{ {-459, -50, -402}, 0, {496, 496}, {43, 43, 43, 255} }},
 	{{ {-29, -50, -402}, 0, {5676, 496}, {114, 114, 114, 255} }},
@@ -154,14 +154,25 @@ Vtx escape_rm_dl_floor_002_mesh_layer_Opaque_vtx_0[12] = {
 	{{ {-459, 156, -1081}, 0, {496, -7680}, {147, 147, 147, 255} }},
 	{{ {437, 156, -1081}, 0, {11286, -7680}, {80, 80, 80, 255} }},
 	{{ {437, 156, -402}, 0, {11286, 496}, {196, 196, 196, 255} }},
+	{{ {-29, -50, -402}, 0, {410, 993}, {114, 114, 114, 255} }},
+	{{ {-29, 50, -382}, 0, {410, 510}, {33, 33, 33, 255} }},
+	{{ {-29, -50, -382}, 0, {410, 993}, {3, 3, 3, 255} }},
+	{{ {-29, 50, -402}, 0, {410, 510}, {255, 255, 255, 255} }},
+	{{ {31, 50, -382}, 0, {700, 510}, {8, 8, 8, 255} }},
+	{{ {31, 50, -402}, 0, {700, 510}, {255, 255, 255, 255} }},
+	{{ {31, -50, -382}, 0, {700, 993}, {0, 0, 0, 255} }},
+	{{ {31, -50, -402}, 0, {700, 993}, {25, 25, 25, 255} }},
 };
 
 Gfx escape_rm_dl_floor_002_mesh_layer_Opaque_tri_0[] = {
-	gsSPVertex(escape_rm_dl_floor_002_mesh_layer_Opaque_vtx_0 + 0, 12, 0),
+	gsSPVertex(escape_rm_dl_floor_002_mesh_layer_Opaque_vtx_0 + 0, 20, 0),
 	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
 	gsSP2Triangles(3, 2, 4, 0, 3, 4, 5, 0),
 	gsSP2Triangles(3, 6, 0, 0, 3, 7, 6, 0),
 	gsSP2Triangles(8, 9, 10, 0, 8, 10, 11, 0),
+	gsSP2Triangles(12, 13, 14, 0, 12, 15, 13, 0),
+	gsSP2Triangles(15, 16, 13, 0, 15, 17, 16, 0),
+	gsSP2Triangles(17, 18, 16, 0, 17, 19, 18, 0),
 	gsSPEndDisplayList(),
 };
 
@@ -204,25 +215,6 @@ Vtx escape_rm_dl_floor_002_mesh_layer_Opaque_vtx_2[4] = {
 Gfx escape_rm_dl_floor_002_mesh_layer_Opaque_tri_2[] = {
 	gsSPVertex(escape_rm_dl_floor_002_mesh_layer_Opaque_vtx_2 + 0, 4, 0),
 	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
-	gsSPEndDisplayList(),
-};
-
-Vtx escape_rm_dl_floor_002_mesh_layer_Opaque_vtx_3[8] = {
-	{{ {31, 50, -402}, 0, {700, 510}, {255, 255, 255, 255} }},
-	{{ {31, -50, -402}, 0, {700, 993}, {25, 25, 25, 255} }},
-	{{ {31, -50, -382}, 0, {700, 993}, {0, 0, 0, 255} }},
-	{{ {31, 50, -382}, 0, {700, 510}, {8, 8, 8, 255} }},
-	{{ {-29, 50, -402}, 0, {410, 510}, {255, 255, 255, 255} }},
-	{{ {-29, 50, -382}, 0, {410, 510}, {33, 33, 33, 255} }},
-	{{ {-29, -50, -402}, 0, {410, 993}, {114, 114, 114, 255} }},
-	{{ {-29, -50, -382}, 0, {410, 993}, {3, 3, 3, 255} }},
-};
-
-Gfx escape_rm_dl_floor_002_mesh_layer_Opaque_tri_3[] = {
-	gsSPVertex(escape_rm_dl_floor_002_mesh_layer_Opaque_vtx_3 + 0, 8, 0),
-	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
-	gsSP2Triangles(4, 0, 3, 0, 4, 3, 5, 0),
-	gsSP2Triangles(6, 4, 5, 0, 6, 5, 7, 0),
 	gsSPEndDisplayList(),
 };
 
@@ -291,8 +283,6 @@ Gfx escape_rm_dl_floor_002_mesh_layer_Opaque[] = {
 	gsSPDisplayList(escape_rm_dl_floor_002_mesh_layer_Opaque_tri_1),
 	gsSPDisplayList(mat_escape_rm_dl_old_wall2_layerOpaque),
 	gsSPDisplayList(escape_rm_dl_floor_002_mesh_layer_Opaque_tri_2),
-	gsSPDisplayList(mat_escape_rm_dl_siding_layerOpaque),
-	gsSPDisplayList(escape_rm_dl_floor_002_mesh_layer_Opaque_tri_3),
 	gsSPEndDisplayList(),
 };
 

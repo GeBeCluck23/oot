@@ -838,17 +838,24 @@ void* sMouthTextures[] = {
 };
 #else
 // Defining `AVOID_UB` will use a 2D array instead and properly use the child link pointers to allow for shifting.
-void* sEyeTextures[][8] = {
-    { gLinkAdultEyesOpenTex, gLinkAdultEyesHalfTex, gLinkAdultEyesClosedfTex, gLinkAdultEyesRollLeftTex,
-      gLinkAdultEyesRollRightTex, gLinkAdultEyesShockTex, gLinkAdultEyesUnk1Tex, gLinkAdultEyesUnk2Tex },
-    { gLinkChildEyesOpenTex, gLinkChildEyesHalfTex, gLinkChildEyesClosedfTex, gLinkChildEyesRollLeftTex,
-      gLinkChildEyesRollRightTex, gLinkChildEyesShockTex, gLinkChildEyesUnk1Tex, gLinkChildEyesUnk2Tex },
-};
+void* sEyeTextures[][8] = {{     gLinkAdultSkel_eyes_open_ci8_png_001_ci8,
+    gLinkAdultSkel_eyes_half_ci8_png_001_ci8,
+    gLinkAdultSkel_eyes_closed_ci8_png_001_ci8,
+    gLinkAdultSkel_eyes_roll_left_ci8_png_001_ci8,
+    gLinkAdultSkel_eyes_roll_right_ci8_png_001_ci8,
+    gLinkAdultSkel_eyes_shock_ci8_png_001_ci8,
+    gLinkAdultSkel_eyes_unk_1_ci8_png_001_ci8,
+    gLinkAdultSkel_eyes_unk_2_ci8_png_001_ci8,
+ },
+{ gLinkChildEyesOpenTex, gLinkChildEyesHalfTex, gLinkChildEyesClosedfTex, gLinkChildEyesRollLeftTex,
+      gLinkChildEyesRollRightTex, gLinkChildEyesShockTex, gLinkChildEyesUnk1Tex, gLinkChildEyesUnk2Tex }};
 
-void* sMouthTextures[][4] = {
-    { gLinkAdultMouth1Tex, gLinkAdultMouth2Tex, gLinkAdultMouth3Tex, gLinkAdultMouth4Tex },
-    { gLinkChildMouth1Tex, gLinkChildMouth2Tex, gLinkChildMouth3Tex, gLinkChildMouth4Tex },
-};
+void* sMouthTextures[][4] = {{     gLinkAdultSkel_mouth_1_ci8_png_001_ci8,
+    gLinkAdultSkel_mouth_2_ci8_png_001_ci8,
+    gLinkAdultSkel_mouth_3_ci8_png_001_ci8,
+    gLinkAdultSkel_mouth_4_ci8_png_001_ci8,
+ },
+{ gLinkChildMouth1Tex, gLinkChildMouth2Tex, gLinkChildMouth3Tex, gLinkChildMouth4Tex }};
 #endif
 
 Color_RGB8 sTunicColors[PLAYER_TUNIC_MAX] = {

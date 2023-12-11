@@ -45,8 +45,8 @@ void MapSelect_LoadGame(MapSelectState* this, s32 entranceIndex) {
 
 // "Translation" (Actual name)
 static SceneSelectEntry sScenes[] = {
-    { " 0:My Dungeon", MapSelect_LoadGame, ENTR_MY_DUNGEON_0 },
     { " 01:Escape Room", MapSelect_LoadGame, ENTR_ESCAPE_RM_0 },
+    { " 0:My Dungeon", MapSelect_LoadGame, ENTR_MY_DUNGEON_0 },
     { " 02:HM Test Map", MapSelect_LoadGame, ENTR_TEST_MAP_0 },
     { " 1:SPOT00", MapSelect_LoadGame, ENTR_HYRULE_FIELD_0 },
     { " 2:SPOT01", MapSelect_LoadGame, ENTR_KAKARIKO_VILLAGE_0 },
