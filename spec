@@ -3378,6 +3378,12 @@ beginseg
     include "build/src/overlays/actors/ovl_Shot_Sun/ovl_Shot_Sun_reloc.o"
 endseg
 
+beginseg
+    name "ovl_Npc_Test"
+    include "build/src/overlays/actors/ovl_Npc_Test/z_npc_test.o"
+    include "build/src/overlays/actors/ovl_Npc_Test/ovl_Npc_Test_reloc.o"
+endseg
+
 #include "spec.hm_pack_actors.inc"
 
 beginseg

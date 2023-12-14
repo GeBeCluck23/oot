@@ -215,3 +215,34 @@ OFF = &= ~PLAYER_STATE2_<Number>;
 
 
 
+____________________________________________________________
+Adding NPCs
+
+folder structure is:
+src/overlays/actors/ovl_Example/z_example.c
+src/overlays/actors/ovl_Example/z_example.h
+
+.c file should contain:
+void Example_Init(Actor* thisx, PlayState* play);
+void Example_Destroy(Actor* thisx, PlayState* play);
+void Example_Update(Actor* thisx, PlayState* play);
+void Example_Draw(Actor* thisx, PlayState* play);
+
+Npc must be added to the spec file, and actor_table.h
+
+- spec
+beginseg
+    name "ovl_Example"
+    include "build/src/overlays/actors/ovl_Example/z_example.o"
+    include "build/src/overlays/actors/ovl_Example/ovl_Example_reloc.o"
+endseg
+
+- actor_table.h
+DEFINE_ACTOR(Npc_Test, ACTOR_NPC_TEST, ACTOROVL_ALLOC_NORMAL, "Npc_Test")
+
+
+header file should contain the typedef struct, "NpcInteractInfo"
+
+
+
+

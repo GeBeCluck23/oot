@@ -11,7 +11,7 @@
  * Header Child Day (Default)
 */
 #define LENGTH_MY_DUNGEON_ROOM_2_HEADER00_OBJECTLIST 1
-#define LENGTH_MY_DUNGEON_ROOM_2_HEADER00_ACTORLIST 4
+#define LENGTH_MY_DUNGEON_ROOM_2_HEADER00_ACTORLIST 6
 SceneCmd my_dungeon_room_2_header00[] = {
     SCENE_CMD_ECHO_SETTINGS(0x00),
     SCENE_CMD_ROOM_BEHAVIOR(0x00, 0x00, false, false),
@@ -28,20 +28,28 @@ s16 my_dungeon_room_2_header00_objectList[LENGTH_MY_DUNGEON_ROOM_2_HEADER00_OBJE
 };
 
 ActorEntry my_dungeon_room_2_header00_actorList[LENGTH_MY_DUNGEON_ROOM_2_HEADER00_ACTORLIST] = {
-    // Flame Circle
-    {
-        /* Actor ID   */ ACTOR_BG_HIDAN_CURTAIN,
-        /* Position   */ { -888, -120, -472 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x1082
-    },
-
     // Dungeon Switches
     {
         /* Actor ID   */ ACTOR_OBJ_SWITCH,
         /* Position   */ { -888, -120, -71 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
         /* Parameters */ 0x0200
+    },
+
+    // Treasure Chest
+    {
+        /* Actor ID   */ ACTOR_EN_BOX,
+        /* Position   */ { -888, -120, -472 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(180.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x27E2
+    },
+
+    // Custom Actor
+    {
+        /* Actor ID   */ ACTOR_POLS_VOICE,
+        /* Position   */ { -443, -120, -75 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0000
     },
 
     // Push Block
@@ -52,12 +60,20 @@ ActorEntry my_dungeon_room_2_header00_actorList[LENGTH_MY_DUNGEON_ROOM_2_HEADER0
         /* Parameters */ 0x0000
     },
 
-    // Treasure Chest
+    // Flame Circle
     {
-        /* Actor ID   */ ACTOR_EN_BOX,
+        /* Actor ID   */ ACTOR_BG_HIDAN_CURTAIN,
         /* Position   */ { -888, -120, -472 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(180.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x27E2
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x1082
+    },
+
+    // Custom Actor
+    {
+        /* Actor ID   */ ACTOR_RAT,
+        /* Position   */ { -478, -120, -86 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0000
     },
 };
 

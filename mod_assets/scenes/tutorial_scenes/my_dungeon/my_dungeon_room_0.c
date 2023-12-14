@@ -11,7 +11,7 @@
  * Header Child Day (Default)
 */
 #define LENGTH_MY_DUNGEON_ROOM_0_HEADER00_OBJECTLIST 5
-#define LENGTH_MY_DUNGEON_ROOM_0_HEADER00_ACTORLIST 5
+#define LENGTH_MY_DUNGEON_ROOM_0_HEADER00_ACTORLIST 4
 SceneCmd my_dungeon_room_0_header00[] = {
     SCENE_CMD_ECHO_SETTINGS(0x00),
     SCENE_CMD_ROOM_BEHAVIOR(0x00, 0x00, false, false),
@@ -35,6 +35,14 @@ ActorEntry my_dungeon_room_0_header00_actorList[LENGTH_MY_DUNGEON_ROOM_0_HEADER0
     // Custom Actor
     {
         /* Actor ID   */ ACTOR_EN_ZOL,
+        /* Position   */ { 350, -120, -365 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0100
+    },
+
+    // Custom Actor
+    {
+        /* Actor ID   */ ACTOR_EN_ZOL,
         /* Position   */ { 957, 161, -33 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
         /* Parameters */ 0x0201
@@ -42,17 +50,9 @@ ActorEntry my_dungeon_room_0_header00_actorList[LENGTH_MY_DUNGEON_ROOM_0_HEADER0
 
     // Custom Actor
     {
-        /* Actor ID   */ ACTOR_POLS_VOICE,
-        /* Position   */ { -231, -120, -11 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0000
-    },
-
-    // Custom Actor
-    {
-        /* Actor ID   */ ACTOR_RAT,
-        /* Position   */ { 317, -120, 221 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Actor ID   */ ACTOR_NPC_TEST,
+        /* Position   */ { 247, -98, -38 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
         /* Parameters */ 0x0000
     },
 
@@ -62,14 +62,6 @@ ActorEntry my_dungeon_room_0_header00_actorList[LENGTH_MY_DUNGEON_ROOM_0_HEADER0
         /* Position   */ { 477, -120, -38 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(270.000), DEG_TO_BINANG(0.000) },
         /* Parameters */ 0x0BC3
-    },
-
-    // Custom Actor
-    {
-        /* Actor ID   */ ACTOR_EN_ZOL,
-        /* Position   */ { 350, -120, -365 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0100
     },
 };
 
