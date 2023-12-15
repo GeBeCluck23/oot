@@ -10,13 +10,31 @@
 /**
  * Header Child Day (Default)
 */
+#define LENGTH_ESCAPE_RM_ROOM_3_HEADER00_OBJECTLIST 1
+#define LENGTH_ESCAPE_RM_ROOM_3_HEADER00_ACTORLIST 1
 SceneCmd escape_rm_room_3_header00[] = {
     SCENE_CMD_ECHO_SETTINGS(0x00),
     SCENE_CMD_ROOM_BEHAVIOR(0x00, 0x00, false, false),
     SCENE_CMD_SKYBOX_DISABLES(true, true),
     SCENE_CMD_TIME_SETTINGS(0xFF, 0xFF, 0),
     SCENE_CMD_ROOM_SHAPE(&escape_rm_room_3_shapeHeader),
+    SCENE_CMD_OBJECT_LIST(LENGTH_ESCAPE_RM_ROOM_3_HEADER00_OBJECTLIST, escape_rm_room_3_header00_objectList),
+    SCENE_CMD_ACTOR_LIST(LENGTH_ESCAPE_RM_ROOM_3_HEADER00_ACTORLIST, escape_rm_room_3_header00_actorList),
     SCENE_CMD_END(),
+};
+
+s16 escape_rm_room_3_header00_objectList[LENGTH_ESCAPE_RM_ROOM_3_HEADER00_OBJECTLIST] = {
+    OBJECT_BOX,
+};
+
+ActorEntry escape_rm_room_3_header00_actorList[LENGTH_ESCAPE_RM_ROOM_3_HEADER00_ACTORLIST] = {
+    // Treasure Chest
+    {
+        /* Actor ID   */ ACTOR_EN_BOX,
+        /* Position   */ { 1232, -50, -280 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x5840
+    },
 };
 
 RoomShapeNormal escape_rm_room_3_shapeHeader = {

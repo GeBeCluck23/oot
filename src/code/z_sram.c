@@ -56,13 +56,16 @@ static SavePlayerData sNewSavePlayerData = {
     },                                                  // adultEquips
     0,                                                  // unk_38
     { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },       // unk_3C
-    SCENE_LINKS_HOUSE,                                  // savedSceneId
+    SCENE_ESCAPE_RM,                                    // savedSceneId
+    // SCENE_LINKS_HOUSE,                                  // savedSceneId
 };
 
 static ItemEquips sNewSaveEquips = {
-    { ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE }, // buttonItems
+    { ITEM_SWORD_MASTER, ITEM_NONE, ITEM_NONE, ITEM_NONE }, // buttonItems
     { SLOT_NONE, SLOT_NONE, SLOT_NONE },            // cButtonSlots
-    0x1100,                                         // equipment
+    (EQUIP_VALUE_SWORD_MASTER << (EQUIP_TYPE_SWORD * 4)) |
+    (EQUIP_VALUE_TUNIC_KOKIRI << (EQUIP_TYPE_TUNIC * 4)) | (EQUIP_VALUE_BOOTS_KOKIRI << (EQUIP_TYPE_BOOTS * 4)),
+    //0x1100,                                         // equipment
 };
 
 static Inventory sNewSaveInventory = {
@@ -412,6 +415,10 @@ void Sram_OpenSave(SramContext* sramCtx) {
         case SCENE_GANON_BOSS:
             gSaveContext.save.entranceIndex = ENTR_GANONS_TOWER_0;
             break;
+        
+        case SCENE_ESCAPE_RM:
+            gSaveContext.save.entranceIndex = ENTR_ESCAPE_RM_0;
+            break;
 
         default:
             if (gSaveContext.save.info.playerData.savedSceneId != SCENE_LINKS_HOUSE) {
@@ -720,20 +727,29 @@ void Sram_InitSave(FileSelectState* fileSelect, SramContext* sramCtx) {
     u16* ptr;
     u16 checksum;
 
+
+    #ifdef ENABLE_DEBUG_FEATURES
     if (fileSelect->buttonIndex != 0) {
         Sram_InitNewSave();
     } else {
         Sram_InitDebugSave();
     }
+    #else
+    Sram_InitNewSave();
+    #endif
 
-    gSaveContext.save.entranceIndex = ENTR_LINKS_HOUSE_0;
-    gSaveContext.save.linkAge = LINK_AGE_CHILD;
+    gSaveContext.save.entranceIndex = ENTR_ESCAPE_RM_0;
+    // gSaveContext.save.entranceIndex = ENTR_LINKS_HOUSE_0;
+    gSaveContext.save.linkAge = LINK_AGE_ADULT;
     gSaveContext.save.dayTime = CLOCK_TIME(10, 0);
-    gSaveContext.save.cutsceneIndex = 0xFFF1;
+    gSaveContext.save.cutsceneIndex = 0;
+    // gSaveContext.save.cutsceneIndex = 0xFFF1;
 
+    #ifdef ENABLE_DEBUG_FEATURES
     if (fileSelect->buttonIndex == 0) {
         gSaveContext.save.cutsceneIndex = 0;
     }
+    #endif
 
     for (offset = 0; offset < 8; offset++) {
         gSaveContext.save.info.playerData.playerName[offset] = fileSelect->fileNames[fileSelect->buttonIndex][offset];

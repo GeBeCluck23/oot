@@ -10,8 +10,8 @@
 /**
  * Header Child Day (Default)
 */
-#define LENGTH_ESCAPE_RM_ROOM_2_HEADER00_OBJECTLIST 1
-#define LENGTH_ESCAPE_RM_ROOM_2_HEADER00_ACTORLIST 1
+#define LENGTH_ESCAPE_RM_ROOM_2_HEADER00_OBJECTLIST 2
+#define LENGTH_ESCAPE_RM_ROOM_2_HEADER00_ACTORLIST 2
 SceneCmd escape_rm_room_2_header00[] = {
     SCENE_CMD_ECHO_SETTINGS(0x00),
     SCENE_CMD_ROOM_BEHAVIOR(0x00, 0x00, false, false),
@@ -25,6 +25,7 @@ SceneCmd escape_rm_room_2_header00[] = {
 
 s16 escape_rm_room_2_header00_objectList[LENGTH_ESCAPE_RM_ROOM_2_HEADER00_OBJECTLIST] = {
     OBJECT_RAT,
+    OBJECT_BOX,
 };
 
 ActorEntry escape_rm_room_2_header00_actorList[LENGTH_ESCAPE_RM_ROOM_2_HEADER00_ACTORLIST] = {
@@ -34,6 +35,14 @@ ActorEntry escape_rm_room_2_header00_actorList[LENGTH_ESCAPE_RM_ROOM_2_HEADER00_
         /* Position   */ { 352, -50, -498 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
         /* Parameters */ 0x0000
+    },
+
+    // Treasure Chest
+    {
+        /* Actor ID   */ ACTOR_EN_BOX,
+        /* Position   */ { 379, -50, -1030 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x054A
     },
 };
 
