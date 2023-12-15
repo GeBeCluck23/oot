@@ -219,8 +219,8 @@ ____________________________________________________________
 Adding NPCs
 
 folder structure is:
-src/overlays/actors/ovl_Example/z_example.c
-src/overlays/actors/ovl_Example/z_example.h
+src/overlays/actors/ovl_Npc_Example/z_npc_example.c
+src/overlays/actors/ovl_Npc_Example/z_npc_example.h
 
 .c file should contain:
 void Example_Init(Actor* thisx, PlayState* play);
@@ -232,17 +232,36 @@ Npc must be added to the spec file, and actor_table.h
 
 - spec
 beginseg
-    name "ovl_Example"
-    include "build/src/overlays/actors/ovl_Example/z_example.o"
-    include "build/src/overlays/actors/ovl_Example/ovl_Example_reloc.o"
+    name "ovl_Npc_Example"
+    include "build/src/overlays/actors/ovl_Npc_Example/z_npc_example.o"
+    include "build/src/overlays/actors/ovl_Npc_Example/ovl_Npc_Example_reloc.o"
 endseg
 
 - actor_table.h
-DEFINE_ACTOR(Npc_Test, ACTOR_NPC_TEST, ACTOROVL_ALLOC_NORMAL, "Npc_Test")
+DEFINE_ACTOR(Npc_Example, ACTOR_NPC_EXAMPLE, ACTOROVL_ALLOC_NORMAL, "Npc_Example")
 
 
 header file should contain the typedef struct, "NpcInteractInfo"
 
+
+- message_data.h
+when adding dialogue, add a new textbox at the bottom, while updating the message ID. For example,
+DEFINE_MESSAGE(0x71B3, TEXTBOX_TYPE_BLACK, TEXTBOX_POS_VARIABLE,
+"Example Message")
+
+Then reference that message ID in the c and h files like so:
+- c
+typedef enum {
+    NPCEXAMPLE_MESSAGE_1 = 0X71B3,
+} NpcExampleMessageId;
+
+- h
+typedef struct NpcExample {
+    Actor actor;
+    NpcInteractInfo interactInfo;
+} NpcExample;
+
+(Note: NpcInteractInfo references the func in src/code/z_actor.c)
 
 
 
