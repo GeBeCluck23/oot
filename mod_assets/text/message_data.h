@@ -7631,6 +7631,54 @@ SHIFT("\x0A")  COLOR(RED) "vérité" COLOR(DEFAULT) " du Village Cocorico sera\n
 SHIFT("\x23") "porté par les Ombres." QUICKTEXT_DISABLE
 )
 
+// New Messages for En_Wonder_Talk2
+
+// Message ID 61, wonder_talk param should be 0x0F40
+DEFINE_MESSAGE(0x023D, TEXTBOX_TYPE_BLUE, TEXTBOX_POS_VARIABLE,
+"The quick brown fox jumped over the \n"
+"Lazy dog\n"
+"I have a stomach ache.\n"
+"Owwie!!\n"
+BOX_BREAK
+" This is the constraints for a\n"
+"textbox; as far as I can tell."
+,
+"german"
+,
+"french"
+)
+
+// Message ID 62
+DEFINE_MESSAGE(0x023E, TEXTBOX_TYPE_BLUE, TEXTBOX_POS_VARIABLE,
+"If you're reading this, it would seem\n"
+"that you have found yourself here,\n"
+"trapped " COLOR(BLUE) "alone " COLOR(DEFAULT) "in the very place I once\n"
+"called home, long ago..."
+BOX_BREAK
+"There is an escape, but as I sit here,\n"
+"I already find my memory failing me.\n"
+"It won't be long now before even I can't\n"
+"remember how to leave.\n"
+BOX_BREAK
+"I must mark where I hid my " COLOR(BLUE) "tool" COLOR(DEFAULT) ",\n"
+"or I might really be lost forever."
+BOX_BREAK
+UNSKIPPABLE "..."
+BOX_BREAK
+UNSKIPPABLE "...Also, I have one question for\n"
+UNSKIPPABLE "        you personally."
+BOX_BREAK
+UNSKIPPABLE "...Are you..."
+BOX_BREAK
+UNSKIPPABLE "        ...TRULY..."
+BOX_BREAK
+COLOR(RED) "             ...alone?"
+,
+"german"
+,
+"french"
+)
+
 DEFINE_MESSAGE(0x0300, TEXTBOX_TYPE_WOODEN, TEXTBOX_POS_VARIABLE,
 BACKGROUND("\x00", "\x01", "\x10")
 ,
