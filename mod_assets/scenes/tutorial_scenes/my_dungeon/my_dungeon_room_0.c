@@ -32,12 +32,20 @@ s16 my_dungeon_room_0_header00_objectList[LENGTH_MY_DUNGEON_ROOM_0_HEADER00_OBJE
 };
 
 ActorEntry my_dungeon_room_0_header00_actorList[LENGTH_MY_DUNGEON_ROOM_0_HEADER00_ACTORLIST] = {
+    // Treasure Chest
+    {
+        /* Actor ID   */ ACTOR_EN_BOX,
+        /* Position   */ { 477, -120, -38 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(270.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0BC3
+    },
+
     // Custom Actor
     {
-        /* Actor ID   */ ACTOR_EN_ZOL,
-        /* Position   */ { 350, -120, -365 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0100
+        /* Actor ID   */ ACTOR_NPC_TEST,
+        /* Position   */ { 247, -98, -38 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0000
     },
 
     // Custom Actor
@@ -50,18 +58,10 @@ ActorEntry my_dungeon_room_0_header00_actorList[LENGTH_MY_DUNGEON_ROOM_0_HEADER0
 
     // Custom Actor
     {
-        /* Actor ID   */ ACTOR_NPC_TEST,
-        /* Position   */ { 247, -98, -38 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0000
-    },
-
-    // Treasure Chest
-    {
-        /* Actor ID   */ ACTOR_EN_BOX,
-        /* Position   */ { 477, -120, -38 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(270.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0BC3
+        /* Actor ID   */ ACTOR_EN_ZOL,
+        /* Position   */ { 350, -120, -365 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0100
     },
 };
 

@@ -45,7 +45,7 @@ void MapSelect_LoadGame(MapSelectState* this, s32 entranceIndex) {
 
 // "Translation" (Actual name)
 static SceneSelectEntry sScenes[] = {
-    { " 01:James Mod", MapSelect_LoadGame, ENTR_ESCAPE_RM_0 },
+    { " 01:Escape Room", MapSelect_LoadGame, ENTR_ESCAPE_RM_0 },
     { " 0:My Dungeon", MapSelect_LoadGame, ENTR_MY_DUNGEON_0 },
     { " 02:HM Test Map", MapSelect_LoadGame, ENTR_TEST_MAP_0 },
     { " 1:SPOT00", MapSelect_LoadGame, ENTR_HYRULE_FIELD_0 },
@@ -286,7 +286,6 @@ static SceneSelectEntry sScenes[] = {
     { "124:depth" GFXP_KATAKANA "ﾃｽﾄ", MapSelect_LoadGame, ENTR_DEPTH_TEST_0 },
     // "125: Hyrule Garden Game 2" (Early Hyrule Garden Game)
     { "125:" GFXP_KATAKANA "ﾊｲﾗﾙ" GFXP_HIRAGANA "ﾆﾜ" GFXP_KATAKANA "ｹﾞｰﾑ2", MapSelect_LoadGame, ENTR_HAIRAL_NIWA2_0 },
-    { "126:Escape Room", MapSelect_LoadGame, ENTR_ESCAPE_RM_0 },
     // "title" (Title Screen)
     { "title", (void*)MapSelect_LoadTitle, 0 },
 };

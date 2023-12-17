@@ -15,7 +15,7 @@ ORIG_COMPILER ?= 0
 # If COMPILER is "gcc", compile with GCC instead of IDO.
 COMPILER ?= gcc
 
-# CFLAGS ?= 
+#CFLAGS ?= 
 CFLAGS ?= -DENABLE_DEBUG_FEATURES
 CPPFLAGS ?=
 

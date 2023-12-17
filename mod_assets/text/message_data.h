@@ -7657,16 +7657,16 @@ DEFINE_MESSAGE(0x023E, TEXTBOX_TYPE_BLUE, TEXTBOX_POS_VARIABLE,
 BOX_BREAK
 "There is an escape, but as I sit here,\n"
 "I already find my memory failing me.\n"
-"It won't be long now before even I can't\n"
-"remember how to leave.\n"
+"It won't be long now before even\n"
+"I can't remember how to leave.\n"
 BOX_BREAK
-"I must mark where I hid my " COLOR(BLUE) "tool" COLOR(DEFAULT) ",\n"
+"I must " COLOR(BLUE) "mark " COLOR(DEFAULT) "where I hid my tool,\n"
 "or I might really be lost forever."
 BOX_BREAK
 UNSKIPPABLE "..."
 BOX_BREAK
-UNSKIPPABLE "...Also, I have one question for\n"
-UNSKIPPABLE "        you personally."
+UNSKIPPABLE "...Also, I have one question \n"
+UNSKIPPABLE "        for you personally."
 BOX_BREAK
 UNSKIPPABLE "...Are you..."
 BOX_BREAK
