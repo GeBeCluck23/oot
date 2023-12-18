@@ -11,7 +11,7 @@
  * Header Child Day (Default)
 */
 #define LENGTH_ESCAPE_RM_ROOM_3_HEADER00_OBJECTLIST 1
-#define LENGTH_ESCAPE_RM_ROOM_3_HEADER00_ACTORLIST 1
+#define LENGTH_ESCAPE_RM_ROOM_3_HEADER00_ACTORLIST 2
 SceneCmd escape_rm_room_3_header00[] = {
     SCENE_CMD_ECHO_SETTINGS(0x00),
     SCENE_CMD_ROOM_BEHAVIOR(0x00, 0x00, false, false),
@@ -35,6 +35,14 @@ ActorEntry escape_rm_room_3_header00_actorList[LENGTH_ESCAPE_RM_ROOM_3_HEADER00_
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
         /* Parameters */ 0x5840
     },
+
+    // Treasure Chest
+    {
+        /* Actor ID   */ ACTOR_EN_BOX,
+        /* Position   */ { 1516, -50, 129 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0085
+    },
 };
 
 RoomShapeNormal escape_rm_room_3_shapeHeader = {
@@ -54,6 +62,7 @@ Gfx escape_rm_room_3_entry_0_opaque[] = {
 	gsSPDisplayList(escape_rm_dl_Cube_004_mesh_layer_Opaque),
 	gsSPDisplayList(escape_rm_dl_Floor_002_mesh_layer_Opaque),
 	gsSPDisplayList(escape_rm_dl_Floor_003_mesh_layer_Opaque),
+	gsSPDisplayList(escape_rm_dl_floor_007_mesh_layer_Opaque),
 	gsSPDisplayList(escape_rm_dl_stairs_003_mesh_layer_Opaque),
 	gsSPEndDisplayList(),
 };
@@ -4537,6 +4546,30 @@ Gfx escape_rm_dl_Floor_003_mesh_layer_Opaque_tri_1[] = {
 	gsSPEndDisplayList(),
 };
 
+Vtx escape_rm_dl_floor_007_mesh_layer_Opaque_vtx_cull[8] = {
+	{{ {1808, -50, 339}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {1808, -50, 339}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {1808, -50, -339}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {1808, -50, -339}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {2704, -50, 339}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {2704, -50, 339}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {2704, -50, -339}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {2704, -50, -339}, 0, {0, 0}, {0, 0, 0, 0} }},
+};
+
+Vtx escape_rm_dl_floor_007_mesh_layer_Opaque_vtx_0[4] = {
+	{{ {1808, -50, 339}, 0, {496, 496}, {255, 255, 255, 255} }},
+	{{ {2704, -50, 339}, 0, {11286, 496}, {255, 255, 255, 255} }},
+	{{ {2704, -50, -339}, 0, {11286, -7680}, {255, 255, 255, 255} }},
+	{{ {1808, -50, -339}, 0, {496, -7680}, {255, 255, 255, 255} }},
+};
+
+Gfx escape_rm_dl_floor_007_mesh_layer_Opaque_tri_0[] = {
+	gsSPVertex(escape_rm_dl_floor_007_mesh_layer_Opaque_vtx_0 + 0, 4, 0),
+	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
+	gsSPEndDisplayList(),
+};
+
 Vtx escape_rm_dl_stairs_003_mesh_layer_Opaque_vtx_cull[8] = {
 	{{ {1276, -50, 339}, 0, {0, 0}, {0, 0, 0, 0} }},
 	{{ {1276, 91, 339}, 0, {0, 0}, {0, 0, 0, 0} }},
@@ -4722,6 +4755,16 @@ Gfx escape_rm_dl_Floor_003_mesh_layer_Opaque[] = {
 	gsSPDisplayList(escape_rm_dl_Floor_003_mesh_layer_Opaque_tri_0),
 	gsSPDisplayList(mat_escape_rm_dl_paneling_layerOpaque),
 	gsSPDisplayList(escape_rm_dl_Floor_003_mesh_layer_Opaque_tri_1),
+	gsSPEndDisplayList(),
+};
+
+Gfx escape_rm_dl_floor_007_mesh_layer_Opaque[] = {
+	gsSPClearGeometryMode(G_LIGHTING),
+	gsSPVertex(escape_rm_dl_floor_007_mesh_layer_Opaque_vtx_cull + 0, 8, 0),
+	gsSPSetGeometryMode(G_LIGHTING),
+	gsSPCullDisplayList(0, 7),
+	gsSPDisplayList(mat_escape_rm_dl_brick_layerOpaque),
+	gsSPDisplayList(escape_rm_dl_floor_007_mesh_layer_Opaque_tri_0),
 	gsSPEndDisplayList(),
 };
 

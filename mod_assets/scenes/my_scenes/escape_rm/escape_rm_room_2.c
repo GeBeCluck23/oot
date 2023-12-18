@@ -29,20 +29,20 @@ s16 escape_rm_room_2_header00_objectList[LENGTH_ESCAPE_RM_ROOM_2_HEADER00_OBJECT
 };
 
 ActorEntry escape_rm_room_2_header00_actorList[LENGTH_ESCAPE_RM_ROOM_2_HEADER00_ACTORLIST] = {
-    // Custom Actor
-    {
-        /* Actor ID   */ ACTOR_RAT,
-        /* Position   */ { 352, -50, -498 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0000
-    },
-
     // Treasure Chest
     {
         /* Actor ID   */ ACTOR_EN_BOX,
         /* Position   */ { 379, -50, -1030 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
         /* Parameters */ 0x054A
+    },
+
+    // Custom Actor
+    {
+        /* Actor ID   */ ACTOR_RAT,
+        /* Position   */ { 352, -50, -498 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0000
     },
 };
 
