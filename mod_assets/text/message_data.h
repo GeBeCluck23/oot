@@ -3853,7 +3853,7 @@ QUICKTEXT_ENABLE  COLOR(LIGHTBLUE) "Ceci n'a pas l'air de servir à \n"
 )
 
 DEFINE_MESSAGE(0x00D0, TEXTBOX_TYPE_BLACK, TEXTBOX_POS_VARIABLE,
-QUICKTEXT_ENABLE  COLOR(LIGHTBLUE) "It won't open! butt" COLOR(DEFAULT)  QUICKTEXT_DISABLE
+QUICKTEXT_ENABLE  COLOR(LIGHTBLUE) "Thought you could find\n" "the exit that easily?" COLOR(DEFAULT)  QUICKTEXT_DISABLE
 ,
 QUICKTEXT_ENABLE  COLOR(LIGHTBLUE) "Geht nicht auf!" COLOR(DEFAULT)  QUICKTEXT_DISABLE
 ,
@@ -7663,7 +7663,7 @@ BOX_BREAK
 "I must " COLOR(BLUE) "mark " COLOR(DEFAULT) "where I hid my tool,\n"
 "or I might really be lost forever."
 BOX_BREAK
-UNSKIPPABLE "..."
+"..."
 BOX_BREAK
 UNSKIPPABLE "...Also, I have one question \n"
 UNSKIPPABLE "        for you personally."
