@@ -1178,8 +1178,8 @@ UNSKIPPABLE  ITEM_ICON("\x0F")  QUICKTEXT_ENABLE "You found the " COLOR(RED) "Le
 "look through it! Mysterious \n"
 "things are hidden everywhere!"
 BOX_BREAK
-UNSKIPPABLE  ITEM_ICON("\x0F") "Be sure to try to use it outside\n"
-"of the well. Seeing the truth will\n"
+UNSKIPPABLE  ITEM_ICON("\x0F") "Search some rooms you have\n"
+"already been to. Seeing the truth will\n"
 "cost magic power, so press " COLOR(YELLOW) "[C]\n"
 COLOR(DEFAULT) "again to stop using it."
 ,
@@ -6714,7 +6714,7 @@ COLOR(DEFAULT)  SHIFT("\x41")  COLOR(LIGHTBLUE) "s'ouvre pas" COLOR(DEFAULT)
 DEFINE_MESSAGE(0x0202, TEXTBOX_TYPE_BLACK, TEXTBOX_POS_BOTTOM,
 SHIFT("\x04")  COLOR(LIGHTBLUE) "Strong " COLOR(DEFAULT) "iron bars " COLOR(LIGHTBLUE) "are blocking the\n"
 COLOR(DEFAULT)  SHIFT("\x0B")  COLOR(LIGHTBLUE) "door. You can't open them with\n"
-COLOR(DEFAULT)  SHIFT("\x40")  COLOR(LIGHTBLUE) "your hands!" COLOR(DEFAULT)
+COLOR(DEFAULT)  SHIFT("\x3B")  COLOR(LIGHTBLUE) "your hands, idiot!" COLOR(DEFAULT)
 ,
 SHIFT("\x04")  COLOR(LIGHTBLUE) "Dicke " COLOR(DEFAULT) "Eisenstangen " COLOR(LIGHTBLUE) "blockieren die\n"
 COLOR(DEFAULT)  SHIFT("\x21")  COLOR(LIGHTBLUE) "Tür. Finde einen Weg, sie\n"
@@ -7672,7 +7672,7 @@ UNSKIPPABLE "...Are you..."
 BOX_BREAK
 UNSKIPPABLE "        ...TRULY..."
 BOX_BREAK
-COLOR(RED) "             ...alone?"
+COLOR(RED) "             ...alone?" COLOR(DEFAULT)
 ,
 "german"
 ,

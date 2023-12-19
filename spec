@@ -10616,3 +10616,24 @@ beginseg
     include "build/assets/scenes/my_scenes/escape_rm/escape_rm_room_7.o"
     number 3
 endseg
+
+beginseg
+    name "escape_rm_room_8"
+    romalign 0x1000
+    include "build/assets/scenes/my_scenes/escape_rm/escape_rm_room_8.o"
+    number 3
+endseg
+
+beginseg
+    name "escape_rm_room_9"
+    romalign 0x1000
+    include "build/assets/scenes/my_scenes/escape_rm/escape_rm_room_9.o"
+    number 3
+endseg
+
+beginseg
+    name "escape_rm_room_10"
+    romalign 0x1000
+    include "build/assets/scenes/my_scenes/escape_rm/escape_rm_room_10.o"
+    number 3
+endseg
