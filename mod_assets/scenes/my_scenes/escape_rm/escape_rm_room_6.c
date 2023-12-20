@@ -27,7 +27,7 @@ ActorEntry escape_rm_room_6_header00_actorList[LENGTH_ESCAPE_RM_ROOM_6_HEADER00_
         /* Actor ID   */ ACTOR_EN_WONDER_TALK2,
         /* Position   */ { 301, -777, 1536 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x8FCB
+        /* Parameters */ 0x8FCA
     },
 };
 

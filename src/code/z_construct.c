@@ -179,9 +179,9 @@ void Interface_Init(PlayState* play) {
     R_ITEM_AMMO_X(0) = B_BUTTON_X + 2;
     R_A_BTN_X = A_BUTTON_X;
     R_A_ICON_X = A_BUTTON_X;
-    R_A_BTN_COLOR(0) = 10;
-    R_A_BTN_COLOR(1) = 20;
-    R_A_BTN_COLOR(2) = 200;
+    R_A_BTN_COLOR(0) = 20;
+    R_A_BTN_COLOR(1) = 40;
+    R_A_BTN_COLOR(2) = 190;
 }
 
 #define TEXTBOX_SEGMENT_SIZE \

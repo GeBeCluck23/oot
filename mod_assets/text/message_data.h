@@ -7689,6 +7689,57 @@ DEFINE_MESSAGE(0x023F, TEXTBOX_TYPE_BLUE, TEXTBOX_POS_VARIABLE,
 "french"
 )
 
+// Message ID 64
+DEFINE_MESSAGE(0x0240, TEXTBOX_TYPE_BLUE, TEXTBOX_POS_VARIABLE,
+"Go back the way you came."
+,
+"german"
+,
+"french"
+)
+
+// Message ID 65
+DEFINE_MESSAGE(0x0241, TEXTBOX_TYPE_BLUE, TEXTBOX_POS_VARIABLE,
+"My notes are scattered everywhere!\n"
+BOX_BREAK
+"If only I could remember what each\n"
+"   one is referring to..."
+BOX_BREAK
+"I found one recently that may have\n"
+"  some importance.\n"
+"I will keep it here, so I don't lose it."
+BOX_BREAK
+"..."
+BOX_BREAK
+"Attached to the notes is a\n"
+"message which reads:"
+BOX_BREAK
+UNSKIPPABLE SHIFT("\x18") "'Only when the captain goes\n"
+SHIFT("\x18") "blind are his secrets revealed.'"
+,
+"german"
+,
+"french"
+)
+
+// Message ID 66
+DEFINE_MESSAGE(0x0242, TEXTBOX_TYPE_BLUE, TEXTBOX_POS_VARIABLE,
+"Message ID 66"
+,
+"german"
+,
+"french"
+)
+
+// Message ID 67
+DEFINE_MESSAGE(0x0243, TEXTBOX_TYPE_BLUE, TEXTBOX_POS_VARIABLE,
+"Message ID 67"
+,
+"german"
+,
+"french"
+)
+
 DEFINE_MESSAGE(0x0300, TEXTBOX_TYPE_WOODEN, TEXTBOX_POS_VARIABLE,
 BACKGROUND("\x00", "\x01", "\x10")
 ,
