@@ -28,28 +28,20 @@ s16 my_dungeon_room_2_header00_objectList[LENGTH_MY_DUNGEON_ROOM_2_HEADER00_OBJE
 };
 
 ActorEntry my_dungeon_room_2_header00_actorList[LENGTH_MY_DUNGEON_ROOM_2_HEADER00_ACTORLIST] = {
-    // Flame Circle
-    {
-        /* Actor ID   */ ACTOR_BG_HIDAN_CURTAIN,
-        /* Position   */ { -888, -120, -472 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x1082
-    },
-
-    // Push Block
-    {
-        /* Actor ID   */ ACTOR_OBJ_OSHIHIKI,
-        /* Position   */ { -720, -120, -418 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0000
-    },
-
     // Custom Actor
     {
         /* Actor ID   */ ACTOR_POLS_VOICE,
         /* Position   */ { -443, -120, -75 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
         /* Parameters */ 0x0000
+    },
+
+    // Dungeon Switches
+    {
+        /* Actor ID   */ ACTOR_OBJ_SWITCH,
+        /* Position   */ { -888, -120, -71 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0200
     },
 
     // Custom Actor
@@ -68,12 +60,20 @@ ActorEntry my_dungeon_room_2_header00_actorList[LENGTH_MY_DUNGEON_ROOM_2_HEADER0
         /* Parameters */ 0x27E2
     },
 
-    // Dungeon Switches
+    // Flame Circle
     {
-        /* Actor ID   */ ACTOR_OBJ_SWITCH,
-        /* Position   */ { -888, -120, -71 },
+        /* Actor ID   */ ACTOR_BG_HIDAN_CURTAIN,
+        /* Position   */ { -888, -120, -472 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0200
+        /* Parameters */ 0x1082
+    },
+
+    // Push Block
+    {
+        /* Actor ID   */ ACTOR_OBJ_OSHIHIKI,
+        /* Position   */ { -720, -120, -418 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0000
     },
 };
 

@@ -22,12 +22,12 @@ SceneCmd escape_rm_room_8_header00[] = {
 };
 
 ActorEntry escape_rm_room_8_header00_actorList[LENGTH_ESCAPE_RM_ROOM_8_HEADER00_ACTORLIST] = {
-    // Dungeon Switches
+    // Checkable Spot
     {
-        /* Actor ID   */ ACTOR_OBJ_SWITCH,
-        /* Position   */ { 2264, 691, 2120 },
-        /* Rotation   */ { DEG_TO_BINANG(0.786), DEG_TO_BINANG(105.507), DEG_TO_BINANG(1.088) },
-        /* Parameters */ 0x0502
+        /* Actor ID   */ ACTOR_EN_WONDER_TALK2,
+        /* Position   */ { 3701, 503, 1041 },
+        /* Rotation   */ { DEG_TO_BINANG(8.723), DEG_TO_BINANG(285.046), DEG_TO_BINANG(352.507) },
+        /* Parameters */ 0x908A
     },
 
     // Checkable Spot
@@ -38,12 +38,12 @@ ActorEntry escape_rm_room_8_header00_actorList[LENGTH_ESCAPE_RM_ROOM_8_HEADER00_
         /* Parameters */ 0x900A
     },
 
-    // Checkable Spot
+    // Dungeon Switches
     {
-        /* Actor ID   */ ACTOR_EN_WONDER_TALK2,
-        /* Position   */ { 3701, 503, 1041 },
-        /* Rotation   */ { DEG_TO_BINANG(8.723), DEG_TO_BINANG(285.046), DEG_TO_BINANG(352.507) },
-        /* Parameters */ 0x908A
+        /* Actor ID   */ ACTOR_OBJ_SWITCH,
+        /* Position   */ { 2264, 691, 2120 },
+        /* Rotation   */ { DEG_TO_BINANG(0.786), DEG_TO_BINANG(105.507), DEG_TO_BINANG(1.088) },
+        /* Parameters */ 0x0502
     },
 };
 
