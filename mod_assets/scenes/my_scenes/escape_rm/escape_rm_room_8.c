@@ -10,32 +10,39 @@
 /**
  * Header Child Day (Default)
 */
-#define LENGTH_ESCAPE_RM_ROOM_8_HEADER00_ACTORLIST 3
+#define LENGTH_ESCAPE_RM_ROOM_8_HEADER00_OBJECTLIST 2
+#define LENGTH_ESCAPE_RM_ROOM_8_HEADER00_ACTORLIST 6
 SceneCmd escape_rm_room_8_header00[] = {
     SCENE_CMD_ECHO_SETTINGS(0x00),
     SCENE_CMD_ROOM_BEHAVIOR(0x00, 0x00, false, false),
     SCENE_CMD_SKYBOX_DISABLES(true, true),
     SCENE_CMD_TIME_SETTINGS(0xFF, 0xFF, 0),
     SCENE_CMD_ROOM_SHAPE(&escape_rm_room_8_shapeHeader),
+    SCENE_CMD_OBJECT_LIST(LENGTH_ESCAPE_RM_ROOM_8_HEADER00_OBJECTLIST, escape_rm_room_8_header00_objectList),
     SCENE_CMD_ACTOR_LIST(LENGTH_ESCAPE_RM_ROOM_8_HEADER00_ACTORLIST, escape_rm_room_8_header00_actorList),
     SCENE_CMD_END(),
 };
 
+s16 escape_rm_room_8_header00_objectList[LENGTH_ESCAPE_RM_ROOM_8_HEADER00_OBJECTLIST] = {
+    OBJECT_ZOL,
+    OBJECT_RAT,
+};
+
 ActorEntry escape_rm_room_8_header00_actorList[LENGTH_ESCAPE_RM_ROOM_8_HEADER00_ACTORLIST] = {
-    // Checkable Spot
+    // Custom Actor
     {
-        /* Actor ID   */ ACTOR_EN_WONDER_TALK2,
-        /* Position   */ { 3701, 503, 1041 },
-        /* Rotation   */ { DEG_TO_BINANG(8.723), DEG_TO_BINANG(285.046), DEG_TO_BINANG(352.507) },
-        /* Parameters */ 0x908A
+        /* Actor ID   */ ACTOR_EN_ZOL,
+        /* Position   */ { 2349, 401, 1780 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0000
     },
 
-    // Checkable Spot
+    // Custom Actor
     {
-        /* Actor ID   */ ACTOR_EN_WONDER_TALK2,
-        /* Position   */ { 2363, 448, 2094 },
-        /* Rotation   */ { DEG_TO_BINANG(359.506), DEG_TO_BINANG(14.854), DEG_TO_BINANG(0.071) },
-        /* Parameters */ 0x900A
+        /* Actor ID   */ ACTOR_EN_ZOL,
+        /* Position   */ { 2542, 406, 1594 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(123.322), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0001
     },
 
     // Dungeon Switches
@@ -44,6 +51,30 @@ ActorEntry escape_rm_room_8_header00_actorList[LENGTH_ESCAPE_RM_ROOM_8_HEADER00_
         /* Position   */ { 2264, 691, 2120 },
         /* Rotation   */ { DEG_TO_BINANG(0.786), DEG_TO_BINANG(105.507), DEG_TO_BINANG(1.088) },
         /* Parameters */ 0x0502
+    },
+
+    // Checkable Spot
+    {
+        /* Actor ID   */ ACTOR_EN_WONDER_TALK2,
+        /* Position   */ { 3701, 503, 1041 },
+        /* Rotation   */ { DEG_TO_BINANG(8.723), DEG_TO_BINANG(285.046), DEG_TO_BINANG(352.507) },
+        /* Parameters */ 0x908A
+    },
+
+    // Custom Actor
+    {
+        /* Actor ID   */ ACTOR_EN_ZOL,
+        /* Position   */ { 3008, 745, 1870 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0201
+    },
+
+    // Checkable Spot
+    {
+        /* Actor ID   */ ACTOR_EN_WONDER_TALK2,
+        /* Position   */ { 2363, 448, 2094 },
+        /* Rotation   */ { DEG_TO_BINANG(359.506), DEG_TO_BINANG(14.854), DEG_TO_BINANG(0.071) },
+        /* Parameters */ 0x900A
     },
 };
 

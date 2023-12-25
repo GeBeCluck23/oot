@@ -33,17 +33,9 @@ ActorEntry my_dungeon_room_1_header00_actorList[LENGTH_MY_DUNGEON_ROOM_1_HEADER0
     // Keese
     {
         /* Actor ID   */ ACTOR_EN_FIREFLY,
-        /* Position   */ { -732, 10, 273 },
+        /* Position   */ { -549, 37, 340 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
         /* Parameters */ 0x0002
-    },
-
-    // Treasure Chest
-    {
-        /* Actor ID   */ ACTOR_EN_BOX,
-        /* Position   */ { -856, -120, 414 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(270.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x7841
     },
 
     // Keese
@@ -57,9 +49,17 @@ ActorEntry my_dungeon_room_1_header00_actorList[LENGTH_MY_DUNGEON_ROOM_1_HEADER0
     // Keese
     {
         /* Actor ID   */ ACTOR_EN_FIREFLY,
-        /* Position   */ { -549, 37, 340 },
+        /* Position   */ { -732, 10, 273 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
         /* Parameters */ 0x0002
+    },
+
+    // Treasure Chest
+    {
+        /* Actor ID   */ ACTOR_EN_BOX,
+        /* Position   */ { -856, -120, 414 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(270.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x7841
     },
 
     // Lizalfos

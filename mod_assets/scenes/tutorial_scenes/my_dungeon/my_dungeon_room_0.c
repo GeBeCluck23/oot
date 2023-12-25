@@ -30,26 +30,10 @@ s16 my_dungeon_room_0_header00_objectList[LENGTH_MY_DUNGEON_ROOM_0_HEADER00_OBJE
     OBJECT_ZOL,
     OBJECT_BOX,
     OBJECT_BWALL,
-    OBJECT_DDAN_OBJECTS,
+    OBJECT_KINGDODONGO,
 };
 
 ActorEntry my_dungeon_room_0_header00_actorList[LENGTH_MY_DUNGEON_ROOM_0_HEADER00_ACTORLIST] = {
-    // Custom Actor
-    {
-        /* Actor ID   */ ACTOR_EN_ZOL,
-        /* Position   */ { 957, 161, -33 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0201
-    },
-
-    // Dodongo's Cavern Objects
-    {
-        /* Actor ID   */ ACTOR_BG_BREAKWALL,
-        /* Position   */ { 232, -120, 122 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x4008
-    },
-
     // Custom Actor
     {
         /* Actor ID   */ ACTOR_EN_ZOL,
@@ -58,20 +42,28 @@ ActorEntry my_dungeon_room_0_header00_actorList[LENGTH_MY_DUNGEON_ROOM_0_HEADER0
         /* Parameters */ 0x0100
     },
 
-    // 2D Bombable Wall
+    // Dodongo's Cavern Objects
     {
-        /* Actor ID   */ ACTOR_BG_BOMBWALL,
-        /* Position   */ { 199, -120, 249 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x8002
+        /* Actor ID   */ ACTOR_BG_BREAKWALL,
+        /* Position   */ { 57, -120, 122 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x4001
+    },
+
+    // Dodongo's Cavern Objects
+    {
+        /* Actor ID   */ ACTOR_BG_BREAKWALL,
+        /* Position   */ { 202, -102, 79 },
+        /* Rotation   */ { 0, 0, 0 },
+        /* Parameters */ 0xA001
     },
 
     // Custom Actor
     {
-        /* Actor ID   */ ACTOR_NPC_TEST,
-        /* Position   */ { 247, -98, -38 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0000
+        /* Actor ID   */ ACTOR_EN_ZOL,
+        /* Position   */ { 957, 161, -33 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0201
     },
 
     // Treasure Chest
@@ -80,6 +72,14 @@ ActorEntry my_dungeon_room_0_header00_actorList[LENGTH_MY_DUNGEON_ROOM_0_HEADER0
         /* Position   */ { 477, -120, -38 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(270.000), DEG_TO_BINANG(0.000) },
         /* Parameters */ 0x0BC3
+    },
+
+    // Custom Actor
+    {
+        /* Actor ID   */ ACTOR_NPC_TEST,
+        /* Position   */ { 247, -98, -38 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0000
     },
 };
 
@@ -636,27 +636,23 @@ Gfx my_dungeon_dl_Floor_mesh_layer_Opaque_tri_1[] = {
 	gsSPEndDisplayList(),
 };
 
-Vtx my_dungeon_dl_Floor_mesh_layer_Opaque_vtx_2[24] = {
+Vtx my_dungeon_dl_Floor_mesh_layer_Opaque_vtx_2[20] = {
 	{{ {456, -120, 112}, 0, {3678, 1279}, {255, 255, 255, 255} }},
 	{{ {1037, -120, 112}, 0, {7729, 1279}, {255, 255, 255, 255} }},
 	{{ {1037, -120, -192}, 0, {7729, -840}, {255, 255, 255, 255} }},
 	{{ {456, -120, -192}, 0, {3678, -840}, {255, 255, 255, 255} }},
-	{{ {288, -120, 60}, 0, {2507, 913}, {255, 255, 255, 255} }},
-	{{ {160, -120, 67}, 0, {1610, 963}, {254, 254, 254, 255} }},
-	{{ {-82, -120, -504}, 0, {-79, -3023}, {232, 232, 232, 255} }},
 	{{ {38, -120, -504}, 0, {758, -3023}, {255, 255, 255, 255} }},
 	{{ {456, -120, -504}, 0, {3678, -3023}, {255, 255, 255, 255} }},
-	{{ {-300, -120, -192}, 0, {-1597, -840}, {255, 255, 255, 255} }},
-	{{ {-300, -120, -372}, 0, {-1597, -2099}, {255, 255, 255, 255} }},
+	{{ {-82, -120, -504}, 0, {-79, -3023}, {232, 232, 232, 255} }},
 	{{ {-300, -120, -432}, 0, {-1597, -2517}, {255, 255, 255, 255} }},
 	{{ {-300, -120, -504}, 0, {-1597, -3023}, {255, 255, 255, 255} }},
+	{{ {-300, -120, -372}, 0, {-1597, -2099}, {255, 255, 255, 255} }},
+	{{ {-300, -120, -192}, 0, {-1597, -840}, {255, 255, 255, 255} }},
 	{{ {-300, -120, 112}, 0, {-1597, 1279}, {255, 255, 255, 255} }},
 	{{ {-300, -120, 249}, 0, {-1597, 2232}, {255, 255, 255, 255} }},
-	{{ {107, -120, 188}, 0, {1239, 1809}, {255, 255, 255, 255} }},
-	{{ {292, -120, 169}, 0, {2530, 1677}, {255, 255, 255, 255} }},
 	{{ {-300, -120, 309}, 0, {-1597, 2650}, {255, 255, 255, 255} }},
-	{{ {456, -120, 407}, 0, {3678, 3336}, {255, 255, 255, 255} }},
 	{{ {-300, -120, 407}, 0, {-1597, 3336}, {255, 255, 255, 255} }},
+	{{ {456, -120, 407}, 0, {3678, 3336}, {255, 255, 255, 255} }},
 	{{ {-82, -120, -504}, 0, {310, 934}, {232, 232, 232, 255} }},
 	{{ {38, -120, -504}, 0, {682, 934}, {255, 255, 255, 255} }},
 	{{ {38, -120, -524}, 0, {682, 873}, {74, 74, 74, 255} }},
@@ -664,18 +660,15 @@ Vtx my_dungeon_dl_Floor_mesh_layer_Opaque_vtx_2[24] = {
 };
 
 Gfx my_dungeon_dl_Floor_mesh_layer_Opaque_tri_2[] = {
-	gsSPVertex(my_dungeon_dl_Floor_mesh_layer_Opaque_vtx_2 + 0, 24, 0),
+	gsSPVertex(my_dungeon_dl_Floor_mesh_layer_Opaque_vtx_2 + 0, 20, 0),
 	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
-	gsSP2Triangles(4, 0, 3, 0, 5, 4, 3, 0),
-	gsSP2Triangles(5, 3, 6, 0, 3, 7, 6, 0),
-	gsSP2Triangles(3, 8, 7, 0, 6, 9, 5, 0),
-	gsSP2Triangles(6, 10, 9, 0, 6, 11, 10, 0),
-	gsSP2Triangles(6, 12, 11, 0, 9, 13, 5, 0),
-	gsSP2Triangles(13, 14, 5, 0, 14, 15, 5, 0),
-	gsSP2Triangles(16, 15, 14, 0, 16, 14, 17, 0),
-	gsSP2Triangles(16, 17, 18, 0, 17, 19, 18, 0),
-	gsSP2Triangles(18, 0, 16, 0, 4, 16, 0, 0),
-	gsSP2Triangles(20, 21, 22, 0, 20, 22, 23, 0),
+	gsSP2Triangles(0, 3, 4, 0, 3, 5, 4, 0),
+	gsSP2Triangles(0, 4, 6, 0, 0, 6, 7, 0),
+	gsSP2Triangles(6, 8, 7, 0, 0, 7, 9, 0),
+	gsSP2Triangles(0, 9, 10, 0, 10, 11, 0, 0),
+	gsSP2Triangles(11, 12, 0, 0, 12, 13, 0, 0),
+	gsSP2Triangles(13, 14, 0, 0, 14, 15, 0, 0),
+	gsSP2Triangles(16, 17, 18, 0, 16, 18, 19, 0),
 	gsSPEndDisplayList(),
 };
 
