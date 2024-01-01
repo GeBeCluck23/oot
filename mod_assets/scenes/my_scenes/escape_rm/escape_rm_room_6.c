@@ -10,7 +10,7 @@
 /**
  * Header Child Day (Default)
 */
-#define LENGTH_ESCAPE_RM_ROOM_6_HEADER00_ACTORLIST 1
+#define LENGTH_ESCAPE_RM_ROOM_6_HEADER00_ACTORLIST 2
 SceneCmd escape_rm_room_6_header00[] = {
     SCENE_CMD_ECHO_SETTINGS(0x00),
     SCENE_CMD_ROOM_BEHAVIOR(0x00, 0x00, false, false),
@@ -22,11 +22,19 @@ SceneCmd escape_rm_room_6_header00[] = {
 };
 
 ActorEntry escape_rm_room_6_header00_actorList[LENGTH_ESCAPE_RM_ROOM_6_HEADER00_ACTORLIST] = {
+    // Flame
+    {
+        /* Actor ID   */ ACTOR_EN_LIGHT,
+        /* Position   */ { 278, -765, 1500 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x83F0
+    },
+
     // Checkable Spot
     {
         /* Actor ID   */ ACTOR_EN_WONDER_TALK2,
-        /* Position   */ { 301, -777, 1536 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Position   */ { 311, -775, 1537 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
         /* Parameters */ 0x8FCA
     },
 };

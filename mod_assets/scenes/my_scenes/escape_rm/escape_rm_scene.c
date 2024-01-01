@@ -48,30 +48,39 @@ ActorEntry escape_rm_scene_header00_playerEntryList[] = {
 };
 
 TransitionActorEntry escape_rm_scene_header00_transitionActors[] = {
+    // Lifting Wooden Door
+    {
+        /* Room & Cam Index (Front, Back) */ { 9, 0xFF, 8, 0xFF },
+        /* Actor ID                       */ ACTOR_DOOR_SHUTTER,
+        /* Position                       */ { 3259, 417, 1755 },
+        /* Rotation Y                     */ DEG_TO_BINANG(284.678),
+        /* Parameters                     */ 0x0085
+    },
+
     // Wooden Door
     {
-        /* Room & Cam Index (Front, Back) */ { 8, 0xFF, 7, 0xFF },
+        /* Room & Cam Index (Front, Back) */ { 6, 0xFF, 4, 0xFF },
         /* Actor ID                       */ ACTOR_EN_DOOR,
-        /* Position                       */ { 2103, 399, 1107 },
-        /* Rotation Y                     */ DEG_TO_BINANG(194.991),
+        /* Position                       */ { 745, -826, 1115 },
+        /* Rotation Y                     */ DEG_TO_BINANG(180.000),
+        /* Parameters                     */ 0x0082
+    },
+
+    // Wooden Door
+    {
+        /* Room & Cam Index (Front, Back) */ { 10, 0xFF, 7, 0xFF },
+        /* Actor ID                       */ ACTOR_EN_DOOR,
+        /* Position                       */ { 2051, -50, 333 },
+        /* Rotation Y                     */ DEG_TO_BINANG(0.000),
         /* Parameters                     */ 0x0000
     },
 
     // Wooden Door
     {
-        /* Room & Cam Index (Front, Back) */ { 255, 0x00, 4, 0x00 },
+        /* Room & Cam Index (Front, Back) */ { 0, 0xFF, 2, 0xFF },
         /* Actor ID                       */ ACTOR_EN_DOOR,
-        /* Position                       */ { 751, -826, 396 },
-        /* Rotation Y                     */ DEG_TO_BINANG(0.000),
-        /* Parameters                     */ 0x0200
-    },
-
-    // Wooden Door
-    {
-        /* Room & Cam Index (Front, Back) */ { 0, 0xFF, 3, 0xFF },
-        /* Actor ID                       */ ACTOR_EN_DOOR,
-        /* Position                       */ { 438, -50, 143 },
-        /* Rotation Y                     */ DEG_TO_BINANG(90.000),
+        /* Position                       */ { 1, -50, -382 },
+        /* Rotation Y                     */ DEG_TO_BINANG(180.000),
         /* Parameters                     */ 0x0000
     },
 
@@ -95,47 +104,29 @@ TransitionActorEntry escape_rm_scene_header00_transitionActors[] = {
 
     // Wooden Door
     {
-        /* Room & Cam Index (Front, Back) */ { 0, 0xFF, 5, 0xFF },
+        /* Room & Cam Index (Front, Back) */ { 8, 0xFF, 7, 0xFF },
         /* Actor ID                       */ ACTOR_EN_DOOR,
-        /* Position                       */ { 5, 160, -382 },
+        /* Position                       */ { 2103, 399, 1107 },
+        /* Rotation Y                     */ DEG_TO_BINANG(194.991),
+        /* Parameters                     */ 0x0000
+    },
+
+    // Wooden Door
+    {
+        /* Room & Cam Index (Front, Back) */ { 0, 0xFF, 3, 0xFF },
+        /* Actor ID                       */ ACTOR_EN_DOOR,
+        /* Position                       */ { 438, -50, 143 },
+        /* Rotation Y                     */ DEG_TO_BINANG(90.000),
+        /* Parameters                     */ 0x0000
+    },
+
+    // Wooden Door
+    {
+        /* Room & Cam Index (Front, Back) */ { 4, 0xFF, 0, 0xFF },
+        /* Actor ID                       */ ACTOR_EN_DOOR,
+        /* Position                       */ { 1, -50, 359 },
         /* Rotation Y                     */ DEG_TO_BINANG(180.000),
-        /* Parameters                     */ 0x0040
-    },
-
-    // Lifting Wooden Door
-    {
-        /* Room & Cam Index (Front, Back) */ { 9, 0xFF, 8, 0xFF },
-        /* Actor ID                       */ ACTOR_DOOR_SHUTTER,
-        /* Position                       */ { 3259, 417, 1755 },
-        /* Rotation Y                     */ DEG_TO_BINANG(284.678),
-        /* Parameters                     */ 0x0085
-    },
-
-    // Wooden Door
-    {
-        /* Room & Cam Index (Front, Back) */ { 10, 0xFF, 7, 0xFF },
-        /* Actor ID                       */ ACTOR_EN_DOOR,
-        /* Position                       */ { 2051, -50, 333 },
-        /* Rotation Y                     */ DEG_TO_BINANG(0.000),
-        /* Parameters                     */ 0x0000
-    },
-
-    // Wooden Door
-    {
-        /* Room & Cam Index (Front, Back) */ { 10, 0xFF, 3, 0xFF },
-        /* Actor ID                       */ ACTOR_EN_DOOR,
-        /* Position                       */ { 1726, -50, 180 },
-        /* Rotation Y                     */ DEG_TO_BINANG(270.000),
-        /* Parameters                     */ 0x0000
-    },
-
-    // Wooden Door
-    {
-        /* Room & Cam Index (Front, Back) */ { 0, 0xFF, 2, 0xFF },
-        /* Actor ID                       */ ACTOR_EN_DOOR,
-        /* Position                       */ { 1, -50, -382 },
-        /* Rotation Y                     */ DEG_TO_BINANG(180.000),
-        /* Parameters                     */ 0x0000
+        /* Parameters                     */ 0x0086
     },
 
     // Wooden Door
@@ -149,20 +140,29 @@ TransitionActorEntry escape_rm_scene_header00_transitionActors[] = {
 
     // Wooden Door
     {
-        /* Room & Cam Index (Front, Back) */ { 6, 0xFF, 4, 0xFF },
+        /* Room & Cam Index (Front, Back) */ { 255, 0x00, 4, 0x00 },
         /* Actor ID                       */ ACTOR_EN_DOOR,
-        /* Position                       */ { 745, -826, 1115 },
-        /* Rotation Y                     */ DEG_TO_BINANG(180.000),
-        /* Parameters                     */ 0x0082
+        /* Position                       */ { 751, -826, 396 },
+        /* Rotation Y                     */ DEG_TO_BINANG(0.000),
+        /* Parameters                     */ 0x0200
     },
 
     // Wooden Door
     {
-        /* Room & Cam Index (Front, Back) */ { 4, 0xFF, 0, 0xFF },
+        /* Room & Cam Index (Front, Back) */ { 10, 0xFF, 3, 0xFF },
         /* Actor ID                       */ ACTOR_EN_DOOR,
-        /* Position                       */ { 1, -50, 359 },
+        /* Position                       */ { 1726, -50, 180 },
+        /* Rotation Y                     */ DEG_TO_BINANG(270.000),
+        /* Parameters                     */ 0x0000
+    },
+
+    // Wooden Door
+    {
+        /* Room & Cam Index (Front, Back) */ { 0, 0xFF, 5, 0xFF },
+        /* Actor ID                       */ ACTOR_EN_DOOR,
+        /* Position                       */ { 5, 160, -382 },
         /* Rotation Y                     */ DEG_TO_BINANG(180.000),
-        /* Parameters                     */ 0x0086
+        /* Parameters                     */ 0x0040
     },
 };
 

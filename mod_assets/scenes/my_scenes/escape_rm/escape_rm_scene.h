@@ -97,6 +97,8 @@ extern SceneCmd escape_rm_room_6_header00[];
 extern ActorEntry escape_rm_room_6_header00_actorList[];
 extern SceneCmd* escape_rm_room_7_alternateHeaders[];
 extern SceneCmd escape_rm_room_7_header00[];
+extern s16 escape_rm_room_7_header00_objectList[];
+extern ActorEntry escape_rm_room_7_header00_actorList[];
 extern SceneCmd* escape_rm_room_8_alternateHeaders[];
 extern SceneCmd escape_rm_room_8_header00[];
 extern s16 escape_rm_room_8_header00_objectList[];
