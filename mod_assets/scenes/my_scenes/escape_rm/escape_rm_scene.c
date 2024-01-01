@@ -41,8 +41,8 @@ RomFile escape_rm_scene_roomList[] = {
 ActorEntry escape_rm_scene_header00_playerEntryList[] = {
     {
         /* Actor ID   */ ACTOR_PLAYER,
-        /* Position   */ { 1984, 394, 1221 },
-        /* Rotation   */ { DEG_TO_BINANG(2.455), DEG_TO_BINANG(0.005), DEG_TO_BINANG(1.417) },
+        /* Position   */ { 4, -50, 250 },
+        /* Rotation   */ { DEG_TO_BINANG(2.455), DEG_TO_BINANG(180.005), DEG_TO_BINANG(358.583) },
         /* Parameters */ 0x0FFF
     },
 };
@@ -50,11 +50,11 @@ ActorEntry escape_rm_scene_header00_playerEntryList[] = {
 TransitionActorEntry escape_rm_scene_header00_transitionActors[] = {
     // Wooden Door
     {
-        /* Room & Cam Index (Front, Back) */ { 0, 0xFF, 5, 0xFF },
+        /* Room & Cam Index (Front, Back) */ { 8, 0xFF, 7, 0xFF },
         /* Actor ID                       */ ACTOR_EN_DOOR,
-        /* Position                       */ { 5, 160, -382 },
-        /* Rotation Y                     */ DEG_TO_BINANG(180.000),
-        /* Parameters                     */ 0x0040
+        /* Position                       */ { 2103, 399, 1107 },
+        /* Rotation Y                     */ DEG_TO_BINANG(194.991),
+        /* Parameters                     */ 0x0000
     },
 
     // Wooden Door
@@ -68,20 +68,38 @@ TransitionActorEntry escape_rm_scene_header00_transitionActors[] = {
 
     // Wooden Door
     {
-        /* Room & Cam Index (Front, Back) */ { 4, 0xFF, 0, 0xFF },
-        /* Actor ID                       */ ACTOR_EN_DOOR,
-        /* Position                       */ { 1, -50, 359 },
-        /* Rotation Y                     */ DEG_TO_BINANG(180.000),
-        /* Parameters                     */ 0x0080
-    },
-
-    // Wooden Door
-    {
         /* Room & Cam Index (Front, Back) */ { 0, 0xFF, 3, 0xFF },
         /* Actor ID                       */ ACTOR_EN_DOOR,
         /* Position                       */ { 438, -50, 143 },
         /* Rotation Y                     */ DEG_TO_BINANG(90.000),
         /* Parameters                     */ 0x0000
+    },
+
+    // Wooden Door
+    {
+        /* Room & Cam Index (Front, Back) */ { 1, 0xFF, 0, 0xFF },
+        /* Actor ID                       */ ACTOR_EN_DOOR,
+        /* Position                       */ { -423, -50, 143 },
+        /* Rotation Y                     */ DEG_TO_BINANG(90.000),
+        /* Parameters                     */ 0x0081
+    },
+
+    // Wooden Door
+    {
+        /* Room & Cam Index (Front, Back) */ { 7, 0x00, 4, 0x00 },
+        /* Actor ID                       */ ACTOR_EN_DOOR,
+        /* Position                       */ { 1524, -698, 756 },
+        /* Rotation Y                     */ DEG_TO_BINANG(285.546),
+        /* Parameters                     */ 0x0000
+    },
+
+    // Wooden Door
+    {
+        /* Room & Cam Index (Front, Back) */ { 0, 0xFF, 5, 0xFF },
+        /* Actor ID                       */ ACTOR_EN_DOOR,
+        /* Position                       */ { 5, 160, -382 },
+        /* Rotation Y                     */ DEG_TO_BINANG(180.000),
+        /* Parameters                     */ 0x0040
     },
 
     // Lifting Wooden Door
@@ -120,15 +138,6 @@ TransitionActorEntry escape_rm_scene_header00_transitionActors[] = {
         /* Parameters                     */ 0x0000
     },
 
-    // Lifting Wooden Door
-    {
-        /* Room & Cam Index (Front, Back) */ { 6, 0xFF, 4, 0xFF },
-        /* Actor ID                       */ ACTOR_DOOR_SHUTTER,
-        /* Position                       */ { 745, -826, 1115 },
-        /* Rotation Y                     */ DEG_TO_BINANG(180.000),
-        /* Parameters                     */ 0x0000
-    },
-
     // Wooden Door
     {
         /* Room & Cam Index (Front, Back) */ { 8, 0xFF, 7, 0xFF },
@@ -140,35 +149,26 @@ TransitionActorEntry escape_rm_scene_header00_transitionActors[] = {
 
     // Wooden Door
     {
-        /* Room & Cam Index (Front, Back) */ { 8, 0xFF, 7, 0xFF },
+        /* Room & Cam Index (Front, Back) */ { 6, 0xFF, 4, 0xFF },
         /* Actor ID                       */ ACTOR_EN_DOOR,
-        /* Position                       */ { 2103, 399, 1107 },
-        /* Rotation Y                     */ DEG_TO_BINANG(194.991),
-        /* Parameters                     */ 0x0000
+        /* Position                       */ { 745, -826, 1115 },
+        /* Rotation Y                     */ DEG_TO_BINANG(180.000),
+        /* Parameters                     */ 0x0082
     },
 
     // Wooden Door
     {
-        /* Room & Cam Index (Front, Back) */ { 1, 0xFF, 0, 0xFF },
+        /* Room & Cam Index (Front, Back) */ { 4, 0xFF, 0, 0xFF },
         /* Actor ID                       */ ACTOR_EN_DOOR,
-        /* Position                       */ { -423, -50, 143 },
-        /* Rotation Y                     */ DEG_TO_BINANG(90.000),
-        /* Parameters                     */ 0x0081
-    },
-
-    // Wooden Door
-    {
-        /* Room & Cam Index (Front, Back) */ { 7, 0x00, 4, 0x00 },
-        /* Actor ID                       */ ACTOR_EN_DOOR,
-        /* Position                       */ { 1524, -698, 756 },
-        /* Rotation Y                     */ DEG_TO_BINANG(285.546),
-        /* Parameters                     */ 0x0000
+        /* Position                       */ { 1, -50, 359 },
+        /* Rotation Y                     */ DEG_TO_BINANG(180.000),
+        /* Parameters                     */ 0x0086
     },
 };
 
 Spawn escape_rm_scene_header00_entranceList[] = {
     // { Spawn Actor List Index, Room Index }
-    { 0, 8 },
+    { 0, 0 },
 };
 
 EnvLightSettings escape_rm_scene_header00_lightSettings[1] = {
@@ -1571,8 +1571,8 @@ CollisionPoly escape_rm_polygons[] = {
 	{ 0x0000, 0x0195, 0x0199, 0x0192, COLPOLY_SNORMAL(0.0), COLPOLY_SNORMAL(-1.0), COLPOLY_SNORMAL(-7.549790126404332e-08), 0xfc94 },
 	{ 0x0000, 0x0196, 0x0194, 0x0193, COLPOLY_SNORMAL(0.0), COLPOLY_SNORMAL(1.0), COLPOLY_SNORMAL(7.549790126404332e-08), 0x02a4 },
 	{ 0x0000, 0x0196, 0x0193, 0x0198, COLPOLY_SNORMAL(0.0), COLPOLY_SNORMAL(1.0), COLPOLY_SNORMAL(7.549790126404332e-08), 0x02a4 },
-	{ 0x0000, 0x019c, 0x019a, 0x019b, COLPOLY_SNORMAL(0.0), COLPOLY_SNORMAL(7.549790126404332e-08), COLPOLY_SNORMAL(-1.0), 0x0381 },
-	{ 0x0000, 0x019c, 0x019d, 0x019a, COLPOLY_SNORMAL(0.0), COLPOLY_SNORMAL(7.549790126404332e-08), COLPOLY_SNORMAL(-1.0), 0x0381 },
+	{ 0x0000, 0x019c, 0x019a, 0x019b, COLPOLY_SNORMAL(0.0), COLPOLY_SNORMAL(7.549790126404332e-08), COLPOLY_SNORMAL(-1.0), 0x0397 },
+	{ 0x0000, 0x019c, 0x019d, 0x019a, COLPOLY_SNORMAL(0.0), COLPOLY_SNORMAL(7.549790126404332e-08), COLPOLY_SNORMAL(-1.0), 0x0397 },
 	{ 0x0000, 0x019e, 0x019f, 0x01a0, COLPOLY_SNORMAL(0.0), COLPOLY_SNORMAL(-1.0), COLPOLY_SNORMAL(-7.549790126404332e-08), 0x0132 },
 	{ 0x0000, 0x019e, 0x01a0, 0x01a1, COLPOLY_SNORMAL(0.0), COLPOLY_SNORMAL(-1.0), COLPOLY_SNORMAL(-7.549790126404332e-08), 0x0132 },
 	{ 0x0000, 0x01a2, 0x01a1, 0x01a0, COLPOLY_SNORMAL(-1.0), COLPOLY_SNORMAL(0.0), COLPOLY_SNORMAL(0.0), 0x01e6 },
@@ -1605,12 +1605,12 @@ CollisionPoly escape_rm_polygons[] = {
 	{ 0x0000, 0x01af, 0x01a3, 0x01a6, COLPOLY_SNORMAL(0.0), COLPOLY_SNORMAL(1.0), COLPOLY_SNORMAL(7.549790126404332e-08), 0x0032 },
 	{ 0x0000, 0x01a7, 0x01a4, 0x01af, COLPOLY_SNORMAL(0.0), COLPOLY_SNORMAL(1.0), COLPOLY_SNORMAL(7.549790126404332e-08), 0x0032 },
 	{ 0x0000, 0x01af, 0x01a6, 0x01a7, COLPOLY_SNORMAL(0.0), COLPOLY_SNORMAL(1.0), COLPOLY_SNORMAL(7.549790126404332e-08), 0x0032 },
-	{ 0x0000, 0x01b0, 0x019b, 0x01af, COLPOLY_SNORMAL(-1.0), COLPOLY_SNORMAL(0.0), COLPOLY_SNORMAL(0.0), 0xff14 },
-	{ 0x0000, 0x01b0, 0x019c, 0x019b, COLPOLY_SNORMAL(-1.0), COLPOLY_SNORMAL(0.0), COLPOLY_SNORMAL(0.0), 0xff14 },
-	{ 0x0000, 0x019d, 0x01ae, 0x019a, COLPOLY_SNORMAL(1.0), COLPOLY_SNORMAL(0.0), COLPOLY_SNORMAL(0.0), 0x0135 },
-	{ 0x0000, 0x019d, 0x01b1, 0x01ae, COLPOLY_SNORMAL(1.0), COLPOLY_SNORMAL(0.0), COLPOLY_SNORMAL(0.0), 0x0135 },
-	{ 0x0000, 0x01b1, 0x01af, 0x01ae, COLPOLY_SNORMAL(0.0), COLPOLY_SNORMAL(-7.549790126404332e-08), COLPOLY_SNORMAL(1.0), 0xfcee },
-	{ 0x0000, 0x01b1, 0x01b0, 0x01af, COLPOLY_SNORMAL(0.0), COLPOLY_SNORMAL(-7.549790126404332e-08), COLPOLY_SNORMAL(1.0), 0xfcee },
+	{ 0x0000, 0x01b0, 0x019b, 0x01af, COLPOLY_SNORMAL(-1.0), COLPOLY_SNORMAL(0.0), COLPOLY_SNORMAL(0.0), 0xff3f },
+	{ 0x0000, 0x01b0, 0x019c, 0x019b, COLPOLY_SNORMAL(-1.0), COLPOLY_SNORMAL(0.0), COLPOLY_SNORMAL(0.0), 0xff3f },
+	{ 0x0000, 0x019d, 0x01ae, 0x019a, COLPOLY_SNORMAL(1.0), COLPOLY_SNORMAL(0.0), COLPOLY_SNORMAL(0.0), 0x0160 },
+	{ 0x0000, 0x019d, 0x01b1, 0x01ae, COLPOLY_SNORMAL(1.0), COLPOLY_SNORMAL(0.0), COLPOLY_SNORMAL(0.0), 0x0160 },
+	{ 0x0000, 0x01b1, 0x01af, 0x01ae, COLPOLY_SNORMAL(0.0), COLPOLY_SNORMAL(-7.549790126404332e-08), COLPOLY_SNORMAL(1.0), 0xfd03 },
+	{ 0x0000, 0x01b1, 0x01b0, 0x01af, COLPOLY_SNORMAL(0.0), COLPOLY_SNORMAL(-7.549790126404332e-08), COLPOLY_SNORMAL(1.0), 0xfd03 },
 	{ 0x0000, 0x01b2, 0x01b3, 0x01b4, COLPOLY_SNORMAL(1.0), COLPOLY_SNORMAL(0.0), COLPOLY_SNORMAL(0.0), 0x01cb },
 	{ 0x0000, 0x01b2, 0x01b4, 0x01b5, COLPOLY_SNORMAL(1.0), COLPOLY_SNORMAL(0.0), COLPOLY_SNORMAL(0.0), 0x01cb },
 	{ 0x0000, 0x01b6, 0x01b7, 0x01b8, COLPOLY_SNORMAL(0.0), COLPOLY_SNORMAL(-7.549790126404332e-08), COLPOLY_SNORMAL(1.0), 0xfe60 },
@@ -4188,10 +4188,10 @@ Vec3s escape_rm_vertices[2519] = {
 	{ 811, -876, 376 },
 	{ 811, -676, 416 },
 	{ 811, -876, 416 },
-	{ -309, -50, 897 },
-	{ -236, -50, 897 },
-	{ -236, -384, 897 },
-	{ -309, -384, 897 },
+	{ -352, -50, 919 },
+	{ -193, -50, 919 },
+	{ -193, -384, 919 },
+	{ -352, -384, 919 },
 	{ -410, 306, 1058 },
 	{ -410, 306, 379 },
 	{ 486, 306, 379 },
@@ -4208,10 +4208,10 @@ Vec3s escape_rm_vertices[2519] = {
 	{ 31, 50, 359 },
 	{ 31, -50, 359 },
 	{ -29, -50, 359 },
-	{ -309, -50, 786 },
-	{ -236, -50, 786 },
-	{ -236, -384, 786 },
-	{ -309, -384, 786 },
+	{ -352, -50, 765 },
+	{ -193, -50, 765 },
+	{ -193, -384, 765 },
+	{ -352, -384, 765 },
 	{ -459, -826, 416 },
 	{ -459, -384, 416 },
 	{ -459, -384, 1095 },

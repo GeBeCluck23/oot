@@ -446,7 +446,7 @@ extern u64 escape_rm_dl_spot01_sceneTex_00DD50_i4_i8[];
 extern u64 escape_rm_dl_men_room_9Tex_003070_rgba16_ci8[];
 extern u64 escape_rm_dl_men_room_9Tex_003070_rgba16_pal_rgba16[];
 extern Vtx escape_rm_dl_floor_003_mesh_layer_Opaque_vtx_cull[8];
-extern Vtx escape_rm_dl_floor_003_mesh_layer_Opaque_vtx_0[68];
+extern Vtx escape_rm_dl_floor_003_mesh_layer_Opaque_vtx_0[71];
 extern Gfx escape_rm_dl_floor_003_mesh_layer_Opaque_tri_0[];
 extern Vtx escape_rm_dl_floor_005_mesh_layer_Opaque_vtx_cull[8];
 extern Vtx escape_rm_dl_floor_005_mesh_layer_Opaque_vtx_0[169];

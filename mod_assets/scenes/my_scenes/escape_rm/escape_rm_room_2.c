@@ -11,7 +11,7 @@
  * Header Child Day (Default)
 */
 #define LENGTH_ESCAPE_RM_ROOM_2_HEADER00_OBJECTLIST 2
-#define LENGTH_ESCAPE_RM_ROOM_2_HEADER00_ACTORLIST 4
+#define LENGTH_ESCAPE_RM_ROOM_2_HEADER00_ACTORLIST 8
 SceneCmd escape_rm_room_2_header00[] = {
     SCENE_CMD_ECHO_SETTINGS(0x00),
     SCENE_CMD_ROOM_BEHAVIOR(0x00, 0x00, false, false),
@@ -29,20 +29,44 @@ s16 escape_rm_room_2_header00_objectList[LENGTH_ESCAPE_RM_ROOM_2_HEADER00_OBJECT
 };
 
 ActorEntry escape_rm_room_2_header00_actorList[LENGTH_ESCAPE_RM_ROOM_2_HEADER00_ACTORLIST] = {
+    // Custom Actor
+    {
+        /* Actor ID   */ ACTOR_METAL_CRATE,
+        /* Position   */ { -366, -50, -951 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0000
+    },
+
+    // Custom Actor
+    {
+        /* Actor ID   */ ACTOR_METAL_CRATE,
+        /* Position   */ { -366, -50, -1002 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0000
+    },
+
+    // Custom Actor
+    {
+        /* Actor ID   */ ACTOR_METAL_CRATE,
+        /* Position   */ { -315, -50, -951 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0000
+    },
+
     // Checkable Spot
     {
         /* Actor ID   */ ACTOR_EN_WONDER_TALK2,
-        /* Position   */ { -210, 6, -753 },
-        /* Rotation   */ { DEG_TO_BINANG(359.506), DEG_TO_BINANG(14.854), DEG_TO_BINANG(0.071) },
+        /* Position   */ { -202, 7, -754 },
+        /* Rotation   */ { DEG_TO_BINANG(359.231), DEG_TO_BINANG(104.854), DEG_TO_BINANG(359.736) },
         /* Parameters */ 0x904A
     },
 
-    // Treasure Chest
+    // Custom Actor
     {
-        /* Actor ID   */ ACTOR_EN_BOX,
-        /* Position   */ { 379, -50, -1030 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x054A
+        /* Actor ID   */ ACTOR_METAL_CRATE,
+        /* Position   */ { -315, -50, -1002 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0000
     },
 
     // Checkable Spot
@@ -51,6 +75,14 @@ ActorEntry escape_rm_room_2_header00_actorList[LENGTH_ESCAPE_RM_ROOM_2_HEADER00_
         /* Position   */ { -650, -6, -1004 },
         /* Rotation   */ { DEG_TO_BINANG(359.506), DEG_TO_BINANG(14.854), DEG_TO_BINANG(0.071) },
         /* Parameters */ 0x90CA
+    },
+
+    // Treasure Chest
+    {
+        /* Actor ID   */ ACTOR_EN_BOX,
+        /* Position   */ { 379, -50, -1030 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x054A
     },
 
     // Custom Actor

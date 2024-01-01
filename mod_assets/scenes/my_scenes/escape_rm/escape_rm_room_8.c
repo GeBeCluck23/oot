@@ -29,12 +29,20 @@ s16 escape_rm_room_8_header00_objectList[LENGTH_ESCAPE_RM_ROOM_8_HEADER00_OBJECT
 };
 
 ActorEntry escape_rm_room_8_header00_actorList[LENGTH_ESCAPE_RM_ROOM_8_HEADER00_ACTORLIST] = {
+    // Checkable Spot
+    {
+        /* Actor ID   */ ACTOR_EN_WONDER_TALK2,
+        /* Position   */ { 2363, 448, 2094 },
+        /* Rotation   */ { DEG_TO_BINANG(359.506), DEG_TO_BINANG(14.854), DEG_TO_BINANG(0.071) },
+        /* Parameters */ 0x900A
+    },
+
     // Custom Actor
     {
         /* Actor ID   */ ACTOR_EN_ZOL,
-        /* Position   */ { 2349, 401, 1780 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0000
+        /* Position   */ { 3008, 745, 1870 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0201
     },
 
     // Custom Actor
@@ -43,14 +51,6 @@ ActorEntry escape_rm_room_8_header00_actorList[LENGTH_ESCAPE_RM_ROOM_8_HEADER00_
         /* Position   */ { 2542, 406, 1594 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(123.322), DEG_TO_BINANG(0.000) },
         /* Parameters */ 0x0001
-    },
-
-    // Dungeon Switches
-    {
-        /* Actor ID   */ ACTOR_OBJ_SWITCH,
-        /* Position   */ { 2264, 691, 2120 },
-        /* Rotation   */ { DEG_TO_BINANG(0.786), DEG_TO_BINANG(105.507), DEG_TO_BINANG(1.088) },
-        /* Parameters */ 0x0502
     },
 
     // Checkable Spot
@@ -64,17 +64,17 @@ ActorEntry escape_rm_room_8_header00_actorList[LENGTH_ESCAPE_RM_ROOM_8_HEADER00_
     // Custom Actor
     {
         /* Actor ID   */ ACTOR_EN_ZOL,
-        /* Position   */ { 3008, 745, 1870 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0201
+        /* Position   */ { 2349, 401, 1780 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0000
     },
 
-    // Checkable Spot
+    // Dungeon Switches
     {
-        /* Actor ID   */ ACTOR_EN_WONDER_TALK2,
-        /* Position   */ { 2363, 448, 2094 },
-        /* Rotation   */ { DEG_TO_BINANG(359.506), DEG_TO_BINANG(14.854), DEG_TO_BINANG(0.071) },
-        /* Parameters */ 0x900A
+        /* Actor ID   */ ACTOR_OBJ_SWITCH,
+        /* Position   */ { 2264, 691, 2120 },
+        /* Rotation   */ { DEG_TO_BINANG(0.786), DEG_TO_BINANG(105.507), DEG_TO_BINANG(1.088) },
+        /* Parameters */ 0x0502
     },
 };
 

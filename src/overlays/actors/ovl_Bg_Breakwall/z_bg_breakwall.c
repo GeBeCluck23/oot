@@ -225,16 +225,17 @@ void BgBreakwall_WaitForObject(BgBreakwall* this, PlayState* play) {
  * despawn itself.
  */
 
-/*void BgBreakwall_Wait(BgBreakwall* this, PlayState* play) {
+void BgBreakwall_Wait(BgBreakwall* this, PlayState* play) {
     if (this->collider.base.acFlags & AC_HIT) {
         Vec3f effectPos;
-        s32 wallType = ((this->dyna.actor.params >> 13) & 3) & 0xFF;*/
+        s32 wallType = ((this->dyna.actor.params >> 13) & 3) & 0xFF;
 
-void BgBreakwall_Wait(BgBreakwall* this, PlayState* play) {
+// James' Code
+/*void BgBreakwall_Wait(BgBreakwall* this, PlayState* play) {
     Player* player = GET_PLAYER(play);
     if (this->collider.base.acFlags & AC_HIT && player->heldItemAction != PLAYER_IA_HAMMER) {
         Vec3f effectPos;
-        s32 wallType = ((this->dyna.actor.params >> 13) & 3) & 0xFF;
+        s32 wallType = ((this->dyna.actor.params >> 13) & 3) & 0xFF;*/
 
         DynaPoly_DeleteBgActor(play, &play->colCtx.dyna, this->dyna.bgId);
         effectPos.y = effectPos.z = effectPos.x = 0.0f;
