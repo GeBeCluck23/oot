@@ -45,14 +45,6 @@ ActorEntry escape_rm_room_2_header00_actorList[LENGTH_ESCAPE_RM_ROOM_2_HEADER00_
         /* Parameters */ 0x0000
     },
 
-    // Checkable Spot
-    {
-        /* Actor ID   */ ACTOR_EN_WONDER_TALK2,
-        /* Position   */ { -202, 7, -754 },
-        /* Rotation   */ { DEG_TO_BINANG(359.231), DEG_TO_BINANG(104.854), DEG_TO_BINANG(359.736) },
-        /* Parameters */ 0x904A
-    },
-
     // Custom Actor
     {
         /* Actor ID   */ ACTOR_METAL_CRATE,
@@ -83,6 +75,14 @@ ActorEntry escape_rm_room_2_header00_actorList[LENGTH_ESCAPE_RM_ROOM_2_HEADER00_
         /* Position   */ { 379, -50, -1030 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
         /* Parameters */ 0x054A
+    },
+
+    // Checkable Spot
+    {
+        /* Actor ID   */ ACTOR_EN_WONDER_TALK2,
+        /* Position   */ { -202, 7, -754 },
+        /* Rotation   */ { DEG_TO_BINANG(359.231), DEG_TO_BINANG(104.854), DEG_TO_BINANG(359.736) },
+        /* Parameters */ 0x904A
     },
 
     // Custom Actor
