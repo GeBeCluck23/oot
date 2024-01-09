@@ -22,20 +22,20 @@ SceneCmd escape_rm_room_6_header00[] = {
 };
 
 ActorEntry escape_rm_room_6_header00_actorList[LENGTH_ESCAPE_RM_ROOM_6_HEADER00_ACTORLIST] = {
-    // Flame
-    {
-        /* Actor ID   */ ACTOR_EN_LIGHT,
-        /* Position   */ { 278, -765, 1500 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x83F0
-    },
-
     // Checkable Spot
     {
         /* Actor ID   */ ACTOR_EN_WONDER_TALK2,
         /* Position   */ { 311, -775, 1537 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
         /* Parameters */ 0x8FCA
+    },
+
+    // Flame
+    {
+        /* Actor ID   */ ACTOR_EN_LIGHT,
+        /* Position   */ { 278, -765, 1500 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x83F0
     },
 };
 

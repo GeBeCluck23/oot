@@ -29,22 +29,6 @@ s16 escape_rm_room_1_header00_objectList[LENGTH_ESCAPE_RM_ROOM_1_HEADER00_OBJECT
 };
 
 ActorEntry escape_rm_room_1_header00_actorList[LENGTH_ESCAPE_RM_ROOM_1_HEADER00_ACTORLIST] = {
-    // Treasure Chest
-    {
-        /* Actor ID   */ ACTOR_EN_BOX,
-        /* Position   */ { -531, -50, -281 },
-        /* Rotation   */ { 0, 0, 3 },
-        /* Parameters */ 0xBBC6
-    },
-
-    // Treasure Chest
-    {
-        /* Actor ID   */ ACTOR_EN_BOX,
-        /* Position   */ { -1313, 285, 0 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(180.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x5841
-    },
-
     // Dodongo's Cavern Objects
     {
         /* Actor ID   */ ACTOR_BG_BREAKWALL,
@@ -59,6 +43,22 @@ ActorEntry escape_rm_room_1_header00_actorList[LENGTH_ESCAPE_RM_ROOM_1_HEADER00_
         /* Position   */ { -1078, 165, 804 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(180.000), DEG_TO_BINANG(0.000) },
         /* Parameters */ 0x0302
+    },
+
+    // Treasure Chest
+    {
+        /* Actor ID   */ ACTOR_EN_BOX,
+        /* Position   */ { -1313, 285, 0 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(180.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x5841
+    },
+
+    // Treasure Chest
+    {
+        /* Actor ID   */ ACTOR_EN_BOX,
+        /* Position   */ { -531, -50, -281 },
+        /* Rotation   */ { 0, 0, 3 },
+        /* Parameters */ 0xBBC6
     },
 
     // Checkable Spot

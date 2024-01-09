@@ -33,9 +33,17 @@ ActorEntry escape_rm_room_5_header00_actorList[LENGTH_ESCAPE_RM_ROOM_5_HEADER00_
     // Custom Actor
     {
         /* Actor ID   */ ACTOR_JUMPTOGGLE_PLATFORM,
-        /* Position   */ { -544, 304, -4288 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(180.000), DEG_TO_BINANG(0.000) },
+        /* Position   */ { -570, 304, -3790 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
         /* Parameters */ 0x0000
+    },
+
+    // Treasure Chest
+    {
+        /* Actor ID   */ ACTOR_EN_BOX,
+        /* Position   */ { 940, 307, -741 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(180.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0643
     },
 
     // Treasure Chest
@@ -49,14 +57,6 @@ ActorEntry escape_rm_room_5_header00_actorList[LENGTH_ESCAPE_RM_ROOM_5_HEADER00_
     // Custom Actor
     {
         /* Actor ID   */ ACTOR_PLATFORMS,
-        /* Position   */ { -39, 935, -3822 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x8000
-    },
-
-    // Custom Actor
-    {
-        /* Actor ID   */ ACTOR_PLATFORMS,
         /* Position   */ { 104, 960, -3571 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
         /* Parameters */ 0x8000
@@ -64,26 +64,18 @@ ActorEntry escape_rm_room_5_header00_actorList[LENGTH_ESCAPE_RM_ROOM_5_HEADER00_
 
     // Custom Actor
     {
-        /* Actor ID   */ ACTOR_PLATFORMS,
-        /* Position   */ { 261, 987, -3805 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x8000
+        /* Actor ID   */ ACTOR_JUMPTOGGLE_PLATFORM,
+        /* Position   */ { -544, 304, -4288 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(180.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0000
     },
 
     // Custom Actor
     {
-        /* Actor ID   */ ACTOR_PLATFORMS,
-        /* Position   */ { 594, 1022, -3738 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x8000
-    },
-
-    // Treasure Chest
-    {
-        /* Actor ID   */ ACTOR_EN_BOX,
-        /* Position   */ { 940, 307, -741 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(180.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0643
+        /* Actor ID   */ ACTOR_JUMPTOGGLE_PLATFORM,
+        /* Position   */ { -313, 304, -4044 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0000
     },
 
     // Custom Actor
@@ -96,18 +88,26 @@ ActorEntry escape_rm_room_5_header00_actorList[LENGTH_ESCAPE_RM_ROOM_5_HEADER00_
 
     // Custom Actor
     {
-        /* Actor ID   */ ACTOR_JUMPTOGGLE_PLATFORM,
-        /* Position   */ { -570, 304, -3790 },
+        /* Actor ID   */ ACTOR_PLATFORMS,
+        /* Position   */ { -39, 935, -3822 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0000
+        /* Parameters */ 0x8000
     },
 
     // Custom Actor
     {
-        /* Actor ID   */ ACTOR_JUMPTOGGLE_PLATFORM,
-        /* Position   */ { -313, 304, -4044 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0000
+        /* Actor ID   */ ACTOR_PLATFORMS,
+        /* Position   */ { 594, 1022, -3738 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x8000
+    },
+
+    // Custom Actor
+    {
+        /* Actor ID   */ ACTOR_PLATFORMS,
+        /* Position   */ { 261, 987, -3805 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x8000
     },
 };
 
