@@ -30,42 +30,10 @@ s16 escape_rm_room_5_header00_objectList[LENGTH_ESCAPE_RM_ROOM_5_HEADER00_OBJECT
 };
 
 ActorEntry escape_rm_room_5_header00_actorList[LENGTH_ESCAPE_RM_ROOM_5_HEADER00_ACTORLIST] = {
-    // Treasure Chest
-    {
-        /* Actor ID   */ ACTOR_EN_BOX,
-        /* Position   */ { 940, 307, -741 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(180.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0643
-    },
-
-    // Treasure Chest
-    {
-        /* Actor ID   */ ACTOR_EN_BOX,
-        /* Position   */ { 915, 1090, -1855 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x01A7
-    },
-
     // Custom Actor
     {
         /* Actor ID   */ ACTOR_PLATFORMS,
-        /* Position   */ { 594, 1022, -3738 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x8000
-    },
-
-    // Custom Actor
-    {
-        /* Actor ID   */ ACTOR_PLATFORMS,
-        /* Position   */ { 386, 999, -3534 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x8000
-    },
-
-    // Custom Actor
-    {
-        /* Actor ID   */ ACTOR_PLATFORMS,
-        /* Position   */ { -39, 935, -3822 },
+        /* Position   */ { 261, 987, -3805 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
         /* Parameters */ 0x8000
     },
@@ -78,12 +46,36 @@ ActorEntry escape_rm_room_5_header00_actorList[LENGTH_ESCAPE_RM_ROOM_5_HEADER00_
         /* Parameters */ 0x0000
     },
 
+    // Treasure Chest
+    {
+        /* Actor ID   */ ACTOR_EN_BOX,
+        /* Position   */ { 940, 307, -741 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(180.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0643
+    },
+
+    // Custom Actor
+    {
+        /* Actor ID   */ ACTOR_JUMPTOGGLE_PLATFORM,
+        /* Position   */ { -544, 304, -4288 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(180.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0000
+    },
+
     // Custom Actor
     {
         /* Actor ID   */ ACTOR_PLATFORMS,
-        /* Position   */ { 261, 987, -3805 },
+        /* Position   */ { -39, 935, -3822 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
         /* Parameters */ 0x8000
+    },
+
+    // Treasure Chest
+    {
+        /* Actor ID   */ ACTOR_EN_BOX,
+        /* Position   */ { 915, 1090, -1855 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x01A7
     },
 
     // Custom Actor
@@ -97,6 +89,14 @@ ActorEntry escape_rm_room_5_header00_actorList[LENGTH_ESCAPE_RM_ROOM_5_HEADER00_
     // Custom Actor
     {
         /* Actor ID   */ ACTOR_PLATFORMS,
+        /* Position   */ { 386, 999, -3534 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x8000
+    },
+
+    // Custom Actor
+    {
+        /* Actor ID   */ ACTOR_PLATFORMS,
         /* Position   */ { 104, 960, -3571 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
         /* Parameters */ 0x8000
@@ -104,10 +104,10 @@ ActorEntry escape_rm_room_5_header00_actorList[LENGTH_ESCAPE_RM_ROOM_5_HEADER00_
 
     // Custom Actor
     {
-        /* Actor ID   */ ACTOR_JUMPTOGGLE_PLATFORM,
-        /* Position   */ { -544, 304, -4288 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(180.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0000
+        /* Actor ID   */ ACTOR_PLATFORMS,
+        /* Position   */ { 594, 1022, -3738 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x8000
     },
 };
 
@@ -918,21 +918,21 @@ Gfx escape_rm_dl_floor_004_mesh_layer_Opaque_tri_1[] = {
 };
 
 Vtx escape_rm_dl_Plane_001_mesh_layer_Opaque_vtx_cull[8] = {
-	{{ {573, 370, -745}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {573, 428, -745}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {573, 428, -745}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {573, 370, -745}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {601, 370, -745}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {601, 428, -745}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {601, 428, -745}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {601, 370, -745}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {583, 440, -744}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {583, 481, -744}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {583, 481, -744}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {583, 440, -744}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {608, 440, -744}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {608, 481, -744}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {608, 481, -744}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {608, 440, -744}, 0, {0, 0}, {0, 0, 0, 0} }},
 };
 
 Vtx escape_rm_dl_Plane_001_mesh_layer_Opaque_vtx_0[4] = {
-	{{ {601, 370, -745}, 0, {16, 1548}, {0, 0, 129, 255} }},
-	{{ {573, 370, -745}, 0, {854, 1548}, {0, 0, 129, 255} }},
-	{{ {573, 428, -745}, 0, {854, 76}, {0, 0, 129, 255} }},
-	{{ {601, 428, -745}, 0, {16, 76}, {0, 0, 129, 255} }},
+	{{ {608, 440, -744}, 0, {16, 1548}, {0, 0, 129, 255} }},
+	{{ {583, 440, -744}, 0, {854, 1548}, {0, 0, 129, 255} }},
+	{{ {583, 481, -744}, 0, {854, 76}, {0, 0, 129, 255} }},
+	{{ {608, 481, -744}, 0, {16, 76}, {0, 0, 129, 255} }},
 };
 
 Gfx escape_rm_dl_Plane_001_mesh_layer_Opaque_tri_0[] = {

@@ -7681,8 +7681,27 @@ COLOR(RED) "             ...alone?" COLOR(DEFAULT)
 
 // Message ID 63
 DEFINE_MESSAGE(0x023F, TEXTBOX_TYPE_BLUE, TEXTBOX_POS_VARIABLE,
-"Never gonna give you up\n"
-"Never gonna let you down\n"
+"I'm losing my mind!!!"
+BOX_BREAK
+"Am I the master of this house?\n"
+"...Or is the house my master?"
+BOX_BREAK
+"When I put on this robe..."
+BOX_BREAK
+"...and this mask, I feel..."
+BOX_BREAK
+COLOR(RED) "FIRE!! " COLOR(BLUE) "ICE!! " COLOR(DEFAULT) "Monsters!!"
+BOX_BREAK
+"Key...\n"
+"...escape..."
+BOX_BREAK
+"...chandelier..."
+BOX_BREAK
+"...blue mark...\n"
+"...don't shoot..."
+BOX_BREAK
+"The rest is crossed out lines\n"
+"and gibberish."
 ,
 "german"
 ,
@@ -7736,11 +7755,11 @@ BOX_BREAK
 "message which reads:"
 BOX_BREAK
 UNSKIPPABLE SHIFT("\x18") "'Pierce the heart which hides\n"
-SHIFT("\x18") COLOR(BLUE) "within " COLOR(DEFAULT)"the lonely painting.'"
+SHIFT("\x18") COLOR(BLUE) "within " COLOR(DEFAULT)"the lonely woman.'"
 BOX_BREAK
 "..."
 BOX_BREAK
-"'Within' the lonely painting?\n"
+"'Within' the lonely woman?\n"
 "What does that mean??"
 ,
 "german"

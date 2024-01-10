@@ -11,7 +11,7 @@
  * Header Child Day (Default)
 */
 #define LENGTH_ESCAPE_RM_ROOM_7_HEADER00_OBJECTLIST 1
-#define LENGTH_ESCAPE_RM_ROOM_7_HEADER00_ACTORLIST 1
+#define LENGTH_ESCAPE_RM_ROOM_7_HEADER00_ACTORLIST 2
 SceneCmd escape_rm_room_7_header00[] = {
     SCENE_CMD_ECHO_SETTINGS(0x00),
     SCENE_CMD_ROOM_BEHAVIOR(0x00, 0x00, false, false),
@@ -28,12 +28,20 @@ s16 escape_rm_room_7_header00_objectList[LENGTH_ESCAPE_RM_ROOM_7_HEADER00_OBJECT
 };
 
 ActorEntry escape_rm_room_7_header00_actorList[LENGTH_ESCAPE_RM_ROOM_7_HEADER00_ACTORLIST] = {
+    // Breakable Pot
+    {
+        /* Actor ID   */ ACTOR_OBJ_TSUBO,
+        /* Position   */ { 1947, 393, 970 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0003
+    },
+
     // Treasure Chest
     {
         /* Actor ID   */ ACTOR_EN_BOX,
-        /* Position   */ { 1917, 393, 425 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x07CB
+        /* Position   */ { 1898, 393, 420 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(279.020), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x07AC
     },
 };
 
