@@ -7724,7 +7724,24 @@ SHIFT("\x18") "blind are his secrets revealed.'"
 
 // Message ID 66
 DEFINE_MESSAGE(0x0242, TEXTBOX_TYPE_BLUE, TEXTBOX_POS_VARIABLE,
-"Message ID 66"
+"In order to escape, you\n"
+"will require the assistance\n"
+"of a blue heron's feather."
+BOX_BREAK
+"This should be able to help you:"
+BOX_BREAK
+"..."
+BOX_BREAK
+"Attached to the notes is a\n"
+"message which reads:"
+BOX_BREAK
+UNSKIPPABLE SHIFT("\x18") "'Pierce the heart which hides\n"
+SHIFT("\x18") COLOR(BLUE) "within " COLOR(DEFAULT)"the lonely painting.'"
+BOX_BREAK
+"..."
+BOX_BREAK
+"'Within' the lonely painting?\n"
+"What does that mean??"
 ,
 "german"
 ,

@@ -30,14 +30,6 @@ s16 escape_rm_room_5_header00_objectList[LENGTH_ESCAPE_RM_ROOM_5_HEADER00_OBJECT
 };
 
 ActorEntry escape_rm_room_5_header00_actorList[LENGTH_ESCAPE_RM_ROOM_5_HEADER00_ACTORLIST] = {
-    // Custom Actor
-    {
-        /* Actor ID   */ ACTOR_JUMPTOGGLE_PLATFORM,
-        /* Position   */ { -570, 304, -3790 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0000
-    },
-
     // Treasure Chest
     {
         /* Actor ID   */ ACTOR_EN_BOX,
@@ -57,25 +49,9 @@ ActorEntry escape_rm_room_5_header00_actorList[LENGTH_ESCAPE_RM_ROOM_5_HEADER00_
     // Custom Actor
     {
         /* Actor ID   */ ACTOR_PLATFORMS,
-        /* Position   */ { 104, 960, -3571 },
+        /* Position   */ { 594, 1022, -3738 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
         /* Parameters */ 0x8000
-    },
-
-    // Custom Actor
-    {
-        /* Actor ID   */ ACTOR_JUMPTOGGLE_PLATFORM,
-        /* Position   */ { -544, 304, -4288 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(180.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0000
-    },
-
-    // Custom Actor
-    {
-        /* Actor ID   */ ACTOR_JUMPTOGGLE_PLATFORM,
-        /* Position   */ { -313, 304, -4044 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0000
     },
 
     // Custom Actor
@@ -96,10 +72,10 @@ ActorEntry escape_rm_room_5_header00_actorList[LENGTH_ESCAPE_RM_ROOM_5_HEADER00_
 
     // Custom Actor
     {
-        /* Actor ID   */ ACTOR_PLATFORMS,
-        /* Position   */ { 594, 1022, -3738 },
+        /* Actor ID   */ ACTOR_JUMPTOGGLE_PLATFORM,
+        /* Position   */ { -570, 304, -3790 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x8000
+        /* Parameters */ 0x0000
     },
 
     // Custom Actor
@@ -108,6 +84,30 @@ ActorEntry escape_rm_room_5_header00_actorList[LENGTH_ESCAPE_RM_ROOM_5_HEADER00_
         /* Position   */ { 261, 987, -3805 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
         /* Parameters */ 0x8000
+    },
+
+    // Custom Actor
+    {
+        /* Actor ID   */ ACTOR_JUMPTOGGLE_PLATFORM,
+        /* Position   */ { -313, 304, -4044 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0000
+    },
+
+    // Custom Actor
+    {
+        /* Actor ID   */ ACTOR_PLATFORMS,
+        /* Position   */ { 104, 960, -3571 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x8000
+    },
+
+    // Custom Actor
+    {
+        /* Actor ID   */ ACTOR_JUMPTOGGLE_PLATFORM,
+        /* Position   */ { -544, 304, -4288 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(180.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0000
     },
 };
 
@@ -918,21 +918,21 @@ Gfx escape_rm_dl_floor_004_mesh_layer_Opaque_tri_1[] = {
 };
 
 Vtx escape_rm_dl_Plane_001_mesh_layer_Opaque_vtx_cull[8] = {
-	{{ {583, 440, -744}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {583, 481, -744}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {583, 481, -744}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {583, 440, -744}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {608, 440, -744}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {608, 481, -744}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {608, 481, -744}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {608, 440, -744}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {573, 370, -745}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {573, 428, -745}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {573, 428, -745}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {573, 370, -745}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {601, 370, -745}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {601, 428, -745}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {601, 428, -745}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {601, 370, -745}, 0, {0, 0}, {0, 0, 0, 0} }},
 };
 
 Vtx escape_rm_dl_Plane_001_mesh_layer_Opaque_vtx_0[4] = {
-	{{ {608, 440, -744}, 0, {16, 1548}, {0, 0, 129, 255} }},
-	{{ {583, 440, -744}, 0, {854, 1548}, {0, 0, 129, 255} }},
-	{{ {583, 481, -744}, 0, {854, 76}, {0, 0, 129, 255} }},
-	{{ {608, 481, -744}, 0, {16, 76}, {0, 0, 129, 255} }},
+	{{ {601, 370, -745}, 0, {16, 1548}, {0, 0, 129, 255} }},
+	{{ {573, 370, -745}, 0, {854, 1548}, {0, 0, 129, 255} }},
+	{{ {573, 428, -745}, 0, {854, 76}, {0, 0, 129, 255} }},
+	{{ {601, 428, -745}, 0, {16, 76}, {0, 0, 129, 255} }},
 };
 
 Gfx escape_rm_dl_Plane_001_mesh_layer_Opaque_tri_0[] = {
