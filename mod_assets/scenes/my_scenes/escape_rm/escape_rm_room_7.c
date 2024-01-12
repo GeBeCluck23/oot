@@ -28,20 +28,20 @@ s16 escape_rm_room_7_header00_objectList[LENGTH_ESCAPE_RM_ROOM_7_HEADER00_OBJECT
 };
 
 ActorEntry escape_rm_room_7_header00_actorList[LENGTH_ESCAPE_RM_ROOM_7_HEADER00_ACTORLIST] = {
+    // Treasure Chest
+    {
+        /* Actor ID   */ ACTOR_EN_BOX,
+        /* Position   */ { 1891, 393, 351 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(198.479), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x07AC
+    },
+
     // Breakable Pot
     {
         /* Actor ID   */ ACTOR_OBJ_TSUBO,
         /* Position   */ { 1947, 393, 970 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
         /* Parameters */ 0x0003
-    },
-
-    // Treasure Chest
-    {
-        /* Actor ID   */ ACTOR_EN_BOX,
-        /* Position   */ { 1898, 393, 420 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(279.020), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x07AC
     },
 };
 
@@ -1406,7 +1406,7 @@ Vtx escape_rm_dl_stairs_005_mesh_layer_Opaque_vtx_cull[8] = {
 };
 
 Vtx escape_rm_dl_stairs_005_mesh_layer_Opaque_vtx_0[288] = {
-	{{ {1634, -59, 378}, 0, {-16, 1008}, {253, 127, 0, 255} }},
+	{{ {1603, -59, 317}, 0, {-16, 1008}, {253, 127, 0, 255} }},
 	{{ {1797, -59, 575}, 0, {-16, 1008}, {253, 127, 0, 255} }},
 	{{ {2035, -50, 567}, 0, {-16, 1008}, {253, 127, 0, 255} }},
 	{{ {2230, -50, 315}, 0, {-16, 1008}, {253, 127, 0, 255} }},

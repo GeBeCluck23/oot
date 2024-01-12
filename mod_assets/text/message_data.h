@@ -7684,11 +7684,11 @@ DEFINE_MESSAGE(0x023F, TEXTBOX_TYPE_BLUE, TEXTBOX_POS_VARIABLE,
 "I'm losing my mind!!!"
 BOX_BREAK
 "Am I the master of this house?\n"
-"...Or is the house my master?"
+"...Or is this house the master of me?"
 BOX_BREAK
 "When I put on this robe..."
 BOX_BREAK
-"...and this mask, I feel..."
+"...and this bird mask, I feel..."
 BOX_BREAK
 COLOR(RED) "FIRE!! " COLOR(BLUE) "ICE!! " COLOR(DEFAULT) "Monsters!!"
 BOX_BREAK

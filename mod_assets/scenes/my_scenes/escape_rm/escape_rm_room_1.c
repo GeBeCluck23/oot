@@ -37,12 +37,12 @@ ActorEntry escape_rm_room_1_header00_actorList[LENGTH_ESCAPE_RM_ROOM_1_HEADER00_
         /* Parameters */ 0xBBC6
     },
 
-    // Dodongo's Cavern Objects
+    // Checkable Spot
     {
-        /* Actor ID   */ ACTOR_BG_BREAKWALL,
-        /* Position   */ { -1078, -40, 342 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(180.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x2007
+        /* Actor ID   */ ACTOR_EN_WONDER_TALK2,
+        /* Position   */ { -1242, 335, 33 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x8F8A
     },
 
     // Dungeon Switches
@@ -53,12 +53,12 @@ ActorEntry escape_rm_room_1_header00_actorList[LENGTH_ESCAPE_RM_ROOM_1_HEADER00_
         /* Parameters */ 0x0302
     },
 
-    // Checkable Spot
+    // Dodongo's Cavern Objects
     {
-        /* Actor ID   */ ACTOR_EN_WONDER_TALK2,
-        /* Position   */ { -1242, 335, 33 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x8F8A
+        /* Actor ID   */ ACTOR_BG_BREAKWALL,
+        /* Position   */ { -1078, -40, 342 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(180.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x2007
     },
 
     // Treasure Chest
