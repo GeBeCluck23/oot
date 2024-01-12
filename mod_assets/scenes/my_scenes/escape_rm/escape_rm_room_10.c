@@ -10,8 +10,8 @@
 /**
  * Header Child Day (Default)
 */
-#define LENGTH_ESCAPE_RM_ROOM_10_HEADER00_OBJECTLIST 2
-#define LENGTH_ESCAPE_RM_ROOM_10_HEADER00_ACTORLIST 5
+#define LENGTH_ESCAPE_RM_ROOM_10_HEADER00_OBJECTLIST 5
+#define LENGTH_ESCAPE_RM_ROOM_10_HEADER00_ACTORLIST 10
 SceneCmd escape_rm_room_10_header00[] = {
     SCENE_CMD_ECHO_SETTINGS(0x00),
     SCENE_CMD_ROOM_BEHAVIOR(0x00, 0x00, false, false),
@@ -26,47 +26,90 @@ SceneCmd escape_rm_room_10_header00[] = {
 s16 escape_rm_room_10_header00_objectList[LENGTH_ESCAPE_RM_ROOM_10_HEADER00_OBJECTLIST] = {
     OBJECT_BOX,
     OBJECT_METAL_CRATE,
+    OBJECT_BDOOR,
+    OBJECT_LADDER,
+    OBJECT_WALLMASTER,
 };
 
 ActorEntry escape_rm_room_10_header00_actorList[LENGTH_ESCAPE_RM_ROOM_10_HEADER00_ACTORLIST] = {
     // Custom Actor
     {
         /* Actor ID   */ ACTOR_METAL_CRATE,
-        /* Position   */ { 2214, -1, -341 },
+        /* Position   */ { 2164, -50, -349 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
         /* Parameters */ 0x0000
     },
 
-    // Custom Actor
+    // Wallmaster
     {
-        /* Actor ID   */ ACTOR_METAL_CRATE,
-        /* Position   */ { 2214, -50, -341 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0000
+        /* Actor ID   */ ACTOR_EN_WALLMAS,
+        /* Position   */ { 2289, -52, -785 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0E02
     },
 
-    // Custom Actor
+    // Dungeon Switches
     {
-        /* Actor ID   */ ACTOR_METAL_CRATE,
-        /* Position   */ { 2164, -50, -341 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0000
-    },
-
-    // Custom Actor
-    {
-        /* Actor ID   */ ACTOR_METAL_CRATE,
-        /* Position   */ { 2164, -1, -341 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0000
+        /* Actor ID   */ ACTOR_OBJ_SWITCH,
+        /* Position   */ { 1994, -50, -704 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0D03
     },
 
     // Treasure Chest
     {
         /* Actor ID   */ ACTOR_EN_BOX,
-        /* Position   */ { 2186, -50, -229 },
+        /* Position   */ { 2188, -50, -229 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(180.000), DEG_TO_BINANG(0.000) },
         /* Parameters */ 0x0085
+    },
+
+    // Dungeon Switches
+    {
+        /* Actor ID   */ ACTOR_OBJ_SWITCH,
+        /* Position   */ { 2388, -50, -704 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0E03
+    },
+
+    // Custom Actor
+    {
+        /* Actor ID   */ ACTOR_LADDER,
+        /* Position   */ { 2188, -50, -1054 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x200D
+    },
+
+    // Custom Actor
+    {
+        /* Actor ID   */ ACTOR_METAL_CRATE,
+        /* Position   */ { 2214, -50, -349 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0000
+    },
+
+    // Custom Actor
+    {
+        /* Actor ID   */ ACTOR_METAL_CRATE,
+        /* Position   */ { 2214, -1, -349 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0000
+    },
+
+    // Custom Actor
+    {
+        /* Actor ID   */ ACTOR_METAL_CRATE,
+        /* Position   */ { 2164, -1, -349 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0000
+    },
+
+    // Wallmaster
+    {
+        /* Actor ID   */ ACTOR_EN_WALLMAS,
+        /* Position   */ { 2338, -50, -816 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0E02
     },
 };
 
@@ -83,6 +126,9 @@ RoomShapeDListsEntry escape_rm_room_10_shapeDListEntry[1] = {
 
 Gfx escape_rm_room_10_entry_0_opaque[] = {
 	gsSPDisplayList(escape_rm_dl_floor_007_mesh_layer_Opaque),
+	gsSPDisplayList(escape_rm_dl_floor_009_mesh_layer_Opaque),
+	gsSPDisplayList(escape_rm_dl_Plane_004_mesh_layer_Opaque),
+	gsSPDisplayList(escape_rm_dl_Plane_006_mesh_layer_Opaque),
 	gsSPEndDisplayList(),
 };
 
@@ -154,38 +200,118 @@ u64 escape_rm_dl_ganon_demo_sceneTex_004B70_i8_i8[] = {
 	
 };
 
-Vtx escape_rm_dl_floor_007_mesh_layer_Opaque_vtx_cull[8] = {
-	{{ {1726, -50, 340}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {1726, 440, 340}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {1726, 440, -322}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {1726, -50, -322}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {2533, -50, 340}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {2533, 440, 340}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {2533, 440, -322}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {2533, -50, -322}, 0, {0, 0}, {0, 0, 0, 0} }},
+u64 escape_rm_dl_hairal_niwa2_room_0Tex_0163F8_ia4_ia8[] = {
+	0x0000000000000000, 0x0000000000402000, 0x0000000000006000, 0x006f6060406fbf90, 0x402040604f2f6060, 0x6000002040200000, 0x0000000000000000, 0x0000000000000000, 
+	0x0000000000000000, 0x0000000000000000, 0x0000000000004040, 0x004f9f6f6f6f9f6f, 0x6f9f9f6f4f2f0f0f, 0x4f00000000200000, 0x0020000000000000, 0x0000000000000000, 
+	0x0000000000000000, 0x0000000000000000, 0x0000000000004060, 0x00204f2f2f4f9fbf, 0x9f9f4f6f4f6f6f4f, 0x4f4f000020000000, 0x0040000000000000, 0x0000000000000000, 
+	0x0000000000000000, 0x0000000000000000, 0x0000000000002040, 0x2000204f2f9fdfff, 0xffbf9f6f6f9f9f9f, 0x0020202040000000, 0x4040200000000000, 0x0000000000000000, 
+	0x0000000000000000, 0x0000000000000000, 0x0000000000000020, 0x00209f6f6fdfffdf, 0xffffdfdfbf9f9f4f, 0x4f20002000000000, 0x0000000000000020, 0x0000000000000000, 
+	0x0000000000000000, 0x0000000000000000, 0x0000000000000000, 0x4f6f4f6f9fdfffff, 0xffffffdf9f6f6f6f, 0x4f6f202000000000, 0x0000000000000020, 0x0000000000000000, 
+	0x0000000000000000, 0x0000000000000000, 0x0000000000000020, 0x4f2f4f6f4f9fdfff, 0xffffdfbf6f2f4f6f, 0x4f6f4f0020000000, 0x0000000000000020, 0x0000000000000000, 
+	0x0000000000000000, 0x0000000000000000, 0x000000000000004f, 0x6f6f9f6f2fbfffff, 0xffbfbf9f4f0f4f6f, 0x4f4f6f2040200000, 0x0000000000000000, 0x0000000000000000, 
+	0x0000000000000000, 0x0000000000000000, 0x000000000000604f, 0x4f4f6f4f0f2f6f9f, 0x9f9fbfdf9f0f0f9f, 0x6f6f4f2000000000, 0x0000000000000000, 0x0000000000000000, 
+	0x0000000000000000, 0x0000000000000000, 0x0000000000004000, 0x409f6f6f4f4fbf9f, 0xdfffffdf6f0f0f4f, 0x9f6f9f4f00000000, 0x0000000000000000, 0x0000000000000000, 
+	0x0000000000000000, 0x0000000000000000, 0x0000206f9f4f4f2f, 0x6fbf9f9f6f9fffff, 0xffffffbf9f4f9f9f, 0x6f6f6f6f4f000000, 0x0000000000000000, 0x0000000000000000, 
+	0x0000000000000000, 0x0000000000000020, 0x4f6f9fdf9f6f6f4f, 0x6f6f9f9f9f9f2fdf, 0xffffffdfbf9f9f6f, 0x6f6f6f6f9f9f4f4f, 0x2f00000000000000, 0x0000000000000000, 
+	0x0000000000000000, 0x0000000000006f6f, 0x6f9fbfbf6f9f4f6f, 0x6f6f9f9f9fbf6f2f, 0x9fbfbfbfbf9f6f6f, 0x9fbf6f9fbfbf9f9f, 0x9f6f2f0f00000000, 0x0000000000000000, 
+	0x0000000000000000, 0x0000002040609f9f, 0xbf9fdf9fbf9f6f6f, 0x6f6f9f9f9f9f9f9f, 0x4fbfbfbf9f9f6f6f, 0x4f4f6fbf9f9f9f6f, 0x6f6f2f0f0f000000, 0x0000000000000000, 
+	0x0000000000000000, 0x2040606090bfbfbf, 0xdfbfbfbfbf6f6f6f, 0x6f9fbfbfbfbfbfbf, 0x9fbf9fbf9f9f9f6f, 0x6f2f0f4f9fbf9f9f, 0x6f6f4f4f2f000000, 0x0000000000000000, 
+	0x0000000000000040, 0x4060606090bfdfdf, 0xdfbfbfbf4f9f6f6f, 0x6f9fbfdfdfdfbfbf, 0x9fdfdfdfbfbfbf9f, 0x6f2f2f2f9fffdfbf, 0x9f6f4f4f2f2f0000, 0x0000000000000000, 
+	0x0000000000409090, 0x9090b0b0b0bfbfdf, 0xdfbfdfbf4f6f6fbf, 0x9f9fbfffffffdfdf, 0xdfffffffdfbf9f9f, 0x9f2f0f0f6fdfdfbf, 0xbf9f9f4f4f2f0000, 0x0000000000000000, 
+	0x0000000090b0b090, 0xb0b0d0b0d0d06fdf, 0xdfdfff4f2f6f6f9f, 0x9fbf9fbfdfdfbfdf, 0xdfdfbfbfbfbfbf9f, 0x4f0f0f0f9fbfbf6f, 0xbf9f9f4f4f4f0000, 0x0000000000000000, 
+	0x000000b0b0b0d0d0, 0xd0d0d0b0b0f0bf9f, 0xdfdf6f0f2f9f9f9f, 0xbf9fbfdfffffffff, 0xdfdfffdfbfbf9f4f, 0x4f4f0f0f9f9f9f9f, 0xbf6f4f4f2f000000, 0x0000000000000000, 
+	0x000040d0b0b0d0f0, 0xf0f0d0b0b0d0d09f, 0x4fdf0f0f0f9f9f9f, 0xdfbf6f9fffffffff, 0xffdfdfdfdfbfbf4f, 0x4f4f0f006f6f6f6f, 0x9f6f2f0f00000000, 0x0000000000000000, 
+	0x000060f0d0b0d0f0, 0xf0f0f090b0d0d09f, 0xdfffbf2f0f6f9fbf, 0xffdf9fdfffffffff, 0xffffffdfbfbfdf9f, 0x4f4f0f00000020bf, 0xdfdfbf6f00004000, 0x0000000000000000, 
+	0x000090f0d0b0d0f0, 0xf0d0d090b0d0f09f, 0xdfdf9f6f002f6fbf, 0xffdfbfdfffffffff, 0xffffffdfbf9fdfbf, 0x4f0f0f2060000020, 0xbfdfbf9f4f002000, 0x0000000000000000, 
+	0x0000d0f0f0b0d0f0, 0xd0d0d09060d0f09f, 0x9fbf9f6000206fbf, 0xdfdfbfdfffffffff, 0xffffffbf9f6f9f9f, 0x6f2f0f4090402000, 0x4f6f6f9f9f2f0000, 0x0000000000000000, 
+	0x0000f0f0f0b0f0f0, 0xd0b0600000b0d0bf, 0x9fdfd09000406fbf, 0xdfdfbfbfbfffffff, 0xffffbf9f6f6fbfbf, 0x9f4f0f0f60402060, 0x2f4f9f9f9f6f0000, 0x0000000000000000, 
+	0x0000f0f0f0b0d0d0, 0xd0d090000090d0df, 0x9f9fd0b000406f9f, 0xdfdfbf9fbfffffff, 0xffffffdfbf9fdfbf, 0xbf9f4f0f0f402060, 0x204f9f9f9f6f2f00, 0x0000000000000000, 
+	0x0040f0f0d0400090, 0xd0d0d020009fdfbf, 0x2f2fb0900020609f, 0xbfffdf9fbfffffff, 0xffffffdfdfdfbfbf, 0xdfbf6f4f2f0f0040, 0x202f6f9f6f6f2f00, 0x0000000000000000, 
+	0x0040604f4f9f6f6f, 0xd0b0902000bfdfdf, 0xbf6f90904000209f, 0xbfffdfbfdfdfffff, 0xffffffffffdfbfbf, 0xbfbfbf9f6f4f0040, 0x40004f6f6f4f0f00, 0x0000000000000000, 
+	0x0060904fffffdf9f, 0x60606060606fbf9f, 0x9fbf606020006060, 0xbfdfdfdfdfffffff, 0xffffffffffdfdfbf, 0xbfbfbf9f4f2f0f00, 0x40004fbf9f6f2f00, 0x0000000000000000, 
+	0x00004fbfdfffdf6f, 0x204090909f9f9f9f, 0x6f6f609000606f9f, 0x9f9fbfdfdfdfffdf, 0xdfffffdfffdfdfbf, 0xbf9fbf6f4f2f0f00, 0x204060dfdfbf6f40, 0x0000000000000000, 
+	0x00002fdfdfffdf4f, 0x4f4f90909fbfbf6f, 0xdf0f60f0206f4f9f, 0x9f9fbfbfbfbfdfff, 0xdfdfffffdfdfdfbf, 0x9f9fbf9fbf6f0f00, 0x40409fdfdfbf6f20, 0x0000000000000000, 
+	0x000000009fbf4f6f, 0x6f9fbfb09fbfdf6f, 0x9f4f60f09f4f4f6f, 0x9f9f9f9f9f9fbfff, 0xdfbfffffdfdfbfbf, 0xdfdfdfbfdf6f2f00, 0x20609fdfffbf9f20, 0x0000000000000000, 
+	0x00000000004f4f6f, 0x9f9fbf9f9f9f9f9f, 0x6f4f4fbf9f6f6f6f, 0x6f6f6f6f9f9f9fbf, 0xdfdfbfbfbfbfdfdf, 0xdfdfdfbfbf9f2f2f, 0x20609fbfbfbf6f00, 0x0000000000000000, 
+	0x00000000004f9fbf, 0xbfbfbfbfbf9f9f9f, 0x9f6f6f2f6f6f6f6f, 0x6f6f9f6f6f6f4f9f, 0xbfbfbfbfdfdfffff, 0xdfdfdfbf9f9f2f2f, 0x20409f9f4fbf6f20, 0x0000000000000000, 
+	0x00000000006fbf9f, 0xbfbfbfdfdfbfbf9f, 0x6f4f4f6f6f9f9f9f, 0x9f9f9f9f6f6f4f9f, 0xbfdfbfbfbfdfffff, 0xdfdfff9fbf9f2f6f, 0x20402f9f9f9f4f40, 0x0000000000000000, 
+	0x00000000009f9fbf, 0xdfbfdfffdfbf6f6f, 0x6f2f2f4f6f9f9fbf, 0x9f9f9f6f6f9f4f9f, 0xdfdfbfbfbfdfffff, 0xdfbfff9f9f9f2f9f, 0x40404f6fbf9f0f60, 0x0000000000000000, 
+	0x000000000020bfbf, 0x9fbf6f4f4f4f4f2f, 0x6f6f4f4f9f9fbfbf, 0xbf9f6f9f6fbf2f4f, 0xdfbfdfdfbfdfffdf, 0xbfbfff9f6f9f2f9f, 0x00004fffff6f0f40, 0x0000000000000000, 
+	0x0000000000200000, 0x002f2f6fbfdfdf6f, 0x6f0f0f6f9fbfbf9f, 0x9f9f6f6f6fbf4f2f, 0xbfbfbfbfbfffffbf, 0xbfbfff9f6fbf2f6f, 0x00409fffff6f6f40, 0x0000000000000000, 
+	0x0000000000604040, 0x006fffffffffdf9f, 0x4f2f4f6f9fbf9f9f, 0xbfbf9f6f6fbf4f4f, 0xbfdfbfbfbfdfdfbf, 0xdf9fdfbf6f9f6f6f, 0x4090bfffff6f9f20, 0x0000000000000000, 
+	0x0000000000600040, 0x002fbfdfdfbfdf6f, 0x2f909f6f9fbf9f9f, 0x9f9f9f6f9fbf6f4f, 0x6f9fbfbfdfffdf9f, 0xbf6fbfdf4f6f9f2f, 0x6060bfffdf4f9020, 0x0000000000000000, 
+	0x0000000000406000, 0x204fbfbfbfbf6f00, 0x00406f9f9fbf9f9f, 0x9f9f9f6f9fbf4f2f, 0x6f6fbfbfdfffbfbf, 0x9f6fbf9f2f6f6040, 0x6090bfffdf206000, 0x0000000000000000, 
+	0x0000000000009020, 0x60dfdfdfbfbf4f00, 0x00006fbf9f9f9f9f, 0x9f6f6f9f9fbf202f, 0x6f9fbfbfbfff9fdf, 0xdf6f9f4f4f4f2040, 0x2040dfffdf204000, 0x0000000000000000, 
+	0x00000000000060bf, 0xbfdfdfdfbfbf9fbf, 0xbf60204f6f9fbfdf, 0xbf9f6f4f2f000000, 0x002f6f9f9fdf9f9f, 0x9f00000000000020, 0x6060dfffbf200000, 0x0000000000000000, 
+	0x00000000009f6f9f, 0xbfdfffdf9fbfdfdf, 0xdfbf40206fbfffff, 0xffbf6f2000000000, 0x000f9fbfffffffbf, 0x4f002040400020b0, 0xd0d0ffff9f000000, 0x0000000000000000, 
+	0x000000004f6f6f9f, 0xbfffdfbfbfbfdfff, 0xffffdf6f9fdfdfff, 0xdfbf9f0000202040, 0x604fbfdfdfffff9f, 0x0020909060404090, 0xd0d0ffff60000000, 0x0000000000000000, 
+	0x000000009f9fbfbf, 0xdfffdfffffffffff, 0xffffff9fbfffffff, 0xdfbf6f004090b0b0, 0x906fbfffdfffdf4f, 0x0040b09000204090, 0xb090ffff20000000, 0x0000000000000000, 
+	0x0000006f9fbfbfbf, 0xdfdfdfffffffffff, 0xffffffbf9fffffff, 0xdfbf4f2090d0d0b0, 0x904f9fdfdfdfbf4f, 0x0040600000206060, 0x6060ffdf000f2f6f, 0x4020200020000000, 
+	0x0000009f9fbfbfdf, 0xbfdfdfdfffffffff, 0xdfffffdfbfffffff, 0xdfbf0040b0d09090, 0xb04f6fbfdfffbf9f, 0x000000206f6f6060, 0x6060dfbf002f6f6f, 0x6f40202020404020, 
+	0x0000209f9fbfbfbf, 0xdfffffffffffffff, 0xffffffdfbfffffff, 0xffbf204090909090, 0x6f6f9fbfffffdf9f, 0x0000209f9f6f4f4f, 0x6f6f9f9f6f6f6f6f, 0x9f6f404020204060, 
+	0x00004f9f9fbfbfdf, 0xdfffffffdfdfffdf, 0xdfdfffbfdfffffdf, 0xffdf400060b09090, 0x4f9fdfdfffffff9f, 0x00409f9fbfbf9f6f, 0x4f9f9f9f9f9f6f6f, 0x6f9f9f9f60204060, 
+	0x00009fbf9fdfdfbf, 0xdfffffffffffffdf, 0xdfdfff9fdfffffff, 0xffdf9f2060909090, 0x6fdfdfffffffff6f, 0x0090dfbfbfbf9f9f, 0x6f6fbfbfbfbf6f6f, 0x6f6f6f6f400020b0, 
+	0x00009fbfbfdfdfdf, 0xffffdfffffffffdf, 0xdfdfffbfdfffffff, 0xffff9f2040906040, 0x4fdfffffffffff4f, 0x00b0dfbfbfbfbfbf, 0x9f6f9fbfdfbf9f6f, 0x6f6f6f6f40000000, 
+	0x000090dfbfbfffff, 0xffdfdfffffffdfdf, 0xdfdfffbf9fbfdfdf, 0xffffbf0000202000, 0x2fdfffdfdfbf9f2f, 0x20909fbfbfbfbfdf, 0xbf9f6fbfffbfbf9f, 0x6f6f9f9f40000000, 
+	0x000060dfbfbfdfff, 0xffdfdfffffffdfdf, 0xdfffbf6f9f9f9f9f, 0x9fbf9f0000000000, 0x2fbfdfbfbfbf6060, 0x0020bfdfbfdfbfbf, 0x9f9f6f9fdfbfdfbf, 0x9f6f9f6f6f000000, 
+	0x000040bfbfbfdfdf, 0xdfffffffffffdfdf, 0xdfff9f6fdfffbf9f, 0x6f6f9f2f0020000f, 0x6fbfbfbfdfdf6040, 0x4020dfdfdfffdfdf, 0xbf9f6f6fbfdfdfdf, 0xbf9f9f9f2f000000, 
+	0x000000bfbfbfdfdf, 0xdfffffffffdfdfff, 0xdfff9f6fbfdfdfbf, 0xbf6f4f0f00004f2f, 0x4f9fbfffdfbf2020, 0x2090ffdfdfdfffff, 0xdfbf9f6fbfffffdf, 0xdf6f6f9f00000000, 
+	0x0000009fbfbfbfdf, 0xffdfdfffffffffff, 0xffffffbf9fbfdfff, 0xffbfbf4f0000002f, 0x4f9fffffdfbf2020, 0x609fdfbfdfffffdf, 0xffdfbf6fbfffffdf, 0xbf2f6f6f00000000, 
+	0x00000020bfbfdfbf, 0xdfdfdfffffdfffff, 0xffffffffbfdfffff, 0xffbf20000000000f, 0x0f9fffffffbf0020, 0x00209fbfffffffdf, 0xffdfbf9fdfffffdf, 0xbf4f6f6f6f000000, 
+	0x000000006fbfbfbf, 0xdfffffffffffffff, 0xffffffffdfdfffff, 0xdf9f00000020000f, 0x2f6fffffff4f4060, 0x00006fbfdfdfbfbf, 0xbf9f6fbfdfdfdfbf, 0xbf9f6f6f2f000000, 
+	0x00000000009fbfdf, 0xdfdfffffffffffff, 0xffffffffbfbfffff, 0xbf20406060402000, 0x0f6fdfdf9f0f2000, 0x00409fbfbfbfbfdf, 0xdf2f6fffdfdfbfbf, 0xbfbfbf6f2f000000, 
+	0x0000000000209fdf, 0xdfffffffffffffff, 0xffffdfdf9f9fdfdf, 0xbf20204040400000, 0x0f9f9f6f4f2f4f20, 0x206f9fbfdfdfbfdf, 0xdf6f6fdfdfbf9fbf, 0x6f9f9f6f6f0f0000, 
+	0x000000000000209f, 0xbfbfdfffffffffdf, 0xbf9f9f9f6f6f9fbf, 0xbf20002000200000, 0x0f6f6f6f6f4f4f00, 0x006fdfdfdfdfbfbf, 0xbf9f4fbfbf9fbfbf, 0xbf9f6f4f4f0f0000, 
+	0x0000000000000000, 0x9f9fbfbfbfdf9f9f, 0x9f6f4f9f9f9f6f4f, 0x4f2f204020204000, 0x4f9f6f6f6f6f4f20, 0x002f6f9f9f6f9fbf, 0x6f4f4f4f4f6f9f6f, 0x4f6f4f2f2f0f0000, 
+	0x0000000000000000, 0x40606060606040bf, 0x9f9f9f9f4f4f2f2f, 0x9f6f000000000000, 0x0f4f4f2f4f6f9f6f, 0x604f0f2f2f4f6f2f, 0x0f4f6f4f0f2f6f6f, 0x4040606060404000, 
+	0x0000000000002040, 0x40606060604060bf, 0xbf9f9f4f0f2f2f4f, 0x6f6f204040406060, 0x6f6f6f6f9f9fbf9f, 0xbf9f6f9f9fbfdfdf, 0xbfdfbfb0b0b0d0f0, 0xf0d0d0f0f0f0d0b0, 
+	
 };
 
-Vtx escape_rm_dl_floor_007_mesh_layer_Opaque_vtx_0[76] = {
+Vtx escape_rm_dl_floor_007_mesh_layer_Opaque_vtx_cull[8] = {
+	{{ {1726, -50, 340}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {1726, 563, 340}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {1726, 563, -2356}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {1726, -50, -2356}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {2533, -50, 340}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {2533, 563, 340}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {2533, 563, -2356}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {2533, -50, -2356}, 0, {0, 0}, {0, 0, 0, 0} }},
+};
+
+Vtx escape_rm_dl_floor_007_mesh_layer_Opaque_vtx_0[204] = {
 	{{ {1746, -50, 210}, 0, {-4158, 3673}, {0, 127, 0, 255} }},
 	{{ {1746, -50, 295}, 0, {-4158, 4667}, {0, 127, 0, 255} }},
 	{{ {2027, -50, 306}, 0, {-869, 4790}, {0, 127, 0, 255} }},
-	{{ {1746, -50, 150}, 0, {-4158, 2971}, {0, 127, 0, 255} }},
 	{{ {2533, -50, 295}, 0, {5049, 4667}, {0, 127, 0, 255} }},
 	{{ {2085, -50, 321}, 0, {-191, 4972}, {0, 127, 0, 255} }},
 	{{ {2022, -50, 325}, 0, {-930, 5016}, {0, 127, 0, 255} }},
 	{{ {2080, -50, 340}, 0, {-252, 5198}, {0, 127, 0, 255} }},
-	{{ {1746, -50, -322}, 0, {-4158, -2548}, {0, 127, 0, 255} }},
+	{{ {2148, -50, -322}, 0, {543, -2548}, {0, 127, 0, 255} }},
+	{{ {2228, -50, -322}, 0, {1479, -2548}, {0, 127, 0, 255} }},
 	{{ {2533, -50, -322}, 0, {5049, -2548}, {0, 127, 0, 255} }},
+	{{ {2228, -50, -687}, 0, {1479, -6819}, {0, 127, 0, 255} }},
+	{{ {2148, -50, -687}, 0, {543, -6819}, {0, 127, 0, 255} }},
+	{{ {2406, -50, -687}, 0, {3554, -6819}, {0, 127, 0, 255} }},
+	{{ {1971, -50, -687}, 0, {-1533, -6819}, {0, 127, 0, 255} }},
+	{{ {1746, -50, -322}, 0, {-4158, -2548}, {0, 127, 0, 255} }},
+	{{ {1746, -50, 150}, 0, {-4158, 2971}, {0, 127, 0, 255} }},
+	{{ {1726, -50, 150}, 0, {-4391, 2971}, {0, 127, 0, 255} }},
+	{{ {1726, -50, 210}, 0, {-4391, 3673}, {0, 127, 0, 255} }},
 	{{ {1923, 440, 282}, 0, {-2094, 4518}, {0, 129, 0, 255} }},
 	{{ {1746, 440, 295}, 0, {-4158, 4667}, {0, 129, 0, 255} }},
 	{{ {1746, 440, -322}, 0, {-4158, -2548}, {0, 129, 0, 255} }},
 	{{ {2099, 440, 269}, 0, {-30, 4369}, {0, 129, 0, 255} }},
 	{{ {2533, 440, 295}, 0, {5049, 4667}, {0, 129, 0, 255} }},
 	{{ {2533, 440, -322}, 0, {5049, -2548}, {0, 129, 0, 255} }},
+	{{ {2228, -50, -322}, 0, {1479, 4843}, {0, 0, 127, 255} }},
 	{{ {2533, -50, -322}, 0, {5049, 4843}, {0, 0, 127, 255} }},
 	{{ {2533, 440, -322}, 0, {5049, -887}, {0, 0, 127, 255} }},
-	{{ {1746, 440, -322}, 0, {-4158, -887}, {0, 0, 127, 255} }},
+	{{ {2228, 50, -322}, 0, {1479, 3673}, {0, 0, 127, 255} }},
+	{{ {2148, 50, -322}, 0, {543, 3673}, {0, 0, 127, 255} }},
 	{{ {1746, -50, -322}, 0, {-4158, 4843}, {0, 0, 127, 255} }},
+	{{ {1746, 440, -322}, 0, {-4158, -887}, {0, 0, 127, 255} }},
+	{{ {2148, -50, -322}, 0, {543, 4843}, {0, 0, 127, 255} }},
 	{{ {2085, 50, 321}, 0, {-191, 3673}, {2, 244, 130, 255} }},
 	{{ {2027, 50, 306}, 0, {-869, 3673}, {2, 244, 130, 255} }},
 	{{ {1923, 440, 282}, 0, {-2094, -887}, {2, 244, 130, 255} }},
@@ -198,9 +324,7 @@ Vtx escape_rm_dl_floor_007_mesh_layer_Opaque_vtx_0[76] = {
 	{{ {1746, -50, -322}, 0, {4672, 4843}, {127, 0, 0, 255} }},
 	{{ {1746, 440, -322}, 0, {4672, -887}, {127, 0, 0, 255} }},
 	{{ {1746, 50, 150}, 0, {-847, 3673}, {127, 0, 0, 255} }},
-	{{ {1746, 440, -322}, 0, {4672, -887}, {127, 0, 0, 255} }},
 	{{ {1746, 440, 295}, 0, {-2543, -887}, {127, 0, 0, 255} }},
-	{{ {1746, 50, 150}, 0, {-847, 3673}, {127, 0, 0, 255} }},
 	{{ {1746, 50, 210}, 0, {-1549, 3673}, {127, 0, 0, 255} }},
 	{{ {1746, -50, 210}, 0, {-1549, 4843}, {127, 0, 0, 255} }},
 	{{ {1746, -50, 295}, 0, {-2543, 4843}, {127, 0, 0, 255} }},
@@ -220,16 +344,14 @@ Vtx escape_rm_dl_floor_007_mesh_layer_Opaque_vtx_0[76] = {
 	{{ {1746, -50, 295}, 0, {-4158, 4843}, {1, 253, 129, 255} }},
 	{{ {1746, 440, 295}, 0, {-4158, -887}, {1, 253, 129, 255} }},
 	{{ {2027, 50, 306}, 0, {-869, 3673}, {1, 253, 129, 255} }},
+	{{ {1746, 440, 295}, 0, {-4158, -887}, {1, 253, 129, 255} }},
 	{{ {1923, 440, 282}, 0, {-2094, -887}, {1, 253, 129, 255} }},
+	{{ {2027, 50, 306}, 0, {-869, 3673}, {1, 253, 129, 255} }},
 	{{ {2533, 440, 295}, 0, {5049, -884}, {254, 249, 129, 255} }},
 	{{ {2533, -50, 295}, 0, {5050, 4840}, {254, 249, 129, 255} }},
 	{{ {2085, -50, 321}, 0, {-191, 4843}, {254, 249, 129, 255} }},
 	{{ {2099, 440, 269}, 0, {-30, -887}, {254, 249, 129, 255} }},
 	{{ {2085, 50, 321}, 0, {-191, 3673}, {254, 249, 129, 255} }},
-	{{ {1746, -50, 210}, 0, {-4158, 3673}, {0, 127, 0, 255} }},
-	{{ {1746, -50, 150}, 0, {-4158, 2971}, {0, 127, 0, 255} }},
-	{{ {1726, -50, 150}, 0, {-4391, 2971}, {0, 127, 0, 255} }},
-	{{ {1726, -50, 210}, 0, {-4391, 3673}, {0, 127, 0, 255} }},
 	{{ {1746, -50, 150}, 0, {-4158, 4843}, {0, 0, 127, 255} }},
 	{{ {1746, 50, 150}, 0, {-4158, 3673}, {0, 0, 127, 255} }},
 	{{ {1726, 50, 150}, 0, {-4391, 3673}, {0, 0, 127, 255} }},
@@ -242,34 +364,269 @@ Vtx escape_rm_dl_floor_007_mesh_layer_Opaque_vtx_0[76] = {
 	{{ {1746, 50, 210}, 0, {-4158, 3673}, {0, 129, 0, 255} }},
 	{{ {1726, 50, 210}, 0, {-4391, 3673}, {0, 129, 0, 255} }},
 	{{ {1726, 50, 150}, 0, {-4391, 2971}, {0, 129, 0, 255} }},
+	{{ {2228, 50, -322}, 0, {1479, 3673}, {0, 129, 0, 255} }},
+	{{ {2148, 50, -322}, 0, {543, 3673}, {0, 129, 0, 255} }},
+	{{ {2148, 50, -687}, 0, {543, 3673}, {0, 129, 0, 255} }},
+	{{ {2228, 50, -687}, 0, {1479, 3673}, {0, 129, 0, 255} }},
+	{{ {2228, 50, -687}, 0, {1479, 3673}, {0, 0, 129, 255} }},
+	{{ {2148, 50, -687}, 0, {543, 3673}, {0, 0, 129, 255} }},
+	{{ {1971, 563, -687}, 0, {-1533, 3673}, {0, 0, 129, 255} }},
+	{{ {2406, 563, -687}, 0, {3554, 3673}, {0, 0, 129, 255} }},
+	{{ {2148, 50, -322}, 0, {543, 3673}, {127, 0, 0, 255} }},
+	{{ {2148, -50, -322}, 0, {543, 4843}, {127, 0, 0, 255} }},
+	{{ {2148, -50, -687}, 0, {543, 4843}, {127, 0, 0, 255} }},
+	{{ {2148, 50, -687}, 0, {543, 3673}, {127, 0, 0, 255} }},
+	{{ {2228, -50, -322}, 0, {1479, 4843}, {129, 0, 0, 255} }},
+	{{ {2228, 50, -322}, 0, {1479, 3673}, {129, 0, 0, 255} }},
+	{{ {2228, 50, -687}, 0, {1479, 3673}, {129, 0, 0, 255} }},
+	{{ {2228, -50, -687}, 0, {1479, 4843}, {129, 0, 0, 255} }},
+	{{ {1971, 563, -687}, 0, {543, -2328}, {127, 0, 0, 255} }},
+	{{ {1971, -50, -687}, 0, {543, 4843}, {127, 0, 0, 255} }},
+	{{ {1971, -50, -1054}, 0, {543, 4843}, {127, 0, 0, 255} }},
+	{{ {1971, 563, -1054}, 0, {543, -2328}, {127, 0, 0, 255} }},
+	{{ {2148, 50, -687}, 0, {543, 3673}, {0, 0, 129, 255} }},
+	{{ {2148, -50, -687}, 0, {543, 4843}, {0, 0, 129, 255} }},
+	{{ {1971, -50, -687}, 0, {543, 4843}, {0, 0, 129, 255} }},
+	{{ {1971, 563, -687}, 0, {543, -2328}, {0, 0, 129, 255} }},
+	{{ {2228, -50, -687}, 0, {1479, 4843}, {0, 0, 129, 255} }},
+	{{ {2228, 50, -687}, 0, {1479, 3673}, {0, 0, 129, 255} }},
+	{{ {2406, 563, -687}, 0, {1479, -2328}, {0, 0, 129, 255} }},
+	{{ {2406, -50, -687}, 0, {1479, 4843}, {0, 0, 129, 255} }},
+	{{ {2355, 454, -1054}, 0, {2960, -1880}, {245, 130, 7, 255} }},
+	{{ {2288, 468, -1054}, 0, {2408, -1880}, {245, 130, 7, 255} }},
+	{{ {2250, 441, -1478}, 0, {1729, -1880}, {245, 130, 7, 255} }},
+	{{ {2336, 441, -1478}, 0, {2730, -1880}, {245, 130, 7, 255} }},
+	{{ {2406, -50, -687}, 0, {1479, 4843}, {129, 0, 0, 255} }},
+	{{ {2406, 563, -687}, 0, {1479, -2328}, {129, 0, 0, 255} }},
+	{{ {2406, 563, -1054}, 0, {1479, -2328}, {129, 0, 0, 255} }},
+	{{ {2406, -50, -1054}, 0, {1479, 4843}, {129, 0, 0, 255} }},
+	{{ {2406, 563, -687}, 0, {3554, 3673}, {0, 129, 0, 255} }},
+	{{ {1971, 563, -687}, 0, {-1533, 3673}, {0, 129, 0, 255} }},
+	{{ {1971, 563, -1054}, 0, {-1533, 3673}, {0, 129, 0, 255} }},
+	{{ {2406, 563, -1054}, 0, {3554, 3673}, {0, 129, 0, 255} }},
+	{{ {1971, -50, -687}, 0, {-1533, 4843}, {0, 127, 0, 255} }},
+	{{ {2406, -50, -687}, 0, {3554, 4843}, {0, 127, 0, 255} }},
+	{{ {2406, -50, -1054}, 0, {3554, 4843}, {0, 127, 0, 255} }},
+	{{ {1971, -50, -1054}, 0, {-1533, 4843}, {0, 127, 0, 255} }},
+	{{ {2355, 236, -1054}, 0, {2964, 1499}, {0, 0, 127, 255} }},
+	{{ {2021, 236, -1054}, 0, {-943, 1499}, {0, 0, 127, 255} }},
+	{{ {1971, -50, -1054}, 0, {-1533, 4843}, {0, 0, 127, 255} }},
+	{{ {2406, -50, -1054}, 0, {3554, 4843}, {0, 0, 127, 255} }},
+	{{ {2355, 454, -1054}, 0, {2964, -1055}, {0, 0, 127, 255} }},
+	{{ {2355, 236, -1054}, 0, {2964, 1499}, {0, 0, 127, 255} }},
+	{{ {2406, 563, -1054}, 0, {3554, -2328}, {0, 0, 127, 255} }},
+	{{ {1971, 563, -1054}, 0, {-1533, -2328}, {0, 0, 127, 255} }},
+	{{ {2021, 454, -1054}, 0, {-943, -1055}, {0, 0, 127, 255} }},
+	{{ {2085, 468, -1054}, 0, {-199, -1217}, {0, 0, 127, 255} }},
+	{{ {2288, 468, -1054}, 0, {2184, -1217}, {0, 0, 127, 255} }},
+	{{ {2355, 454, -1054}, 0, {2964, -1055}, {0, 0, 127, 255} }},
+	{{ {2021, 236, -1054}, 0, {-943, 1499}, {0, 0, 127, 255} }},
+	{{ {2021, 454, -1054}, 0, {-943, -1055}, {0, 0, 127, 255} }},
+	{{ {2041, 441, -1478}, 0, {-943, -906}, {127, 0, 0, 255} }},
+	{{ {2041, 249, -1478}, 0, {-943, 1350}, {127, 0, 0, 255} }},
+	{{ {2041, 249, -2104}, 0, {-943, 1350}, {127, 0, 0, 255} }},
+	{{ {2041, 441, -2104}, 0, {-943, -906}, {127, 0, 0, 255} }},
+	{{ {2021, 236, -1054}, 0, {-943, 674}, {0, 127, 4, 255} }},
+	{{ {2355, 236, -1054}, 0, {2964, 674}, {0, 127, 4, 255} }},
+	{{ {2336, 249, -1478}, 0, {2736, 674}, {0, 127, 4, 255} }},
+	{{ {2041, 249, -1478}, 0, {-715, 674}, {0, 127, 4, 255} }},
+	{{ {2021, 454, -1054}, 0, {-943, -1055}, {127, 0, 6, 255} }},
+	{{ {2021, 236, -1054}, 0, {-943, 1499}, {127, 0, 6, 255} }},
+	{{ {2041, 249, -1478}, 0, {-943, 1350}, {127, 0, 6, 255} }},
+	{{ {2041, 441, -1478}, 0, {-943, -906}, {127, 0, 6, 255} }},
+	{{ {2355, 236, -1054}, 0, {2964, 1499}, {129, 0, 6, 255} }},
+	{{ {2355, 454, -1054}, 0, {2964, -1055}, {129, 0, 6, 255} }},
+	{{ {2336, 441, -1478}, 0, {2964, -906}, {129, 0, 6, 255} }},
+	{{ {2336, 249, -1478}, 0, {2964, 1350}, {129, 0, 6, 255} }},
+	{{ {2248, 249, -2104}, 0, {1712, 1350}, {0, 0, 127, 255} }},
+	{{ {2336, 249, -2104}, 0, {2736, 1350}, {0, 0, 127, 255} }},
+	{{ {2336, 441, -2104}, 0, {2736, -906}, {0, 0, 127, 255} }},
+	{{ {2248, 389, -2104}, 0, {1712, -288}, {0, 0, 127, 255} }},
+	{{ {2041, 441, -2104}, 0, {-715, -906}, {0, 0, 127, 255} }},
+	{{ {2128, 389, -2104}, 0, {309, -288}, {0, 0, 127, 255} }},
+	{{ {2128, 249, -2104}, 0, {309, 1350}, {0, 0, 127, 255} }},
+	{{ {2041, 249, -2104}, 0, {-715, 1350}, {0, 0, 127, 255} }},
+	{{ {2336, 249, -1478}, 0, {2964, 1350}, {129, 0, 0, 255} }},
+	{{ {2336, 441, -1478}, 0, {2964, -906}, {129, 0, 0, 255} }},
+	{{ {2336, 441, -2104}, 0, {2964, -906}, {129, 0, 0, 255} }},
+	{{ {2336, 249, -2104}, 0, {2964, 1350}, {129, 0, 0, 255} }},
+	{{ {2336, 441, -2104}, 0, {2736, -1880}, {0, 129, 0, 255} }},
+	{{ {2336, 441, -1478}, 0, {2736, -1880}, {0, 129, 0, 255} }},
+	{{ {2250, 441, -1478}, 0, {1735, -1880}, {0, 129, 0, 255} }},
+	{{ {2147, 441, -1478}, 0, {526, -1880}, {0, 129, 0, 255} }},
+	{{ {2041, 441, -2104}, 0, {-715, -1880}, {0, 129, 0, 255} }},
+	{{ {2041, 441, -1478}, 0, {-715, -1880}, {0, 129, 0, 255} }},
+	{{ {2041, 249, -2104}, 0, {-715, 674}, {0, 127, 0, 255} }},
+	{{ {2041, 249, -1478}, 0, {-715, 674}, {0, 127, 0, 255} }},
+	{{ {2336, 249, -1478}, 0, {2736, 674}, {0, 127, 0, 255} }},
+	{{ {2128, 249, -2104}, 0, {309, 674}, {0, 127, 0, 255} }},
+	{{ {2248, 249, -2104}, 0, {1712, 674}, {0, 127, 0, 255} }},
+	{{ {2336, 249, -2104}, 0, {2736, 674}, {0, 127, 0, 255} }},
+	{{ {2248, 249, -2356}, 0, {1712, 674}, {0, 127, 0, 255} }},
+	{{ {2128, 249, -2356}, 0, {309, 674}, {0, 127, 0, 255} }},
+	{{ {2128, 389, -2104}, 0, {309, -288}, {127, 0, 0, 255} }},
+	{{ {2128, 249, -2104}, 0, {309, 1350}, {127, 0, 0, 255} }},
+	{{ {2128, 249, -2356}, 0, {309, 1350}, {127, 0, 0, 255} }},
+	{{ {2128, 389, -2356}, 0, {309, -288}, {127, 0, 0, 255} }},
+	{{ {2250, 441, -1478}, 0, {1735, -1880}, {0, 129, 8, 255} }},
+	{{ {2288, 468, -1054}, 0, {2184, -1880}, {0, 129, 8, 255} }},
+	{{ {2085, 468, -1054}, 0, {-199, -1880}, {0, 129, 8, 255} }},
+	{{ {2147, 441, -1478}, 0, {526, -1880}, {0, 129, 8, 255} }},
+	{{ {2147, 441, -1478}, 0, {531, -1880}, {10, 130, 7, 255} }},
+	{{ {2085, 468, -1054}, 0, {-403, -1880}, {10, 130, 7, 255} }},
+	{{ {2021, 454, -1054}, 0, {-939, -1880}, {10, 130, 7, 255} }},
+	{{ {2041, 441, -1478}, 0, {-709, -1880}, {10, 130, 7, 255} }},
+	{{ {2248, 389, -2104}, 0, {1712, -1113}, {0, 129, 0, 255} }},
+	{{ {2128, 389, -2104}, 0, {309, -1113}, {0, 129, 0, 255} }},
+	{{ {2128, 389, -2356}, 0, {309, -1113}, {0, 129, 0, 255} }},
+	{{ {2248, 389, -2356}, 0, {1712, -1113}, {0, 129, 0, 255} }},
+	{{ {2248, 249, -2104}, 0, {1712, 1350}, {129, 0, 0, 255} }},
+	{{ {2248, 389, -2104}, 0, {1712, -288}, {129, 0, 0, 255} }},
+	{{ {2248, 389, -2356}, 0, {1712, -288}, {129, 0, 0, 255} }},
+	{{ {2248, 249, -2356}, 0, {1712, 1350}, {129, 0, 0, 255} }},
 };
 
 Gfx escape_rm_dl_floor_007_mesh_layer_Opaque_tri_0[] = {
 	gsSPVertex(escape_rm_dl_floor_007_mesh_layer_Opaque_vtx_0 + 0, 32, 0),
-	gsSP2Triangles(0, 1, 2, 0, 3, 0, 2, 0),
-	gsSP2Triangles(2, 4, 3, 0, 2, 5, 4, 0),
-	gsSP2Triangles(5, 2, 6, 0, 5, 6, 7, 0),
-	gsSP2Triangles(4, 8, 3, 0, 4, 9, 8, 0),
-	gsSP2Triangles(10, 11, 12, 0, 13, 10, 12, 0),
+	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
+	gsSP2Triangles(2, 4, 3, 0, 4, 2, 5, 0),
+	gsSP2Triangles(4, 5, 6, 0, 3, 7, 0, 0),
+	gsSP2Triangles(3, 8, 7, 0, 3, 9, 8, 0),
+	gsSP2Triangles(7, 8, 10, 0, 7, 10, 11, 0),
+	gsSP2Triangles(11, 10, 12, 0, 11, 12, 13, 0),
+	gsSP2Triangles(7, 14, 15, 0, 7, 15, 0, 0),
+	gsSP2Triangles(0, 15, 16, 0, 0, 16, 17, 0),
+	gsSP2Triangles(18, 19, 20, 0, 21, 18, 20, 0),
+	gsSP2Triangles(20, 22, 21, 0, 20, 23, 22, 0),
+	gsSP2Triangles(24, 25, 26, 0, 27, 24, 26, 0),
+	gsSP2Triangles(26, 28, 27, 0, 26, 29, 28, 0),
+	gsSP2Triangles(26, 30, 29, 0, 29, 31, 28, 0),
+	gsSPVertex(escape_rm_dl_floor_007_mesh_layer_Opaque_vtx_0 + 32, 32, 0),
+	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
+	gsSP2Triangles(4, 5, 6, 0, 4, 6, 7, 0),
+	gsSP2Triangles(8, 9, 10, 0, 11, 8, 10, 0),
+	gsSP2Triangles(10, 12, 11, 0, 12, 13, 11, 0),
 	gsSP2Triangles(12, 14, 13, 0, 12, 15, 14, 0),
 	gsSP2Triangles(16, 17, 18, 0, 16, 18, 19, 0),
 	gsSP2Triangles(20, 21, 22, 0, 20, 22, 23, 0),
 	gsSP2Triangles(24, 25, 26, 0, 24, 26, 27, 0),
-	gsSP2Triangles(28, 29, 30, 0, 31, 28, 30, 0),
-	gsSPVertex(escape_rm_dl_floor_007_mesh_layer_Opaque_vtx_0 + 32, 32, 0),
-	gsSP2Triangles(0, 1, 2, 0, 1, 3, 2, 0),
-	gsSP2Triangles(1, 4, 3, 0, 1, 5, 4, 0),
-	gsSP2Triangles(6, 7, 8, 0, 6, 8, 9, 0),
-	gsSP2Triangles(10, 11, 12, 0, 10, 12, 13, 0),
-	gsSP2Triangles(14, 15, 16, 0, 14, 16, 17, 0),
-	gsSP2Triangles(18, 19, 20, 0, 20, 21, 18, 0),
-	gsSP2Triangles(20, 22, 21, 0, 23, 24, 25, 0),
-	gsSP2Triangles(25, 26, 23, 0, 25, 27, 26, 0),
+	gsSP2Triangles(28, 29, 30, 0, 30, 31, 28, 0),
+	gsSPVertex(escape_rm_dl_floor_007_mesh_layer_Opaque_vtx_0 + 64, 32, 0),
+	gsSP2Triangles(0, 1, 2, 0, 3, 4, 5, 0),
+	gsSP2Triangles(5, 6, 3, 0, 5, 7, 6, 0),
+	gsSP2Triangles(8, 9, 10, 0, 8, 10, 11, 0),
+	gsSP2Triangles(12, 13, 14, 0, 12, 14, 15, 0),
+	gsSP2Triangles(16, 17, 18, 0, 16, 18, 19, 0),
+	gsSP2Triangles(20, 21, 22, 0, 20, 22, 23, 0),
+	gsSP2Triangles(24, 25, 26, 0, 24, 26, 27, 0),
 	gsSP2Triangles(28, 29, 30, 0, 28, 30, 31, 0),
-	gsSPVertex(escape_rm_dl_floor_007_mesh_layer_Opaque_vtx_0 + 64, 12, 0),
+	gsSPVertex(escape_rm_dl_floor_007_mesh_layer_Opaque_vtx_0 + 96, 32, 0),
 	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
 	gsSP2Triangles(4, 5, 6, 0, 4, 6, 7, 0),
 	gsSP2Triangles(8, 9, 10, 0, 8, 10, 11, 0),
+	gsSP2Triangles(12, 13, 14, 0, 12, 14, 15, 0),
+	gsSP2Triangles(16, 17, 18, 0, 16, 18, 19, 0),
+	gsSP2Triangles(20, 21, 22, 0, 20, 22, 23, 0),
+	gsSP2Triangles(24, 25, 26, 0, 24, 26, 27, 0),
+	gsSP2Triangles(28, 29, 30, 0, 28, 30, 31, 0),
+	gsSPVertex(escape_rm_dl_floor_007_mesh_layer_Opaque_vtx_0 + 128, 30, 0),
+	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
+	gsSP2Triangles(4, 5, 3, 0, 4, 3, 6, 0),
+	gsSP2Triangles(7, 8, 9, 0, 7, 9, 10, 0),
+	gsSP2Triangles(10, 6, 7, 0, 10, 11, 6, 0),
+	gsSP2Triangles(12, 13, 7, 0, 12, 7, 2, 0),
+	gsSP2Triangles(14, 15, 16, 0, 14, 16, 17, 0),
+	gsSP2Triangles(18, 19, 20, 0, 18, 20, 21, 0),
+	gsSP2Triangles(22, 23, 24, 0, 22, 24, 25, 0),
+	gsSP2Triangles(26, 27, 28, 0, 26, 28, 29, 0),
+	gsSPVertex(escape_rm_dl_floor_007_mesh_layer_Opaque_vtx_0 + 158, 30, 0),
+	gsSP2Triangles(0, 1, 2, 0, 3, 0, 2, 0),
+	gsSP2Triangles(2, 4, 3, 0, 4, 5, 3, 0),
+	gsSP2Triangles(4, 6, 5, 0, 4, 7, 6, 0),
+	gsSP2Triangles(8, 9, 10, 0, 8, 10, 11, 0),
+	gsSP2Triangles(12, 13, 14, 0, 12, 14, 15, 0),
+	gsSP2Triangles(15, 16, 12, 0, 15, 17, 16, 0),
+	gsSP2Triangles(18, 19, 20, 0, 21, 18, 20, 0),
+	gsSP2Triangles(20, 22, 21, 0, 20, 23, 22, 0),
+	gsSP2Triangles(21, 22, 24, 0, 21, 24, 25, 0),
+	gsSP2Triangles(26, 27, 28, 0, 26, 28, 29, 0),
+	gsSPVertex(escape_rm_dl_floor_007_mesh_layer_Opaque_vtx_0 + 188, 16, 0),
+	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
+	gsSP2Triangles(4, 5, 6, 0, 4, 6, 7, 0),
+	gsSP2Triangles(8, 9, 10, 0, 8, 10, 11, 0),
+	gsSP2Triangles(12, 13, 14, 0, 12, 14, 15, 0),
+	gsSPEndDisplayList(),
+};
+
+Vtx escape_rm_dl_floor_009_mesh_layer_Opaque_vtx_cull[8] = {
+	{{ {2148, -50, -322}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {2148, 50, -322}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {2148, 50, -322}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {2148, -50, -322}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {2228, -50, -322}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {2228, 50, -322}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {2228, 50, -322}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {2228, -50, -322}, 0, {0, 0}, {0, 0, 0, 0} }},
+};
+
+Vtx escape_rm_dl_floor_009_mesh_layer_Opaque_vtx_0[4] = {
+	{{ {2228, 50, -322}, 0, {1479, 3673}, {0, 0, 127, 255} }},
+	{{ {2148, 50, -322}, 0, {543, 3673}, {0, 0, 127, 255} }},
+	{{ {2148, -50, -322}, 0, {543, 4843}, {0, 0, 127, 255} }},
+	{{ {2228, -50, -322}, 0, {1479, 4843}, {0, 0, 127, 255} }},
+};
+
+Gfx escape_rm_dl_floor_009_mesh_layer_Opaque_tri_0[] = {
+	gsSPVertex(escape_rm_dl_floor_009_mesh_layer_Opaque_vtx_0 + 0, 4, 0),
+	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
+	gsSPEndDisplayList(),
+};
+
+Vtx escape_rm_dl_Plane_004_mesh_layer_Opaque_vtx_cull[8] = {
+	{{ {1982, -51, -699}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {1982, 54, -699}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {1982, 54, -743}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {1982, -51, -743}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {2027, -51, -699}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {2027, 54, -699}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {2027, 54, -743}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {2027, -51, -743}, 0, {0, 0}, {0, 0, 0, 0} }},
+};
+
+Vtx escape_rm_dl_Plane_004_mesh_layer_Opaque_vtx_0[4] = {
+	{{ {2027, -51, -699}, 0, {-16, 2032}, {8, 8, 64, 255} }},
+	{{ {1982, -51, -743}, 0, {2032, 2032}, {8, 8, 64, 255} }},
+	{{ {1982, 54, -743}, 0, {2032, 10}, {41, 41, 100, 255} }},
+	{{ {2027, 54, -699}, 0, {-16, 10}, {25, 25, 80, 255} }},
+};
+
+Gfx escape_rm_dl_Plane_004_mesh_layer_Opaque_tri_0[] = {
+	gsSPVertex(escape_rm_dl_Plane_004_mesh_layer_Opaque_vtx_0 + 0, 4, 0),
+	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
+	gsSPEndDisplayList(),
+};
+
+Vtx escape_rm_dl_Plane_006_mesh_layer_Opaque_vtx_cull[8] = {
+	{{ {2352, -52, -697}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {2352, 54, -697}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {2352, 54, -741}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {2352, -52, -741}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {2399, -52, -697}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {2399, 54, -697}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {2399, 54, -741}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {2399, -52, -741}, 0, {0, 0}, {0, 0, 0, 0} }},
+};
+
+Vtx escape_rm_dl_Plane_006_mesh_layer_Opaque_vtx_0[4] = {
+	{{ {2399, -52, -741}, 0, {-16, 2032}, {109, 19, 19, 255} }},
+	{{ {2352, -52, -697}, 0, {2032, 2032}, {76, 18, 18, 255} }},
+	{{ {2352, 54, -697}, 0, {2032, -4}, {177, 26, 26, 255} }},
+	{{ {2399, 54, -741}, 0, {-16, -4}, {139, 48, 48, 255} }},
+};
+
+Gfx escape_rm_dl_Plane_006_mesh_layer_Opaque_tri_0[] = {
+	gsSPVertex(escape_rm_dl_Plane_006_mesh_layer_Opaque_vtx_0 + 0, 4, 0),
+	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
 	gsSPEndDisplayList(),
 };
 
@@ -289,6 +646,38 @@ Gfx mat_escape_rm_dl_dark_brick_layerOpaque[] = {
 	gsSPEndDisplayList(),
 };
 
+Gfx mat_escape_rm_dl_knight_layerOpaque[] = {
+	gsDPPipeSync(),
+	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, TEXEL0, COMBINED, 0, PRIMITIVE, 0, 0, 0, 0, COMBINED),
+	gsSPLoadGeometryMode(G_ZBUFFER | G_SHADE | G_FOG | G_SHADING_SMOOTH),
+	gsSPSetOtherMode(G_SETOTHERMODE_H, 4, 20, G_AD_NOISE | G_CD_MAGICSQ | G_CK_NONE | G_TC_FILT | G_TF_BILERP | G_TT_NONE | G_TL_TILE | G_TD_CLAMP | G_TP_PERSP | G_CYC_2CYCLE | G_PM_NPRIMITIVE),
+	gsSPSetOtherMode(G_SETOTHERMODE_L, 0, 32, G_AC_NONE | G_ZS_PIXEL | G_RM_FOG_SHADE_A | G_RM_AA_ZB_TEX_EDGE2),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetPrimColor(0, 0, 255, 255, 255, 255),
+	gsDPSetTextureImage(G_IM_FMT_IA, G_IM_SIZ_8b_LOAD_BLOCK, 1, escape_rm_dl_hairal_niwa2_room_0Tex_0163F8_ia4_ia8),
+	gsDPSetTile(G_IM_FMT_IA, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadBlock(7, 0, 0, 2047, 256),
+	gsDPSetTile(G_IM_FMT_IA, G_IM_SIZ_8b, 8, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 6, 0, G_TX_WRAP | G_TX_NOMIRROR, 6, 0),
+	gsDPSetTileSize(0, 0, 0, 252, 252),
+	gsSPEndDisplayList(),
+};
+
+Gfx mat_escape_rm_dl_knight_002_layerOpaque[] = {
+	gsDPPipeSync(),
+	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, TEXEL0, COMBINED, 0, PRIMITIVE, 0, 0, 0, 0, COMBINED),
+	gsSPLoadGeometryMode(G_ZBUFFER | G_SHADE | G_FOG | G_SHADING_SMOOTH),
+	gsSPSetOtherMode(G_SETOTHERMODE_H, 4, 20, G_AD_NOISE | G_CD_MAGICSQ | G_CK_NONE | G_TC_FILT | G_TF_BILERP | G_TT_NONE | G_TL_TILE | G_TD_CLAMP | G_TP_PERSP | G_CYC_2CYCLE | G_PM_NPRIMITIVE),
+	gsSPSetOtherMode(G_SETOTHERMODE_L, 0, 32, G_AC_NONE | G_ZS_PIXEL | G_RM_FOG_SHADE_A | G_RM_AA_ZB_TEX_EDGE2),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetPrimColor(0, 0, 255, 255, 255, 255),
+	gsDPSetTextureImage(G_IM_FMT_IA, G_IM_SIZ_8b_LOAD_BLOCK, 1, escape_rm_dl_hairal_niwa2_room_0Tex_0163F8_ia4_ia8),
+	gsDPSetTile(G_IM_FMT_IA, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadBlock(7, 0, 0, 2047, 256),
+	gsDPSetTile(G_IM_FMT_IA, G_IM_SIZ_8b, 8, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 6, 0, G_TX_WRAP | G_TX_NOMIRROR, 6, 0),
+	gsDPSetTileSize(0, 0, 0, 252, 252),
+	gsSPEndDisplayList(),
+};
+
 Gfx escape_rm_dl_floor_007_mesh_layer_Opaque[] = {
 	gsSPClearGeometryMode(G_LIGHTING),
 	gsSPVertex(escape_rm_dl_floor_007_mesh_layer_Opaque_vtx_cull + 0, 8, 0),
@@ -296,6 +685,36 @@ Gfx escape_rm_dl_floor_007_mesh_layer_Opaque[] = {
 	gsSPCullDisplayList(0, 7),
 	gsSPDisplayList(mat_escape_rm_dl_dark_brick_layerOpaque),
 	gsSPDisplayList(escape_rm_dl_floor_007_mesh_layer_Opaque_tri_0),
+	gsSPEndDisplayList(),
+};
+
+Gfx escape_rm_dl_floor_009_mesh_layer_Opaque[] = {
+	gsSPClearGeometryMode(G_LIGHTING),
+	gsSPVertex(escape_rm_dl_floor_009_mesh_layer_Opaque_vtx_cull + 0, 8, 0),
+	gsSPSetGeometryMode(G_LIGHTING),
+	gsSPCullDisplayList(0, 7),
+	gsSPDisplayList(mat_escape_rm_dl_dark_brick_layerOpaque),
+	gsSPDisplayList(escape_rm_dl_floor_009_mesh_layer_Opaque_tri_0),
+	gsSPEndDisplayList(),
+};
+
+Gfx escape_rm_dl_Plane_004_mesh_layer_Opaque[] = {
+	gsSPClearGeometryMode(G_LIGHTING),
+	gsSPVertex(escape_rm_dl_Plane_004_mesh_layer_Opaque_vtx_cull + 0, 8, 0),
+	gsSPSetGeometryMode(G_LIGHTING),
+	gsSPCullDisplayList(0, 7),
+	gsSPDisplayList(mat_escape_rm_dl_knight_layerOpaque),
+	gsSPDisplayList(escape_rm_dl_Plane_004_mesh_layer_Opaque_tri_0),
+	gsSPEndDisplayList(),
+};
+
+Gfx escape_rm_dl_Plane_006_mesh_layer_Opaque[] = {
+	gsSPClearGeometryMode(G_LIGHTING),
+	gsSPVertex(escape_rm_dl_Plane_006_mesh_layer_Opaque_vtx_cull + 0, 8, 0),
+	gsSPSetGeometryMode(G_LIGHTING),
+	gsSPCullDisplayList(0, 7),
+	gsSPDisplayList(mat_escape_rm_dl_knight_002_layerOpaque),
+	gsSPDisplayList(escape_rm_dl_Plane_006_mesh_layer_Opaque_tri_0),
 	gsSPEndDisplayList(),
 };
 

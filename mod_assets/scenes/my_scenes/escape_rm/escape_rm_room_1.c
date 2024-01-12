@@ -29,12 +29,12 @@ s16 escape_rm_room_1_header00_objectList[LENGTH_ESCAPE_RM_ROOM_1_HEADER00_OBJECT
 };
 
 ActorEntry escape_rm_room_1_header00_actorList[LENGTH_ESCAPE_RM_ROOM_1_HEADER00_ACTORLIST] = {
-    // Treasure Chest
+    // Dungeon Switches
     {
-        /* Actor ID   */ ACTOR_EN_BOX,
-        /* Position   */ { -531, -50, -281 },
-        /* Rotation   */ { 0, 0, 3 },
-        /* Parameters */ 0xBBC6
+        /* Actor ID   */ ACTOR_OBJ_SWITCH,
+        /* Position   */ { -1078, 165, 942 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(180.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0302
     },
 
     // Checkable Spot
@@ -45,12 +45,12 @@ ActorEntry escape_rm_room_1_header00_actorList[LENGTH_ESCAPE_RM_ROOM_1_HEADER00_
         /* Parameters */ 0x8F8A
     },
 
-    // Dungeon Switches
+    // Treasure Chest
     {
-        /* Actor ID   */ ACTOR_OBJ_SWITCH,
-        /* Position   */ { -1078, 165, 942 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(180.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0302
+        /* Actor ID   */ ACTOR_EN_BOX,
+        /* Position   */ { -531, -50, -281 },
+        /* Rotation   */ { 0, 0, 3 },
+        /* Parameters */ 0xBBC6
     },
 
     // Dodongo's Cavern Objects

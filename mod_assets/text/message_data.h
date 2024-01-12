@@ -7747,7 +7747,8 @@ DEFINE_MESSAGE(0x0242, TEXTBOX_TYPE_BLUE, TEXTBOX_POS_VARIABLE,
 "will require the assistance\n"
 "of a blue heron's feather."
 BOX_BREAK
-"This should be able to help you:"
+"I think this note had something\n"
+"to do with a feather? Perhaps...?"
 BOX_BREAK
 "..."
 BOX_BREAK
@@ -7756,11 +7757,6 @@ BOX_BREAK
 BOX_BREAK
 UNSKIPPABLE SHIFT("\x18") "'Pierce the heart which hides\n"
 SHIFT("\x18") COLOR(BLUE) "within " COLOR(DEFAULT)"the lonely woman.'"
-BOX_BREAK
-"..."
-BOX_BREAK
-"'Within' the lonely woman?\n"
-"What does that mean??"
 ,
 "german"
 ,
@@ -7769,7 +7765,30 @@ BOX_BREAK
 
 // Message ID 67
 DEFINE_MESSAGE(0x0243, TEXTBOX_TYPE_BLUE, TEXTBOX_POS_VARIABLE,
-"Message ID 67"
+"I don't know how much longer I\n"
+"will still be able to think clearly."
+BOX_BREAK
+"I tried to barricade the final door\n"
+"to keep anything from coming in."
+BOX_BREAK
+"...or out."
+BOX_BREAK
+"The wall looks a little weak though.\n"
+"Especially right behind the chest\n"
+"where I store my prized bow."
+BOX_BREAK
+"I'll have to remember to\n"
+"secure that soon...\n"
+"...before it's too late."
+,
+"german"
+,
+"french"
+)
+
+// Message ID 68
+DEFINE_MESSAGE(0x0244, TEXTBOX_TYPE_BLUE, TEXTBOX_POS_VARIABLE,
+"Hit the blue statue"
 ,
 "german"
 ,
