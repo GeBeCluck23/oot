@@ -41,7 +41,7 @@ ActorEntry escape_rm_room_7_header00_actorList[LENGTH_ESCAPE_RM_ROOM_7_HEADER00_
         /* Actor ID   */ ACTOR_EN_BOX,
         /* Position   */ { 1891, 393, 351 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(198.479), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x07AC
+        /* Parameters */ 0x47AC
     },
 };
 

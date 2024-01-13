@@ -36,6 +36,30 @@ ActorEntry escape_rm_room_3_header00_actorList[LENGTH_ESCAPE_RM_ROOM_3_HEADER00_
         /* Parameters */ 0x5840
     },
 
+    // Breakable Pot
+    {
+        /* Actor ID   */ ACTOR_OBJ_TSUBO,
+        /* Position   */ { 1467, -50, 69 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0008
+    },
+
+    // Breakable Pot
+    {
+        /* Actor ID   */ ACTOR_OBJ_TSUBO,
+        /* Position   */ { 502, -50, 311 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0003
+    },
+
+    // Breakable Pot
+    {
+        /* Actor ID   */ ACTOR_OBJ_TSUBO,
+        /* Position   */ { 1673, -50, 69 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0008
+    },
+
     // Treasure Chest
     {
         /* Actor ID   */ ACTOR_EN_BOX,
@@ -44,28 +68,12 @@ ActorEntry escape_rm_room_3_header00_actorList[LENGTH_ESCAPE_RM_ROOM_3_HEADER00_
         /* Parameters */ 0x57AD
     },
 
-    // Dungeon Switches
+    // Treasure Chest
     {
-        /* Actor ID   */ ACTOR_OBJ_SWITCH,
-        /* Position   */ { 926, 187, 2 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(180.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0902
-    },
-
-    // Breakable Pot
-    {
-        /* Actor ID   */ ACTOR_OBJ_TSUBO,
-        /* Position   */ { 1281, -50, -327 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0003
-    },
-
-    // Breakable Pot
-    {
-        /* Actor ID   */ ACTOR_OBJ_TSUBO,
-        /* Position   */ { 1467, -50, 69 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0008
+        /* Actor ID   */ ACTOR_EN_BOX,
+        /* Position   */ { 902, -50, 284 },
+        /* Rotation   */ { 0, 0, 9 },
+        /* Parameters */ 0xB7E9
     },
 
     // Breakable Pot
@@ -79,25 +87,17 @@ ActorEntry escape_rm_room_3_header00_actorList[LENGTH_ESCAPE_RM_ROOM_3_HEADER00_
     // Breakable Pot
     {
         /* Actor ID   */ ACTOR_OBJ_TSUBO,
-        /* Position   */ { 1673, -50, 69 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0008
-    },
-
-    // Breakable Pot
-    {
-        /* Actor ID   */ ACTOR_OBJ_TSUBO,
-        /* Position   */ { 502, -50, 311 },
+        /* Position   */ { 1281, -50, -327 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
         /* Parameters */ 0x0003
     },
 
-    // Treasure Chest
+    // Dungeon Switches
     {
-        /* Actor ID   */ ACTOR_EN_BOX,
-        /* Position   */ { 902, -50, 284 },
-        /* Rotation   */ { 0, 0, 9 },
-        /* Parameters */ 0xB7E9
+        /* Actor ID   */ ACTOR_OBJ_SWITCH,
+        /* Position   */ { 926, 187, 2 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(180.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0902
     },
 };
 

@@ -7788,7 +7788,18 @@ BOX_BREAK
 
 // Message ID 68
 DEFINE_MESSAGE(0x0244, TEXTBOX_TYPE_BLUE, TEXTBOX_POS_VARIABLE,
-"Hit the blue statue"
+"Strike the blue statue"
+,
+"german"
+,
+"french"
+)
+
+// Message ID 69
+DEFINE_MESSAGE(0x0245, TEXTBOX_TYPE_BLUE, TEXTBOX_POS_VARIABLE,
+"There are n extra hearts in all.\n"
+"See if you can find all of them\n"
+"before you leave."
 ,
 "german"
 ,
