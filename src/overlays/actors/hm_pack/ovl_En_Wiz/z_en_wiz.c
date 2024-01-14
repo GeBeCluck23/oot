@@ -177,16 +177,20 @@ void EnWiz_Init(Actor* thisx, PlayState* play) {
     Actor_SetScale(&this->actor, 0.01f);
     SkelAnime_InitFlex(play, &this->skelAnime, &Armature, &IdleAnim, this->jointTable, this->morphTable,
                        12);
+        // Added Navi Hint               
+        this->actor.naviEnemyId = NAVI_ENEMY_UNUSED_3C;
     ActorShape_Init(&thisx->shape, -200.0f, ActorShadow_DrawCircle, 70.0f);
 
     EnWiz_InitCollision(thisx, play);
     CollisionCheck_SetInfo(&thisx->colChkInfo, NULL, &sColChkInfoInit);
     thisx->colChkInfo.damageTable = sDamageTable;
-    thisx->colChkInfo.health = 6;
+    thisx->colChkInfo.health = 20;
+    //thisx->colChkInfo.health = 6;
 
     thisx->shape.yOffset = -200.0f; // maybe remove this?
 
-    Actor_SetScale(&this->actor, 0.008f);
+    Actor_SetScale(&this->actor, 0.010f);
+    //Actor_SetScale(&this->actor, 0.008f);
 
     this->type = (thisx->params & 0xFF00) >> 8;
 

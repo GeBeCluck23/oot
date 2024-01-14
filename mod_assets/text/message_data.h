@@ -10212,11 +10212,21 @@ COLOR(LIGHTBLUE) "Attention à son souffle glacé! \n"
 )
 
 DEFINE_MESSAGE(0x063C, TEXTBOX_TYPE_BLUE, TEXTBOX_POS_VARIABLE,
-"063c"
+QUICKTEXT_ENABLE "The Master\n"
+COLOR(LIGHTBLUE) "Is this really him? I wonder just\n"
+"how long here's been stuck here."
+BOX_BREAK
+QUICKTEXT_ENABLE COLOR(LIGHTBLUE) "Oh well, it doesn't matter.\n"
+"He's clearly gone insane by now,\n"
+"and it doesn't look like we can"
+BOX_BREAK
+QUICKTEXT_ENABLE COLOR(LIGHTBLUE) "leave until you defeat him.\n"
+"You can do this, " NAME "!"
+COLOR(DEFAULT)  QUICKTEXT_DISABLE
 ,
-"063c"
+"german"
 ,
-"063c"
+"french"
 )
 
 DEFINE_MESSAGE(0x063D, TEXTBOX_TYPE_BLUE, TEXTBOX_POS_VARIABLE,
