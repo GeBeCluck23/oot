@@ -11,7 +11,7 @@
  * Header Child Day (Default)
 */
 #define LENGTH_ESCAPE_RM_ROOM_10_HEADER00_OBJECTLIST 5
-#define LENGTH_ESCAPE_RM_ROOM_10_HEADER00_ACTORLIST 12
+#define LENGTH_ESCAPE_RM_ROOM_10_HEADER00_ACTORLIST 11
 SceneCmd escape_rm_room_10_header00[] = {
     SCENE_CMD_ECHO_SETTINGS(0x00),
     SCENE_CMD_ROOM_BEHAVIOR(0x00, 0x00, false, false),
@@ -32,6 +32,78 @@ s16 escape_rm_room_10_header00_objectList[LENGTH_ESCAPE_RM_ROOM_10_HEADER00_OBJE
 };
 
 ActorEntry escape_rm_room_10_header00_actorList[LENGTH_ESCAPE_RM_ROOM_10_HEADER00_ACTORLIST] = {
+    // Dungeon Switches
+    {
+        /* Actor ID   */ ACTOR_OBJ_SWITCH,
+        /* Position   */ { 1994, -50, -704 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0D03
+    },
+
+    // Custom Actor
+    {
+        /* Actor ID   */ ACTOR_METAL_CRATE,
+        /* Position   */ { 2214, -1, -349 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0000
+    },
+
+    // Checkable Spot
+    {
+        /* Actor ID   */ ACTOR_EN_WONDER_TALK2,
+        /* Position   */ { 2531, 15, 0 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(268.989), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x910A
+    },
+
+    // Wallmaster
+    {
+        /* Actor ID   */ ACTOR_EN_WALLMAS,
+        /* Position   */ { 2338, -50, -816 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0E02
+    },
+
+    // Treasure Chest
+    {
+        /* Actor ID   */ ACTOR_EN_BOX,
+        /* Position   */ { 2188, -50, -229 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(180.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0085
+    },
+
+    // Custom Actor
+    {
+        /* Actor ID   */ ACTOR_METAL_CRATE,
+        /* Position   */ { 2164, -1, -349 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0000
+    },
+
+    // Custom Actor
+    {
+        /* Actor ID   */ ACTOR_METAL_CRATE,
+        /* Position   */ { 2214, -50, -349 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0000
+    },
+
+    // Custom Actor
+    {
+        /* Actor ID   */ ACTOR_METAL_CRATE,
+        /* Position   */ { 2164, -50, -349 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0000
+    },
+
+    // Custom Actor
+    {
+        /* Actor ID   */ ACTOR_LADDER,
+        /* Position   */ { 2188, -50, -1054 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x200D
+    },
+
     // Wallmaster
     {
         /* Actor ID   */ ACTOR_EN_WALLMAS,
@@ -46,86 +118,6 @@ ActorEntry escape_rm_room_10_header00_actorList[LENGTH_ESCAPE_RM_ROOM_10_HEADER0
         /* Position   */ { 2388, -50, -704 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
         /* Parameters */ 0x0E03
-    },
-
-    // Custom Actor
-    {
-        /* Actor ID   */ ACTOR_METAL_CRATE,
-        /* Position   */ { 2214, -50, -349 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0000
-    },
-
-    // Custom Actor
-    {
-        /* Actor ID   */ ACTOR_METAL_CRATE,
-        /* Position   */ { 2164, -1, -349 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0000
-    },
-
-    // Checkable Spot
-    {
-        /* Actor ID   */ ACTOR_EN_WONDER_TALK2,
-        /* Position   */ { 2531, 15, 0 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(268.989), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x910A
-    },
-
-    // Custom Actor
-    {
-        /* Actor ID   */ ACTOR_METAL_CRATE,
-        /* Position   */ { 2214, -1, -349 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0000
-    },
-
-    // Custom Actor
-    {
-        /* Actor ID   */ ACTOR_LADDER,
-        /* Position   */ { 2188, -50, -1054 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x200D
-    },
-
-    // Checkable Spot
-    {
-        /* Actor ID   */ ACTOR_EN_WONDER_TALK2,
-        /* Position   */ { 592, 622, -407 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(178.989), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x910A
-    },
-
-    // Dungeon Switches
-    {
-        /* Actor ID   */ ACTOR_OBJ_SWITCH,
-        /* Position   */ { 1994, -50, -704 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0D03
-    },
-
-    // Treasure Chest
-    {
-        /* Actor ID   */ ACTOR_EN_BOX,
-        /* Position   */ { 2188, -50, -229 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(180.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0085
-    },
-
-    // Wallmaster
-    {
-        /* Actor ID   */ ACTOR_EN_WALLMAS,
-        /* Position   */ { 2338, -50, -816 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0E02
-    },
-
-    // Custom Actor
-    {
-        /* Actor ID   */ ACTOR_METAL_CRATE,
-        /* Position   */ { 2164, -50, -349 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0000
     },
 };
 
@@ -144,7 +136,6 @@ Gfx escape_rm_room_10_entry_0_opaque[] = {
 	gsSPDisplayList(escape_rm_dl_floor_007_mesh_layer_Opaque),
 	gsSPDisplayList(escape_rm_dl_floor_009_mesh_layer_Opaque),
 	gsSPDisplayList(escape_rm_dl_paper_006_mesh_layer_Opaque),
-	gsSPDisplayList(escape_rm_dl_paper_007_mesh_layer_Opaque),
 	gsSPDisplayList(escape_rm_dl_Plane_004_mesh_layer_Opaque),
 	gsSPDisplayList(escape_rm_dl_Plane_006_mesh_layer_Opaque),
 	gsSPEndDisplayList(),
@@ -644,30 +635,6 @@ Gfx escape_rm_dl_paper_006_mesh_layer_Opaque_tri_0[] = {
 	gsSPEndDisplayList(),
 };
 
-Vtx escape_rm_dl_paper_007_mesh_layer_Opaque_vtx_cull[8] = {
-	{{ {580, 606, -406}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {580, 641, -406}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {580, 641, -408}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {580, 606, -408}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {606, 606, -406}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {606, 641, -406}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {606, 641, -408}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {606, 606, -408}, 0, {0, 0}, {0, 0, 0, 0} }},
-};
-
-Vtx escape_rm_dl_paper_007_mesh_layer_Opaque_vtx_0[4] = {
-	{{ {602, 641, -407}, 0, {-16, 983}, {248, 1, 129, 255} }},
-	{{ {606, 608, -408}, 0, {1738, 983}, {248, 1, 129, 255} }},
-	{{ {583, 606, -406}, 0, {1738, 25}, {248, 1, 129, 255} }},
-	{{ {580, 638, -406}, 0, {-16, 25}, {248, 1, 129, 255} }},
-};
-
-Gfx escape_rm_dl_paper_007_mesh_layer_Opaque_tri_0[] = {
-	gsSPVertex(escape_rm_dl_paper_007_mesh_layer_Opaque_vtx_0 + 0, 4, 0),
-	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
-	gsSPEndDisplayList(),
-};
-
 Vtx escape_rm_dl_Plane_004_mesh_layer_Opaque_vtx_cull[8] = {
 	{{ {1982, -51, -699}, 0, {0, 0}, {0, 0, 0, 0} }},
 	{{ {1982, 54, -699}, 0, {0, 0}, {0, 0, 0, 0} }},
@@ -795,16 +762,6 @@ Gfx escape_rm_dl_paper_006_mesh_layer_Opaque[] = {
 	gsSPCullDisplayList(0, 7),
 	gsSPDisplayList(mat_escape_rm_dl_old_wall_shaded_layerOpaque),
 	gsSPDisplayList(escape_rm_dl_paper_006_mesh_layer_Opaque_tri_0),
-	gsSPEndDisplayList(),
-};
-
-Gfx escape_rm_dl_paper_007_mesh_layer_Opaque[] = {
-	gsSPClearGeometryMode(G_LIGHTING),
-	gsSPVertex(escape_rm_dl_paper_007_mesh_layer_Opaque_vtx_cull + 0, 8, 0),
-	gsSPSetGeometryMode(G_LIGHTING),
-	gsSPCullDisplayList(0, 7),
-	gsSPDisplayList(mat_escape_rm_dl_old_wall_shaded_layerOpaque),
-	gsSPDisplayList(escape_rm_dl_paper_007_mesh_layer_Opaque_tri_0),
 	gsSPEndDisplayList(),
 };
 
