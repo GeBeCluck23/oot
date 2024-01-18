@@ -7697,8 +7697,10 @@ BOX_BREAK
 BOX_BREAK
 "...chandelier..."
 BOX_BREAK
-"...blue mark...\n"
+"...always watching...\n"
 "...don't shoot..."
+BOX_BREAK
+"...the eye..."
 BOX_BREAK
 "The rest is crossed out lines\n"
 "and gibberish."

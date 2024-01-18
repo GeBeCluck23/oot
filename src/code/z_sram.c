@@ -38,9 +38,9 @@ static SavePlayerData sNewSavePlayerData = {
     0,                                                  // rupees
     0,                                                  // swordHealth
     0,                                                  // naviTimer
-    false,                                              // isMagicAcquired
+    true,                                              // isMagicAcquired
     0,                                                  // unk_1F
-    false,                                              // isDoubleMagicAcquired
+    true,                                              // isDoubleMagicAcquired
     false,                                              // isDoubleDefenseAcquired
     0,                                                  // bgsFlag
     0,                                                  // ocarinaGameRoundNum

@@ -10,8 +10,8 @@
 /**
  * Header Child Day (Default)
 */
-#define LENGTH_ESCAPE_RM_ROOM_10_HEADER00_OBJECTLIST 5
-#define LENGTH_ESCAPE_RM_ROOM_10_HEADER00_ACTORLIST 11
+#define LENGTH_ESCAPE_RM_ROOM_10_HEADER00_OBJECTLIST 6
+#define LENGTH_ESCAPE_RM_ROOM_10_HEADER00_ACTORLIST 16
 SceneCmd escape_rm_room_10_header00[] = {
     SCENE_CMD_ECHO_SETTINGS(0x00),
     SCENE_CMD_ROOM_BEHAVIOR(0x00, 0x00, false, false),
@@ -29,21 +29,22 @@ s16 escape_rm_room_10_header00_objectList[LENGTH_ESCAPE_RM_ROOM_10_HEADER00_OBJE
     OBJECT_BDOOR,
     OBJECT_LADDER,
     OBJECT_WALLMASTER,
+    OBJECT_BWALL,
 };
 
 ActorEntry escape_rm_room_10_header00_actorList[LENGTH_ESCAPE_RM_ROOM_10_HEADER00_ACTORLIST] = {
-    // Dungeon Switches
+    // Breakable Pot
     {
-        /* Actor ID   */ ACTOR_OBJ_SWITCH,
-        /* Position   */ { 1994, -50, -704 },
+        /* Actor ID   */ ACTOR_OBJ_TSUBO,
+        /* Position   */ { 2384, -50, -1030 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0D03
+        /* Parameters */ 0x0012
     },
 
     // Custom Actor
     {
         /* Actor ID   */ ACTOR_METAL_CRATE,
-        /* Position   */ { 2214, -1, -349 },
+        /* Position   */ { 2164, -1, -650 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
         /* Parameters */ 0x0000
     },
@@ -56,6 +57,46 @@ ActorEntry escape_rm_room_10_header00_actorList[LENGTH_ESCAPE_RM_ROOM_10_HEADER0
         /* Parameters */ 0x910A
     },
 
+    // Breakable Pot
+    {
+        /* Actor ID   */ ACTOR_OBJ_TSUBO,
+        /* Position   */ { 2071, -50, -1030 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x000A
+    },
+
+    // Breakable Pot
+    {
+        /* Actor ID   */ ACTOR_OBJ_TSUBO,
+        /* Position   */ { 2348, -50, -1030 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x000B
+    },
+
+    // Custom Actor
+    {
+        /* Actor ID   */ ACTOR_LADDER,
+        /* Position   */ { 2188, -50, -1054 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x2006
+    },
+
+    // Custom Actor
+    {
+        /* Actor ID   */ ACTOR_METAL_CRATE,
+        /* Position   */ { 2164, -50, -650 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0000
+    },
+
+    // Custom Actor
+    {
+        /* Actor ID   */ ACTOR_METAL_CRATE,
+        /* Position   */ { 2214, -50, -650 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0000
+    },
+
     // Wallmaster
     {
         /* Actor ID   */ ACTOR_EN_WALLMAS,
@@ -64,44 +105,12 @@ ActorEntry escape_rm_room_10_header00_actorList[LENGTH_ESCAPE_RM_ROOM_10_HEADER0
         /* Parameters */ 0x0E02
     },
 
-    // Treasure Chest
+    // Dodongo's Cavern Objects
     {
-        /* Actor ID   */ ACTOR_EN_BOX,
-        /* Position   */ { 2188, -50, -229 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(180.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0085
-    },
-
-    // Custom Actor
-    {
-        /* Actor ID   */ ACTOR_METAL_CRATE,
-        /* Position   */ { 2164, -1, -349 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0000
-    },
-
-    // Custom Actor
-    {
-        /* Actor ID   */ ACTOR_METAL_CRATE,
-        /* Position   */ { 2214, -50, -349 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0000
-    },
-
-    // Custom Actor
-    {
-        /* Actor ID   */ ACTOR_METAL_CRATE,
-        /* Position   */ { 2164, -50, -349 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0000
-    },
-
-    // Custom Actor
-    {
-        /* Actor ID   */ ACTOR_LADDER,
-        /* Position   */ { 2188, -50, -1054 },
+        /* Actor ID   */ ACTOR_BG_BREAKWALL,
+        /* Position   */ { 2188, -50, -325 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x200D
+        /* Parameters */ 0x200C
     },
 
     // Wallmaster
@@ -112,12 +121,44 @@ ActorEntry escape_rm_room_10_header00_actorList[LENGTH_ESCAPE_RM_ROOM_10_HEADER0
         /* Parameters */ 0x0E02
     },
 
-    // Dungeon Switches
+    // Custom Actor
     {
-        /* Actor ID   */ ACTOR_OBJ_SWITCH,
-        /* Position   */ { 2388, -50, -704 },
+        /* Actor ID   */ ACTOR_METAL_CRATE,
+        /* Position   */ { 2214, -1, -650 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0000
+    },
+
+    // Treasure Chest
+    {
+        /* Actor ID   */ ACTOR_EN_BOX,
+        /* Position   */ { 2188, -50, -229 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(180.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0085
+    },
+
+    // Breakable Pot
+    {
+        /* Actor ID   */ ACTOR_OBJ_TSUBO,
+        /* Position   */ { 1998, -50, -1030 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0E03
+        /* Parameters */ 0x0003
+    },
+
+    // Breakable Pot
+    {
+        /* Actor ID   */ ACTOR_OBJ_TSUBO,
+        /* Position   */ { 2035, -50, -1030 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0003
+    },
+
+    // Breakable Pot
+    {
+        /* Actor ID   */ ACTOR_OBJ_TSUBO,
+        /* Position   */ { 2311, -50, -1030 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x000B
     },
 };
 
@@ -136,8 +177,7 @@ Gfx escape_rm_room_10_entry_0_opaque[] = {
 	gsSPDisplayList(escape_rm_dl_floor_007_mesh_layer_Opaque),
 	gsSPDisplayList(escape_rm_dl_floor_009_mesh_layer_Opaque),
 	gsSPDisplayList(escape_rm_dl_paper_006_mesh_layer_Opaque),
-	gsSPDisplayList(escape_rm_dl_Plane_004_mesh_layer_Opaque),
-	gsSPDisplayList(escape_rm_dl_Plane_006_mesh_layer_Opaque),
+	gsSPDisplayList(escape_rm_dl_Plane_009_mesh_layer_Opaque),
 	gsSPEndDisplayList(),
 };
 
@@ -209,71 +249,39 @@ u64 escape_rm_dl_ganon_demo_sceneTex_004B70_i8_i8[] = {
 	
 };
 
-u64 escape_rm_dl_hairal_niwa2_room_0Tex_0163F8_ia4_ia8[] = {
-	0x0000000000000000, 0x0000000000402000, 0x0000000000006000, 0x006f6060406fbf90, 0x402040604f2f6060, 0x6000002040200000, 0x0000000000000000, 0x0000000000000000, 
-	0x0000000000000000, 0x0000000000000000, 0x0000000000004040, 0x004f9f6f6f6f9f6f, 0x6f9f9f6f4f2f0f0f, 0x4f00000000200000, 0x0020000000000000, 0x0000000000000000, 
-	0x0000000000000000, 0x0000000000000000, 0x0000000000004060, 0x00204f2f2f4f9fbf, 0x9f9f4f6f4f6f6f4f, 0x4f4f000020000000, 0x0040000000000000, 0x0000000000000000, 
-	0x0000000000000000, 0x0000000000000000, 0x0000000000002040, 0x2000204f2f9fdfff, 0xffbf9f6f6f9f9f9f, 0x0020202040000000, 0x4040200000000000, 0x0000000000000000, 
-	0x0000000000000000, 0x0000000000000000, 0x0000000000000020, 0x00209f6f6fdfffdf, 0xffffdfdfbf9f9f4f, 0x4f20002000000000, 0x0000000000000020, 0x0000000000000000, 
-	0x0000000000000000, 0x0000000000000000, 0x0000000000000000, 0x4f6f4f6f9fdfffff, 0xffffffdf9f6f6f6f, 0x4f6f202000000000, 0x0000000000000020, 0x0000000000000000, 
-	0x0000000000000000, 0x0000000000000000, 0x0000000000000020, 0x4f2f4f6f4f9fdfff, 0xffffdfbf6f2f4f6f, 0x4f6f4f0020000000, 0x0000000000000020, 0x0000000000000000, 
-	0x0000000000000000, 0x0000000000000000, 0x000000000000004f, 0x6f6f9f6f2fbfffff, 0xffbfbf9f4f0f4f6f, 0x4f4f6f2040200000, 0x0000000000000000, 0x0000000000000000, 
-	0x0000000000000000, 0x0000000000000000, 0x000000000000604f, 0x4f4f6f4f0f2f6f9f, 0x9f9fbfdf9f0f0f9f, 0x6f6f4f2000000000, 0x0000000000000000, 0x0000000000000000, 
-	0x0000000000000000, 0x0000000000000000, 0x0000000000004000, 0x409f6f6f4f4fbf9f, 0xdfffffdf6f0f0f4f, 0x9f6f9f4f00000000, 0x0000000000000000, 0x0000000000000000, 
-	0x0000000000000000, 0x0000000000000000, 0x0000206f9f4f4f2f, 0x6fbf9f9f6f9fffff, 0xffffffbf9f4f9f9f, 0x6f6f6f6f4f000000, 0x0000000000000000, 0x0000000000000000, 
-	0x0000000000000000, 0x0000000000000020, 0x4f6f9fdf9f6f6f4f, 0x6f6f9f9f9f9f2fdf, 0xffffffdfbf9f9f6f, 0x6f6f6f6f9f9f4f4f, 0x2f00000000000000, 0x0000000000000000, 
-	0x0000000000000000, 0x0000000000006f6f, 0x6f9fbfbf6f9f4f6f, 0x6f6f9f9f9fbf6f2f, 0x9fbfbfbfbf9f6f6f, 0x9fbf6f9fbfbf9f9f, 0x9f6f2f0f00000000, 0x0000000000000000, 
-	0x0000000000000000, 0x0000002040609f9f, 0xbf9fdf9fbf9f6f6f, 0x6f6f9f9f9f9f9f9f, 0x4fbfbfbf9f9f6f6f, 0x4f4f6fbf9f9f9f6f, 0x6f6f2f0f0f000000, 0x0000000000000000, 
-	0x0000000000000000, 0x2040606090bfbfbf, 0xdfbfbfbfbf6f6f6f, 0x6f9fbfbfbfbfbfbf, 0x9fbf9fbf9f9f9f6f, 0x6f2f0f4f9fbf9f9f, 0x6f6f4f4f2f000000, 0x0000000000000000, 
-	0x0000000000000040, 0x4060606090bfdfdf, 0xdfbfbfbf4f9f6f6f, 0x6f9fbfdfdfdfbfbf, 0x9fdfdfdfbfbfbf9f, 0x6f2f2f2f9fffdfbf, 0x9f6f4f4f2f2f0000, 0x0000000000000000, 
-	0x0000000000409090, 0x9090b0b0b0bfbfdf, 0xdfbfdfbf4f6f6fbf, 0x9f9fbfffffffdfdf, 0xdfffffffdfbf9f9f, 0x9f2f0f0f6fdfdfbf, 0xbf9f9f4f4f2f0000, 0x0000000000000000, 
-	0x0000000090b0b090, 0xb0b0d0b0d0d06fdf, 0xdfdfff4f2f6f6f9f, 0x9fbf9fbfdfdfbfdf, 0xdfdfbfbfbfbfbf9f, 0x4f0f0f0f9fbfbf6f, 0xbf9f9f4f4f4f0000, 0x0000000000000000, 
-	0x000000b0b0b0d0d0, 0xd0d0d0b0b0f0bf9f, 0xdfdf6f0f2f9f9f9f, 0xbf9fbfdfffffffff, 0xdfdfffdfbfbf9f4f, 0x4f4f0f0f9f9f9f9f, 0xbf6f4f4f2f000000, 0x0000000000000000, 
-	0x000040d0b0b0d0f0, 0xf0f0d0b0b0d0d09f, 0x4fdf0f0f0f9f9f9f, 0xdfbf6f9fffffffff, 0xffdfdfdfdfbfbf4f, 0x4f4f0f006f6f6f6f, 0x9f6f2f0f00000000, 0x0000000000000000, 
-	0x000060f0d0b0d0f0, 0xf0f0f090b0d0d09f, 0xdfffbf2f0f6f9fbf, 0xffdf9fdfffffffff, 0xffffffdfbfbfdf9f, 0x4f4f0f00000020bf, 0xdfdfbf6f00004000, 0x0000000000000000, 
-	0x000090f0d0b0d0f0, 0xf0d0d090b0d0f09f, 0xdfdf9f6f002f6fbf, 0xffdfbfdfffffffff, 0xffffffdfbf9fdfbf, 0x4f0f0f2060000020, 0xbfdfbf9f4f002000, 0x0000000000000000, 
-	0x0000d0f0f0b0d0f0, 0xd0d0d09060d0f09f, 0x9fbf9f6000206fbf, 0xdfdfbfdfffffffff, 0xffffffbf9f6f9f9f, 0x6f2f0f4090402000, 0x4f6f6f9f9f2f0000, 0x0000000000000000, 
-	0x0000f0f0f0b0f0f0, 0xd0b0600000b0d0bf, 0x9fdfd09000406fbf, 0xdfdfbfbfbfffffff, 0xffffbf9f6f6fbfbf, 0x9f4f0f0f60402060, 0x2f4f9f9f9f6f0000, 0x0000000000000000, 
-	0x0000f0f0f0b0d0d0, 0xd0d090000090d0df, 0x9f9fd0b000406f9f, 0xdfdfbf9fbfffffff, 0xffffffdfbf9fdfbf, 0xbf9f4f0f0f402060, 0x204f9f9f9f6f2f00, 0x0000000000000000, 
-	0x0040f0f0d0400090, 0xd0d0d020009fdfbf, 0x2f2fb0900020609f, 0xbfffdf9fbfffffff, 0xffffffdfdfdfbfbf, 0xdfbf6f4f2f0f0040, 0x202f6f9f6f6f2f00, 0x0000000000000000, 
-	0x0040604f4f9f6f6f, 0xd0b0902000bfdfdf, 0xbf6f90904000209f, 0xbfffdfbfdfdfffff, 0xffffffffffdfbfbf, 0xbfbfbf9f6f4f0040, 0x40004f6f6f4f0f00, 0x0000000000000000, 
-	0x0060904fffffdf9f, 0x60606060606fbf9f, 0x9fbf606020006060, 0xbfdfdfdfdfffffff, 0xffffffffffdfdfbf, 0xbfbfbf9f4f2f0f00, 0x40004fbf9f6f2f00, 0x0000000000000000, 
-	0x00004fbfdfffdf6f, 0x204090909f9f9f9f, 0x6f6f609000606f9f, 0x9f9fbfdfdfdfffdf, 0xdfffffdfffdfdfbf, 0xbf9fbf6f4f2f0f00, 0x204060dfdfbf6f40, 0x0000000000000000, 
-	0x00002fdfdfffdf4f, 0x4f4f90909fbfbf6f, 0xdf0f60f0206f4f9f, 0x9f9fbfbfbfbfdfff, 0xdfdfffffdfdfdfbf, 0x9f9fbf9fbf6f0f00, 0x40409fdfdfbf6f20, 0x0000000000000000, 
-	0x000000009fbf4f6f, 0x6f9fbfb09fbfdf6f, 0x9f4f60f09f4f4f6f, 0x9f9f9f9f9f9fbfff, 0xdfbfffffdfdfbfbf, 0xdfdfdfbfdf6f2f00, 0x20609fdfffbf9f20, 0x0000000000000000, 
-	0x00000000004f4f6f, 0x9f9fbf9f9f9f9f9f, 0x6f4f4fbf9f6f6f6f, 0x6f6f6f6f9f9f9fbf, 0xdfdfbfbfbfbfdfdf, 0xdfdfdfbfbf9f2f2f, 0x20609fbfbfbf6f00, 0x0000000000000000, 
-	0x00000000004f9fbf, 0xbfbfbfbfbf9f9f9f, 0x9f6f6f2f6f6f6f6f, 0x6f6f9f6f6f6f4f9f, 0xbfbfbfbfdfdfffff, 0xdfdfdfbf9f9f2f2f, 0x20409f9f4fbf6f20, 0x0000000000000000, 
-	0x00000000006fbf9f, 0xbfbfbfdfdfbfbf9f, 0x6f4f4f6f6f9f9f9f, 0x9f9f9f9f6f6f4f9f, 0xbfdfbfbfbfdfffff, 0xdfdfff9fbf9f2f6f, 0x20402f9f9f9f4f40, 0x0000000000000000, 
-	0x00000000009f9fbf, 0xdfbfdfffdfbf6f6f, 0x6f2f2f4f6f9f9fbf, 0x9f9f9f6f6f9f4f9f, 0xdfdfbfbfbfdfffff, 0xdfbfff9f9f9f2f9f, 0x40404f6fbf9f0f60, 0x0000000000000000, 
-	0x000000000020bfbf, 0x9fbf6f4f4f4f4f2f, 0x6f6f4f4f9f9fbfbf, 0xbf9f6f9f6fbf2f4f, 0xdfbfdfdfbfdfffdf, 0xbfbfff9f6f9f2f9f, 0x00004fffff6f0f40, 0x0000000000000000, 
-	0x0000000000200000, 0x002f2f6fbfdfdf6f, 0x6f0f0f6f9fbfbf9f, 0x9f9f6f6f6fbf4f2f, 0xbfbfbfbfbfffffbf, 0xbfbfff9f6fbf2f6f, 0x00409fffff6f6f40, 0x0000000000000000, 
-	0x0000000000604040, 0x006fffffffffdf9f, 0x4f2f4f6f9fbf9f9f, 0xbfbf9f6f6fbf4f4f, 0xbfdfbfbfbfdfdfbf, 0xdf9fdfbf6f9f6f6f, 0x4090bfffff6f9f20, 0x0000000000000000, 
-	0x0000000000600040, 0x002fbfdfdfbfdf6f, 0x2f909f6f9fbf9f9f, 0x9f9f9f6f9fbf6f4f, 0x6f9fbfbfdfffdf9f, 0xbf6fbfdf4f6f9f2f, 0x6060bfffdf4f9020, 0x0000000000000000, 
-	0x0000000000406000, 0x204fbfbfbfbf6f00, 0x00406f9f9fbf9f9f, 0x9f9f9f6f9fbf4f2f, 0x6f6fbfbfdfffbfbf, 0x9f6fbf9f2f6f6040, 0x6090bfffdf206000, 0x0000000000000000, 
-	0x0000000000009020, 0x60dfdfdfbfbf4f00, 0x00006fbf9f9f9f9f, 0x9f6f6f9f9fbf202f, 0x6f9fbfbfbfff9fdf, 0xdf6f9f4f4f4f2040, 0x2040dfffdf204000, 0x0000000000000000, 
-	0x00000000000060bf, 0xbfdfdfdfbfbf9fbf, 0xbf60204f6f9fbfdf, 0xbf9f6f4f2f000000, 0x002f6f9f9fdf9f9f, 0x9f00000000000020, 0x6060dfffbf200000, 0x0000000000000000, 
-	0x00000000009f6f9f, 0xbfdfffdf9fbfdfdf, 0xdfbf40206fbfffff, 0xffbf6f2000000000, 0x000f9fbfffffffbf, 0x4f002040400020b0, 0xd0d0ffff9f000000, 0x0000000000000000, 
-	0x000000004f6f6f9f, 0xbfffdfbfbfbfdfff, 0xffffdf6f9fdfdfff, 0xdfbf9f0000202040, 0x604fbfdfdfffff9f, 0x0020909060404090, 0xd0d0ffff60000000, 0x0000000000000000, 
-	0x000000009f9fbfbf, 0xdfffdfffffffffff, 0xffffff9fbfffffff, 0xdfbf6f004090b0b0, 0x906fbfffdfffdf4f, 0x0040b09000204090, 0xb090ffff20000000, 0x0000000000000000, 
-	0x0000006f9fbfbfbf, 0xdfdfdfffffffffff, 0xffffffbf9fffffff, 0xdfbf4f2090d0d0b0, 0x904f9fdfdfdfbf4f, 0x0040600000206060, 0x6060ffdf000f2f6f, 0x4020200020000000, 
-	0x0000009f9fbfbfdf, 0xbfdfdfdfffffffff, 0xdfffffdfbfffffff, 0xdfbf0040b0d09090, 0xb04f6fbfdfffbf9f, 0x000000206f6f6060, 0x6060dfbf002f6f6f, 0x6f40202020404020, 
-	0x0000209f9fbfbfbf, 0xdfffffffffffffff, 0xffffffdfbfffffff, 0xffbf204090909090, 0x6f6f9fbfffffdf9f, 0x0000209f9f6f4f4f, 0x6f6f9f9f6f6f6f6f, 0x9f6f404020204060, 
-	0x00004f9f9fbfbfdf, 0xdfffffffdfdfffdf, 0xdfdfffbfdfffffdf, 0xffdf400060b09090, 0x4f9fdfdfffffff9f, 0x00409f9fbfbf9f6f, 0x4f9f9f9f9f9f6f6f, 0x6f9f9f9f60204060, 
-	0x00009fbf9fdfdfbf, 0xdfffffffffffffdf, 0xdfdfff9fdfffffff, 0xffdf9f2060909090, 0x6fdfdfffffffff6f, 0x0090dfbfbfbf9f9f, 0x6f6fbfbfbfbf6f6f, 0x6f6f6f6f400020b0, 
-	0x00009fbfbfdfdfdf, 0xffffdfffffffffdf, 0xdfdfffbfdfffffff, 0xffff9f2040906040, 0x4fdfffffffffff4f, 0x00b0dfbfbfbfbfbf, 0x9f6f9fbfdfbf9f6f, 0x6f6f6f6f40000000, 
-	0x000090dfbfbfffff, 0xffdfdfffffffdfdf, 0xdfdfffbf9fbfdfdf, 0xffffbf0000202000, 0x2fdfffdfdfbf9f2f, 0x20909fbfbfbfbfdf, 0xbf9f6fbfffbfbf9f, 0x6f6f9f9f40000000, 
-	0x000060dfbfbfdfff, 0xffdfdfffffffdfdf, 0xdfffbf6f9f9f9f9f, 0x9fbf9f0000000000, 0x2fbfdfbfbfbf6060, 0x0020bfdfbfdfbfbf, 0x9f9f6f9fdfbfdfbf, 0x9f6f9f6f6f000000, 
-	0x000040bfbfbfdfdf, 0xdfffffffffffdfdf, 0xdfff9f6fdfffbf9f, 0x6f6f9f2f0020000f, 0x6fbfbfbfdfdf6040, 0x4020dfdfdfffdfdf, 0xbf9f6f6fbfdfdfdf, 0xbf9f9f9f2f000000, 
-	0x000000bfbfbfdfdf, 0xdfffffffffdfdfff, 0xdfff9f6fbfdfdfbf, 0xbf6f4f0f00004f2f, 0x4f9fbfffdfbf2020, 0x2090ffdfdfdfffff, 0xdfbf9f6fbfffffdf, 0xdf6f6f9f00000000, 
-	0x0000009fbfbfbfdf, 0xffdfdfffffffffff, 0xffffffbf9fbfdfff, 0xffbfbf4f0000002f, 0x4f9fffffdfbf2020, 0x609fdfbfdfffffdf, 0xffdfbf6fbfffffdf, 0xbf2f6f6f00000000, 
-	0x00000020bfbfdfbf, 0xdfdfdfffffdfffff, 0xffffffffbfdfffff, 0xffbf20000000000f, 0x0f9fffffffbf0020, 0x00209fbfffffffdf, 0xffdfbf9fdfffffdf, 0xbf4f6f6f6f000000, 
-	0x000000006fbfbfbf, 0xdfffffffffffffff, 0xffffffffdfdfffff, 0xdf9f00000020000f, 0x2f6fffffff4f4060, 0x00006fbfdfdfbfbf, 0xbf9f6fbfdfdfdfbf, 0xbf9f6f6f2f000000, 
-	0x00000000009fbfdf, 0xdfdfffffffffffff, 0xffffffffbfbfffff, 0xbf20406060402000, 0x0f6fdfdf9f0f2000, 0x00409fbfbfbfbfdf, 0xdf2f6fffdfdfbfbf, 0xbfbfbf6f2f000000, 
-	0x0000000000209fdf, 0xdfffffffffffffff, 0xffffdfdf9f9fdfdf, 0xbf20204040400000, 0x0f9f9f6f4f2f4f20, 0x206f9fbfdfdfbfdf, 0xdf6f6fdfdfbf9fbf, 0x6f9f9f6f6f0f0000, 
-	0x000000000000209f, 0xbfbfdfffffffffdf, 0xbf9f9f9f6f6f9fbf, 0xbf20002000200000, 0x0f6f6f6f6f4f4f00, 0x006fdfdfdfdfbfbf, 0xbf9f4fbfbf9fbfbf, 0xbf9f6f4f4f0f0000, 
-	0x0000000000000000, 0x9f9fbfbfbfdf9f9f, 0x9f6f4f9f9f9f6f4f, 0x4f2f204020204000, 0x4f9f6f6f6f6f4f20, 0x002f6f9f9f6f9fbf, 0x6f4f4f4f4f6f9f6f, 0x4f6f4f2f2f0f0000, 
-	0x0000000000000000, 0x40606060606040bf, 0x9f9f9f9f4f4f2f2f, 0x9f6f000000000000, 0x0f4f4f2f4f6f9f6f, 0x604f0f2f2f4f6f2f, 0x0f4f6f4f0f2f6f6f, 0x4040606060404000, 
-	0x0000000000002040, 0x40606060604060bf, 0xbf9f9f4f0f2f2f4f, 0x6f6f204040406060, 0x6f6f6f6f9f9fbf9f, 0xbf9f6f9f9fbfdfdf, 0xbfdfbfb0b0b0d0f0, 0xf0d0d0f0f0f0d0b0, 
+u64 escape_rm_dl_bow_icon_rgba32_rgba16[] = {
+	0x0000000000000000, 0x0000000000000000, 0x0000000000000000, 0x0000000000000000, 0x0000000000000000, 0x0000000000000000, 0x0000000031925adf, 0x842f7beb21080000, 
+	0x0000000000000000, 0x0000000000000000, 0x0000000000000000, 0x0000000000000000, 0x0000000000000000, 0x0000000000000000, 0x5adf73678c718c2f, 0x9471bdb5739b0000, 
+	0x0000a04338000000, 0x0000000000000000, 0x0000000000000000, 0x0000000000000000, 0x0000000000000000, 0x0000000000008c27, 0xad35947183e16ad7, 0xbdb1f7b742110001, 
+	0x3000f88578010000, 0x0000000000000000, 0x0000000000000000, 0x20805142618371c3, 0x9a456183490310cc, 0x0163004c0000a4e5, 0xa4ed83135a053947, 0xf7b7e6f100010001, 
+	0x8801f909b8013948, 0xbd63398a5a9218c4, 0x0000390249439245, 0x9a87cbcfab4b7a47, 0x9a457a05624f1339, 0x01f5004b0000739c, 0xa4df5a0728c3945d, 0xf775739700010001, 
+	0xc801f801f801db15, 0xd6297357e66b72d1, 0x9245b309b38fcbd1, 0x92cb69c561835143, 0x69c361c923b91abd, 0x111500035ad7d671, 0xd66f49cb4a0df775, 0xd66b318b00010000, 
+	0x6001d801f801f315, 0xb5237315c5a582cd, 0xa2c9824949435943, 0x3903494539033903, 0x4a131af50a3749d9, 0xec094901c5abe6f5, 0x73994a0f31495a91, 0x7bdb000100010000, 
+	0x000148017801abdb, 0x735773159c5d4187, 0x49434103414559c9, 0x3947390530c32993, 0x12ff01f53955fb41, 0xfc07f491dd9f6293, 0x420f0001000118c5, 0x1085000100010000, 
+	0x000000011001941d, 0x4a0f83db5a9149cb, 0x498930c318811841, 0x0801000100011273, 0x09ad2953cac3eb01, 0xfc93ee656a8f5987, 0x1085000100470001, 0x0000000000000000, 
+	0x0000000118c75251, 0x398b62d341cd1083, 0x0001000100010001, 0x0001000000000093, 0x089108036141d389, 0xe623724bdb45f343, 0x51cd02f901690000, 0x0000000000000000, 
+	0x0000000000000843, 0x1085398b83db7359, 0x1083000000000000, 0x0000000000000000, 0x000000015a4dee65, 0x724bc2c9fb41cc55, 0x2bb91ab700930000, 0x0000000000000000, 
+	0x0000000000000001, 0x000108437b9bd62d, 0x7b9b108200000000, 0x0000000000000000, 0x00005a4dde256a8f, 0x620dc281d34d3b73, 0x01f5009528810801, 0x0001000000000000, 
+	0x0000000000000000, 0x0000000108436b17, 0xce2d62d510820000, 0x0000000000000000, 0x41cce5e162090840, 0x000161871bbf01f3, 0x1915490530c10801, 0x0000000000000000, 
+	0x0000000000000000, 0x0000000000010843, 0x6b17ce2d73591082, 0x000000000000420e, 0xee656a4b08400001, 0x00010aff01b11915, 0x79c3594330c31041, 0x0001000000000000, 
+	0x0000000000000000, 0x0000000000000001, 0x084383ddd62d62d5, 0x10820000420cde25, 0x7a8b084000010001, 0x00d90165399561c7, 0x7a03514328c11041, 0x0001000000000000, 
+	0x0000000000000000, 0x0000000000000000, 0x000100017b9bce2d, 0x6b57624adddf724b, 0x1882000100010000, 0x00000004494571c5, 0x7a05514328811041, 0x0001000000000000, 
+	0x0000000000000000, 0x0000000000000000, 0x0000000108437b9b, 0xde2bee656a4b0840, 0x0001000100000000, 0x0000000038c29289, 0x8205490328810001, 0x0001000000000000, 
+	0x0000000000000000, 0x0000000000000000, 0x00000000000151c9, 0xe6256a4b83991083, 0x0001000000000000, 0x0000000051438245, 0x71c5410320810001, 0x0001000000000000, 
+	0x0000000000000000, 0x0000000000000000, 0x000000005a0bee67, 0x62096b15d62d62d5, 0x1082000000000000, 0x000000007a477a05, 0x71c330c118410001, 0x0001000000000000, 
+	0x0000000000000000, 0x0000000000004a0f, 0x7b9b735be6256209, 0x0841084383ddce2d, 0x62d5108200000000, 0x000020809a857a05, 0x618328c100010001, 0x0000000000000000, 
+	0x0000000000000000, 0x00001040628d8393, 0x945be6257b112909, 0x00010001000183dd, 0xce2d735910820000, 0x00004102a2c769c3, 0x5143208100010001, 0x0000000000000000, 
+	0x0000000000000000, 0x2902730773497b4f, 0xd5e38351941d314b, 0x0001000000010843, 0x83ddd62d73591082, 0x00004942ab4b6183, 0x4903188100010001, 0x0000000000000000, 
+	0x0000000020007985, 0x728573057307c561, 0x830f8bd583d91085, 0x0001000000000001, 0x08436b17d62d7b9b, 0x1082928b92456183, 0x4147525108430000, 0x0000000000000000, 
+	0x00000000304268c5, 0x69c58307e6277b0d, 0x734b7b4f524d0001, 0x0001000000000000, 0x0001084383ddce2d, 0x8c1dcd1fd5a5b4df, 0xa49f5a9118c50000, 0x0000000000000000, 
+	0x0000000000000000, 0x0801e62582cf8349, 0x73076ac900010001, 0x0001000000000000, 0x0000000108436b17, 0xc5a7ace17b995a91, 0x4a0d398b18850001, 0x0000000000000000, 
+	0x0000000000000000, 0x6a8e72cf62097285, 0x7305290300010001, 0x0000000000000000, 0x0000000000010001, 0x5a9373578bdbac9d, 0xb521839931490001, 0x0000000000000000, 
+	0x0000000000000000, 0x0000080038c581c5, 0x4183000100010000, 0x0000000000000000, 0x0000000000000001, 0x4a4fb5239c5f7357, 0x5251414908430001, 0x0000000000000000, 
+	0x0000000000000000, 0x00000000084280c5, 0x1041000100010000, 0x0000000000000000, 0x0000000000000000, 0x0843318b80c7a043, 0x9001984370011801, 0x0000000000000000, 
+	0x0000000000000000, 0x0000000000002000, 0x0001000100000000, 0x0000000000000000, 0x0000000000000000, 0x0000000150017001, 0x78019001e001c801, 0x2000000000000000, 
+	0x0000000000000000, 0x0000000000000000, 0x0000000000000000, 0x0000000000000000, 0x0000000000000000, 0x0000000000013001, 0x4801480140011801, 0x0001000000000000, 
+	0x0000000000000000, 0x0000000000000000, 0x0000000000000000, 0x0000000000000000, 0x0000000000000000, 0x0000000000000001, 0x1001080100010001, 0x0001000000000000, 
+	0x0000000000000000, 0x0000000000000000, 0x0000000000000000, 0x0000000000000000, 0x0000000000000000, 0x0000000000000000, 0x0000000100010000, 0x0000000000000000, 
 	
 };
 
@@ -635,50 +643,26 @@ Gfx escape_rm_dl_paper_006_mesh_layer_Opaque_tri_0[] = {
 	gsSPEndDisplayList(),
 };
 
-Vtx escape_rm_dl_Plane_004_mesh_layer_Opaque_vtx_cull[8] = {
-	{{ {1982, -51, -699}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {1982, 54, -699}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {1982, 54, -743}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {1982, -51, -743}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {2027, -51, -699}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {2027, 54, -699}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {2027, 54, -743}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {2027, -51, -743}, 0, {0, 0}, {0, 0, 0, 0} }},
+Vtx escape_rm_dl_Plane_009_mesh_layer_Opaque_vtx_cull[8] = {
+	{{ {2178, -46, -209}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {2178, -27, -209}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {2178, -27, -209}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {2178, -46, -209}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {2198, -46, -209}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {2198, -27, -209}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {2198, -27, -209}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {2198, -46, -209}, 0, {0, 0}, {0, 0, 0, 0} }},
 };
 
-Vtx escape_rm_dl_Plane_004_mesh_layer_Opaque_vtx_0[4] = {
-	{{ {2027, -51, -699}, 0, {-16, 2032}, {8, 8, 64, 255} }},
-	{{ {1982, -51, -743}, 0, {2032, 2032}, {8, 8, 64, 255} }},
-	{{ {1982, 54, -743}, 0, {2032, 10}, {41, 41, 100, 255} }},
-	{{ {2027, 54, -699}, 0, {-16, 10}, {25, 25, 80, 255} }},
+Vtx escape_rm_dl_Plane_009_mesh_layer_Opaque_vtx_0[4] = {
+	{{ {2178, -46, -209}, 0, {-16, 1008}, {0, 0, 127, 255} }},
+	{{ {2198, -46, -209}, 0, {1008, 1008}, {0, 0, 127, 255} }},
+	{{ {2198, -27, -209}, 0, {1008, -16}, {0, 0, 127, 255} }},
+	{{ {2178, -27, -209}, 0, {-16, -16}, {0, 0, 127, 255} }},
 };
 
-Gfx escape_rm_dl_Plane_004_mesh_layer_Opaque_tri_0[] = {
-	gsSPVertex(escape_rm_dl_Plane_004_mesh_layer_Opaque_vtx_0 + 0, 4, 0),
-	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
-	gsSPEndDisplayList(),
-};
-
-Vtx escape_rm_dl_Plane_006_mesh_layer_Opaque_vtx_cull[8] = {
-	{{ {2352, -52, -697}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {2352, 54, -697}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {2352, 54, -741}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {2352, -52, -741}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {2399, -52, -697}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {2399, 54, -697}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {2399, 54, -741}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {2399, -52, -741}, 0, {0, 0}, {0, 0, 0, 0} }},
-};
-
-Vtx escape_rm_dl_Plane_006_mesh_layer_Opaque_vtx_0[4] = {
-	{{ {2399, -52, -741}, 0, {-16, 2032}, {109, 19, 19, 255} }},
-	{{ {2352, -52, -697}, 0, {2032, 2032}, {76, 18, 18, 255} }},
-	{{ {2352, 54, -697}, 0, {2032, -4}, {177, 26, 26, 255} }},
-	{{ {2399, 54, -741}, 0, {-16, -4}, {139, 48, 48, 255} }},
-};
-
-Gfx escape_rm_dl_Plane_006_mesh_layer_Opaque_tri_0[] = {
-	gsSPVertex(escape_rm_dl_Plane_006_mesh_layer_Opaque_vtx_0 + 0, 4, 0),
+Gfx escape_rm_dl_Plane_009_mesh_layer_Opaque_tri_0[] = {
+	gsSPVertex(escape_rm_dl_Plane_009_mesh_layer_Opaque_vtx_0 + 0, 4, 0),
 	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
 	gsSPEndDisplayList(),
 };
@@ -699,35 +683,19 @@ Gfx mat_escape_rm_dl_dark_brick_layerOpaque[] = {
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_escape_rm_dl_knight_layerOpaque[] = {
+Gfx mat_escape_rm_dl_bow_icon_layerOpaque[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, TEXEL0, COMBINED, 0, PRIMITIVE, 0, 0, 0, 0, COMBINED),
-	gsSPLoadGeometryMode(G_ZBUFFER | G_SHADE | G_FOG | G_SHADING_SMOOTH),
+	gsSPLoadGeometryMode(G_ZBUFFER | G_SHADE | G_FOG | G_LIGHTING | G_SHADING_SMOOTH),
 	gsSPSetOtherMode(G_SETOTHERMODE_H, 4, 20, G_AD_NOISE | G_CD_MAGICSQ | G_CK_NONE | G_TC_FILT | G_TF_BILERP | G_TT_NONE | G_TL_TILE | G_TD_CLAMP | G_TP_PERSP | G_CYC_2CYCLE | G_PM_NPRIMITIVE),
 	gsSPSetOtherMode(G_SETOTHERMODE_L, 0, 32, G_AC_NONE | G_ZS_PIXEL | G_RM_FOG_SHADE_A | G_RM_AA_ZB_TEX_EDGE2),
 	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetPrimColor(0, 0, 255, 255, 255, 255),
-	gsDPSetTextureImage(G_IM_FMT_IA, G_IM_SIZ_8b_LOAD_BLOCK, 1, escape_rm_dl_hairal_niwa2_room_0Tex_0163F8_ia4_ia8),
-	gsDPSetTile(G_IM_FMT_IA, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadBlock(7, 0, 0, 2047, 256),
-	gsDPSetTile(G_IM_FMT_IA, G_IM_SIZ_8b, 8, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 6, 0, G_TX_WRAP | G_TX_NOMIRROR, 6, 0),
-	gsDPSetTileSize(0, 0, 0, 252, 252),
-	gsSPEndDisplayList(),
-};
-
-Gfx mat_escape_rm_dl_knight_002_layerOpaque[] = {
-	gsDPPipeSync(),
-	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, TEXEL0, COMBINED, 0, PRIMITIVE, 0, 0, 0, 0, COMBINED),
-	gsSPLoadGeometryMode(G_ZBUFFER | G_SHADE | G_FOG | G_SHADING_SMOOTH),
-	gsSPSetOtherMode(G_SETOTHERMODE_H, 4, 20, G_AD_NOISE | G_CD_MAGICSQ | G_CK_NONE | G_TC_FILT | G_TF_BILERP | G_TT_NONE | G_TL_TILE | G_TD_CLAMP | G_TP_PERSP | G_CYC_2CYCLE | G_PM_NPRIMITIVE),
-	gsSPSetOtherMode(G_SETOTHERMODE_L, 0, 32, G_AC_NONE | G_ZS_PIXEL | G_RM_FOG_SHADE_A | G_RM_AA_ZB_TEX_EDGE2),
-	gsSPTexture(65535, 65535, 0, 0, 1),
-	gsDPSetPrimColor(0, 0, 255, 255, 255, 255),
-	gsDPSetTextureImage(G_IM_FMT_IA, G_IM_SIZ_8b_LOAD_BLOCK, 1, escape_rm_dl_hairal_niwa2_room_0Tex_0163F8_ia4_ia8),
-	gsDPSetTile(G_IM_FMT_IA, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadBlock(7, 0, 0, 2047, 256),
-	gsDPSetTile(G_IM_FMT_IA, G_IM_SIZ_8b, 8, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 6, 0, G_TX_WRAP | G_TX_NOMIRROR, 6, 0),
-	gsDPSetTileSize(0, 0, 0, 252, 252),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b_LOAD_BLOCK, 1, escape_rm_dl_bow_icon_rgba32_rgba16),
+	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadBlock(7, 0, 0, 1023, 256),
+	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b, 8, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTileSize(0, 0, 0, 124, 124),
 	gsSPEndDisplayList(),
 };
 
@@ -765,23 +733,13 @@ Gfx escape_rm_dl_paper_006_mesh_layer_Opaque[] = {
 	gsSPEndDisplayList(),
 };
 
-Gfx escape_rm_dl_Plane_004_mesh_layer_Opaque[] = {
+Gfx escape_rm_dl_Plane_009_mesh_layer_Opaque[] = {
 	gsSPClearGeometryMode(G_LIGHTING),
-	gsSPVertex(escape_rm_dl_Plane_004_mesh_layer_Opaque_vtx_cull + 0, 8, 0),
+	gsSPVertex(escape_rm_dl_Plane_009_mesh_layer_Opaque_vtx_cull + 0, 8, 0),
 	gsSPSetGeometryMode(G_LIGHTING),
 	gsSPCullDisplayList(0, 7),
-	gsSPDisplayList(mat_escape_rm_dl_knight_layerOpaque),
-	gsSPDisplayList(escape_rm_dl_Plane_004_mesh_layer_Opaque_tri_0),
-	gsSPEndDisplayList(),
-};
-
-Gfx escape_rm_dl_Plane_006_mesh_layer_Opaque[] = {
-	gsSPClearGeometryMode(G_LIGHTING),
-	gsSPVertex(escape_rm_dl_Plane_006_mesh_layer_Opaque_vtx_cull + 0, 8, 0),
-	gsSPSetGeometryMode(G_LIGHTING),
-	gsSPCullDisplayList(0, 7),
-	gsSPDisplayList(mat_escape_rm_dl_knight_002_layerOpaque),
-	gsSPDisplayList(escape_rm_dl_Plane_006_mesh_layer_Opaque_tri_0),
+	gsSPDisplayList(mat_escape_rm_dl_bow_icon_layerOpaque),
+	gsSPDisplayList(escape_rm_dl_Plane_009_mesh_layer_Opaque_tri_0),
 	gsSPEndDisplayList(),
 };
 

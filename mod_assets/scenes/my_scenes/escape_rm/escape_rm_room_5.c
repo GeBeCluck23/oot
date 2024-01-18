@@ -10,8 +10,8 @@
 /**
  * Header Child Day (Default)
 */
-#define LENGTH_ESCAPE_RM_ROOM_5_HEADER00_OBJECTLIST 3
-#define LENGTH_ESCAPE_RM_ROOM_5_HEADER00_ACTORLIST 13
+#define LENGTH_ESCAPE_RM_ROOM_5_HEADER00_OBJECTLIST 4
+#define LENGTH_ESCAPE_RM_ROOM_5_HEADER00_ACTORLIST 14
 SceneCmd escape_rm_room_5_header00[] = {
     SCENE_CMD_ECHO_SETTINGS(0x00),
     SCENE_CMD_ROOM_BEHAVIOR(0x00, 0x00, false, false),
@@ -27,9 +27,18 @@ s16 escape_rm_room_5_header00_objectList[LENGTH_ESCAPE_RM_ROOM_5_HEADER00_OBJECT
     OBJECT_JUMPTOGGLE_PLATFORM,
     OBJECT_PLATFORMS,
     OBJECT_BOX,
+    OBJECT_ZOL,
 };
 
 ActorEntry escape_rm_room_5_header00_actorList[LENGTH_ESCAPE_RM_ROOM_5_HEADER00_ACTORLIST] = {
+    // Treasure Chest
+    {
+        /* Actor ID   */ ACTOR_EN_BOX,
+        /* Position   */ { 940, 307, -741 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(180.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0643
+    },
+
     // Custom Actor
     {
         /* Actor ID   */ ACTOR_PLATFORMS,
@@ -46,12 +55,12 @@ ActorEntry escape_rm_room_5_header00_actorList[LENGTH_ESCAPE_RM_ROOM_5_HEADER00_
         /* Parameters */ 0x8000
     },
 
-    // Treasure Chest
+    // Custom Actor
     {
-        /* Actor ID   */ ACTOR_EN_BOX,
-        /* Position   */ { 940, 307, -741 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(180.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0643
+        /* Actor ID   */ ACTOR_EN_ZOL,
+        /* Position   */ { 322, 579, -560 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(359.698), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0000
     },
 
     // Custom Actor
@@ -70,14 +79,6 @@ ActorEntry escape_rm_room_5_header00_actorList[LENGTH_ESCAPE_RM_ROOM_5_HEADER00_
         /* Parameters */ 0x07AE
     },
 
-    // Custom Actor
-    {
-        /* Actor ID   */ ACTOR_JUMPTOGGLE_PLATFORM,
-        /* Position   */ { -570, 304, -3790 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0000
-    },
-
     // Checkable Spot
     {
         /* Actor ID   */ ACTOR_EN_WONDER_TALK2,
@@ -89,25 +90,17 @@ ActorEntry escape_rm_room_5_header00_actorList[LENGTH_ESCAPE_RM_ROOM_5_HEADER00_
     // Custom Actor
     {
         /* Actor ID   */ ACTOR_PLATFORMS,
-        /* Position   */ { 386, 999, -3534 },
+        /* Position   */ { 261, 987, -3805 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
         /* Parameters */ 0x8000
     },
 
-    // Treasure Chest
+    // Custom Actor
     {
-        /* Actor ID   */ ACTOR_EN_BOX,
-        /* Position   */ { 915, 1090, -1855 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x01A7
-    },
-
-    // Treasure Chest
-    {
-        /* Actor ID   */ ACTOR_EN_BOX,
-        /* Position   */ { 697, 579, -484 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x014F
+        /* Actor ID   */ ACTOR_PLATFORMS,
+        /* Position   */ { 386, 999, -3534 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x8000
     },
 
     // Custom Actor
@@ -126,12 +119,28 @@ ActorEntry escape_rm_room_5_header00_actorList[LENGTH_ESCAPE_RM_ROOM_5_HEADER00_
         /* Parameters */ 0x0000
     },
 
+    // Treasure Chest
+    {
+        /* Actor ID   */ ACTOR_EN_BOX,
+        /* Position   */ { 915, 1090, -1855 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x01A7
+    },
+
     // Custom Actor
     {
-        /* Actor ID   */ ACTOR_PLATFORMS,
-        /* Position   */ { 261, 987, -3805 },
+        /* Actor ID   */ ACTOR_JUMPTOGGLE_PLATFORM,
+        /* Position   */ { -570, 304, -3790 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x8000
+        /* Parameters */ 0x0000
+    },
+
+    // Treasure Chest
+    {
+        /* Actor ID   */ ACTOR_EN_BOX,
+        /* Position   */ { 697, 579, -484 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x014F
     },
 };
 
@@ -160,8 +169,35 @@ Gfx escape_rm_room_5_entry_0_opaque[] = {
 	gsSPDisplayList(escape_rm_dl_fake_wall_mesh_layer_Opaque),
 	gsSPDisplayList(escape_rm_dl_floor_004_mesh_layer_Opaque),
 	gsSPDisplayList(escape_rm_dl_paper_007_mesh_layer_Opaque),
-	gsSPDisplayList(escape_rm_dl_Plane_001_mesh_layer_Opaque),
 	gsSPEndDisplayList(),
+};
+
+u64 escape_rm_dl_bookshelf_mark_rgba16_ci8[] = {
+	0x0001000001010102, 0x0304010501050502, 0x0202000305000202, 0x0202010000010504, 0x0101000505050405, 0x0505050501010103, 0x0501030402010101, 0x0102020200010101, 
+	0x060708090a0b070c, 0x0d060e0f0f0f0606, 0x10061106060f110e, 0x061106111213130c, 0x06070809090b1415, 0x0f060f16060f110f, 0x110d0f0606110610, 0x06170f111819130c, 
+	0x0d070809090a140c, 0x111a1b0f06060f10, 0x0d0d1006110d0f10, 0x060d100f1c1d1e1f, 0x110708200909080c, 0x0f1b1b060f0f0e10, 0x0d0d0f0d0d0f110f, 0x11060f110121221f, 
+	0x061408092009080c, 0x0f1b1b0f0f060e0f, 0x0606060d060c2324, 0x252627062221220c, 0x06070809090b080c, 0x111b280c29152a2b, 0x2c2d0606110c2e25, 0x2f2627112221220c, 
+	0x0f0708090a0b140c, 0x1130301531151532, 0x332d0e1106152e25, 0x2f3427110121220c, 0x06140809090b140c, 0x1130350c310c2a36, 0x2c37060d060c2e2f, 0x3826390601213a3b, 
+	0x0f1408090a08072a, 0x063c350c310c0c36, 0x3d37110d060c2e25, 0x243e390f1c223f2a, 0x0c1408090b08072a, 0x063c350c310c0c36, 0x2c37060d06152e24, 0x243e270f1c403f15, 
+	0x06140b090a08070c, 0x06353015410c0c36, 0x2c420c43441f2324, 0x453e4606221e470c, 0x0e140b200a081415, 0x11281b15480c0c2b, 0x2c370c43490c2345, 0x4a4b270f1c1d3f0c, 
+	0x061408090908070c, 0x061a1a0c4c0c0c2b, 0x2c4d15434e2a2324, 0x4a4b270f1c1d3f15, 0x4f505151524f4f4f, 0x4f534f4f54555655, 0x56554f5755514f58, 0x5552534f58504f51, 
+	0x595a5b5c5d5e5f60, 0x5a5f5a6159625a5b, 0x6364636566636367, 0x66625c5c6268695c, 0x0500000200000204, 0x0501020204050101, 0x0505050405050105, 0x0501050504050505, 
+	0x111111110f0f0f0d, 0x0f0e0c1e1d00060f, 0x0d0f0d06110f0f06, 0x0f6a080a090a1415, 0x11060f0f11100606, 0x1106151e1d1c0d06, 0x170f0c0611060606, 0x0f6a140920091415, 
+	0x060f170f060f060f, 0x0606151e6b1c0606, 0x0f06110f06156c15, 0x0f6a1409090a142a, 0x0d0f110d06116d11, 0x0d0f0c1e6b1c0606, 0x0f0f0d0e0d1f6c15, 0x0f07140a0a08072a, 
+	0x17060611396e6f70, 0x230c0c406b1c060f, 0x06060611061f280c, 0x0d07140b0a08070c, 0x06110d0f39716f72, 0x230c0c1c6b1c3b2b, 0x734d0674310c280c, 0x0614080a0b08070c, 
+	0x0606060f396e6f70, 0x752a0c3f1e3f1f32, 0x337606777815790c, 0x0f14080a0b08070c, 0x0606060f277a6f7b, 0x230c2a1313181f3d, 0x33361177770c7c0c, 0x06140b090b146a0c, 
+	0x060f061127716f7d, 0x23152a137e12153d, 0x333606787f0c7c15, 0x0f1408090b14070c, 0x0606110680816f82, 0x830c0c8485120c3d, 0x334d0d86871f882a, 0x0f140b200a08070c, 
+	0x06898a0c8b6f6f6f, 0x8c151f3f19471f32, 0x2c37062986158d0c, 0x0d140b8e0908070c, 0x118f900c916f6f92, 0x230c151c6b3f0c2b, 0x732d0f86930c3515, 0x0c140b8e090b6a0c, 
+	0x068f8a0c2771944a, 0x750d151e6b95152b, 0x73760f86960c352a, 0x06080a97200a070c, 0x5851514f50559898, 0x4f5598994f99559a, 0x4f555550984f9855, 0x569b4f99989c9855, 
+	
+};
+
+u64 escape_rm_dl_bookshelf_mark_rgba16_pal_rgba16[] = {
+	0x520d5a4f524f524d, 0x5a8f5a9151830201, 0x02810341030102c1, 0x4983494359c55985, 0x61c559835189620b, 0x0241498551855143, 0x51c96a4d3b173ad7, 0x5a0d6a4f624d4143, 
+	0x03816a91624f80c1, 0xc241c281a9c16801, 0x3ad5939549c5a001, 0x8801c00188c1ca81, 0x32d3935598017801, 0xb1c13293a801c801, 0xd28160015a4d4183, 0x3ad39001a1815a0b, 
+	0x620d9397d001c341, 0xbb41ba41700159cb, 0x9b97bb81b201a981, 0x9bd9b801c3818397, 0x83998bd98bd77b97, 0x83d77b5573137315, 0x83d99419ac9db4e1, 0xb521acddb51fb4df, 
+	0xbd21a45b9c5bacdf, 0x94179459bd63c5a5, 0x9c59a49d01c16a8f, 0x3a95498d5157116b, 0x89cd495991c98001, 0x8b5378c1b001828f, 0x8ad13a93595791cd, 0x325199c96a0d82d1, 
+	0x40913161499d4117, 0x59c961cb93539b95, 0x320fc401bb011925, 0x2123325303c1cc01, 0xc301484d19698b13, 0x2165520b8b110401, 0x835583956ad16b13, 0x8b99000000000000
 };
 
 Vtx escape_rm_dl_Cube_002_mesh_layer_Opaque_vtx_cull[8] = {
@@ -643,7 +679,7 @@ Vtx escape_rm_dl_Cube_013_mesh_layer_Opaque_vtx_cull[8] = {
 	{{ {1024, 158, -787}, 0, {0, 0}, {0, 0, 0, 0} }},
 };
 
-Vtx escape_rm_dl_Cube_013_mesh_layer_Opaque_vtx_0[53] = {
+Vtx escape_rm_dl_Cube_013_mesh_layer_Opaque_vtx_0[55] = {
 	{{ {107, 158, -743}, 0, {-1414, 2072}, {255, 255, 255, 255} }},
 	{{ {551, 435, -743}, 0, {1907, 0}, {255, 255, 255, 255} }},
 	{{ {551, 307, -743}, 0, {1907, 955}, {255, 255, 255, 255} }},
@@ -664,8 +700,10 @@ Vtx escape_rm_dl_Cube_013_mesh_layer_Opaque_vtx_0[53] = {
 	{{ {551, 435, -518}, 0, {254, 51}, {255, 255, 255, 255} }},
 	{{ {764, 579, -743}, 0, {3497, -1080}, {255, 255, 255, 255} }},
 	{{ {630, 435, -743}, 0, {2496, 0}, {255, 255, 255, 255} }},
-	{{ {551, 435, -743}, 0, {1907, 0}, {255, 255, 255, 255} }},
+	{{ {630, 502, -743}, 0, {2494, -505}, {255, 255, 255, 255} }},
+	{{ {552, 503, -743}, 0, {1915, -508}, {255, 255, 255, 255} }},
 	{{ {107, 579, -743}, 0, {-1414, -1080}, {255, 255, 255, 255} }},
+	{{ {551, 435, -743}, 0, {1907, 0}, {255, 255, 255, 255} }},
 	{{ {874, 435, -660}, 0, {229, -178}, {255, 255, 255, 255} }},
 	{{ {874, 307, -660}, 0, {229, 1009}, {255, 255, 255, 255} }},
 	{{ {874, 307, -787}, 0, {1411, 1009}, {255, 255, 255, 255} }},
@@ -700,17 +738,18 @@ Vtx escape_rm_dl_Cube_013_mesh_layer_Opaque_vtx_0[53] = {
 };
 
 Gfx escape_rm_dl_Cube_013_mesh_layer_Opaque_tri_0[] = {
-	gsSPVertex(escape_rm_dl_Cube_013_mesh_layer_Opaque_vtx_0 + 0, 30, 0),
+	gsSPVertex(escape_rm_dl_Cube_013_mesh_layer_Opaque_vtx_0 + 0, 32, 0),
 	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
 	gsSP2Triangles(0, 3, 4, 0, 3, 5, 4, 0),
 	gsSP2Triangles(6, 7, 8, 0, 6, 8, 9, 0),
 	gsSP2Triangles(10, 11, 12, 0, 10, 12, 13, 0),
 	gsSP2Triangles(14, 15, 16, 0, 14, 16, 17, 0),
 	gsSP2Triangles(18, 4, 19, 0, 18, 19, 20, 0),
-	gsSP2Triangles(20, 21, 18, 0, 20, 0, 21, 0),
-	gsSP2Triangles(22, 23, 24, 0, 22, 24, 25, 0),
-	gsSP2Triangles(26, 27, 28, 0, 26, 28, 29, 0),
-	gsSPVertex(escape_rm_dl_Cube_013_mesh_layer_Opaque_vtx_0 + 30, 23, 0),
+	gsSP2Triangles(18, 20, 21, 0, 21, 22, 18, 0),
+	gsSP2Triangles(21, 23, 22, 0, 23, 0, 22, 0),
+	gsSP2Triangles(24, 25, 26, 0, 24, 26, 27, 0),
+	gsSP2Triangles(28, 29, 30, 0, 28, 30, 31, 0),
+	gsSPVertex(escape_rm_dl_Cube_013_mesh_layer_Opaque_vtx_0 + 32, 23, 0),
 	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
 	gsSP2Triangles(4, 5, 6, 0, 4, 6, 7, 0),
 	gsSP2Triangles(8, 9, 10, 0, 8, 10, 11, 0),
@@ -762,6 +801,19 @@ Gfx escape_rm_dl_Cube_013_mesh_layer_Opaque_tri_1[] = {
 	gsSP2Triangles(7, 20, 18, 0, 20, 21, 18, 0),
 	gsSP2Triangles(14, 22, 23, 0, 14, 23, 24, 0),
 	gsSP2Triangles(25, 20, 26, 0, 25, 26, 27, 0),
+	gsSPEndDisplayList(),
+};
+
+Vtx escape_rm_dl_Cube_013_mesh_layer_Opaque_vtx_2[4] = {
+	{{ {551, 435, -743}, 0, {1907, 0}, {255, 255, 255, 255} }},
+	{{ {552, 503, -743}, 0, {1915, -508}, {255, 255, 255, 255} }},
+	{{ {630, 502, -743}, 0, {2494, -505}, {255, 255, 255, 255} }},
+	{{ {630, 435, -743}, 0, {2496, 0}, {255, 255, 255, 255} }},
+};
+
+Gfx escape_rm_dl_Cube_013_mesh_layer_Opaque_tri_2[] = {
+	gsSPVertex(escape_rm_dl_Cube_013_mesh_layer_Opaque_vtx_2 + 0, 4, 0),
+	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
 	gsSPEndDisplayList(),
 };
 
@@ -991,27 +1043,22 @@ Gfx escape_rm_dl_paper_007_mesh_layer_Opaque_tri_0[] = {
 	gsSPEndDisplayList(),
 };
 
-Vtx escape_rm_dl_Plane_001_mesh_layer_Opaque_vtx_cull[8] = {
-	{{ {583, 440, -744}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {583, 481, -744}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {583, 481, -744}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {583, 440, -744}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {608, 440, -744}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {608, 481, -744}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {608, 481, -744}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {608, 440, -744}, 0, {0, 0}, {0, 0, 0, 0} }},
-};
-
-Vtx escape_rm_dl_Plane_001_mesh_layer_Opaque_vtx_0[4] = {
-	{{ {608, 440, -744}, 0, {16, 1548}, {0, 0, 129, 255} }},
-	{{ {583, 440, -744}, 0, {854, 1548}, {0, 0, 129, 255} }},
-	{{ {583, 481, -744}, 0, {854, 76}, {0, 0, 129, 255} }},
-	{{ {608, 481, -744}, 0, {16, 76}, {0, 0, 129, 255} }},
-};
-
-Gfx escape_rm_dl_Plane_001_mesh_layer_Opaque_tri_0[] = {
-	gsSPVertex(escape_rm_dl_Plane_001_mesh_layer_Opaque_vtx_0 + 0, 4, 0),
-	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
+Gfx mat_escape_rm_dl_bookshelf2_001_layerOpaque[] = {
+	gsDPPipeSync(),
+	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, 1, COMBINED, 0, PRIMITIVE, 0, 0, 0, 0, COMBINED),
+	gsSPLoadGeometryMode(G_ZBUFFER | G_SHADE | G_CULL_BACK | G_FOG | G_SHADING_SMOOTH),
+	gsSPSetOtherMode(G_SETOTHERMODE_H, 4, 20, G_AD_NOISE | G_CD_MAGICSQ | G_CK_NONE | G_TC_FILT | G_TF_BILERP | G_TT_RGBA16 | G_TL_TILE | G_TD_CLAMP | G_TP_PERSP | G_CYC_2CYCLE | G_PM_NPRIMITIVE),
+	gsSPSetOtherMode(G_SETOTHERMODE_L, 0, 32, G_AC_NONE | G_ZS_PIXEL | G_RM_FOG_SHADE_A | G_RM_AA_ZB_OPA_SURF2),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetPrimColor(0, 0, 255, 255, 255, 255),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, escape_rm_dl_bookshelf_mark_rgba16_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 156),
+	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, escape_rm_dl_bookshelf_mark_rgba16_ci8),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadBlock(7, 0, 0, 511, 512),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTileSize(0, 0, 0, 124, 124),
 	gsSPEndDisplayList(),
 };
 
@@ -1120,6 +1167,8 @@ Gfx escape_rm_dl_Cube_013_mesh_layer_Opaque[] = {
 	gsSPDisplayList(escape_rm_dl_Cube_013_mesh_layer_Opaque_tri_0),
 	gsSPDisplayList(mat_escape_rm_dl_wood2_layerOpaque),
 	gsSPDisplayList(escape_rm_dl_Cube_013_mesh_layer_Opaque_tri_1),
+	gsSPDisplayList(mat_escape_rm_dl_bookshelf2_001_layerOpaque),
+	gsSPDisplayList(escape_rm_dl_Cube_013_mesh_layer_Opaque_tri_2),
 	gsSPEndDisplayList(),
 };
 
@@ -1164,16 +1213,6 @@ Gfx escape_rm_dl_paper_007_mesh_layer_Opaque[] = {
 	gsSPCullDisplayList(0, 7),
 	gsSPDisplayList(mat_escape_rm_dl_old_wall_shaded_layerOpaque),
 	gsSPDisplayList(escape_rm_dl_paper_007_mesh_layer_Opaque_tri_0),
-	gsSPEndDisplayList(),
-};
-
-Gfx escape_rm_dl_Plane_001_mesh_layer_Opaque[] = {
-	gsSPClearGeometryMode(G_LIGHTING),
-	gsSPVertex(escape_rm_dl_Plane_001_mesh_layer_Opaque_vtx_cull + 0, 8, 0),
-	gsSPSetGeometryMode(G_LIGHTING),
-	gsSPCullDisplayList(0, 7),
-	gsSPDisplayList(mat_escape_rm_dl_blue_layerOpaque),
-	gsSPDisplayList(escape_rm_dl_Plane_001_mesh_layer_Opaque_tri_0),
 	gsSPEndDisplayList(),
 };
 
