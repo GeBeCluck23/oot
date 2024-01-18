@@ -47,8 +47,10 @@ void MapSelect_LoadGame(MapSelectState* this, s32 entranceIndex) {
 static SceneSelectEntry sScenes[] = {
     { " 01:Escape Room", MapSelect_LoadGame, ENTR_ESCAPE_RM_0 },
     { " 02:Escape Room Boss", MapSelect_LoadGame, ENTR_ESCAPE_RM_BOSS_0 },
+    { " 03:Escape Room Exit", MapSelect_LoadGame, ENTR_ESCAPE_RM_EXIT_0 },
+    { " 04:Escape Room Outside", MapSelect_LoadGame, ENTR_ESCAPE_RM_OUTSIDE_0 },
     { " 00:My Dungeon", MapSelect_LoadGame, ENTR_MY_DUNGEON_0 },
-    { " 03:HM Test Map", MapSelect_LoadGame, ENTR_TEST_MAP_0 },
+    { " 05:HM Test Map", MapSelect_LoadGame, ENTR_TEST_MAP_0 },
     { " 1:SPOT00", MapSelect_LoadGame, ENTR_HYRULE_FIELD_0 },
     { " 2:SPOT01", MapSelect_LoadGame, ENTR_KAKARIKO_VILLAGE_0 },
     { " 3:SPOT02", MapSelect_LoadGame, ENTR_GRAVEYARD_0 },
