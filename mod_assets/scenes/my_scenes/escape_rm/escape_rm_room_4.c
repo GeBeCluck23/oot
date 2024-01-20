@@ -10,8 +10,8 @@
 /**
  * Header Child Day (Default)
 */
-#define LENGTH_ESCAPE_RM_ROOM_4_HEADER00_OBJECTLIST 6
-#define LENGTH_ESCAPE_RM_ROOM_4_HEADER00_ACTORLIST 30
+#define LENGTH_ESCAPE_RM_ROOM_4_HEADER00_OBJECTLIST 7
+#define LENGTH_ESCAPE_RM_ROOM_4_HEADER00_ACTORLIST 33
 SceneCmd escape_rm_room_4_header00[] = {
     SCENE_CMD_ECHO_SETTINGS(0x00),
     SCENE_CMD_ROOM_BEHAVIOR(0x00, 0x00, false, false),
@@ -30,13 +30,62 @@ s16 escape_rm_room_4_header00_objectList[LENGTH_ESCAPE_RM_ROOM_4_HEADER00_OBJECT
     OBJECT_DOOR_KILLER,
     OBJECT_KINGDODONGO,
     OBJECT_BWALL,
+    OBJECT_FIREFLY,
 };
 
 ActorEntry escape_rm_room_4_header00_actorList[LENGTH_ESCAPE_RM_ROOM_4_HEADER00_ACTORLIST] = {
+    // Breakable Pot
+    {
+        /* Actor ID   */ ACTOR_OBJ_TSUBO,
+        /* Position   */ { 449, -50, 421 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0004
+    },
+
+    // Flame
+    {
+        /* Actor ID   */ ACTOR_EN_LIGHT,
+        /* Position   */ { 1361, -479, 438 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0000
+    },
+
     // Crate
     {
         /* Actor ID   */ ACTOR_OBJ_KIBAKO2,
-        /* Position   */ { -211, -50, 801 },
+        /* Position   */ { -211, -50, 899 },
+        /* Rotation   */ { 3, 0, 0 },
+        /* Parameters */ 0x0000
+    },
+
+    // Dodongo's Cavern Objects
+    {
+        /* Actor ID   */ ACTOR_BG_BREAKWALL,
+        /* Position   */ { -272, -56, 842 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x4008
+    },
+
+    // Fake Stomping Door
+    {
+        /* Actor ID   */ ACTOR_DOOR_KILLER,
+        /* Position   */ { 226, -826, 396 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0400
+    },
+
+    // Crate
+    {
+        /* Actor ID   */ ACTOR_OBJ_KIBAKO2,
+        /* Position   */ { -333, -50, 752 },
+        /* Rotation   */ { 3, 0, 0 },
+        /* Parameters */ 0x0000
+    },
+
+    // Crate
+    {
+        /* Actor ID   */ ACTOR_OBJ_KIBAKO2,
+        /* Position   */ { -273, -50, 947 },
         /* Rotation   */ { 3, 0, 0 },
         /* Parameters */ 0x0000
     },
@@ -49,36 +98,20 @@ ActorEntry escape_rm_room_4_header00_actorList[LENGTH_ESCAPE_RM_ROOM_4_HEADER00_
         /* Parameters */ 0x0004
     },
 
-    // Crate
+    // Treasure Chest
     {
-        /* Actor ID   */ ACTOR_OBJ_KIBAKO2,
-        /* Position   */ { -273, -50, 899 },
-        /* Rotation   */ { 3, 0, 0 },
-        /* Parameters */ 0x0000
+        /* Actor ID   */ ACTOR_EN_BOX,
+        /* Position   */ { 671, -826, -44 },
+        /* Rotation   */ { 0, 0, 0 },
+        /* Parameters */ 0x47AB
     },
 
-    // Crate
+    // Flame
     {
-        /* Actor ID   */ ACTOR_OBJ_KIBAKO2,
-        /* Position   */ { -333, -50, 850 },
-        /* Rotation   */ { 3, 0, 0 },
-        /* Parameters */ 0x0000
-    },
-
-    // Crate
-    {
-        /* Actor ID   */ ACTOR_OBJ_KIBAKO2,
-        /* Position   */ { -333, -50, 801 },
-        /* Rotation   */ { 3, 0, 0 },
-        /* Parameters */ 0x0000
-    },
-
-    // Crate
-    {
-        /* Actor ID   */ ACTOR_OBJ_KIBAKO2,
-        /* Position   */ { -211, -50, 752 },
-        /* Rotation   */ { 3, 0, 0 },
-        /* Parameters */ 0x0000
+        /* Actor ID   */ ACTOR_EN_LIGHT,
+        /* Position   */ { 802, -765, -59 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(99.289), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0004
     },
 
     // Crate
@@ -92,56 +125,8 @@ ActorEntry escape_rm_room_4_header00_actorList[LENGTH_ESCAPE_RM_ROOM_4_HEADER00_
     // Crate
     {
         /* Actor ID   */ ACTOR_OBJ_KIBAKO2,
-        /* Position   */ { -333, -50, 752 },
+        /* Position   */ { -211, -50, 850 },
         /* Rotation   */ { 3, 0, 0 },
-        /* Parameters */ 0x0000
-    },
-
-    // Fake Stomping Door
-    {
-        /* Actor ID   */ ACTOR_DOOR_KILLER,
-        /* Position   */ { 226, -826, 396 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0400
-    },
-
-    // Flame
-    {
-        /* Actor ID   */ ACTOR_EN_LIGHT,
-        /* Position   */ { 1361, -479, 1076 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0000
-    },
-
-    // Dodongo's Cavern Objects
-    {
-        /* Actor ID   */ ACTOR_BG_BREAKWALL,
-        /* Position   */ { -272, -56, 842 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x4008
-    },
-
-    // Treasure Chest
-    {
-        /* Actor ID   */ ACTOR_EN_BOX,
-        /* Position   */ { 671, -826, -44 },
-        /* Rotation   */ { 0, 0, 0 },
-        /* Parameters */ 0x47AB
-    },
-
-    // Crate
-    {
-        /* Actor ID   */ ACTOR_OBJ_KIBAKO2,
-        /* Position   */ { -211, -50, 947 },
-        /* Rotation   */ { 3, 0, 0 },
-        /* Parameters */ 0x0000
-    },
-
-    // Custom Actor
-    {
-        /* Actor ID   */ ACTOR_METAL_CRATE,
-        /* Position   */ { 114, -50, 760 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
         /* Parameters */ 0x0000
     },
 
@@ -156,24 +141,64 @@ ActorEntry escape_rm_room_4_header00_actorList[LENGTH_ESCAPE_RM_ROOM_4_HEADER00_
     // Crate
     {
         /* Actor ID   */ ACTOR_OBJ_KIBAKO2,
-        /* Position   */ { -211, -50, 850 },
+        /* Position   */ { -333, -50, 899 },
         /* Rotation   */ { 3, 0, 0 },
         /* Parameters */ 0x0000
     },
 
-    // Custom Actor
+    // Treasure Chest
     {
-        /* Actor ID   */ ACTOR_METAL_CRATE,
-        /* Position   */ { 226, -826, 360 },
+        /* Actor ID   */ ACTOR_EN_BOX,
+        /* Position   */ { 425, -50, 486 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x5842
+    },
+
+    // Crate
+    {
+        /* Actor ID   */ ACTOR_OBJ_KIBAKO2,
+        /* Position   */ { -333, -50, 947 },
+        /* Rotation   */ { 3, 0, 0 },
+        /* Parameters */ 0x0000
+    },
+
+    // Crate
+    {
+        /* Actor ID   */ ACTOR_OBJ_KIBAKO2,
+        /* Position   */ { -333, -50, 801 },
+        /* Rotation   */ { 3, 0, 0 },
+        /* Parameters */ 0x0000
+    },
+
+    // Keese
+    {
+        /* Actor ID   */ ACTOR_EN_FIREFLY,
+        /* Position   */ { 312, -608, 919 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
         /* Parameters */ 0x0000
     },
 
-    // Flame
+    // Crate
     {
-        /* Actor ID   */ ACTOR_EN_LIGHT,
-        /* Position   */ { 1361, -479, 438 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Actor ID   */ ACTOR_OBJ_KIBAKO2,
+        /* Position   */ { -211, -50, 947 },
+        /* Rotation   */ { 3, 0, 0 },
+        /* Parameters */ 0x0000
+    },
+
+    // Crate
+    {
+        /* Actor ID   */ ACTOR_OBJ_KIBAKO2,
+        /* Position   */ { -273, -50, 899 },
+        /* Rotation   */ { 3, 0, 0 },
+        /* Parameters */ 0x0000
+    },
+
+    // Crate
+    {
+        /* Actor ID   */ ACTOR_OBJ_KIBAKO2,
+        /* Position   */ { -273, -50, 801 },
+        /* Rotation   */ { 3, 0, 0 },
         /* Parameters */ 0x0000
     },
 
@@ -188,7 +213,71 @@ ActorEntry escape_rm_room_4_header00_actorList[LENGTH_ESCAPE_RM_ROOM_4_HEADER00_
     // Crate
     {
         /* Actor ID   */ ACTOR_OBJ_KIBAKO2,
-        /* Position   */ { -333, -50, 947 },
+        /* Position   */ { -211, -50, 752 },
+        /* Rotation   */ { 3, 0, 0 },
+        /* Parameters */ 0x0000
+    },
+
+    // Flame
+    {
+        /* Actor ID   */ ACTOR_EN_LIGHT,
+        /* Position   */ { 1361, -479, 1076 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0000
+    },
+
+    // Keese
+    {
+        /* Actor ID   */ ACTOR_EN_FIREFLY,
+        /* Position   */ { 264, -620, 633 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0000
+    },
+
+    // Custom Actor
+    {
+        /* Actor ID   */ ACTOR_METAL_CRATE,
+        /* Position   */ { 226, -826, 360 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0000
+    },
+
+    // Keese
+    {
+        /* Actor ID   */ ACTOR_EN_FIREFLY,
+        /* Position   */ { -444, -691, 820 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0000
+    },
+
+    // Checkable Spot
+    {
+        /* Actor ID   */ ACTOR_EN_WONDER_TALK2,
+        /* Position   */ { 833, -775, -97 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(189.289), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x8FCA
+    },
+
+    // Custom Actor
+    {
+        /* Actor ID   */ ACTOR_METAL_CRATE,
+        /* Position   */ { 114, -50, 760 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0000
+    },
+
+    // Flame
+    {
+        /* Actor ID   */ ACTOR_EN_LIGHT,
+        /* Position   */ { -270, -699, 438 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0000
+    },
+
+    // Crate
+    {
+        /* Actor ID   */ ACTOR_OBJ_KIBAKO2,
+        /* Position   */ { -211, -50, 801 },
         /* Rotation   */ { 3, 0, 0 },
         /* Parameters */ 0x0000
     },
@@ -204,71 +293,7 @@ ActorEntry escape_rm_room_4_header00_actorList[LENGTH_ESCAPE_RM_ROOM_4_HEADER00_
     // Crate
     {
         /* Actor ID   */ ACTOR_OBJ_KIBAKO2,
-        /* Position   */ { -273, -50, 801 },
-        /* Rotation   */ { 3, 0, 0 },
-        /* Parameters */ 0x0000
-    },
-
-    // Breakable Pot
-    {
-        /* Actor ID   */ ACTOR_OBJ_TSUBO,
-        /* Position   */ { 449, -50, 421 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0004
-    },
-
-    // Flame
-    {
-        /* Actor ID   */ ACTOR_EN_LIGHT,
-        /* Position   */ { -270, -699, 438 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0000
-    },
-
-    // Crate
-    {
-        /* Actor ID   */ ACTOR_OBJ_KIBAKO2,
-        /* Position   */ { -273, -50, 947 },
-        /* Rotation   */ { 3, 0, 0 },
-        /* Parameters */ 0x0000
-    },
-
-    // Treasure Chest
-    {
-        /* Actor ID   */ ACTOR_EN_BOX,
-        /* Position   */ { 425, -50, 486 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x5842
-    },
-
-    // Checkable Spot
-    {
-        /* Actor ID   */ ACTOR_EN_WONDER_TALK2,
-        /* Position   */ { 833, -775, -97 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(189.289), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x8FCA
-    },
-
-    // Crate
-    {
-        /* Actor ID   */ ACTOR_OBJ_KIBAKO2,
-        /* Position   */ { -211, -50, 899 },
-        /* Rotation   */ { 3, 0, 0 },
-        /* Parameters */ 0x0000
-    },
-
-    // Flame
-    {
-        /* Actor ID   */ ACTOR_EN_LIGHT,
-        /* Position   */ { 802, -765, -59 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(99.289), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0004
-    },
-
-    // Crate
-    {
-        /* Actor ID   */ ACTOR_OBJ_KIBAKO2,
-        /* Position   */ { -333, -50, 899 },
+        /* Position   */ { -333, -50, 850 },
         /* Rotation   */ { 3, 0, 0 },
         /* Parameters */ 0x0000
     },
@@ -662,34 +687,40 @@ u64 escape_rm_dl_wiz_mask128_rgba16_rgba16[] = {
 	
 };
 
-u64 escape_rm_dl_men_room_9Tex_003070_rgba16_ci8[] = {
-	0x0001020301040506, 0x0708090a0b0c0d0e, 0x0f101104070d1213, 0x0d14140c0d15160b, 0x1406010117110d0e, 0x18191a0502070e1b, 0x041c1d1e13051f20, 0x0c03130d06131221, 
-	0x050e13130e0e2223, 0x242526091a090927, 0x28290a0e1314052a, 0x1313200506012b12, 0x0e1511160e2c2d2e, 0x2f3031103233340d, 0x1b10290a0d01060b, 0x3536130201010201, 
-	0x0e11373839243a0d, 0x0c053b3c0f0e0102, 0x050e050a05141412, 0x0c3d133e3f010613, 0x4041244243440f0a, 0x130d350404050106, 0x130f0c060c052045, 0x1212463e47480606, 
-	0x491a10104a4b4c04, 0x35130e0f1c051305, 0x4d13140147010606, 0x06070c0148134e17, 0x004e4e0e1f05300a, 0x4f0f0f50303c0404, 0x0805123f3e010101, 0x0651070113365253, 
-	0x130d4e160a140f04, 0x1154375553081b36, 0x561a0506013e5747, 0x510d580516110d14, 0x1f060c130e465927, 0x103b5a531c0f0404, 0x5b5c5d1014013e01, 0x175e34050a5f0146, 
-	0x0714141407604b05, 0x610d050a150f2004, 0x62561d634d0d0d0e, 0x644b65660b010301, 0x010645070f041f51, 0x130e0d610e130f11, 0x670d060f08522d68, 0x1a1638696106013e, 
-	0x6a01464c04060d13, 0x0e0e1b56566b6c2e, 0x6d350101061f4b32, 0x0d6e6f200f0e0702, 0x0452231b0601132a, 0x3c0a0d08080a4d08, 0x303c0f144e50321b, 0x0470520513361616, 
-	0x59103551064e1604, 0x041c0a0a61356105, 0x1446043c2a61344c, 0x642e4c0045131f1d, 0x354513144e361605, 0x0f041b61610d6105, 0x0e4e53713c1b0872, 0x734b520f0d0c1f0d, 
-	0x350d051305050504, 0x3c4b555a0a363156, 0x74752d71113c2926, 0x761077110a05131f, 0x1b780d14131f0427, 0x2f797a7b387c7d27, 0x1854736427597e7f, 0x5d22040f0e0d0c0e, 
-	0x0558800781678283, 0x84858608672e6b0a, 0x878889278a548b6c, 0x0f8c0f131f0c510a, 0x1e333b268d6c6b04, 0x320d06071f130f05, 0x3b4c248e8f887e33, 0x4e160f0c06074e3c, 
-	0x550b909161134d00, 0x90020101060b050a, 0x164c92930f81641b, 0x1b0e04050707275d, 0x0c0c0c070d040b06, 0x940212020206141c, 0x500f4e9522969798, 0x73095a04526d9980, 
-	0x061f0c140f1b9a0d, 0x033e020203030713, 0x0f0f0f729b9c9d9e, 0x9f417fa0a11a0f21, 0x0a3512020d053461, 0x02010701020d0d0e, 0x3611a2a3a464a58f, 0x884b11a6a7632913, 
-	0x0b4535130c0e0d0c, 0x210606060d0f0e81, 0x4c5ea864520f1652, 0x2759592370371a32, 0xa90d1f1f0d0e6114, 0x0d01140d0e050f1e, 0x8aaa643c1e0e0e16, 0x3c273123643c4c7e, 
-	0x09a91f1c08270f0e, 0x611306072a176e67, 0xab275e0e1f200f0d, 0x1c27525689100a11, 0xac8b737aad081530, 0x050506074eae6d6c, 0x3c0416151f200f6e, 0xafb0b1b2b30a1eb4, 
-	0x3131a469900c0d13, 0x4e840a72385d0a0f, 0x1c4d050f0506b57e, 0x5d3bb6275a5a5464, 0x1b2a1d131c011315, 0x35165eb7b84e4e46, 0x52641b0e366e5d08, 0x010e0a042a4db963, 
-	0x00040a14141f1412, 0x202a742f4e131167, 0x7cbabb8bbcbd55be, 0xbf0d2013050d163c, 0x130207013f0a4501, 0x06c08a521614130e, 0x5eae674bc100060c, 0x0d130d0c1f134c59, 
+u64 escape_rm_dl_men_room_9Tex_003070_rgba16_rgba16[] = {
+	0x324f114911891147, 0x11493ad32a4f118b, 0x11cb431364193291, 0x2a0d19cb220d224f, 0x2a914b553b153ad3, 0x11cb220d198b220f, 0x220d19cd19cd19cb, 0x220d329332d32a0d, 
+	0x19cd118b11491149, 0x2ad53b15220d224f, 0x649f9d5f5b952a4f, 0x118911cb224f3ad1, 0x3ad32a8f32d54355, 0x220f2a4f1a0d2a51, 0x19cb1147220f220d, 0x118b220f198b1989, 
+	0x2a4f224f220f220f, 0x224f224f33156c9f, 0x8d657459749f6419, 0x5b95641964195bd9, 0x4b953b133291224f, 0x220f19cd2a4f3ad5, 0x220f220f2a512a4f, 0x118b11491105198b, 
+	0x224f32933b1532d3, 0x224f22d57ce1745d, 0x63db42d353db4b55, 0x42d1328f2a4d220d, 0x3ad14b553b133291, 0x220d1149118b2a0d, 0x2a0f2a93220f1189, 0x1149114911891149, 
+	0x224f3b156c5d6ca1, 0x5c638d656bd7220d, 0x19cb2a4f4b154315, 0x2a91224f11491189, 0x2a4f224f2a4f3291, 0x2a4f19cd19cd198b, 0x19cb21cf220f1107, 0x10c71149118b220f, 
+	0x3b5995a58d658e2d, 0xb66963532a913291, 0x220f220d2a0f3ad3, 0x3ad32a4f1149118b, 0x220f2a9119cb118b, 0x19cb2a4f2a5121cd, 0x198b198b1a0f1107, 0x1109114b118b118b, 
+	0x745b5b954b554b55, 0x7c5b539743573ad3, 0x2a0f220f224f2a91, 0x2a8f2a4f220f2a4f, 0x3a91220f19cd1149, 0x11091149118b118b, 0x118b11cb19cb1149, 0x114b220f22512ad5, 
+	0x324f22512251224f, 0x1a0d2a4f42d33291, 0x32512a912a9132d1, 0x42d343153ad33ad3, 0x43132a4f198b10c7, 0x1107114911491149, 0x118b11cd11cb1149, 0x220f2a934b575357, 
+	0x220f220d225132d3, 0x329119cd2a913ad3, 0x3b15645d6c5d5b97, 0x535743133ad12a93, 0x53555b952a4f118b, 0x1149110710811109, 0x11cd220d21c92a4f, 0x32d33b15220d19cd, 
+	0x1a0d118b19cb220f, 0x224f1a0f53d95bd9, 0x4b554b1553955357, 0x2a8f2a913ad33ad3, 0x3b198cdf63d94b55, 0x19cd114911071149, 0x2ad54b992a4d2a4f, 0x32912a0b11491a0f, 
+	0x11cb19cd19cd19cd, 0x11cb32d753972a4f, 0x21cb220d2a4f3291, 0x32932a912a513ad3, 0x4bdb535532d55bd7, 0x3a91220d220d224f, 0x641b53974b594b97, 0x2a0d114911471149, 
+	0x1149118b21cd11cb, 0x2a913ad31a0d11cd, 0x220f224f220d21cb, 0x224f220f2a913b15, 0x5bdb220d118b2a91, 0x43134b577ce18521, 0x5b9532d36ca16c19, 0x21cb118b11491107, 
+	0x10c511491a0f4357, 0x3ad3118b220d220f, 0x224f224f3ad15355, 0x53554b1363d7745d, 0x6c1b2a0f11491149, 0x118b1a0d539742d1, 0x220d3b17741b2a51, 0x2a91224f11cb1189, 
+	0x3ad34b576c9f3ad1, 0x118b1149220f3ad5, 0x43153291220d4313, 0x431332913a914313, 0x42d343152a9119cd, 0x225132d142d13ad1, 0x3ad36c5b4b572a4f, 0x220f2a9332d332d3, 
+	0x53d94b552a0f11cd, 0x118b225132d33ad3, 0x3ad32a8f32913291, 0x21cb2a0f21cb2a4f, 0x19cd1a0f3ad34315, 0x3ad521cb2a4d4357, 0x641b745d4357324f, 0x21cd220f1a0d32d5, 
+	0x2a0f21cd220f19cd, 0x22512a9332d32a4f, 0x2a913ad33ad121cb, 0x21cb220d21cb2a4f, 0x224f22515357539b, 0x43153ad143134359, 0x7c9d53974b572a91, 0x220d19cb1a0d220d, 
+	0x2a0f220d2a4f220f, 0x2a4f2a4f2a4f3ad3, 0x431553975b975395, 0x32912a9353db5355, 0x439b6c5f7ce1539b, 0x3b1543153b13749f, 0x851f4b553b553b15, 0x32912a4f220f1a0d, 
+	0x3ad1224d220d19cd, 0x220f1a0d3ad35bd9, 0x63db745f9d63849d, 0x6ca195679d655bd9, 0x649f645d7c9d641b, 0x5bd953d96c9d9da5, 0x63d933153ad32a91, 0x224f220d19cb224f, 
+	0x2a4f21c919c911cb, 0x22915bdb95216397, 0x53995b53424f4313, 0x5bdb745d4b133291, 0x6c595c1b749d5bd9, 0x641d645d852363d7, 0x2a912ad32a91220f, 0x1a0d19cb11cd3291, 
+	0x4355328f4b15749f, 0x7c9b63d74b133ad3, 0x42d1220d118b11cb, 0x1a0d220f2a912a4f, 0x4b1543578d6594df, 0x5c1d5c1b6c9d328f, 0x225132d32a9119cb, 0x118b11cb22514315, 
+	0x5b972a0d3a8f428f, 0x21cb220f3a91324f, 0x3a8f118911491149, 0x118b2a0d2a4f3291, 0x32d3435764a36b95, 0x2a912291641b3ad1, 0x3ad1224f3ad32a4f, 0x11cb11cb5bd963d9, 
+	0x19cb19cb19cb11cb, 0x220d3ad32a0d118b, 0x220b1189198b1189, 0x1189118b19cd2a8f, 0x32d12a9122511a51, 0x33154c21a5e7951f, 0x7c9d641953953ad3, 0x4b576c1b3a8d19c9, 
+	0x118b1a0d19cb19cd, 0x2a913ad1324d220d, 0x1147110711891189, 0x1147114711cb220f, 0x2a912a912a914359, 0x5c6185a9ae2b8da9, 0x9e2d95a59da59de9, 0xae295b952a911989, 
+	0x32912a0f198b1189, 0x220d2a4f2a4d21cb, 0x1189114911cb1149, 0x1189220d220d224f, 0x2a933b154b9b7ca1, 0x74e1641b43995c1d, 0x5c1b53973b15541d, 0x8d1f5bd73b13220f, 
+	0x2a0d21cd2a0f220f, 0x19cb224f220d19cb, 0x1989118b118b118b, 0x220d2a91224f2291, 0x43574b9984e1641b, 0x4b572a9132d34b57, 0x5bd953d953d96c9f, 0x6c5b6c5d5b9542d1, 
+	0x42cf220d1a0d1a0d, 0x220d224f21cb19cd, 0x220d114919cd220d, 0x224f2a4f2a914355, 0x641d8d63641b4315, 0x4355224f224f32d3, 0x43155bd953db6c9f, 0x641b431543576c9d, 
+	0x641942cf1a0d2a8f, 0x43135bd92a91224f, 0x21cb220f118b11cb, 0x3ad52ad53b175bdb, 0x7c9f5bd94b99224f, 0x1a0d2a512a91220d, 0x2a8f5bd94b575355, 0x749d4b5532913b15, 
+	0x541f85237c9d9d63, 0x7c174313329342d3, 0x2a4f2a4f118b11cb, 0x22515c5f6c1b63d7, 0x43153ad332d33293, 0x1a0d2a512a913b17, 0x541b8d67a5a99d1f, 0x5bd5329143553b57, 
+	0x53db53db74e16c19, 0x3a8f19cb220d220f, 0x2251539932914359, 0x6ca163d932912a91, 0x2a8f3a912a4f2a91, 0x2a4f118b22936c9d, 0x63d94b1553595bd9, 0x53955395645d641b, 
+	0x3ad13ad532d5220f, 0x2a8f1149220f3293, 0x2a0f32d34b997d23, 0x5b55225122511a0f, 0x4b57641b3ad1224f, 0x2a933b1763d94313, 0x1149224f32913ad3, 0x3ad53a914b535bd7, 
+	0x324f3ad3329119cd, 0x19cd1a0d19cd198b, 0x2a513ad5439b63db, 0x2251220f3b155bdb, 0x9567856595638523, 0xc66da5a55b974291, 0x29cd220d2a51220f, 0x2a4f220d32d34315, 
+	0x220f118911cb1149, 0x10c7329121cd1149, 0x118b1a11641d4b57, 0x32d319cd220f224f, 0x4b995c5f5bdb5397, 0x5313324f118b19cb, 0x220d220f220d19cb, 0x1a0d220f435753d9, 
 	
-};
-
-u64 escape_rm_dl_men_room_9Tex_003070_rgba16_pal_rgba16[] = {
-	0x324f114911891147, 0x3ad32a4f118b11cb, 0x4313641932912a0d, 0x19cb220d224f2a91, 0x4b553b15198b220f, 0x19cd329332d32ad5, 0x649f9d5f5b953ad1, 0x2a8f32d543551a0d, 
-	0x2a51198933156c9f, 0x8d657459749f5bd9, 0x4b953b133ad51105, 0x22d57ce1745d63db, 0x42d353db42d1328f, 0x2a4d2a0f2a936c5d, 0x6ca15c636bd74b15, 0x431521cf110710c7, 
-	0x3b5995a58e2db669, 0x635321cd1a0f1109, 0x114b745b7c5b5397, 0x43573a9122513251, 0x32d111cd4b575357, 0x645d5b9753551081, 0x21c953d953953b19, 0x8cdf63d94b992a0b, 
-	0x32d721cb4bdb5bd7, 0x641b4b594b975bdb, 0x85216c1910c54b13, 0x63d76c1b3b17741b, 0x6c5b539b43597c9d, 0x439b6c5f851f3b55, 0x224d745f9d63849d, 0x95679d656c9d9da5, 
-	0x19c9229195216397, 0x53995b53424f6c59, 0x5c1b749d641d8523, 0x2ad37c9b94df5c1d, 0x3a8f428f64a36b95, 0x220b1a514c21a5e7, 0x951f3a8d324d5c61, 0x85a9ae2b8da99e2d, 
-	0x9de9ae294b9b7ca1, 0x74e14399541d8d1f, 0x84e142cf8d637c9f, 0x541f7c175c5f541b, 0x8d67a5a99d1f5bd5, 0x3b57229353597d23, 0x5b554b5385659563, 0xc66da5a5429129cd, 
-	0x1a11531300000000
 };
 
 u64 escape_rm_dl_wiz_robe128_rgba16_rgba16[] = {
@@ -2592,20 +2623,21 @@ Gfx mat_escape_rm_dl_mask_layerOpaque[] = {
 
 Gfx mat_escape_rm_dl_oot_water_mat_layerTransparent[] = {
 	gsDPPipeSync(),
-	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, TEXEL0, COMBINED, 0, PRIMITIVE, 0, COMBINED, 0, PRIMITIVE, 0),
+	gsDPSetCombineLERP(TEXEL1, TEXEL0, ENV_ALPHA, TEXEL0, 0, 0, 0, 1, COMBINED, 0, SHADE, 0, COMBINED, 0, PRIMITIVE, 0),
 	gsSPLoadGeometryMode(G_ZBUFFER | G_SHADE | G_FOG | G_LIGHTING | G_SHADING_SMOOTH),
-	gsSPSetOtherMode(G_SETOTHERMODE_H, 4, 20, G_AD_NOISE | G_CD_MAGICSQ | G_CK_NONE | G_TC_FILT | G_TF_BILERP | G_TT_RGBA16 | G_TL_TILE | G_TD_CLAMP | G_TP_PERSP | G_CYC_2CYCLE | G_PM_NPRIMITIVE),
+	gsSPSetOtherMode(G_SETOTHERMODE_H, 4, 20, G_AD_NOISE | G_CD_MAGICSQ | G_CK_NONE | G_TC_FILT | G_TF_BILERP | G_TT_NONE | G_TL_TILE | G_TD_CLAMP | G_TP_PERSP | G_CYC_2CYCLE | G_PM_NPRIMITIVE),
 	gsSPSetOtherMode(G_SETOTHERMODE_L, 0, 32, G_AC_NONE | G_ZS_PIXEL | G_RM_FOG_SHADE_A | G_RM_AA_ZB_XLU_SURF2),
 	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetPrimColor(0, 0, 255, 255, 255, 128),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, escape_rm_dl_men_room_9Tex_003070_rgba16_pal_rgba16),
-	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTLUTCmd(5, 193),
-	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, escape_rm_dl_men_room_9Tex_003070_rgba16_ci8),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadBlock(7, 0, 0, 511, 512),
-	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetEnvColor(255, 255, 255, 128),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b_LOAD_BLOCK, 1, escape_rm_dl_men_room_9Tex_003070_rgba16_rgba16),
+	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadBlock(7, 0, 0, 1023, 256),
+	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b, 8, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
+	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b, 8, 0, 1, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 2, G_TX_WRAP | G_TX_NOMIRROR, 5, 2),
+	gsDPSetTileSize(1, 0, 0, 124, 124),
+	gsSPDisplayList(0x8000000),
 	gsSPEndDisplayList(),
 };
 

@@ -1171,9 +1171,9 @@ UNSKIPPABLE  ITEM_ICON("\x0F")  QUICKTEXT_ENABLE "You found the " COLOR(RED) "Le
 "things are hidden everywhere!"
 BOX_BREAK
 UNSKIPPABLE  ITEM_ICON("\x0F") "Search some rooms you have\n"
-"already been to. Seeing the truth will\n"
-"cost magic power, so press " COLOR(YELLOW) "[C]\n"
-COLOR(DEFAULT) "again to stop using it."
+"already been to. Seeing the truth\n"
+"will cost magic power, so\n"
+"press " COLOR(YELLOW) "[C]" COLOR(DEFAULT) "again to stop using it."
 ,
 UNSKIPPABLE  ITEM_ICON("\x0F")  QUICKTEXT_ENABLE "Das " COLOR(RED) "Auge der Wahrheit" COLOR(DEFAULT) "!" QUICKTEXT_DISABLE "\n"
 "Plaziere es auf " COLOR(YELLOW) "[C]" COLOR(DEFAULT) " und sieh\n"
@@ -7791,7 +7791,11 @@ DEFINE_MESSAGE(0x0244, TEXTBOX_TYPE_BLUE, TEXTBOX_POS_VARIABLE,
 
 // Message ID 69
 DEFINE_MESSAGE(0x0245, TEXTBOX_TYPE_BLUE, TEXTBOX_POS_VARIABLE,
-"There are n extra hearts in all.\n"
+"I have hidden some extra chests\n"
+"around the mansion.\n"
+"You must use the lens to find them."
+BOX_BREAK
+"There are 7 hidden chests in all.\n"
 "See if you can find all of them\n"
 "before you leave."
 ,

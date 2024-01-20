@@ -123,7 +123,7 @@
 // Added scenes
            DEFINE_SCENE(my_dungeon, none, SCENE_MY_DUNGEON, SDC_CALM_WATER, 0, 0)
            DEFINE_SCENE(test_map, none, SCENE_TEST_MAP, SDC_DEFAULT, 0, 0)
-           DEFINE_SCENE(escape_rm, none, SCENE_ESCAPE_RM, SDC_DEFAULT, 0, 0)
+           DEFINE_SCENE(escape_rm, none, SCENE_ESCAPE_RM, SDC_CALM_WATER, 0, 0)
            DEFINE_SCENE(escape_rm_boss, none, SCENE_ESCAPE_RM_BOSS, SDC_DEFAULT, 0, 0)
            DEFINE_SCENE(escape_rm_exit, none, SCENE_ESCAPE_RM_EXIT, SDC_DEFAULT, 0, 0)
            DEFINE_SCENE(escape_rm_outside, none, SCENE_ESCAPE_RM_OUTSIDE, SDC_DEFAULT, 0, 0)

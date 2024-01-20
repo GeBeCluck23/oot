@@ -50,6 +50,8 @@ RoomShapeDListsEntry escape_rm_room_6_shapeDListEntry[1] = {
 
 Gfx escape_rm_room_6_entry_0_opaque[] = {
 	gsSPDisplayList(escape_rm_dl_floor_011_mesh_layer_Opaque),
+	gsSPDisplayList(escape_rm_dl_vines_mesh_layer_Opaque),
+	gsSPDisplayList(escape_rm_dl_vines_001_mesh_layer_Opaque),
 	gsSPEndDisplayList(),
 };
 
@@ -77,6 +79,52 @@ u64 escape_rm_dl_Bmori1_room_3Tex_0033D8_ci8_pal_rgba16[] = {
 	0x53535b556b994a91, 0x39cd424f39cf29cb, 0x218b63175b595b15, 0x4a934a5173db29c9, 0x298910c56b8f5ad1, 0x845f5b916b9773d7, 0x7419ad679ce38c5d, 0x84217c1b8cdf5b53, 
 	0x63136b933a8b4a8d, 0x739b52cf4b0f424b, 0x53115b13741b5ad3, 0x420d83df3a0b8415, 0x2185318919452107, 0x31c7294794e39d9f, 0x9463534f4ac9634b, 0x3ac95309b5ab2145, 
 	
+};
+
+u64 escape_rm_dl_Bmori1_room_0Tex_0088F8_rgba16_ci8[] = {
+	0x0001020304050606, 0x070800090a0b0b0b, 0x0b0b0b0b0c0c0b0b, 0x0b0b0b0b0b0b0b0d, 0x0e0f07100d060b0b, 0x090d0211120b0b0b, 0x0b0b0b1313141516, 0x17180b0b0b0b0619, 
+	0x01070f1a0410120b, 0x06061b1c1b0b0b0b, 0x1d0a051e0f020d1f, 0x1320190b0b0b2122, 0x020f0e1a0723240b, 0x0b1825260a0b0b27, 0x2802292a2026152b, 0x2c2d2e130b0b1c04, 
+	0x2f303107040e3233, 0x0b0b11340a0a3536, 0x37250820121c3839, 0x3a1a3b3c0b0b0b3d, 0x0b3e3f1508310e07, 0x0b0b150a3d0a4029, 0x41263015420a1b12, 0x121343440b0b0b0b, 
+	0x0b19034546334712, 0x0b0b0b420348494a, 0x0a4b02264c0f104b, 0x100f4d4e0b0b0b0b, 0x0b0b4f2f5033020b, 0x0b0b0b0b153d0d0a, 0x0b0b260f3051043d, 0x100752220b0b0b0b, 
+	0x0b0b0b121523120b, 0x0b0b0b0b0b0b0b0b, 0x0b0b0b5351542003, 0x2f1955060b0b0b0b, 0x0b0b0b0b07380b0b, 0x0b0b56570b0b0b0b, 0x0b0b0b0b58542059, 0x5a5b5c0b0b0b0b0b, 
+	0x0b0b0b5d33452f0b, 0x0b2c145e060b0b0b, 0x0b0b0b0b585f1560, 0x61621d0b0b0b0b0b, 0x0b0b161a6333150b, 0x0b3064011c656615, 0x1e0b0b0b35671868, 0x59695a0b0b0b0b0b, 
+	0x0b0b19336a0e1c10, 0x476b33191b02071b, 0x300e0b0b3837060b, 0x686c625a0b0b0b0b, 0x0b0b226d630f105e, 0x6b355e6e6f08153d, 0x515f360b0b040b0b, 0x0b70715a0b0b0b0b, 
+	0x0b0b17727305100f, 0x7457757677170b18, 0x0178790b0b0b0b0b, 0x0b7a7b715a0b0b0b, 0x0b0b0b3471695b10, 0x127c7d7e1e0b0b0b, 0x15044a0b0b0b0b0b, 0x0b0b7f71620b0b0b, 
+	0x0b0b0b0b80616266, 0x06350e81050b0b0b, 0x0b0b0b0b0b0b0b0b, 0x0b0b82835a5a0b0b, 0x0b0b0b0b84855a0b, 0x0b500f220b0b0b0b, 0x0b0b0b0b0b0b0b0b, 0x0b0b7f83860c0b0b, 
+	0x0b0b0b0b87858362, 0x0b11660b0b0b0b0b, 0x0b0b0b0b0b0b0b0b, 0x0b0b7f8688880b0b, 0x0b0b0b0b0b828589, 0x0f14428a12068b8c, 0x474a0b0b0b0b0b0b, 0x0b0b7f0c5a0b0b0b, 
+	0x0b0b0b0b0b0b8d70, 0x474702118e5e7447, 0x47510d0b0b0b0b0b, 0x0b0b7f865a0b0b0b, 0x0b0b0b0b0b0b190e, 0x33238e0b5702578f, 0x0f30144b0b0b0b0b, 0x0b7f830c5a0b0b0b, 
+	0x0b0b0b0b0b195490, 0x5891920b0b660606, 0x1c0d04120b0b0b0b, 0x0b82865a0b0b0b0b, 0x0b0b0b0b0b939495, 0x2396620b0b0b060b, 0x0b0b0b120b0b0b0b, 0x0b0b0b0b0b0b0b0b, 
+	0x0b0b0b0b0b972e23, 0x1261965a0b0b071f, 0x0b0b0b0b0b0b0b0b, 0x0b0b0b0b0b0b0b0b, 0x0b0b0b0b0b0f4d38, 0x804f5b985a0b1f02, 0x110b0b0b0b0b0b0b, 0x0b0b0b0b0b0b0b0b, 
+	0x0b0b0b0b0b0b8f0b, 0x6896847b835a8c22, 0x05100b0b0b0b0b0b, 0x0b0b0b0b0b3c4e0b, 0x0b0b0b0b0b0b0b0b, 0x7a996282719a5a07, 0x57100b0b0b0b0b0b, 0x0b0b0b0b0b3c9b01, 
+	0x0b0b0b0b0b0b0b0b, 0x87835a0b9c9d7b5a, 0x45260d0b0b0b0b0b, 0x07070b06020e9e1a, 0x0b0b0b0b0b0b0b0b, 0x7f865a0b0b8d5b06, 0x1b66116f470b0b11, 0x6d359fa0122613a1, 
+	0x0b0b0b0b0b0b0b0b, 0x880c5a0b0b0b7f0f, 0x576650012857096b, 0x2704022c47022073, 0x0b0b0b0b0b0b0b0b, 0x880c5a0b0b0b0200, 0x73090d8f56505736, 0x8f0a06a2a3574b26, 
+	0x0b0b0b0b0b0b0b0b, 0x880c620b0b0b3874, 0x20090b0a493591a4, 0x1c06065e246b1806, 0x0b0b0b0b0b0b0b88, 0x0c0c620b0b0b1066, 0x4b690b11a5a6a7a7, 0x1018065e33013d0b, 
+	0x060b0b0b0b0b0b7f, 0x0c620b0b0b0b0b1c, 0x9c9a0b02a8a9020a, 0x0a0b0b5d1e184b10, 0x01380b0b0b0b0b82, 0x99620b0b0b0b0b0b, 0x7f860c0b66662612, 0x0b0b0b5e380a1501, 
+	0x006b150b0b0b0b9c, 0x9a5a0b0b0b0b0b0b, 0x0b88850b0b0b0a34, 0x070f0b12120b4a22, 0x356d110b0b0b0b7a, 0x9a620b0b0b0b0b0b, 0x0b82980b0b0b1c8f, 0x356b22260b0b0b0b, 
+	0x20aa720b0b0b875b, 0x69620b0b0b0b0b0b, 0x0b875b690a0a4b57, 0x35ab000b0b0b0b0b, 0xa92a380b0b0b8d6c, 0x8f570d0b0b0b0b0b, 0x0b0b870473913d0a, 0x8f00ac140b0b0b0b, 
+	0x0ba9060b0b0b9c02, 0x8f8f201f0b0b0b0b, 0x0b0b476f50ad0b1b, 0x090f0e0f0b0b0b0b, 0x0b060b0b0b0b1114, 0x0227aeaf1f0b0b0b, 0x0b305130260b0b0b, 0xa70f51b00b0b0b0b, 
+	0x0b0b0b0b0b264795, 0x268cb1b28c0b0b0b, 0x0b3374421c075e0b, 0x0b1819110b0b0b0b, 0x0b0b0b6602666fb3, 0x8e0ab4b5390a0b0b, 0x0a2f3d4207510130, 0x0b0b1c1b0b0b0b0b, 
+	0x0b0b0b26502002a3, 0x0f0a07ac01264b06, 0x104f102314144747, 0x070b0b060b0b0b0b, 0x0b0b0b0a123023b6, 0xb0092f11741c0a12, 0x8b453a01957ca702, 0x575a0b0b0b0b0b0b, 
+	0x0b0b0b0b06076f47, 0x0f0a060a02060735, 0x47b68a8a5101140a, 0x1b5a5a0b0b0b0b0b, 0x0b0b0b0b0b1b1247, 0x7406060b06060233, 0x017c0fa05e3535a9, 0x0a0c5a0b0b0b0b0b, 
+	0x0b0b0b0b0b6271b7, 0xb80b0b0b0b1c1c38, 0x6b502f3d10021920, 0x7f995a5a0b0b0b0b, 0x5a5a5a0b5a9c5b0d, 0xb90b0b0b0b0b190a, 0x451d267257596545, 0x8899865a0b0b0b0b, 
+	0x0c0c5a5a8298690b, 0x0d0b0b0b0b0b8f15, 0x102623ba351c10bb, 0x4d51865a0b0b0b0b, 0x880c869969bc6c0b, 0x0b0b0b0b0b0b1507, 0x512620bd730a0b22, 0x1a4d4e5a0b1c150b, 
+	0x0b7f828287999a0b, 0x0b0b0b0b0b0b0d14, 0x8119150111650b66, 0x02394d51341e0013, 0x0b0b0b0b0b26070b, 0x0b0b0b0b0b0b0b8f, 0xbe201c11b84b0b0b, 0x06453333406b6bbf, 
+	0x0b0b0b0b0c2f0f05, 0x0b0b0b0b0b0b0b0d, 0x23c03dc1b8060b0b, 0x06067c20b909aac2, 0x0b0b0b0b0c188c4e, 0xc30b0b0b0b0b0b0b, 0x140a6565060b0b0b, 0x0b2666260b1c0f07, 
+	0x0b0b0b0b063a5458, 0x470b0b827f0b0b0b, 0x0b0b0f070b0b0b0b, 0x2213140a0b0ba90a, 0x0b0b0b064c4d3130, 0x070b9c830c0b0b0b, 0x0b51c40f0b0b0b30, 0x14310ea6650b0b4b, 
+	0x0b0b0607454da245, 0xc598990c0b0b0b0b, 0x4ea3c6450b0b0b33, 0x02333600660b0b0b, 0x0b6507818a8aa00b, 0x846c0b0b0b0b0b0b, 0x39472c3d0b0b0b35, 0x26110023040b0b0b, 
+	0x1c10742c1919190b, 0x85980b0b0b0b0b0b, 0x5e5e530b0b0b0b9c, 0x0d061157380b0b0b, 0x1c026fc78c515e0b, 0x0230200b0b0b0b0b, 0x0b92190b0b0b829d, 0x0b0b3815060b0b0b, 
+	0x1c260f8a8cb04206, 0xb60e22150b0b0b0b, 0x0b8e0b0b0b0b9c5b, 0x0b0b06450b0b0b0b, 0xb0028f0504114b2f, 0xa26301c80a0b0b0b, 0x0b0b0b0b0b82999a, 0x0b0b0b060b0b0b1c, 
+	
+};
+
+u64 escape_rm_dl_Bmori1_room_0Tex_0088F8_rgba16_pal_rgba16[] = {
+	0x740d6bcd3a452941, 0x4245318308014287, 0x63cb29c121410800, 0x6a8129817c515309, 0x2983428532056b8d, 0x42c731c342074205, 0x2943424773cf1941, 0x19012101634b4a89, 
+	0x4ac708814a875349, 0x744f324329c37c0f, 0x5b895b4763896b4d, 0x5b0b63cd95172143, 0x5b4b84918513740f, 0x3a03638b848f63c9, 0x3a05634d42899515, 0x841318c14a495acb, 
+	0x4ac53a8321839d17, 0x94d731c54b47638d, 0x4283424331c11081, 0x29c57c116b8f1881, 0x4b076bcf845339c7, 0x8493630f42c53203, 0x84d3104120802081, 0x524d52c94ac98451, 
+	0x18412881188084d1, 0x6c0f10c12181844d, 0x3940410195d37c4f, 0x390173cd5b0d5b8b, 0x394152015b095307, 0x5b494acb8d958d51, 0x8c8f7c0d52004181, 0x534b5b8d7cd18b80, 
+	0x20c06c0d7b005a41, 0x418049c16a016240, 0xa40020c13a073a47, 0x530b49c032453a43, 0x8d133a8552cb7393, 0x9d557c5330c173d3, 0x494159c151818c95, 0x6a8031418cd55347, 
+	0x21037bd15b4d7411, 0x3ac5738d6b8b2a03, 0x52874a856bcb8d4f, 0x7c9121c39511638f, 0x4b099d9595537c93, 0x7c138d5342c94b01, 0x42813a419dd3528b, 0x38c195936c0b39c3, 
+	0x4ac13a0139c56b4f, 0x845549017bd33185, 0x3201000000000000
 };
 
 Vtx escape_rm_dl_floor_011_mesh_layer_Opaque_vtx_cull[8] = {
@@ -156,6 +204,59 @@ Gfx escape_rm_dl_floor_011_mesh_layer_Opaque_tri_0[] = {
 	gsSPEndDisplayList(),
 };
 
+Vtx escape_rm_dl_vines_mesh_layer_Opaque_vtx_cull[8] = {
+	{{ {1072, -607, 1639}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {1072, -348, 1639}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {1072, -348, 1530}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {1072, -607, 1530}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {1072, -607, 1639}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {1072, -348, 1639}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {1072, -348, 1530}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {1072, -607, 1530}, 0, {0, 0}, {0, 0, 0, 0} }},
+};
+
+Vtx escape_rm_dl_vines_mesh_layer_Opaque_vtx_0[4] = {
+	{{ {1072, -607, 1639}, 0, {-16, 2032}, {127, 0, 0, 255} }},
+	{{ {1072, -607, 1530}, 0, {1008, 2032}, {127, 0, 0, 255} }},
+	{{ {1072, -348, 1530}, 0, {1008, -16}, {127, 0, 0, 255} }},
+	{{ {1072, -348, 1639}, 0, {-16, -16}, {127, 0, 0, 255} }},
+};
+
+Gfx escape_rm_dl_vines_mesh_layer_Opaque_tri_0[] = {
+	gsSPVertex(escape_rm_dl_vines_mesh_layer_Opaque_vtx_0 + 0, 4, 0),
+	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
+	gsSPEndDisplayList(),
+};
+
+Vtx escape_rm_dl_vines_001_mesh_layer_Opaque_vtx_cull[8] = {
+	{{ {364, -605, 1811}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {364, -349, 1811}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {364, -349, 1811}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {364, -605, 1811}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {583, -605, 1811}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {583, -349, 1811}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {583, -349, 1811}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {583, -605, 1811}, 0, {0, 0}, {0, 0, 0, 0} }},
+};
+
+Vtx escape_rm_dl_vines_001_mesh_layer_Opaque_vtx_0[7] = {
+	{{ {364, -349, 1811}, 0, {-880, -16}, {0, 0, 127, 255} }},
+	{{ {364, -528, 1811}, 0, {-880, 1933}, {0, 0, 127, 255} }},
+	{{ {413, -551, 1811}, 0, {-247, 2193}, {0, 0, 127, 255} }},
+	{{ {583, -349, 1811}, 0, {1949, -16}, {0, 0, 127, 255} }},
+	{{ {544, -605, 1811}, 0, {1450, 2772}, {0, 0, 127, 255} }},
+	{{ {453, -584, 1811}, 0, {272, 2548}, {0, 0, 127, 255} }},
+	{{ {583, -528, 1811}, 0, {1949, 1933}, {0, 0, 127, 255} }},
+};
+
+Gfx escape_rm_dl_vines_001_mesh_layer_Opaque_tri_0[] = {
+	gsSPVertex(escape_rm_dl_vines_001_mesh_layer_Opaque_vtx_0 + 0, 7, 0),
+	gsSP2Triangles(0, 1, 2, 0, 3, 0, 2, 0),
+	gsSP2Triangles(2, 4, 3, 0, 2, 5, 4, 0),
+	gsSP1Triangle(4, 6, 3, 0),
+	gsSPEndDisplayList(),
+};
+
 Gfx mat_escape_rm_dl_brick_layerOpaque[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, 1, COMBINED, 0, PRIMITIVE, 0, 0, 0, 0, COMBINED),
@@ -175,6 +276,25 @@ Gfx mat_escape_rm_dl_brick_layerOpaque[] = {
 	gsSPEndDisplayList(),
 };
 
+Gfx mat_escape_rm_dl_vines_2_layerOpaque[] = {
+	gsDPPipeSync(),
+	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, TEXEL0, COMBINED, 0, PRIMITIVE, 0, 0, 0, 0, COMBINED),
+	gsSPLoadGeometryMode(G_ZBUFFER | G_SHADE | G_FOG | G_LIGHTING | G_SHADING_SMOOTH),
+	gsSPSetOtherMode(G_SETOTHERMODE_H, 4, 20, G_AD_NOISE | G_CD_MAGICSQ | G_CK_NONE | G_TC_FILT | G_TF_BILERP | G_TT_RGBA16 | G_TL_TILE | G_TD_CLAMP | G_TP_PERSP | G_CYC_2CYCLE | G_PM_NPRIMITIVE),
+	gsSPSetOtherMode(G_SETOTHERMODE_L, 0, 32, G_AC_NONE | G_ZS_PIXEL | G_RM_FOG_SHADE_A | G_RM_AA_ZB_TEX_EDGE2),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetPrimColor(0, 0, 255, 255, 255, 255),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, escape_rm_dl_Bmori1_room_0Tex_0088F8_rgba16_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 200),
+	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, escape_rm_dl_Bmori1_room_0Tex_0088F8_rgba16_ci8),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadBlock(7, 0, 0, 1023, 512),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 6, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTileSize(0, 0, 0, 124, 252),
+	gsSPEndDisplayList(),
+};
+
 Gfx escape_rm_dl_floor_011_mesh_layer_Opaque[] = {
 	gsSPClearGeometryMode(G_LIGHTING),
 	gsSPVertex(escape_rm_dl_floor_011_mesh_layer_Opaque_vtx_cull + 0, 8, 0),
@@ -182,6 +302,26 @@ Gfx escape_rm_dl_floor_011_mesh_layer_Opaque[] = {
 	gsSPCullDisplayList(0, 7),
 	gsSPDisplayList(mat_escape_rm_dl_brick_layerOpaque),
 	gsSPDisplayList(escape_rm_dl_floor_011_mesh_layer_Opaque_tri_0),
+	gsSPEndDisplayList(),
+};
+
+Gfx escape_rm_dl_vines_mesh_layer_Opaque[] = {
+	gsSPClearGeometryMode(G_LIGHTING),
+	gsSPVertex(escape_rm_dl_vines_mesh_layer_Opaque_vtx_cull + 0, 8, 0),
+	gsSPSetGeometryMode(G_LIGHTING),
+	gsSPCullDisplayList(0, 7),
+	gsSPDisplayList(mat_escape_rm_dl_vines_2_layerOpaque),
+	gsSPDisplayList(escape_rm_dl_vines_mesh_layer_Opaque_tri_0),
+	gsSPEndDisplayList(),
+};
+
+Gfx escape_rm_dl_vines_001_mesh_layer_Opaque[] = {
+	gsSPClearGeometryMode(G_LIGHTING),
+	gsSPVertex(escape_rm_dl_vines_001_mesh_layer_Opaque_vtx_cull + 0, 8, 0),
+	gsSPSetGeometryMode(G_LIGHTING),
+	gsSPCullDisplayList(0, 7),
+	gsSPDisplayList(mat_escape_rm_dl_vines_2_layerOpaque),
+	gsSPDisplayList(escape_rm_dl_vines_001_mesh_layer_Opaque_tri_0),
 	gsSPEndDisplayList(),
 };
 
