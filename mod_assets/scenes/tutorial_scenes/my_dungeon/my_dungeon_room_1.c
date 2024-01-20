@@ -30,26 +30,18 @@ s16 my_dungeon_room_1_header00_objectList[LENGTH_MY_DUNGEON_ROOM_1_HEADER00_OBJE
 };
 
 ActorEntry my_dungeon_room_1_header00_actorList[LENGTH_MY_DUNGEON_ROOM_1_HEADER00_ACTORLIST] = {
-    // Keese
+    // Lizalfos
     {
-        /* Actor ID   */ ACTOR_EN_FIREFLY,
-        /* Position   */ { -549, 37, 340 },
+        /* Actor ID   */ ACTOR_EN_ZF,
+        /* Position   */ { -606, -120, 513 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0002
+        /* Parameters */ 0x00FE
     },
 
     // Keese
     {
         /* Actor ID   */ ACTOR_EN_FIREFLY,
         /* Position   */ { -597, 11, 604 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0002
-    },
-
-    // Keese
-    {
-        /* Actor ID   */ ACTOR_EN_FIREFLY,
-        /* Position   */ { -732, 10, 273 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
         /* Parameters */ 0x0002
     },
@@ -62,12 +54,20 @@ ActorEntry my_dungeon_room_1_header00_actorList[LENGTH_MY_DUNGEON_ROOM_1_HEADER0
         /* Parameters */ 0x7841
     },
 
-    // Lizalfos
+    // Keese
     {
-        /* Actor ID   */ ACTOR_EN_ZF,
-        /* Position   */ { -606, -120, 513 },
+        /* Actor ID   */ ACTOR_EN_FIREFLY,
+        /* Position   */ { -549, 37, 340 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x00FE
+        /* Parameters */ 0x0002
+    },
+
+    // Keese
+    {
+        /* Actor ID   */ ACTOR_EN_FIREFLY,
+        /* Position   */ { -732, 10, 273 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0002
     },
 };
 

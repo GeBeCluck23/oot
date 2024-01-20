@@ -1075,18 +1075,10 @@ UNSKIPPABLE  ITEM_ICON("\x0E") "Utilisez " COLOR(YELLOW) "[C]" COLOR(DEFAULT) " 
 )
 
 DEFINE_MESSAGE(0x0036, TEXTBOX_TYPE_BLUE, TEXTBOX_POS_BOTTOM,
-UNSKIPPABLE  ITEM_ICON("\x0A")  QUICKTEXT_ENABLE "You found the " COLOR(RED) "Hookshot" COLOR(DEFAULT) "!" QUICKTEXT_DISABLE "\n"
-"It's a spring-loaded chain that\n"
-"you can cast out to hook things."
-BOX_BREAK
-UNSKIPPABLE  ITEM_ICON("\x0A") "You can use it to drag\n"
-"distant items toward you, or\n"
-"you can use it to pull yourself\n"
-"toward something."
-BOX_BREAK
-UNSKIPPABLE  ITEM_ICON("\x0A") "While holding " COLOR(YELLOW) "[C]" COLOR(DEFAULT) ", you can\n"
-"aim with " COLOR(LIGHTBLUE) "[Control-Pad]" COLOR(DEFAULT) ". Shoot it by\n"
-"releasing " COLOR(YELLOW) "[C]" COLOR(DEFAULT) "."
+UNSKIPPABLE  ITEM_ICON("\x0A")  QUICKTEXT_ENABLE "You found the " COLOR(BLUE) "Roc's Feather" COLOR(DEFAULT) "!" QUICKTEXT_DISABLE "\n"
+"You feel lighter already! Equip\n"
+"it to " COLOR(YELLOW) "[C]" COLOR(DEFAULT) " to jump with a\n"
+"gust of wind, even in the air!"
 ,
 UNSKIPPABLE  ITEM_ICON("\x0A")  QUICKTEXT_ENABLE "Der " COLOR(RED) "Fanghaken!" COLOR(DEFAULT)  QUICKTEXT_DISABLE "\n"
 "Im " COLOR(YELLOW) "Gegenstands-Menü" COLOR(DEFAULT) " kannst\n"
@@ -3347,10 +3339,10 @@ UNSKIPPABLE  ITEM_ICON("\x0D") "En utilisant la magie une \n"
 )
 
 DEFINE_MESSAGE(0x00AF, TEXTBOX_TYPE_BLUE, TEXTBOX_POS_BOTTOM,
-UNSKIPPABLE  ITEM_ICON("\x13")  QUICKTEXT_ENABLE "You found the " COLOR(BLUE) "Roc's Feather" COLOR(DEFAULT) "!" QUICKTEXT_DISABLE "\n"
-"You feel lighter already! Equip\n"
-"it to " COLOR(YELLOW) "[C]" COLOR(DEFAULT) " to jump with a\n"
-"gust of wind, even in the air!\n"
+UNSKIPPABLE  ITEM_ICON("\x13")  QUICKTEXT_ENABLE "You got " COLOR(BLUE) "Nayru's Love" COLOR(DEFAULT) "!" QUICKTEXT_DISABLE "\n"
+"Cast this to create a powerful\n"
+"protective barrier. It's defensive \n"
+"magic you can use with " COLOR(YELLOW) "[C]" COLOR(DEFAULT) "."
 ,
 UNSKIPPABLE  ITEM_ICON("\x13")  QUICKTEXT_ENABLE  COLOR(BLUE) "Nayrus Umarmung" COLOR(DEFAULT) "!" QUICKTEXT_DISABLE "\n"
 "Setze diese kraftvolle,\n"

@@ -10,8 +10,8 @@
 /**
  * Header Child Day (Default)
 */
-#define LENGTH_MY_DUNGEON_ROOM_0_HEADER00_OBJECTLIST 7
-#define LENGTH_MY_DUNGEON_ROOM_0_HEADER00_ACTORLIST 6
+#define LENGTH_MY_DUNGEON_ROOM_0_HEADER00_OBJECTLIST 5
+#define LENGTH_MY_DUNGEON_ROOM_0_HEADER00_ACTORLIST 5
 SceneCmd my_dungeon_room_0_header00[] = {
     SCENE_CMD_ECHO_SETTINGS(0x00),
     SCENE_CMD_ROOM_BEHAVIOR(0x00, 0x00, false, false),
@@ -29,33 +29,15 @@ s16 my_dungeon_room_0_header00_objectList[LENGTH_MY_DUNGEON_ROOM_0_HEADER00_OBJE
     OBJECT_RAT,
     OBJECT_ZOL,
     OBJECT_BOX,
-    OBJECT_BWALL,
-    OBJECT_KINGDODONGO,
 };
 
 ActorEntry my_dungeon_room_0_header00_actorList[LENGTH_MY_DUNGEON_ROOM_0_HEADER00_ACTORLIST] = {
-    // Custom Actor
+    // Treasure Chest
     {
-        /* Actor ID   */ ACTOR_EN_ZOL,
-        /* Position   */ { 350, -120, -365 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0100
-    },
-
-    // Dodongo's Cavern Objects
-    {
-        /* Actor ID   */ ACTOR_BG_BREAKWALL,
-        /* Position   */ { 57, -120, 122 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x4001
-    },
-
-    // Dodongo's Cavern Objects
-    {
-        /* Actor ID   */ ACTOR_BG_BREAKWALL,
-        /* Position   */ { 202, -102, 79 },
-        /* Rotation   */ { 0, 0, 0 },
-        /* Parameters */ 0xA001
+        /* Actor ID   */ ACTOR_EN_BOX,
+        /* Position   */ { 477, -120, 7 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(270.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0BC3
     },
 
     // Custom Actor
@@ -69,9 +51,17 @@ ActorEntry my_dungeon_room_0_header00_actorList[LENGTH_MY_DUNGEON_ROOM_0_HEADER0
     // Treasure Chest
     {
         /* Actor ID   */ ACTOR_EN_BOX,
-        /* Position   */ { 477, -120, -38 },
+        /* Position   */ { 474, -120, -117 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(270.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0BC3
+        /* Parameters */ 0x010B
+    },
+
+    // Custom Actor
+    {
+        /* Actor ID   */ ACTOR_EN_ZOL,
+        /* Position   */ { 350, -120, -365 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0100
     },
 
     // Custom Actor

@@ -540,7 +540,8 @@ static GetItemEntry sGetItemTable[] = {
     // GI_DEKU_STICKS_1
     GET_ITEM(ITEM_DEKU_STICK, OBJECT_GI_STICK, GID_DEKU_STICK, 0x37, 0x0D, CHEST_ANIM_SHORT),
     // GI_HOOKSHOT
-    GET_ITEM(ITEM_HOOKSHOT, OBJECT_GI_HOOKSHOT, GID_HOOKSHOT, 0x36, 0x80, CHEST_ANIM_LONG),
+    // GET_ITEM(ITEM_HOOKSHOT, OBJECT_GI_HOOKSHOT, GID_HOOKSHOT, 0x36, 0x80, CHEST_ANIM_LONG),
+    GET_ITEM(ITEM_HOOKSHOT, OBJECT_GI_FEATHER, GID_HOOKSHOT, 0x36, 0x80, CHEST_ANIM_LONG),
     // GI_LONGSHOT
     GET_ITEM(ITEM_LONGSHOT, OBJECT_GI_HOOKSHOT, GID_LONGSHOT, 0x4F, 0x80, CHEST_ANIM_LONG),
     // GI_LENS_OF_TRUTH
@@ -712,8 +713,7 @@ static GetItemEntry sGetItemTable[] = {
     // GI_FARORES_WIND
     GET_ITEM(ITEM_FARORES_WIND, OBJECT_GI_GODDESS, GID_FARORES_WIND, 0xAE, 0x80, CHEST_ANIM_LONG),
     // GI_NAYRUS_LOVE
-    // GET_ITEM(ITEM_NAYRUS_LOVE, OBJECT_GI_GODDESS, GID_NAYRUS_LOVE, 0xAF, 0x80, CHEST_ANIM_LONG),
-    GET_ITEM(ITEM_NAYRUS_LOVE, OBJECT_GI_FEATHER, GID_NAYRUS_LOVE, 0xAF, 0x80, CHEST_ANIM_LONG),
+    GET_ITEM(ITEM_NAYRUS_LOVE, OBJECT_GI_GODDESS, GID_NAYRUS_LOVE, 0xAF, 0x80, CHEST_ANIM_LONG),
     // GI_BULLET_BAG_30
     GET_ITEM(ITEM_BULLET_BAG_30, OBJECT_GI_DEKUPOUCH, GID_BULLET_BAG, 0x07, 0x80, CHEST_ANIM_LONG),
     // GI_BULLET_BAG_40
@@ -3230,8 +3230,9 @@ void Player_UseItem(PlayState* play, Player* this, s32 item) {
         ((this->itemAction < 0) && ((Player_ActionToMeleeWeapon(itemAction) != 0) || (itemAction == PLAYER_IA_NONE)))) {
 
         if ((itemAction == PLAYER_IA_NONE) || !(this->stateFlags1 & PLAYER_STATE1_27) ||
-            ((this->actor.bgCheckFlags & BGCHECKFLAG_GROUND) &&
-             ((itemAction == PLAYER_IA_HOOKSHOT) || (itemAction == PLAYER_IA_LONGSHOT)))) {
+            ((this->actor.bgCheckFlags & BGCHECKFLAG_GROUND)
+            // && ((itemAction == PLAYER_IA_HOOKSHOT) || (itemAction == PLAYER_IA_LONGSHOT))
+             )) {
 
             if ((play->bombchuBowlingStatus == 0) &&
                 (((itemAction == PLAYER_IA_DEKU_STICK) && (AMMO(ITEM_DEKU_STICK) == 0)) ||
@@ -3242,7 +3243,7 @@ void Player_UseItem(PlayState* play, Player* this, s32 item) {
                 // Prevent some items from being used if player is out of ammo.
                 // Also prevent explosives from being used if there are 3 or more active (outside of bombchu bowling)
                 Sfx_PlaySfxCentered(NA_SE_SY_ERROR);
-            } else if (itemAction == PLAYER_IA_NAYRUS_LOVE) {
+            } else if (itemAction == PLAYER_IA_HOOKSHOT) {
                 Player_TryFeatherJump(this,play);
             } else if (itemAction == PLAYER_IA_LENS_OF_TRUTH) {
                 // Handle Lens of Truth

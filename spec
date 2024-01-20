@@ -10679,3 +10679,17 @@ beginseg
     include "build/assets/scenes/my_scenes/escape_rm_outside/escape_rm_outside_room_0.o"
     number 3
 endseg
+
+beginseg
+    name "wah_cave"
+    romalign 0x1000
+    include "build/assets/scenes/my_scenes/wah_cave/wah_cave_scene.o"
+    number 2
+endseg
+
+beginseg
+    name "wah_cave_room_0"
+    romalign 0x1000
+    include "build/assets/scenes/my_scenes/wah_cave/wah_cave_room_0.o"
+    number 3
+endseg

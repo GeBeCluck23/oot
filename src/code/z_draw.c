@@ -206,7 +206,8 @@ DrawItemTableEntry sDrawItemTable[] = {
     // hylian shield, OBJECT_GI_SHIELD_2
     { GetItem_DrawOpa0, { gGiHylianShieldDL } },
     // hookshot, OBJECT_GI_HOOKSHOT
-    { GetItem_DrawOpa0, { gGiHookshotDL } },
+    // { GetItem_DrawOpa0, { gGiHookshotDL } },
+    { GetItem_DrawOpa0, { gGiRocsFeatherDL } },
     // longshot, OBJECT_GI_HOOKSHOT
     { GetItem_DrawOpa0, { gGiLongshotDL } },
     // ocarina of time, OBJECT_GI_OCARINA
@@ -328,8 +329,7 @@ DrawItemTableEntry sDrawItemTable[] = {
     // farore's wind, OBJECT_GI_GODDESS
     { GetItem_DrawMagicSpell, { gGiMagicSpellDiamondDL, gGiFaroresWindColorDL, gGiMagicSpellOrbDL } },
     // nayru's Love, OBJECT_GI_GODDESS
-    // { GetItem_DrawMagicSpell, { gGiMagicSpellDiamondDL, gGiNayrusLoveColorDL, gGiMagicSpellOrbDL } },
-    { GetItem_DrawOpa0, { gGiRocsFeatherDL } },
+    { GetItem_DrawMagicSpell, { gGiMagicSpellDiamondDL, gGiNayrusLoveColorDL, gGiMagicSpellOrbDL } },
     // blue fire, OBJECT_GI_FIRE
     { GetItem_DrawBlueFire, { gGiBlueFireChamberstickDL, gGiBlueFireFlameDL } },
     // bugs, OBJECT_GI_INSECT
