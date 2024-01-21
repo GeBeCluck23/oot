@@ -8876,7 +8876,11 @@ BOX_BREAK
 QUICKTEXT_ENABLE COLOR(BLUE) "(...Sorry Frankie, maybe next time\n"
 "I'll add 'you-know-what' in!)" COLOR(DEFAULT)
 BOX_BREAK
-QUICKTEXT_ENABLE "So once again..."
+QUICKTEXT_ENABLE "And finally..."
+BOX_BREAK
+QUICKTEXT_DISABLE "Thank you " NAME " for playing!"
+BOX_BREAK
+QUICKTEXT_ENABLE "And once again..."
 BOX_BREAK
 QUICKTEXT_ENABLE SHIFT("\x36")  COLOR(RED) "Congratulations!!\n" QUICKTEXT_DISABLE
 ,

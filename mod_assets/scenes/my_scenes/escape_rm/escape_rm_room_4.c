@@ -34,6 +34,22 @@ s16 escape_rm_room_4_header00_objectList[LENGTH_ESCAPE_RM_ROOM_4_HEADER00_OBJECT
 };
 
 ActorEntry escape_rm_room_4_header00_actorList[LENGTH_ESCAPE_RM_ROOM_4_HEADER00_ACTORLIST] = {
+    // Flame
+    {
+        /* Actor ID   */ ACTOR_EN_LIGHT,
+        /* Position   */ { 1361, -479, 438 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0000
+    },
+
+    // Treasure Chest
+    {
+        /* Actor ID   */ ACTOR_EN_BOX,
+        /* Position   */ { 671, -826, -44 },
+        /* Rotation   */ { 0, 0, 0 },
+        /* Parameters */ 0x47AB
+    },
+
     // Crate
     {
         /* Actor ID   */ ACTOR_OBJ_KIBAKO2,
@@ -50,60 +66,12 @@ ActorEntry escape_rm_room_4_header00_actorList[LENGTH_ESCAPE_RM_ROOM_4_HEADER00_
         /* Parameters */ 0x0000
     },
 
-    // Custom Actor
+    // Fake Stomping Door
     {
-        /* Actor ID   */ ACTOR_METAL_CRATE,
-        /* Position   */ { 226, -782, 360 },
+        /* Actor ID   */ ACTOR_DOOR_KILLER,
+        /* Position   */ { 226, -826, 396 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0000
-    },
-
-    // Flame
-    {
-        /* Actor ID   */ ACTOR_EN_LIGHT,
-        /* Position   */ { 1361, -479, 1076 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0000
-    },
-
-    // Crate
-    {
-        /* Actor ID   */ ACTOR_OBJ_KIBAKO2,
-        /* Position   */ { -273, -50, 899 },
-        /* Rotation   */ { 3, 0, 0 },
-        /* Parameters */ 0x0000
-    },
-
-    // Breakable Pot
-    {
-        /* Actor ID   */ ACTOR_OBJ_TSUBO,
-        /* Position   */ { 449, -50, 1020 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0004
-    },
-
-    // Crate
-    {
-        /* Actor ID   */ ACTOR_OBJ_KIBAKO2,
-        /* Position   */ { -273, -50, 752 },
-        /* Rotation   */ { 3, 0, 0 },
-        /* Parameters */ 0x0000
-    },
-
-    // Breakable Pot
-    {
-        /* Actor ID   */ ACTOR_OBJ_TSUBO,
-        /* Position   */ { 449, -50, 421 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0004
-    },
-
-    // Crate
-    {
-        /* Actor ID   */ ACTOR_OBJ_KIBAKO2,
-        /* Position   */ { -333, -50, 752 },
-        /* Rotation   */ { 3, 0, 0 },
-        /* Parameters */ 0x0000
+        /* Parameters */ 0x0400
     },
 
     // Crate
@@ -114,52 +82,12 @@ ActorEntry escape_rm_room_4_header00_actorList[LENGTH_ESCAPE_RM_ROOM_4_HEADER00_
         /* Parameters */ 0x0000
     },
 
-    // Flame
+    // Keese
     {
-        /* Actor ID   */ ACTOR_EN_LIGHT,
-        /* Position   */ { 802, -765, -59 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(99.289), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0004
-    },
-
-    // Crate
-    {
-        /* Actor ID   */ ACTOR_OBJ_KIBAKO2,
-        /* Position   */ { -273, -50, 801 },
-        /* Rotation   */ { 3, 0, 0 },
-        /* Parameters */ 0x0000
-    },
-
-    // Crate
-    {
-        /* Actor ID   */ ACTOR_OBJ_KIBAKO2,
-        /* Position   */ { -273, -50, 850 },
-        /* Rotation   */ { 3, 0, 0 },
-        /* Parameters */ 0x0000
-    },
-
-    // Treasure Chest
-    {
-        /* Actor ID   */ ACTOR_EN_BOX,
-        /* Position   */ { 671, -826, -44 },
-        /* Rotation   */ { 0, 0, 0 },
-        /* Parameters */ 0x47AB
-    },
-
-    // Treasure Chest
-    {
-        /* Actor ID   */ ACTOR_EN_BOX,
-        /* Position   */ { 425, -50, 486 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x5842
-    },
-
-    // Crate
-    {
-        /* Actor ID   */ ACTOR_OBJ_KIBAKO2,
-        /* Position   */ { -333, -50, 801 },
-        /* Rotation   */ { 3, 0, 0 },
-        /* Parameters */ 0x0000
+        /* Actor ID   */ ACTOR_EN_FIREFLY,
+        /* Position   */ { 534, -691, 416 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0003
     },
 
     // Checkable Spot
@@ -181,7 +109,15 @@ ActorEntry escape_rm_room_4_header00_actorList[LENGTH_ESCAPE_RM_ROOM_4_HEADER00_
     // Crate
     {
         /* Actor ID   */ ACTOR_OBJ_KIBAKO2,
-        /* Position   */ { -333, -50, 850 },
+        /* Position   */ { -273, -50, 850 },
+        /* Rotation   */ { 3, 0, 0 },
+        /* Parameters */ 0x0000
+    },
+
+    // Crate
+    {
+        /* Actor ID   */ ACTOR_OBJ_KIBAKO2,
+        /* Position   */ { -273, -50, 752 },
         /* Rotation   */ { 3, 0, 0 },
         /* Parameters */ 0x0000
     },
@@ -192,38 +128,6 @@ ActorEntry escape_rm_room_4_header00_actorList[LENGTH_ESCAPE_RM_ROOM_4_HEADER00_
         /* Position   */ { -272, -56, 842 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
         /* Parameters */ 0x4008
-    },
-
-    // Crate
-    {
-        /* Actor ID   */ ACTOR_OBJ_KIBAKO2,
-        /* Position   */ { -211, -50, 752 },
-        /* Rotation   */ { 3, 0, 0 },
-        /* Parameters */ 0x0000
-    },
-
-    // Custom Actor
-    {
-        /* Actor ID   */ ACTOR_METAL_CRATE,
-        /* Position   */ { 114, -50, 760 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0000
-    },
-
-    // Flame
-    {
-        /* Actor ID   */ ACTOR_EN_LIGHT,
-        /* Position   */ { 1361, -479, 438 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0000
-    },
-
-    // Crate
-    {
-        /* Actor ID   */ ACTOR_OBJ_KIBAKO2,
-        /* Position   */ { -333, -50, 899 },
-        /* Rotation   */ { 3, 0, 0 },
-        /* Parameters */ 0x0000
     },
 
     // Flame
@@ -237,23 +141,23 @@ ActorEntry escape_rm_room_4_header00_actorList[LENGTH_ESCAPE_RM_ROOM_4_HEADER00_
     // Crate
     {
         /* Actor ID   */ ACTOR_OBJ_KIBAKO2,
-        /* Position   */ { -211, -50, 801 },
+        /* Position   */ { -333, -50, 899 },
         /* Rotation   */ { 3, 0, 0 },
         /* Parameters */ 0x0000
     },
 
-    // Keese
+    // Custom Actor
     {
-        /* Actor ID   */ ACTOR_EN_FIREFLY,
-        /* Position   */ { 542, -689, 1095 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(180.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0003
+        /* Actor ID   */ ACTOR_METAL_CRATE,
+        /* Position   */ { 114, -50, 760 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0000
     },
 
     // Crate
     {
         /* Actor ID   */ ACTOR_OBJ_KIBAKO2,
-        /* Position   */ { -273, -50, 947 },
+        /* Position   */ { -273, -50, 801 },
         /* Rotation   */ { 3, 0, 0 },
         /* Parameters */ 0x0000
     },
@@ -266,20 +170,36 @@ ActorEntry escape_rm_room_4_header00_actorList[LENGTH_ESCAPE_RM_ROOM_4_HEADER00_
         /* Parameters */ 0x0000
     },
 
-    // Fake Stomping Door
+    // Custom Actor
     {
-        /* Actor ID   */ ACTOR_DOOR_KILLER,
-        /* Position   */ { 226, -826, 396 },
+        /* Actor ID   */ ACTOR_METAL_CRATE,
+        /* Position   */ { 226, -782, 360 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0400
+        /* Parameters */ 0x0000
     },
 
-    // Keese
+    // Crate
     {
-        /* Actor ID   */ ACTOR_EN_FIREFLY,
-        /* Position   */ { 534, -691, 416 },
+        /* Actor ID   */ ACTOR_OBJ_KIBAKO2,
+        /* Position   */ { -211, -50, 801 },
+        /* Rotation   */ { 3, 0, 0 },
+        /* Parameters */ 0x0000
+    },
+
+    // Crate
+    {
+        /* Actor ID   */ ACTOR_OBJ_KIBAKO2,
+        /* Position   */ { -333, -50, 850 },
+        /* Rotation   */ { 3, 0, 0 },
+        /* Parameters */ 0x0000
+    },
+
+    // Breakable Pot
+    {
+        /* Actor ID   */ ACTOR_OBJ_TSUBO,
+        /* Position   */ { 449, -50, 1020 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0003
+        /* Parameters */ 0x0004
     },
 
     // Custom Actor
@@ -287,6 +207,86 @@ ActorEntry escape_rm_room_4_header00_actorList[LENGTH_ESCAPE_RM_ROOM_4_HEADER00_
         /* Actor ID   */ ACTOR_METAL_CRATE,
         /* Position   */ { 226, -826, 360 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0000
+    },
+
+    // Flame
+    {
+        /* Actor ID   */ ACTOR_EN_LIGHT,
+        /* Position   */ { 1361, -479, 1076 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0000
+    },
+
+    // Crate
+    {
+        /* Actor ID   */ ACTOR_OBJ_KIBAKO2,
+        /* Position   */ { -211, -50, 752 },
+        /* Rotation   */ { 3, 0, 0 },
+        /* Parameters */ 0x0000
+    },
+
+    // Crate
+    {
+        /* Actor ID   */ ACTOR_OBJ_KIBAKO2,
+        /* Position   */ { -333, -50, 752 },
+        /* Rotation   */ { 3, 0, 0 },
+        /* Parameters */ 0x0000
+    },
+
+    // Breakable Pot
+    {
+        /* Actor ID   */ ACTOR_OBJ_TSUBO,
+        /* Position   */ { 449, -50, 421 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0004
+    },
+
+    // Crate
+    {
+        /* Actor ID   */ ACTOR_OBJ_KIBAKO2,
+        /* Position   */ { -273, -50, 899 },
+        /* Rotation   */ { 3, 0, 0 },
+        /* Parameters */ 0x0000
+    },
+
+    // Flame
+    {
+        /* Actor ID   */ ACTOR_EN_LIGHT,
+        /* Position   */ { 802, -765, -59 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(99.289), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0004
+    },
+
+    // Crate
+    {
+        /* Actor ID   */ ACTOR_OBJ_KIBAKO2,
+        /* Position   */ { -333, -50, 801 },
+        /* Rotation   */ { 3, 0, 0 },
+        /* Parameters */ 0x0000
+    },
+
+    // Keese
+    {
+        /* Actor ID   */ ACTOR_EN_FIREFLY,
+        /* Position   */ { 542, -689, 1095 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(180.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0003
+    },
+
+    // Treasure Chest
+    {
+        /* Actor ID   */ ACTOR_EN_BOX,
+        /* Position   */ { 425, -50, 486 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x5842
+    },
+
+    // Crate
+    {
+        /* Actor ID   */ ACTOR_OBJ_KIBAKO2,
+        /* Position   */ { -273, -50, 947 },
+        /* Rotation   */ { 3, 0, 0 },
         /* Parameters */ 0x0000
     },
 };

@@ -36,22 +36,6 @@ ActorEntry escape_rm_room_10_header00_actorList[LENGTH_ESCAPE_RM_ROOM_10_HEADER0
     // Breakable Pot
     {
         /* Actor ID   */ ACTOR_OBJ_TSUBO,
-        /* Position   */ { 2311, -50, -1030 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x000B
-    },
-
-    // Breakable Pot
-    {
-        /* Actor ID   */ ACTOR_OBJ_TSUBO,
-        /* Position   */ { 2384, -50, -1030 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0012
-    },
-
-    // Breakable Pot
-    {
-        /* Actor ID   */ ACTOR_OBJ_TSUBO,
         /* Position   */ { 2071, -50, -1030 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
         /* Parameters */ 0x000A
@@ -68,17 +52,17 @@ ActorEntry escape_rm_room_10_header00_actorList[LENGTH_ESCAPE_RM_ROOM_10_HEADER0
     // Custom Actor
     {
         /* Actor ID   */ ACTOR_METAL_CRATE,
-        /* Position   */ { 2214, -1, -650 },
+        /* Position   */ { 2164, -1, -650 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
         /* Parameters */ 0x0000
     },
 
-    // Dodongo's Cavern Objects
+    // Custom Actor
     {
-        /* Actor ID   */ ACTOR_BG_BREAKWALL,
-        /* Position   */ { 2188, -50, -326 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x200C
+        /* Actor ID   */ ACTOR_METAL_CRATE,
+        /* Position   */ { 2214, -1, -650 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0000
     },
 
     // Breakable Pot
@@ -97,20 +81,20 @@ ActorEntry escape_rm_room_10_header00_actorList[LENGTH_ESCAPE_RM_ROOM_10_HEADER0
         /* Parameters */ 0x0000
     },
 
-    // Treasure Chest
-    {
-        /* Actor ID   */ ACTOR_EN_BOX,
-        /* Position   */ { 2188, -50, -229 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(180.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0085
-    },
-
     // Custom Actor
     {
-        /* Actor ID   */ ACTOR_METAL_CRATE,
-        /* Position   */ { 2164, -1, -650 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0000
+        /* Actor ID   */ ACTOR_LADDER,
+        /* Position   */ { 2188, -50, -1054 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x2006
+    },
+
+    // Dodongo's Cavern Objects
+    {
+        /* Actor ID   */ ACTOR_BG_BREAKWALL,
+        /* Position   */ { 2188, -50, -326 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x200C
     },
 
     // Wallmaster
@@ -119,6 +103,14 @@ ActorEntry escape_rm_room_10_header00_actorList[LENGTH_ESCAPE_RM_ROOM_10_HEADER0
         /* Position   */ { 2338, -50, -816 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
         /* Parameters */ 0x0E02
+    },
+
+    // Treasure Chest
+    {
+        /* Actor ID   */ ACTOR_EN_BOX,
+        /* Position   */ { 2188, -50, -229 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(180.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0085
     },
 
     // Breakable Pot
@@ -137,12 +129,12 @@ ActorEntry escape_rm_room_10_header00_actorList[LENGTH_ESCAPE_RM_ROOM_10_HEADER0
         /* Parameters */ 0x000B
     },
 
-    // Custom Actor
+    // Breakable Pot
     {
-        /* Actor ID   */ ACTOR_LADDER,
-        /* Position   */ { 2188, -50, -1054 },
+        /* Actor ID   */ ACTOR_OBJ_TSUBO,
+        /* Position   */ { 2311, -50, -1030 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x2006
+        /* Parameters */ 0x000B
     },
 
     // Custom Actor
@@ -151,6 +143,14 @@ ActorEntry escape_rm_room_10_header00_actorList[LENGTH_ESCAPE_RM_ROOM_10_HEADER0
         /* Position   */ { 2164, -50, -650 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
         /* Parameters */ 0x0000
+    },
+
+    // Breakable Pot
+    {
+        /* Actor ID   */ ACTOR_OBJ_TSUBO,
+        /* Position   */ { 2384, -50, -1030 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0012
     },
 };
 
