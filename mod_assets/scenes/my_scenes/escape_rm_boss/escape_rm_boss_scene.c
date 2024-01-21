@@ -32,7 +32,7 @@ RomFile escape_rm_boss_scene_roomList[] = {
 ActorEntry escape_rm_boss_scene_header00_playerEntryList[] = {
     {
         /* Actor ID   */ ACTOR_PLAYER,
-        /* Position   */ { 5, -120, 660 },
+        /* Position   */ { -14, -120, 1312 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(179.193), DEG_TO_BINANG(0.000) },
         /* Parameters */ 0x0FFF
     },

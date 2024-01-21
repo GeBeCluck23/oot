@@ -184,12 +184,12 @@ void EnWiz_Init(Actor* thisx, PlayState* play) {
     EnWiz_InitCollision(thisx, play);
     CollisionCheck_SetInfo(&thisx->colChkInfo, NULL, &sColChkInfoInit);
     thisx->colChkInfo.damageTable = sDamageTable;
-    thisx->colChkInfo.health = 10;
+    thisx->colChkInfo.health = 8;
     //thisx->colChkInfo.health = 6;
 
     thisx->shape.yOffset = -200.0f; // maybe remove this?
 
-    Actor_SetScale(&this->actor, 0.010f);
+    Actor_SetScale(&this->actor, 0.008f);
     //Actor_SetScale(&this->actor, 0.008f);
 
     this->type = (thisx->params & 0xFF00) >> 8;
