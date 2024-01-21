@@ -126,5 +126,5 @@
            DEFINE_SCENE(escape_rm, none, SCENE_ESCAPE_RM, SDC_CALM_WATER, 0, 0)
            DEFINE_SCENE(escape_rm_boss, none, SCENE_ESCAPE_RM_BOSS, SDC_DEFAULT, 0, 0)
            DEFINE_SCENE(escape_rm_exit, none, SCENE_ESCAPE_RM_EXIT, SDC_DEFAULT, 0, 0)
-           DEFINE_SCENE(escape_rm_outside, none, SCENE_ESCAPE_RM_OUTSIDE, SDC_DEFAULT, 0, 0)
+           DEFINE_SCENE(escape_rm_outside, none, SCENE_ESCAPE_RM_OUTSIDE, SDC_CALM_WATER, 0, 0)
            DEFINE_SCENE(wah_cave, none, SCENE_WAH_CAVE, SDC_CALM_WATER, 0, 0)

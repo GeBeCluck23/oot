@@ -36,20 +36,20 @@ ActorEntry wah_cave_room_0_header00_actorList[LENGTH_WAH_CAVE_ROOM_0_HEADER00_AC
         /* Parameters */ 0x0002
     },
 
-    // Treasure Chest
-    {
-        /* Actor ID   */ ACTOR_EN_BOX,
-        /* Position   */ { 1807, 154, -135 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(113.884), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x07B0
-    },
-
     // Flame
     {
         /* Actor ID   */ ACTOR_EN_LIGHT,
         /* Position   */ { 1557, 180, -164 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(293.884), DEG_TO_BINANG(0.000) },
         /* Parameters */ 0x0002
+    },
+
+    // Treasure Chest
+    {
+        /* Actor ID   */ ACTOR_EN_BOX,
+        /* Position   */ { 1807, 154, -135 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(113.884), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x07B0
     },
 };
 
@@ -79,7 +79,7 @@ Gfx wah_cave_room_0_entry_0_opaque[] = {
 	gsSPDisplayList(wah_cave_dl_crystal_009_mesh_layer_Opaque),
 	gsSPDisplayList(wah_cave_dl_crystal_010_mesh_layer_Opaque),
 	gsSPDisplayList(wah_cave_dl_crystal_011_mesh_layer_Opaque),
-	gsSPDisplayList(wah_cave_dl_keepout_sign_mesh_layer_Opaque),
+	gsSPDisplayList(wah_cave_dl_keepoutMesh_mesh_layer_Opaque),
 	gsSPDisplayList(wah_cave_dl_pedestal_mesh_layer_Opaque),
 	gsSPDisplayList(wah_cave_dl_pedestal_001_mesh_layer_Opaque),
 	gsSPDisplayList(wah_cave_dl_Plane_mesh_layer_Opaque),
@@ -552,10 +552,10 @@ Vtx wah_cave_dl_backboard_mesh_layer_Opaque_vtx_0[22] = {
 	{{ {351, 227, 104}, 0, {752, 506}, {148, 249, 67, 255} }},
 	{{ {346, 230, 96}, 0, {965, 875}, {148, 249, 67, 255} }},
 	{{ {347, 221, 98}, 0, {539, 875}, {148, 249, 67, 255} }},
-	{{ {343, 270, 88}, 0, {-16, 1008}, {188, 229, 152, 255} }},
-	{{ {351, 188, 104}, 0, {1008, 1008}, {188, 229, 152, 255} }},
-	{{ {281, 190, 149}, 0, {1008, -16}, {188, 229, 152, 255} }},
-	{{ {272, 272, 134}, 0, {-16, -16}, {188, 229, 152, 255} }},
+	{{ {343, 270, 88}, 0, {-16, 1008}, {68, 27, 104, 255} }},
+	{{ {272, 272, 134}, 0, {-16, -16}, {68, 27, 104, 255} }},
+	{{ {281, 190, 149}, 0, {1008, -16}, {68, 27, 104, 255} }},
+	{{ {351, 188, 104}, 0, {1008, 1008}, {68, 27, 104, 255} }},
 	{{ {351, 227, 104}, 0, {1008, 496}, {21, 121, 32, 255} }},
 	{{ {402, 227, 70}, 0, {1008, -16}, {21, 121, 32, 255} }},
 	{{ {397, 230, 63}, 0, {667, -16}, {21, 121, 32, 255} }},
@@ -2205,55 +2205,50 @@ Gfx wah_cave_dl_floor_mesh_layer_Transparent_tri_0[] = {
 	gsSPEndDisplayList(),
 };
 
-Vtx wah_cave_dl_keepout_sign_mesh_layer_Opaque_vtx_cull[8] = {
-	{{ {275, 192, 145}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {275, 267, 145}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {275, 267, 90}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {275, 192, 90}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {347, 192, 145}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {347, 267, 145}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {347, 267, 90}, 0, {0, 0}, {0, 0, 0, 0} }},
-	{{ {347, 192, 90}, 0, {0, 0}, {0, 0, 0, 0} }},
+Vtx wah_cave_dl_keepoutMesh_mesh_layer_Opaque_vtx_cull[8] = {
+	{{ {273, 189, 149}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {273, 270, 149}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {273, 270, 88}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {273, 189, 88}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {350, 189, 149}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {350, 270, 149}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {350, 270, 88}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {350, 189, 88}, 0, {0, 0}, {0, 0, 0, 0} }},
 };
 
-Vtx wah_cave_dl_keepout_sign_mesh_layer_Opaque_vtx_0[14] = {
-	{{ {316, 193, 124}, 0, {1024, 2048}, {186, 229, 153, 255} }},
-	{{ {286, 192, 145}, 0, {2048, 2048}, {186, 229, 153, 255} }},
-	{{ {280, 229, 139}, 0, {2048, 1024}, {186, 229, 153, 255} }},
-	{{ {311, 230, 117}, 0, {1024, 1024}, {186, 229, 153, 255} }},
-	{{ {275, 265, 132}, 0, {2048, 0}, {186, 229, 153, 255} }},
-	{{ {306, 266, 111}, 0, {1024, 0}, {186, 229, 153, 255} }},
-	{{ {342, 230, 96}, 0, {0, 1024}, {186, 229, 153, 255} }},
-	{{ {306, 266, 111}, 0, {1024, 0}, {186, 229, 153, 255} }},
-	{{ {337, 267, 90}, 0, {0, 0}, {186, 229, 153, 255} }},
-	{{ {311, 230, 117}, 0, {1024, 1024}, {186, 229, 153, 255} }},
-	{{ {347, 194, 102}, 0, {0, 2048}, {186, 229, 153, 255} }},
-	{{ {316, 193, 124}, 0, {1024, 2048}, {186, 229, 153, 255} }},
-	{{ {311, 230, 117}, 0, {1024, 1024}, {186, 229, 153, 255} }},
-	{{ {342, 230, 96}, 0, {0, 1024}, {186, 229, 153, 255} }},
+Vtx wah_cave_dl_keepoutMesh_mesh_layer_Opaque_vtx_0[12] = {
+	{{ {273, 270, 134}, 0, {2032, -16}, {186, 229, 153, 255} }},
+	{{ {341, 269, 88}, 0, {-16, -16}, {186, 229, 153, 255} }},
+	{{ {346, 229, 95}, 0, {-16, 992}, {186, 229, 153, 255} }},
+	{{ {278, 230, 141}, 0, {2032, 992}, {186, 229, 153, 255} }},
+	{{ {278, 230, 141}, 0, {2032, 992}, {186, 229, 153, 255} }},
+	{{ {346, 229, 95}, 0, {-16, 992}, {186, 229, 153, 255} }},
+	{{ {350, 190, 102}, 0, {-16, 1984}, {186, 229, 153, 255} }},
+	{{ {282, 191, 148}, 0, {2032, 1984}, {186, 229, 153, 255} }},
+	{{ {282, 191, 148}, 0, {2032, 1984}, {186, 229, 153, 255} }},
+	{{ {350, 190, 102}, 0, {-16, 1984}, {186, 229, 153, 255} }},
+	{{ {350, 189, 103}, 0, {-16, 2032}, {186, 229, 153, 255} }},
+	{{ {282, 189, 149}, 0, {2032, 2032}, {186, 229, 153, 255} }},
 };
 
-Gfx wah_cave_dl_keepout_sign_mesh_layer_Opaque_tri_0[] = {
+Gfx wah_cave_dl_keepoutMesh_mesh_layer_Opaque_tri_0[] = {
 	gsDPLoadSync(),
 	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 64, wah_cave_dl_keepout_sign64_rgba16),
-	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b, 8, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTile(7, 128, 0, 252, 252),
-	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b, 8, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 0, 0),
-	gsDPSetTileSize(0, 128, 0, 252, 252),
-	gsSPVertex(wah_cave_dl_keepout_sign_mesh_layer_Opaque_vtx_0 + 0, 6, 0),
+	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b, 16, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTile(7, 0, 0, 252, 124),
+	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b, 16, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 0, 0),
+	gsDPSetTileSize(0, 0, 0, 252, 124),
+	gsSPVertex(wah_cave_dl_keepoutMesh_mesh_layer_Opaque_vtx_0 + 0, 4, 0),
 	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
-	gsSP2Triangles(3, 2, 4, 0, 3, 4, 5, 0),
 	gsDPLoadSync(),
-	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b, 9, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadTile(7, 0, 0, 128, 128),
-	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b, 9, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 0, 0),
-	gsDPSetTileSize(0, 0, 0, 128, 128),
-	gsSPVertex(wah_cave_dl_keepout_sign_mesh_layer_Opaque_vtx_0 + 6, 4, 0),
-	gsSP2Triangles(0, 1, 2, 0, 0, 3, 1, 0),
+	gsDPLoadTile(7, 0, 124, 252, 248),
+	gsDPSetTileSize(0, 0, 124, 252, 248),
+	gsSPVertex(wah_cave_dl_keepoutMesh_mesh_layer_Opaque_vtx_0 + 4, 4, 0),
+	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
 	gsDPLoadSync(),
-	gsDPLoadTile(7, 0, 128, 128, 252),
-	gsDPSetTileSize(0, 0, 128, 128, 252),
-	gsSPVertex(wah_cave_dl_keepout_sign_mesh_layer_Opaque_vtx_0 + 10, 4, 0),
+	gsDPLoadTile(7, 0, 248, 252, 252),
+	gsDPSetTileSize(0, 0, 248, 252, 252),
+	gsSPVertex(wah_cave_dl_keepoutMesh_mesh_layer_Opaque_vtx_0 + 8, 4, 0),
 	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
 	gsSPEndDisplayList(),
 };
@@ -6930,13 +6925,13 @@ Gfx wah_cave_dl_floor_mesh_layer_Transparent[] = {
 	gsSPEndDisplayList(),
 };
 
-Gfx wah_cave_dl_keepout_sign_mesh_layer_Opaque[] = {
+Gfx wah_cave_dl_keepoutMesh_mesh_layer_Opaque[] = {
 	gsSPClearGeometryMode(G_LIGHTING),
-	gsSPVertex(wah_cave_dl_keepout_sign_mesh_layer_Opaque_vtx_cull + 0, 8, 0),
+	gsSPVertex(wah_cave_dl_keepoutMesh_mesh_layer_Opaque_vtx_cull + 0, 8, 0),
 	gsSPSetGeometryMode(G_LIGHTING),
 	gsSPCullDisplayList(0, 7),
 	gsSPDisplayList(mat_wah_cave_dl_keepout_layerOpaque),
-	gsSPDisplayList(wah_cave_dl_keepout_sign_mesh_layer_Opaque_tri_0),
+	gsSPDisplayList(wah_cave_dl_keepoutMesh_mesh_layer_Opaque_tri_0),
 	gsSPEndDisplayList(),
 };
 

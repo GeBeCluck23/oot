@@ -34,7 +34,7 @@ static SavePlayerData sNewSavePlayerData = {
     0x30,                                               // healthCapacity
     0x30,                                               // defense
     0,                                                  // magicLevel
-    MAGIC_NORMAL_METER,                                 // magic
+    MAGIC_DOUBLE_METER,                                 // magic
     0,                                                  // rupees
     0,                                                  // swordHealth
     0,                                                  // naviTimer

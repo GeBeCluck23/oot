@@ -932,11 +932,11 @@ UNSKIPPABLE  ITEM_ICON("\x06") "Si vous désirez tirer très\n"
 )
 
 DEFINE_MESSAGE(0x0031, TEXTBOX_TYPE_BLUE, TEXTBOX_POS_BOTTOM,
-UNSKIPPABLE  ITEM_ICON("\x03")  QUICKTEXT_ENABLE "You found the " COLOR(RED) "Fairy Bow" COLOR(DEFAULT) "!" QUICKTEXT_DISABLE "\n"
+ITEM_ICON("\x03")  QUICKTEXT_ENABLE "You found the " COLOR(RED) "Fairy Bow" COLOR(DEFAULT) "!" QUICKTEXT_DISABLE "\n"
 "On the " COLOR(YELLOW) "Select Item Subscreen" COLOR(DEFAULT) ",\n"
 "you can set it to " COLOR(YELLOW) "[C-Left]" COLOR(DEFAULT) ", " COLOR(YELLOW) "[C-Down]" COLOR(DEFAULT) " or" COLOR(YELLOW) " [C-Right]" COLOR(DEFAULT) "."
 BOX_BREAK
-UNSKIPPABLE  ITEM_ICON("\x03") "Press " COLOR(YELLOW) "[C] " COLOR(DEFAULT) "to take it out\n"
+ITEM_ICON("\x03") "Press " COLOR(YELLOW) "[C] " COLOR(DEFAULT) "to take it out\n"
 "and hold it. As you hold down\n"
 COLOR(YELLOW) "[C]" COLOR(DEFAULT) " you can aim with " COLOR(LIGHTBLUE) "[Control-Pad]" COLOR(DEFAULT) "." COLOR(YELLOW) " " COLOR(DEFAULT) "Release\n"
 COLOR(YELLOW) "[C]" COLOR(DEFAULT) " to let fly with an " COLOR(RED) "arrow" COLOR(DEFAULT) "."
@@ -1171,9 +1171,9 @@ UNSKIPPABLE  ITEM_ICON("\x0F")  QUICKTEXT_ENABLE "You found the " COLOR(RED) "Le
 "things are hidden everywhere!"
 BOX_BREAK
 UNSKIPPABLE  ITEM_ICON("\x0F") "Search some rooms you have\n"
-"already been to. Seeing the truth\n"
-"will cost magic power, so\n"
-"press " COLOR(YELLOW) "[C]" COLOR(DEFAULT) "again to stop using it."
+"already been to. Seeing the\n"
+"truth will cost magic power, so\n"
+"press " COLOR(YELLOW) "[C] " COLOR(DEFAULT) "again to stop using it."
 ,
 UNSKIPPABLE  ITEM_ICON("\x0F")  QUICKTEXT_ENABLE "Das " COLOR(RED) "Auge der Wahrheit" COLOR(DEFAULT) "!" QUICKTEXT_DISABLE "\n"
 "Plaziere es auf " COLOR(YELLOW) "[C]" COLOR(DEFAULT) " und sieh\n"
@@ -7738,19 +7738,24 @@ SHIFT("\x18") "blind are his secrets revealed.'"
 // Message ID 66
 DEFINE_MESSAGE(0x0242, TEXTBOX_TYPE_BLUE, TEXTBOX_POS_VARIABLE,
 "In order to escape, you\n"
-"will require the assistance\n"
-"of a blue heron's feather."
+"will also require the\n"
+"assistance of a special item."
 BOX_BREAK
 "I think this note had something\n"
-"to do with a feather? Perhaps...?"
+"to do with it? Perhaps...?"
 BOX_BREAK
 "..."
 BOX_BREAK
-"Attached to the notes is a\n"
-"message which reads:"
+"Attached to the message is a\n"
+"note which reads:"
 BOX_BREAK
 UNSKIPPABLE SHIFT("\x18") "'Pierce the heart which hides\n"
 SHIFT("\x18") COLOR(BLUE) "within " COLOR(DEFAULT)"the lonely woman.'"
+BOX_BREAK
+"..."
+BOX_BREAK
+COLOR(BLUE) "Within " COLOR(DEFAULT)"the lonely woman...\n"
+"What's that supposed to mean?"
 ,
 "german"
 ,
@@ -7792,8 +7797,8 @@ DEFINE_MESSAGE(0x0244, TEXTBOX_TYPE_BLUE, TEXTBOX_POS_VARIABLE,
 // Message ID 69
 DEFINE_MESSAGE(0x0245, TEXTBOX_TYPE_BLUE, TEXTBOX_POS_VARIABLE,
 "I have hidden some extra chests\n"
-"around the mansion.\n"
-"You must use the lens to find them."
+"around the mansion. These\n"
+"lens must be used to find them."
 BOX_BREAK
 "There are 7 hidden chests in all.\n"
 "See if you can find all of them\n"
@@ -8832,6 +8837,54 @@ SHIFT("\x2D")  COLOR(RED) "Frères Je-Sais-Tout\n"
 COLOR(DEFAULT)  SHIFT("\x0F") "Et vos questions ne resteront\n"
 SHIFT("\x29") "plus sans réponse!!" QUICKTEXT_DISABLE
 )
+
+// Sign Message ID 70
+DEFINE_MESSAGE(0x0346, TEXTBOX_TYPE_WOODEN, TEXTBOX_POS_VARIABLE,
+QUICKTEXT_ENABLE SHIFT("\x36")  COLOR(RED) "Congratulations!\n"
+COLOR(DEFAULT)  SHIFT("\x36") "You've escaped!!"
+BOX_BREAK
+QUICKTEXT_ENABLE "This is my first major ROM Hack!\n"
+"The most I've done before is some\n"
+"small SM64 hacks using decomp."
+BOX_BREAK
+QUICKTEXT_ENABLE "I'm still new to C though, but I\n"
+"learned a lot making this, and hope\n"
+"to learn more in the future!"
+BOX_BREAK
+QUICKTEXT_ENABLE "Also, thanks James for helping me\n"
+"figure out some stuff in C, by\n"
+"sharing your knowledge with me! Haha."
+BOX_BREAK
+QUICKTEXT_ENABLE "Thank you kentonm for the decomp\n"
+"tutorials! Couldn't have done it\n"
+"without them!"
+BOX_BREAK
+QUICKTEXT_ENABLE "Thank you to everyone at Hylian\n"
+"Modding for putting the competition\n"
+"together!! Hoping for more soon!!"
+BOX_BREAK
+QUICKTEXT_ENABLE "Thank you to my friends and family\n"
+"(mostly Gabe, haha) for playtesting\n"
+"this while I worked on it..."
+BOX_BREAK
+QUICKTEXT_ENABLE "...and for contributing ideas!\n"
+"...Even if I couldn't figure out how\n"
+"to implement all of them yet..."
+BOX_BREAK
+"..."
+BOX_BREAK
+QUICKTEXT_ENABLE COLOR(BLUE) "(...Sorry Frankie, maybe next time\n"
+"I'll add 'you-know-what' in!)" COLOR(DEFAULT)
+BOX_BREAK
+QUICKTEXT_ENABLE "So once again..."
+BOX_BREAK
+QUICKTEXT_ENABLE SHIFT("\x36")  COLOR(RED) "Congratulations!!\n" QUICKTEXT_DISABLE
+,
+"german"
+,
+"french"
+)
+//"The most I've done is some small SM64\n
 
 DEFINE_MESSAGE(0x0400, TEXTBOX_TYPE_BLUE, TEXTBOX_POS_VARIABLE,
 "This is a " COLOR(RED) "Gossip Stone" COLOR(DEFAULT) "!"

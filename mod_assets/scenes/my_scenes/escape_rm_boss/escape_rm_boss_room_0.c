@@ -34,12 +34,12 @@ s16 escape_rm_boss_room_0_header00_objectList[LENGTH_ESCAPE_RM_BOSS_ROOM_0_HEADE
 };
 
 ActorEntry escape_rm_boss_room_0_header00_actorList[LENGTH_ESCAPE_RM_BOSS_ROOM_0_HEADER00_ACTORLIST] = {
-    // Custom Actor
+    // Breakable Pot
     {
-        /* Actor ID   */ ACTOR_EN_WIZ,
-        /* Position   */ { 0, 41, 0 },
+        /* Actor ID   */ ACTOR_OBJ_TSUBO,
+        /* Position   */ { 331, -120, 1178 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(124.222), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0001
+        /* Parameters */ 0x0003
     },
 
     // Breakable Pot
@@ -53,31 +53,7 @@ ActorEntry escape_rm_boss_room_0_header00_actorList[LENGTH_ESCAPE_RM_BOSS_ROOM_0
     // Breakable Pot
     {
         /* Actor ID   */ ACTOR_OBJ_TSUBO,
-        /* Position   */ { -337, -120, 1178 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(124.222), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0003
-    },
-
-    // Breakable Pot
-    {
-        /* Actor ID   */ ACTOR_OBJ_TSUBO,
-        /* Position   */ { 458, -120, -146 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(124.222), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x000A
-    },
-
-    // Custom Actor
-    {
-        /* Actor ID   */ ACTOR_EN_ZOL,
-        /* Position   */ { 10, -120, -351 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(124.222), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0101
-    },
-
-    // Breakable Pot
-    {
-        /* Actor ID   */ ACTOR_OBJ_TSUBO,
-        /* Position   */ { 331, -120, 1178 },
+        /* Position   */ { -337, -120, -374 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(124.222), DEG_TO_BINANG(0.000) },
         /* Parameters */ 0x0003
     },
@@ -88,6 +64,30 @@ ActorEntry escape_rm_boss_room_0_header00_actorList[LENGTH_ESCAPE_RM_BOSS_ROOM_0
         /* Position   */ { -270, -120, 565 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(124.222), DEG_TO_BINANG(0.000) },
         /* Parameters */ 0x000A
+    },
+
+    // Breakable Pot
+    {
+        /* Actor ID   */ ACTOR_OBJ_TSUBO,
+        /* Position   */ { 458, -120, -146 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(124.222), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x000A
+    },
+
+    // Breakable Pot
+    {
+        /* Actor ID   */ ACTOR_OBJ_TSUBO,
+        /* Position   */ { -463, -120, -146 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(124.222), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x000A
+    },
+
+    // Custom Actor
+    {
+        /* Actor ID   */ ACTOR_EN_WIZ,
+        /* Position   */ { 0, 41, 0 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(124.222), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0001
     },
 
     // Custom Actor
@@ -101,7 +101,7 @@ ActorEntry escape_rm_boss_room_0_header00_actorList[LENGTH_ESCAPE_RM_BOSS_ROOM_0
     // Breakable Pot
     {
         /* Actor ID   */ ACTOR_OBJ_TSUBO,
-        /* Position   */ { -337, -120, -374 },
+        /* Position   */ { -337, -120, 1178 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(124.222), DEG_TO_BINANG(0.000) },
         /* Parameters */ 0x0003
     },
@@ -114,12 +114,12 @@ ActorEntry escape_rm_boss_room_0_header00_actorList[LENGTH_ESCAPE_RM_BOSS_ROOM_0
         /* Parameters */ 0x000A
     },
 
-    // Breakable Pot
+    // Custom Actor
     {
-        /* Actor ID   */ ACTOR_OBJ_TSUBO,
-        /* Position   */ { -463, -120, -146 },
+        /* Actor ID   */ ACTOR_EN_ZOL,
+        /* Position   */ { 10, -120, -351 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(124.222), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x000A
+        /* Parameters */ 0x0101
     },
 };
 
@@ -140,6 +140,7 @@ Gfx escape_rm_boss_room_0_entry_0_opaque[] = {
 	gsSPDisplayList(escape_rm_boss_dl_Cylinder_002_mesh_layer_Opaque),
 	gsSPDisplayList(escape_rm_boss_dl_Cylinder_003_mesh_layer_Opaque),
 	gsSPDisplayList(escape_rm_boss_dl_Cylinder_004_mesh_layer_Opaque),
+	gsSPDisplayList(escape_rm_boss_dl_Cylinder_005_mesh_layer_Opaque),
 	gsSPDisplayList(escape_rm_boss_dl_stairs_003_mesh_layer_Opaque),
 	gsSPEndDisplayList(),
 };
@@ -252,6 +253,51 @@ u64 escape_rm_boss_dl_syotes2_room_0Tex_007EF8_rgba16_pal_rgba16[] = {
 	0x529752575adb5a99, 0x0803210d62dd3993, 0x41d54a17631d5a9b, 0x4217529b290f5259, 0x6b5f6b1f5add3151, 0x104773a373a13193, 0x83e56b2173616b61, 0x18cb1089631f4a19, 
 	0x49d584277ba57be5, 0x188b62df7ba38c69, 0x7be78c295a9d9469, 0x94ab83e773639cad, 0x629b8c278c67946b, 0x4195529d94a99ced, 0x8c6b6b6384299cab, 0x9ceb4a59a52f62db, 
 	0x9cefa4ed5a5941d7, 0xa4ef5adf73a52951, 0x629d20cd7b635219, 0x39d56321525b8425, 0x7be3735f08055ad9, 0x52db631b5b1b52d9, 0x31d10003298d18c7, 0x0001000000000000
+};
+
+u64 escape_rm_boss_dl_boss_door_spirit_rgba16_ci8[] = {
+	0x0001000000020304, 0x0405060106000604, 0x070809090a080605, 0x0000020202000200, 0x0b020b020a0c040a, 0x0b0d0c0808080e0a, 0x080f10090e090e11, 0x07020a0809090c0e, 
+	0x0b0b09090b120b0a, 0x0d0b090909091314, 0x1516171413141418, 0x0f09091012141009, 0x0b091212090b0a0c, 0x0b0d0c1012090909, 0x100912190a090a09, 0x0c191a101b171c1d, 
+	0x0b121012090a0b0b, 0x0a1e0d1c1b1f0909, 0x201219091e0b0a0e, 0x12101a1c1d1d1521, 0x000b1012090b0600, 0x00020b0a0b020b00, 0x0e12090c090b2207, 0x0b0a0a0e09091b1b, 
+	0x000008090b110000, 0x0006002302000004, 0x0a0b0b000b000022, 0x000a02110b0a220c, 0x0b0b09090c0b0704, 0x010b080824250b07, 0x0d09260e090c0200, 0x2722270222281919, 
+	0x0b081209090b2904, 0x07011e2520252a00, 0x102b1d1212120606, 0x0227062c02222d19, 0x0d121212080b0501, 0x2e0d1e202f20082e, 0x1430301c12091100, 0x022227020e0a3118, 
+	0x08091c1d08322e04, 0x29331e25262f2008, 0x1d3435361d120222, 0x2728022231371838, 0x08121d393a080700, 0x2a0b20083b20200b, 0x1f3c3c211c120006, 0x0622283d280e0e37, 
+	0x081215121d080533, 0x0b1e0820203e3e3f, 0x1f403c2121120b23, 0x2c2228280a411819, 0x081214151d120103, 0x0004010b2a2e2e3f, 0x15424330441a0b45, 0x06060627023d223d, 
+	0x0812144647090b0b, 0x09091d10100c0b00, 0x1f4048494a4b0a0b, 0x0c0d12141c1c1420, 0x0812174a1d091212, 0x14214c2121391209, 0x2b3c3c49301b121c, 0x212b214d4a303430, 
+	0x0814154e15120c09, 0x121c21212121080c, 0x1f4f433c50100c26, 0x101d1c214c344040, 0x081013464c0f094b, 0x1c2121304d101c08, 0x213c514a504b0c08, 0x1c2152304d3c533c, 
+	0x08104e4a1c1b0b07, 0x0a0d120f1c12091e, 0x10544a43214b0b07, 0x320b0c0912101c1d, 0x0814214a21125556, 0x5557555757555555, 0x1c513c3052120456, 0x5804595a45063302, 
+	0x092b214a211d5655, 0x560445592c045556, 0x1f5b344d4d120503, 0x29035c5c07005d07, 0x12104643211c5656, 0x060345225e280006, 0x1f5134304d4c0705, 0x5f295c6061626363, 
+	0x1210304a4d1d5604, 0x6406115e650e2200, 0x1f406630344c2967, 0x686869626a606b6c, 0x101c4a306d140400, 0x11225e65650a2222, 0x1f516630346e0568, 0x6068626f63707172, 
+	0x152b4a34434b565a, 0x065a2265650a2200, 0x2b4f666d43360368, 0x5f68627374756c6c, 0x102130404d145601, 0x6423225e650e0a11, 0x2b427630661a2977, 0x6868686f606a6c75, 
+	0x102130764d1d5603, 0x00230a5e650a0a22, 0x2b533c3443365c68, 0x6a68686878797a7b, 0x101d3040211a5656, 0x1111227c0f0e2211, 0x7d7e3c34664c295f, 0x7f627f687f757580, 
+	0x121f4e3c4c105656, 0x5a232265810e0a22, 0x824f403c6d21295f, 0x5f6f6f607a836b84, 0x101c4e3c21125656, 0x5a06116585091102, 0x3442403c50365c68, 0x7f8679797a7a877b, 
+	0x12108840153a2701, 0x7c1122655e0f0222, 0x89544f3c4a4b295f, 0x69868660867a7b7b, 0x20144a4a21090406, 0x11117c0e5e0e0a22, 0x8a4f4040214b675f, 0x686a868b83796c72, 
+	0x081d303c4d125603, 0x0664225e5e090b0a, 0x1c8c7e3c6d4b295f, 0x7f68688662836c75, 0x121f4a4d434b5504, 0x050011025e220a0a, 0x2b5354436d4b295f, 0x7f68866f6a79837a, 
+	0x101d5b4334125603, 0x5a11231111225e22, 0x2b8c7e7e6d368d6a, 0x68867986608e7975, 0x1021435b761c5656, 0x005a1106115a6406, 0x2b548f517636675f, 0x5f8686686a688679, 
+	0x1c153c43341a5606, 0x3222900a9122007c, 0x92548f7e3452297f, 0x5f6f86606a8e6a79, 0x1c213c40513a555a, 0x00230a9132065603, 0x4654935176365c7f, 0x867975797a757a7a, 
+	0x1c213c403412565a, 0x0011223211640403, 0x947e537e34365c7f, 0x86797f8e6286796a, 0x1f214040511a5603, 0x5a231122115e0622, 0x157e547e514b5c68, 0x8686796a79957579, 
+	0x10434f66401c5656, 0x5a64065a11060011, 0x46548f40534c5f69, 0x68798679797a7996, 0x125b3c40341a5504, 0x0511111191060603, 0x218c5440664b297f, 0x5f6867695f696086, 
+	0x10303c40661d5603, 0x5a231122115e0622, 0x157e545476365c68, 0x7f8e6860626a6879, 0x1c4640403c1c5603, 0x5a64065a11060011, 0x46545497664c5f69, 0x6879866a98837973, 
+	0x15213c7e5b4b0606, 0x0658112327585603, 0x488f7e4376360329, 0x5f676729675f697f, 0x1015994f341a5656, 0x5556565504565555, 0x308f9a669b360367, 0x5c295f5c05676707, 
+	0x10154a9c3412000b, 0x0c091c12211c129d, 0x34549c40996e0b07, 0x1e1e1e1c4b151c36, 0x10153c9e5b3a091c, 0x2130433430304d21, 0x5b549c769e1d2620, 0x4b1c364d4d304d34, 
+	0x1c159f403c120b1d, 0x362130304d21211c, 0x51549c769aa00c20, 0x124b36362b344351, 0x1521309a66090c12, 0x1c214d30212b1c10, 0x7e54404099a0071e, 0x083a3e4b2b4d6d5b, 
+	0x15213c4051090000, 0x07090912120c0b02, 0x66544099404b5c2e, 0x00071e08124b102b, 0x154d3c405b1b0000, 0x0006002302000004, 0x34549c7e3ca0005a, 0xa106022c22220e0e, 
+	0x1c4640435b1b6704, 0x0b023f082f250b07, 0x348c9c546d1c0003, 0x0604060027030659, 0x1c46435b50200003, 0x010b3f082f082e01, 0x30548c7e6d4b0ba1, 0x0200020604044533, 
+	0x1c214a3421200501, 0x07a21e202f20082e, 0x30547e5134745503, 0x04550423042c3d22, 0x121f4a4d12120103, 0x01011e2f202f0808, 0x308f7e34343a0355, 0x555a592357000202, 
+	0x0912301d1c0b5d00, 0x331e0820a3a4200b, 0x92547e824d200606, 0x0627022c273d2237, 0x1e0b2114120b6700, 0x33083a2f9d3e3e3f, 0x107e66344d1e5606, 0x0200022c27020b02, 
+	0x0b000a080a006755, 0x0004010b2e3f013f, 0x09364b1220070306, 0x0603005506a10202, 0x0907081d1c0b0a07, 0x0b09121220092e03, 0x1230824c4d20052a, 0x071e1e1c101c1c4b, 
+	0x0908131d461b1e10, 0x4b21214d89301208, 0x369aa599a6120b26, 0x1c4c2189304d344d, 0x1e0e9f4e1d10090c, 0x1c1c4c305b4d1208, 0x1c999a76a7a40020, 0x4b364c894d514034, 
+	0x0b090914120b000b, 0x083a104d342b0807, 0x1f40439a3412015d, 0x083a3e1a89305343, 0x0b0b0a0b090c0702, 0x0007080a20080001, 0x9d43212143260129, 0x00670b0a20122009, 
+	
+};
+
+u64 escape_rm_boss_dl_boss_door_spirit_rgba16_pal_rgba16[] = {
+	0x1043104110830801, 0x0841100308431843, 0x20c320c518851883, 0x208518c318c520c7, 0x2905104528c53149, 0x2907314729092947, 0x2107210530c728c7, 0x3105310720833145, 
+	0x28c3394710850845, 0x288120c128830885, 0x10c5100118813945, 0x08831903184128c1, 0x4187190718451081, 0x498741c939051905, 0x2145294528853101, 0x49c910c331032081, 
+	0x51c9110552074989, 0x3989004339873909, 0x41c7498b418930c5, 0x3907414739495209, 0x414951c7410759c7, 0x5a09004100010081, 0x00030881080349c7, 0x1803204318872001, 
+	0x2843284128453083, 0x080518c751871801, 0x2803200330433883, 0x4085494738c73005, 0x488740c748c73803, 0x3085388551892041, 0x3041304538454083, 0x1087418559c92801, 
+	0x488520c949453843, 0x48c518c9300340c5, 0x39c9414549852805, 0x5a07200538056209, 0x18471047398561c9, 0x3187384740435989, 0x304751cb520b518b, 0x5a0b29035a0d41cb, 
+	0x38c5008318c12901, 0x30c35a8d520d49cb, 
 };
 
 Vtx escape_rm_boss_dl_Cylinder_mesh_layer_Opaque_vtx_cull[8] = {
@@ -962,6 +1008,30 @@ Gfx escape_rm_boss_dl_Cylinder_004_mesh_layer_Opaque_tri_0[] = {
 	gsSPEndDisplayList(),
 };
 
+Vtx escape_rm_boss_dl_Cylinder_005_mesh_layer_Opaque_vtx_cull[8] = {
+	{{ {58, -131, 1366}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {58, 25, 1366}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {-31, 25, 1426}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {-31, -131, 1426}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {17, -131, 1305}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {17, 25, 1305}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {-72, 25, 1366}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {-72, -131, 1366}, 0, {0, 0}, {0, 0, 0, 0} }},
+};
+
+Vtx escape_rm_boss_dl_Cylinder_005_mesh_layer_Opaque_vtx_0[4] = {
+	{{ {-72, -131, 1366}, 0, {39, -186}, {0, 0, 129, 255} }},
+	{{ {-72, 25, 1366}, 0, {39, 2354}, {0, 0, 129, 255} }},
+	{{ {58, 25, 1366}, 0, {1653, 2354}, {0, 0, 129, 255} }},
+	{{ {58, -131, 1366}, 0, {1653, -186}, {0, 0, 129, 255} }},
+};
+
+Gfx escape_rm_boss_dl_Cylinder_005_mesh_layer_Opaque_tri_0[] = {
+	gsSPVertex(escape_rm_boss_dl_Cylinder_005_mesh_layer_Opaque_vtx_0 + 0, 4, 0),
+	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
+	gsSPEndDisplayList(),
+};
+
 Vtx escape_rm_boss_dl_stairs_003_mesh_layer_Opaque_vtx_cull[8] = {
 	{{ {1519, -231, 230}, 0, {0, 0}, {0, 0, 0, 0} }},
 	{{ {1519, 68, 230}, 0, {0, 0}, {0, 0, 0, 0} }},
@@ -1401,6 +1471,25 @@ Gfx mat_escape_rm_boss_dl_wall_layerOpaque[] = {
 	gsSPEndDisplayList(),
 };
 
+Gfx mat_escape_rm_boss_dl_bdoor_layerOpaque[] = {
+	gsDPPipeSync(),
+	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, 1, COMBINED, 0, PRIMITIVE, 0, 0, 0, 0, COMBINED),
+	gsSPLoadGeometryMode(G_ZBUFFER | G_SHADE | G_CULL_BACK | G_FOG | G_LIGHTING | G_SHADING_SMOOTH),
+	gsSPSetOtherMode(G_SETOTHERMODE_H, 4, 20, G_AD_NOISE | G_CD_MAGICSQ | G_CK_NONE | G_TC_FILT | G_TF_BILERP | G_TT_RGBA16 | G_TL_TILE | G_TD_CLAMP | G_TP_PERSP | G_CYC_2CYCLE | G_PM_NPRIMITIVE),
+	gsSPSetOtherMode(G_SETOTHERMODE_L, 0, 32, G_AC_NONE | G_ZS_PIXEL | G_RM_FOG_SHADE_A | G_RM_AA_ZB_OPA_SURF2),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetPrimColor(0, 0, 255, 255, 255, 255),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, escape_rm_boss_dl_boss_door_spirit_rgba16_pal_rgba16),
+	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadTLUTCmd(5, 167),
+	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 1, escape_rm_boss_dl_boss_door_spirit_rgba16_ci8),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadBlock(7, 0, 0, 1023, 512),
+	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 6, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTileSize(0, 0, 0, 124, 252),
+	gsSPEndDisplayList(),
+};
+
 Gfx mat_escape_rm_boss_dl_siding_white_layerOpaque[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(0, 0, 0, SHADE, 0, 0, 0, 1, COMBINED, 0, PRIMITIVE, 0, 0, 0, 0, COMBINED),
@@ -1461,6 +1550,16 @@ Gfx escape_rm_boss_dl_Cylinder_004_mesh_layer_Opaque[] = {
 	gsSPCullDisplayList(0, 7),
 	gsSPDisplayList(mat_escape_rm_boss_dl_wall_layerOpaque),
 	gsSPDisplayList(escape_rm_boss_dl_Cylinder_004_mesh_layer_Opaque_tri_0),
+	gsSPEndDisplayList(),
+};
+
+Gfx escape_rm_boss_dl_Cylinder_005_mesh_layer_Opaque[] = {
+	gsSPClearGeometryMode(G_LIGHTING),
+	gsSPVertex(escape_rm_boss_dl_Cylinder_005_mesh_layer_Opaque_vtx_cull + 0, 8, 0),
+	gsSPSetGeometryMode(G_LIGHTING),
+	gsSPCullDisplayList(0, 7),
+	gsSPDisplayList(mat_escape_rm_boss_dl_bdoor_layerOpaque),
+	gsSPDisplayList(escape_rm_boss_dl_Cylinder_005_mesh_layer_Opaque_tri_0),
 	gsSPEndDisplayList(),
 };
 

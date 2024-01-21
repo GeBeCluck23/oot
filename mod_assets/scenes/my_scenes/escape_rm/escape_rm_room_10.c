@@ -41,20 +41,52 @@ ActorEntry escape_rm_room_10_header00_actorList[LENGTH_ESCAPE_RM_ROOM_10_HEADER0
         /* Parameters */ 0x0000
     },
 
-    // Dodongo's Cavern Objects
+    // Breakable Pot
     {
-        /* Actor ID   */ ACTOR_BG_BREAKWALL,
-        /* Position   */ { 2188, -50, -325 },
+        /* Actor ID   */ ACTOR_OBJ_TSUBO,
+        /* Position   */ { 2311, -50, -1030 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x200C
+        /* Parameters */ 0x000B
     },
 
-    // Treasure Chest
+    // Custom Actor
     {
-        /* Actor ID   */ ACTOR_EN_BOX,
-        /* Position   */ { 2188, -50, -229 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(180.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0085
+        /* Actor ID   */ ACTOR_LADDER,
+        /* Position   */ { 2188, -50, -1054 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x2006
+    },
+
+    // Breakable Pot
+    {
+        /* Actor ID   */ ACTOR_OBJ_TSUBO,
+        /* Position   */ { 2035, -50, -1030 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0003
+    },
+
+    // Breakable Pot
+    {
+        /* Actor ID   */ ACTOR_OBJ_TSUBO,
+        /* Position   */ { 2384, -50, -1030 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0012
+    },
+
+    // Breakable Pot
+    {
+        /* Actor ID   */ ACTOR_OBJ_TSUBO,
+        /* Position   */ { 2071, -50, -1030 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x000A
+    },
+
+    // Wallmaster
+    {
+        /* Actor ID   */ ACTOR_EN_WALLMAS,
+        /* Position   */ { 2289, -52, -785 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0E02
     },
 
     // Custom Actor
@@ -67,10 +99,10 @@ ActorEntry escape_rm_room_10_header00_actorList[LENGTH_ESCAPE_RM_ROOM_10_HEADER0
 
     // Custom Actor
     {
-        /* Actor ID   */ ACTOR_LADDER,
-        /* Position   */ { 2188, -50, -1054 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x2006
+        /* Actor ID   */ ACTOR_METAL_CRATE,
+        /* Position   */ { 2164, -50, -650 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0000
     },
 
     // Breakable Pot
@@ -89,20 +121,12 @@ ActorEntry escape_rm_room_10_header00_actorList[LENGTH_ESCAPE_RM_ROOM_10_HEADER0
         /* Parameters */ 0x0000
     },
 
-    // Breakable Pot
+    // Treasure Chest
     {
-        /* Actor ID   */ ACTOR_OBJ_TSUBO,
-        /* Position   */ { 2311, -50, -1030 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x000B
-    },
-
-    // Breakable Pot
-    {
-        /* Actor ID   */ ACTOR_OBJ_TSUBO,
-        /* Position   */ { 2384, -50, -1030 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0012
+        /* Actor ID   */ ACTOR_EN_BOX,
+        /* Position   */ { 2188, -50, -229 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(180.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0085
     },
 
     // Wallmaster
@@ -113,12 +137,12 @@ ActorEntry escape_rm_room_10_header00_actorList[LENGTH_ESCAPE_RM_ROOM_10_HEADER0
         /* Parameters */ 0x0E02
     },
 
-    // Wallmaster
+    // Dodongo's Cavern Objects
     {
-        /* Actor ID   */ ACTOR_EN_WALLMAS,
-        /* Position   */ { 2289, -52, -785 },
+        /* Actor ID   */ ACTOR_BG_BREAKWALL,
+        /* Position   */ { 2188, -50, -326 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0E02
+        /* Parameters */ 0x200C
     },
 
     // Breakable Pot
@@ -127,30 +151,6 @@ ActorEntry escape_rm_room_10_header00_actorList[LENGTH_ESCAPE_RM_ROOM_10_HEADER0
         /* Position   */ { 2348, -50, -1030 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
         /* Parameters */ 0x000B
-    },
-
-    // Breakable Pot
-    {
-        /* Actor ID   */ ACTOR_OBJ_TSUBO,
-        /* Position   */ { 2071, -50, -1030 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x000A
-    },
-
-    // Breakable Pot
-    {
-        /* Actor ID   */ ACTOR_OBJ_TSUBO,
-        /* Position   */ { 2035, -50, -1030 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0003
-    },
-
-    // Custom Actor
-    {
-        /* Actor ID   */ ACTOR_METAL_CRATE,
-        /* Position   */ { 2164, -50, -650 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0000
     },
 };
 
@@ -170,6 +170,7 @@ Gfx escape_rm_room_10_entry_0_opaque[] = {
 	gsSPDisplayList(escape_rm_dl_floor_007_mesh_layer_Opaque),
 	gsSPDisplayList(escape_rm_dl_floor_009_mesh_layer_Opaque),
 	gsSPDisplayList(escape_rm_dl_Plane_009_mesh_layer_Opaque),
+	gsSPDisplayList(escape_rm_dl_Plane_013_mesh_layer_Opaque),
 	gsSPEndDisplayList(),
 };
 
@@ -274,6 +275,74 @@ u64 escape_rm_dl_bow_icon_rgba32_rgba16[] = {
 	0x0000000000000000, 0x0000000000000000, 0x0000000000000000, 0x0000000000000000, 0x0000000000000000, 0x0000000000013001, 0x4801480140011801, 0x0001000000000000, 
 	0x0000000000000000, 0x0000000000000000, 0x0000000000000000, 0x0000000000000000, 0x0000000000000000, 0x0000000000000001, 0x1001080100010001, 0x0001000000000000, 
 	0x0000000000000000, 0x0000000000000000, 0x0000000000000000, 0x0000000000000000, 0x0000000000000000, 0x0000000000000000, 0x0000000100010000, 0x0000000000000000, 
+	
+};
+
+u64 escape_rm_dl_gerudoway_sceneTex_007520_rgba16_rgba16[] = {
+	0x6b0c6b0c6b0c6b0c, 0x6b4c6b0c29461084, 0x0842188429063106, 0x18c4290651884146, 0x310659cc5188720a, 0x828e7a4c59cc2906, 0x2906394a394820c6, 0x3988734c734c734c, 
+	0x6b0c6b0c6b0c6b0c, 0x6b0c734e4a4a0883, 0x108520c520c52907, 0x3149498b49893107, 0x3107414769cb59cb, 0x29051883414b498b, 0x3149314931071885, 0x31476acc628a5a4a, 
+	0x6b0c6b0c6b0c6b0c, 0x6b0c734c528c1085, 0x10831083108318c7, 0x418b394931073149, 0x3107518b418b1085, 0x1885398b498b49cb, 0x29092909210718c5, 0x20c7314931493149, 
+	0x6b0c6b0c6b0c6b0c, 0x6b0c734c528a20c5, 0x108318c710852107, 0x418b310729053107, 0x39473109108520c7, 0x8b59aca16a911883, 0x3107310729073107, 0x2907310739493149, 
+	0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c734c41c9, 0x0843108518c52907, 0x290728c731073949, 0x31070843310993dd, 0xc569bd257b15398b, 0x2907310939493949, 0x2907290729072907, 
+	0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c734c39c7, 0x084320c720c52907, 0x28c72907290718c5, 0x1043394bb4e5c5ab, 0xc569cda9cda9bd25, 0x72d3398b18c520c5, 0x20c518c518c51907, 
+	0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c734c5a8a, 0x20c73107188528c7, 0x29073107108318c5, 0x6ad5bd29cdedaca1, 0xde71d5edcd69cdab, 0xbd2572d36a918b15, 0x520f188318c52107, 
+	0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c734c, 0x3989290729072907, 0x20c7108510856ad7, 0xc5abd5edcdabcded, 0xd62fbce5ac5fbd25, 0xd5ebde2fe671de2d, 0xa45f314731073989, 
+	0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b4c, 0x41c93109310720c5, 0x1085398b835baca5, 0xcdedbd69bd27bd27, 0xbd69c527ac5fa45f, 0xb4e3cdebde2fe66f, 0xde2d9bd929072907, 
+	0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c734c, 0x520a394918c50843, 0x394b939bace3ace5, 0xbd6bcdedce2fc5ad, 0xbdabbd27a41d9bdb, 0xa45fbd67de71eeb3, 0xf737e66f93993147, 
+	0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b4c, 0x6b0c39c9290749cd, 0x9399a461a4a3bdab, 0xc5adce31c5efc5ef, 0xbd69ace393999b99, 0xa45fcdabe6b3e671, 0xeef3eef5f737d5a9, 
+	0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b4c730c6a8e7b15, 0x9399ace5c5abd631, 0xc5efb529b527c5ad, 0xbd6bace793dbac61, 0xb4a3cdebd62dcdab, 0xd5edeef5f6f5f735, 
+	0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b4c6ace8317, 0xa45fbd67cdedd62f, 0xce71bdadb527ad27, 0xb569bd6bace5bd67, 0xbd69ace5bd67bd27, 0xc5abd62fe673eef7, 
+	0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c9397, 0xa41face3c5abc5ab, 0xbdabc5efbd6bb529, 0xb527bd69ace7ad27, 0xace79c63a4e5b527, 0xbd69c5adbdabbd69, 
+	0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c9bd9, 0xa461ace3bd69c5ab, 0xc5adc5edcdefbd6b, 0xaca3b527ace79ca3, 0x94639ca5a4a5ad27, 0xb527a4a5a4a393dd, 
+	0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c630a734eaca1, 0xb4e5ace5b527bd69, 0xbd69c5abbd6bb527, 0xbd27bd69ad279c63, 0x9461ace7a4e7a4e7, 0xad27ace59c61941f, 
+	0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c630a, 0x734e8b929bd9c5a9, 0xc569b4e5ace5a4a3, 0xbd6bbdabad27bd69, 0xc5abb569ad27a4a5, 0x9ca5ad27a4e9a4e7, 0xad29ad27a4a3941f, 
+	0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c734e93d4, 0xb4e3c569cdabd5ed, 0xcdedb527a4a5a4e5, 0xad29b529c5abb567, 0xa4a58bdd8c1d9ca5, 0x9ca5a4e7a4e5a4a5, 0x9ca5946194619421, 
+	0x6b0c6b0c6b0c6b0c, 0x7b8e93d5a41db4e3, 0xd5ebe6b1de2fde2f, 0xcdedc5a9bd69b56b, 0xbdadad29b529ad27, 0xa4a5a4a39c619461, 0x9c639ca59ce59c1f, 0x93dd83dd83dd8b9d, 
+	0x6b0c6b0c6b0c7b50, 0x8b97835783159399, 0xd62feef5d62fde71, 0xd62fd671bd69a4e7, 0x9463735d9463ace7, 0x9ca39c63a4a59c61, 0x9c63a4a39ca3941f, 0x839b839b83dd8bdd, 
+	0x6b0c6b0c734e62d0, 0x10c5000118c58b97, 0xbd69c5abd62fd671, 0xde71d631bdab9c63, 0x631910855a53a4e7, 0x9ca58bdd941f9ca3, 0x94619c619c61945f, 0x8bdd839b839b8bdd, 
+	0x6b0c6b0c734e2107, 0x00010041000149cd, 0x8b57a461a4e5b527, 0xce2fbd6bad278c21, 0x4a53000129098bdf, 0x94639ca3a4a3a4a5, 0xa4e59ca3941f9c61, 0x941f93dd8bdf83db, 
+	0x6b0c734c630e2107, 0x1083004108412907, 0x72d57b17941fbd6b, 0xbdada4e79c618bdd, 0x5ad731cf398d93df, 0x94619461a4a3ace7, 0xa4e59ca38bdd9461, 0x8bdd8bdd8bdf8bdd, 
+	0x6b0c734c4a4c2107, 0x0843084108431885, 0x835973177b5b9421, 0x9ca5ad299c637b9b, 0x6b1b8c237b9b8b9b, 0x6b595211a4a1a4e5, 0x9ca59ca19c639421, 0x839b83db839b83df, 
+	0x6b0c734c41cb18c5, 0x0843108508830041, 0x41cb398d525362d7, 0x94a5a4e78c21735b, 0x739f8c218bdd9421, 0x9ca3a461ace3941d, 0x9c639421946383df, 0x73597b9b83db8bdd, 
+	0x6b0c734e318b0001, 0x004318c500410001, 0x1083084110856297, 0x8c6394218c21735b, 0x7b9d9421ace7ad29, 0xb569a4a5a4a3ace5, 0x946394638c1f839d, 0x839d83df8c1f839b, 
+	0x6b0c7b8e5a8f0843, 0x20c7108500011885, 0x418b084118c56ad7, 0x83df7b9d83df7b9d, 0x7b5b9ca3ad29b56b, 0xad27ace7ace79ca7, 0x9ca79463946594a5, 0x94639ca5ace99ca7, 
+	0x6b0c7b4e4a0d2907, 0x29490843000120c5, 0x520d20c529097b5b, 0x73195a9552935253, 0x735b8c1f9ca59ca5, 0xad29ad27ace79ca3, 0xad27ad299ca78c23, 0xb56bb56dc5efbdad, 
+	0x6b0c734e314920c7, 0x20c7084300430843, 0x18c5314962d56b59, 0x5ad76ad76b1741cf, 0x6ad7839b94619ca7, 0x9ca5a4e5ad27a4e7, 0xad29b56bad2b9463, 0xbdefce73d673c5ef, 
+	0x6b4c6b0c21072907, 0x10c5084308430843, 0x108552114a534a53, 0x4a517b5b8bdf7b9b, 0x7b198bdd9ca394a5, 0x94659ca59ca5ad2b, 0xb56bad2bad6bc5af, 0xce33deb5deb5d633, 
+	0x6b4c6b0e394920c5, 0x0885088508831085, 0x088521094a0f62d7, 0x83dd8bdf8bdf9c61, 0x83dd6ad58bdf9ca5, 0x9463ace9bdadc5ef, 0xbdada4e7bdabd673, 0xd673deb5def5deb3, 
+	0x6b4c62ce398b2107, 0x18c71085108510c7, 0x10c7108552117317, 0x839b83dd8bdd941d, 0x9c5f8b9b73179461, 0xb569c5adcdedc5eb, 0xc5addeb3deb3deb5, 0xe6f7deb5e6f7d673, 
+	0x734c628c21071907, 0x190718c718c718c7, 0x10c7084320c74a0f, 0x5a51524f5a918359, 0x8bdb835762918359, 0xbd69bd69ace5bd69, 0xc5abd673d673e6f5, 0xe6f7deb5e737ef39, 
+	0x734c62cc20c72107, 0x3149314929472907, 0x398b398d41cf39cd, 0x4a0f525152517b5b, 0x7b597b556a8f520d, 0x7b579c1d8b99939b, 0xb527d631deb3e6f5, 0xef39f77bf7bbffff, 
+	0x6b0c6b0c628c5a0d, 0x498b418b49cd51cd, 0x524f4a0d420f318d, 0x41d1525352535a95, 0x5a937b597313624f, 0x49cb41cb21073109, 0xb4e5d62fde73de71, 0xe6f5ffbdffffffbd, 
+	0x6b0c6b4c734c62ca, 0x4a09520b5a8d630d, 0x6b0d6b0c6b0c5acd, 0x4a0d4a0f52515a95, 0x5253525173578357, 0x7b578b9919050001, 0x93dbc569cdedde71, 0xeef7f779ffbdffbd, 
+	0x6b0c6b0c6b0c734c, 0x734c734c734c6b4c, 0x6b0c6b0c6b4c734c, 0x734c524b41896291, 0x6ad552516b157b99, 0x9c1fb52573550041, 0x520fc569c5a9e6f5, 0xeef5f77bfffffffd, 
+	0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x734c6b0c4189624f, 0x7317731762d58bdb, 0x9c5fa4a3a4e339cb, 0x1085aca3de71eef7, 0xf739f7bbffbdffff, 
+	0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c5a4d7b17, 0x7b9b63175a93839b, 0x941d7b59a4617b97, 0x18c58319de71ef37, 0xf779fffffffdf77b, 
+	0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c62d07b59, 0x83dd73595a9362d5, 0x73176ad56ad55a91, 0x318b6253de6feef5, 0xf779ffbdffffce2b, 
+	0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c62ce7317, 0x7b596b15524f5a51, 0x83599c617b57aca3, 0x5a918b59e6b3e6b3, 0xeef7f77bffbb9c5d, 
+	0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b4c6ace7b15, 0x62d34a11524f93dd, 0xc56bbda9a4a1c5a9, 0xc5a9cdebcdabcded, 0xe6f5f779f77983d7, 
+	0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c7b509c5f, 0x8bdb62938399b525, 0xcdedbdabcdebbd69, 0xb525bd25cdebe671, 0xf779eef5de2f5a91, 
+	0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c8b95ace3, 0x9c5f93dbace5bda9, 0xcdedc5abcdebc5a9, 0xa49faca1de2deeb3, 0xf737eef5c56541cb, 
+	0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c8b97a461, 0xace3b525b525b569, 0xb569bd69b567c5eb, 0x9c5d8b57e6b1f739, 0xf77bde6fbce341cd, 
+	0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c9397a45f, 0x9c5fa4a1ace5ace5, 0xad25a4e3b527c5eb, 0x9c5d9397e6b1f77b, 0xffffe6b3cdab39cb, 
+	0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c93d9a4a1, 0x93d993d99c1da4a5, 0xa4e3ace3ad25ace3, 0x6ad19b99de71ef37, 0xffffffbdd62f2147, 
+	0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c730e93979c5d, 0x9bd9839783579c61, 0x9c61b525ace3a45f, 0x4a0d5a0fd62fe6b5, 0xef39ffffce2f18c5, 
+	0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c730e83548b97, 0x8b9783577b558357, 0x93db9c5f9c1ba41d, 0x29472907cdedde73, 0xdeb3ffffce2f0843, 
+	0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c628e6a8f, 0x72d172d383136ad1, 0x83559c1b9c5d9bd9, 0x21070001c5abdeb3, 0xe739f7bdb5670001, 
+	0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b4c62cc5a4c, 0x628f62917ad37b13, 0x72d18b57a49f9419, 0x10830001a461e6f5, 0xe6f7deb59ca10001, 
+	0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b4c6b0c628e, 0x624f6a916a917b13, 0x18c53949a41d7b95, 0x004100017317e6b3, 0xde73bdad8c1d0001, 
+	0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b4c6ace, 0x628e5a4d6a9172d3, 0x214910858b576b13, 0x0001000149cfde71, 0xd673bdad83db0001, 
+	0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x7312624f624f6291, 0x2949190762914a0b, 0x000100010001bdab, 0xd671bdad6b570001, 
+	0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b4c, 0x6b0e6ace6a916a91, 0x4a0d0843520f39cb, 0x0001000100018c21, 0xcdefbd6b420f0043, 
+	0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c73106a91, 0x7b176ad37b152947, 0x0843000100014a51, 0x9c63b56921070043, 
+	0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c72ce, 0x72d393998bd92907, 0x18c5088308430001, 0x8c1fa4e510830885, 
+	0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b4c, 0x6b0e6a917b122947, 0x3147088508850043, 0x62d76b1900011085, 
+	0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b4c6b0c62ce20c5, 0x5a9118c510c50883, 0x00015ad5000118c5, 
+	0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b4c630c1083, 0x5a4f2107108510c5, 0x0843294b000118c7, 
+	0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c734e3189, 0x520d41cb108518c7, 0x18c5210700412107, 
+	0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c734e39c9, 0x52115ad318c510c5, 0x2107314919052949, 
+	0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c734c5a8a, 0x524f629031492907, 0x318b41cb5a8a5a8c, 
+	0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c6b0c, 0x6b0c6b0c6b0c734c, 0x62ce6b0e628c524a, 0x62cc734c734c6b0c, 
 	
 };
 
@@ -676,6 +745,35 @@ Gfx escape_rm_dl_Plane_009_mesh_layer_Opaque_tri_0[] = {
 	gsSPEndDisplayList(),
 };
 
+Vtx escape_rm_dl_Plane_013_mesh_layer_Opaque_vtx_cull[8] = {
+	{{ {1746, 100, 196}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {1746, 147, 196}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {1746, 147, 154}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {1746, 100, 154}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {1764, 100, 196}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {1764, 147, 196}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {1764, 147, 154}, 0, {0, 0}, {0, 0, 0, 0} }},
+	{{ {1764, 100, 154}, 0, {0, 0}, {0, 0, 0, 0} }},
+};
+
+Vtx escape_rm_dl_Plane_013_mesh_layer_Opaque_vtx_0[8] = {
+	{{ {1753, 100, 175}, 0, {999, 2032}, {117, 228, 214, 255} }},
+	{{ {1746, 101, 154}, 0, {4, 2032}, {117, 228, 214, 255} }},
+	{{ {1757, 147, 154}, 0, {4, -16}, {117, 228, 214, 255} }},
+	{{ {1764, 145, 175}, 0, {999, -16}, {117, 228, 214, 255} }},
+	{{ {1746, 101, 196}, 0, {-1, 2032}, {117, 228, 42, 255} }},
+	{{ {1753, 100, 175}, 0, {1003, 2032}, {117, 228, 42, 255} }},
+	{{ {1764, 145, 175}, 0, {1003, -16}, {117, 228, 42, 255} }},
+	{{ {1757, 147, 196}, 0, {-1, -16}, {117, 228, 42, 255} }},
+};
+
+Gfx escape_rm_dl_Plane_013_mesh_layer_Opaque_tri_0[] = {
+	gsSPVertex(escape_rm_dl_Plane_013_mesh_layer_Opaque_vtx_0 + 0, 8, 0),
+	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
+	gsSP2Triangles(4, 5, 6, 0, 4, 6, 7, 0),
+	gsSPEndDisplayList(),
+};
+
 Gfx mat_escape_rm_dl_dark_brick_layerOpaque[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, 1, COMBINED, 0, PRIMITIVE, 0, 0, 0, 0, COMBINED),
@@ -705,6 +803,22 @@ Gfx mat_escape_rm_dl_bow_icon_layerOpaque[] = {
 	gsDPLoadBlock(7, 0, 0, 1023, 256),
 	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b, 8, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
+	gsSPEndDisplayList(),
+};
+
+Gfx mat_escape_rm_dl_cowhead_layerOpaque[] = {
+	gsDPPipeSync(),
+	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, TEXEL0, COMBINED, 0, PRIMITIVE, 0, 0, 0, 0, COMBINED),
+	gsSPLoadGeometryMode(G_ZBUFFER | G_SHADE | G_FOG | G_LIGHTING | G_SHADING_SMOOTH),
+	gsSPSetOtherMode(G_SETOTHERMODE_H, 4, 20, G_AD_NOISE | G_CD_MAGICSQ | G_CK_NONE | G_TC_FILT | G_TF_BILERP | G_TT_NONE | G_TL_TILE | G_TD_CLAMP | G_TP_PERSP | G_CYC_2CYCLE | G_PM_NPRIMITIVE),
+	gsSPSetOtherMode(G_SETOTHERMODE_L, 0, 32, G_AC_NONE | G_ZS_PIXEL | G_RM_FOG_SHADE_A | G_RM_AA_ZB_TEX_EDGE2),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetPrimColor(0, 0, 255, 255, 255, 255),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b_LOAD_BLOCK, 1, escape_rm_dl_gerudoway_sceneTex_007520_rgba16_rgba16),
+	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadBlock(7, 0, 0, 2047, 256),
+	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b, 8, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 6, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTileSize(0, 0, 0, 124, 252),
 	gsSPEndDisplayList(),
 };
 
@@ -749,6 +863,16 @@ Gfx escape_rm_dl_Plane_009_mesh_layer_Opaque[] = {
 	gsSPCullDisplayList(0, 7),
 	gsSPDisplayList(mat_escape_rm_dl_bow_icon_layerOpaque),
 	gsSPDisplayList(escape_rm_dl_Plane_009_mesh_layer_Opaque_tri_0),
+	gsSPEndDisplayList(),
+};
+
+Gfx escape_rm_dl_Plane_013_mesh_layer_Opaque[] = {
+	gsSPClearGeometryMode(G_LIGHTING),
+	gsSPVertex(escape_rm_dl_Plane_013_mesh_layer_Opaque_vtx_cull + 0, 8, 0),
+	gsSPSetGeometryMode(G_LIGHTING),
+	gsSPCullDisplayList(0, 7),
+	gsSPDisplayList(mat_escape_rm_dl_cowhead_layerOpaque),
+	gsSPDisplayList(escape_rm_dl_Plane_013_mesh_layer_Opaque_tri_0),
 	gsSPEndDisplayList(),
 };
 
