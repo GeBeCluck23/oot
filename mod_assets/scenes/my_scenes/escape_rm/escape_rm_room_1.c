@@ -45,6 +45,14 @@ ActorEntry escape_rm_room_1_header00_actorList[LENGTH_ESCAPE_RM_ROOM_1_HEADER00_
         /* Parameters */ 0x5841
     },
 
+    // Dodongo's Cavern Objects
+    {
+        /* Actor ID   */ ACTOR_BG_BREAKWALL,
+        /* Position   */ { -1078, -40, 342 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(180.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x2007
+    },
+
     // Checkable Spot
     {
         /* Actor ID   */ ACTOR_EN_WONDER_TALK2,
@@ -59,14 +67,6 @@ ActorEntry escape_rm_room_1_header00_actorList[LENGTH_ESCAPE_RM_ROOM_1_HEADER00_
         /* Position   */ { -1078, 165, 942 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(180.000), DEG_TO_BINANG(0.000) },
         /* Parameters */ 0x0302
-    },
-
-    // Dodongo's Cavern Objects
-    {
-        /* Actor ID   */ ACTOR_BG_BREAKWALL,
-        /* Position   */ { -1078, -40, 342 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(180.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x2007
     },
 };
 

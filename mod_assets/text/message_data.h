@@ -8863,6 +8863,9 @@ QUICKTEXT_ENABLE "Thank you to everyone at Hylian\n"
 "Modding for putting the competition\n"
 "together!! Hoping for more soon!!"
 BOX_BREAK
+QUICKTEXT_ENABLE "Thank you Lillie, for\n"
+"your artwork contibution!"
+BOX_BREAK
 QUICKTEXT_ENABLE "Thank you to my friends and family\n"
 "(mostly Gabe, haha) for playtesting\n"
 "this while I worked on it..."
