@@ -624,8 +624,11 @@ void Sram_VerifyAndLoadAllSaves(FileSelectState* fileSelect, SramContext* sramCt
                 bzero(&gSaveContext.save.nightFlag, sizeof(s32));
                 bzero(&gSaveContext.save.totalDays, sizeof(s32));
                 bzero(&gSaveContext.save.bgsDayCount, sizeof(s32));
+                
+                
+                Sram_InitNewSave();
 
-                if (!slotNum) {
+               /* if (!slotNum) {
                     Sram_InitDebugSave();
                     gSaveContext.save.info.playerData.newf[0] = 'Z';
                     gSaveContext.save.info.playerData.newf[1] = 'E';
@@ -639,7 +642,7 @@ void Sram_VerifyAndLoadAllSaves(FileSelectState* fileSelect, SramContext* sramCt
                                  gSaveContext.save.info.playerData.newf[5]);
                 } else {
                     Sram_InitNewSave();
-                }
+                }*/
 
                 ptr = (u16*)&gSaveContext;
                 osSyncPrintf("\n--------------------------------------------------------------\n");
