@@ -31,38 +31,6 @@ s16 escape_rm_room_5_header00_objectList[LENGTH_ESCAPE_RM_ROOM_5_HEADER00_OBJECT
 };
 
 ActorEntry escape_rm_room_5_header00_actorList[LENGTH_ESCAPE_RM_ROOM_5_HEADER00_ACTORLIST] = {
-    // Treasure Chest
-    {
-        /* Actor ID   */ ACTOR_EN_BOX,
-        /* Position   */ { 915, 1090, -1835 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x01A7
-    },
-
-    // Treasure Chest
-    {
-        /* Actor ID   */ ACTOR_EN_BOX,
-        /* Position   */ { 473, 577, -432 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x414F
-    },
-
-    // Checkable Spot
-    {
-        /* Actor ID   */ ACTOR_EN_WONDER_TALK2,
-        /* Position   */ { 592, 622, -387 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(178.989), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x914A
-    },
-
-    // Breakable Pot
-    {
-        /* Actor ID   */ ACTOR_OBJ_TSUBO,
-        /* Position   */ { 538, 577, -432 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(359.698), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x000E
-    },
-
     // Breakable Pot
     {
         /* Actor ID   */ ACTOR_OBJ_TSUBO,
@@ -79,12 +47,44 @@ ActorEntry escape_rm_room_5_header00_actorList[LENGTH_ESCAPE_RM_ROOM_5_HEADER00_
         /* Parameters */ 0x0643
     },
 
+    // Breakable Pot
+    {
+        /* Actor ID   */ ACTOR_OBJ_TSUBO,
+        /* Position   */ { 538, 577, -432 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(359.698), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x000E
+    },
+
     // Treasure Chest
     {
         /* Actor ID   */ ACTOR_EN_BOX,
         /* Position   */ { -745, 160, -1915 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(268.989), DEG_TO_BINANG(0.000) },
         /* Parameters */ 0x47AE
+    },
+
+    // Treasure Chest
+    {
+        /* Actor ID   */ ACTOR_EN_BOX,
+        /* Position   */ { 915, 1090, -1835 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x01A7
+    },
+
+    // Checkable Spot
+    {
+        /* Actor ID   */ ACTOR_EN_WONDER_TALK2,
+        /* Position   */ { 592, 622, -387 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(178.989), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x914A
+    },
+
+    // Treasure Chest
+    {
+        /* Actor ID   */ ACTOR_EN_BOX,
+        /* Position   */ { 473, 577, -432 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x414F
     },
 };
 
