@@ -331,6 +331,7 @@ static s16 sDungeonEntrances[] = {
     ENTR_INSIDE_GANONS_CASTLE_0,           // SCENE_INSIDE_GANONS_CASTLE
     ENTR_GANONS_TOWER_COLLAPSE_INTERIOR_0, // SCENE_GANONS_TOWER_COLLAPSE_INTERIOR
     ENTR_INSIDE_GANONS_CASTLE_COLLAPSE_0,  // SCENE_INSIDE_GANONS_CASTLE_COLLAPSE
+    ENTR_ESCAPE_RM_0,
 };
 
 /**
@@ -419,13 +420,25 @@ void Sram_OpenSave(SramContext* sramCtx) {
         case SCENE_ESCAPE_RM:
             gSaveContext.save.entranceIndex = ENTR_ESCAPE_RM_0;
             break;
+        case SCENE_ESCAPE_RM_BOSS:
+            gSaveContext.save.entranceIndex = ENTR_ESCAPE_RM_0;
+            break;
+        case SCENE_ESCAPE_RM_EXIT:
+            gSaveContext.save.entranceIndex = ENTR_ESCAPE_RM_0;
+            break;
+        case SCENE_ESCAPE_RM_OUTSIDE:
+            gSaveContext.save.entranceIndex = ENTR_ESCAPE_RM_0;
+            break;
+        case SCENE_WAH_CAVE:
+            gSaveContext.save.entranceIndex = ENTR_ESCAPE_RM_0;
+            break;
 
         default:
             if (gSaveContext.save.info.playerData.savedSceneId != SCENE_LINKS_HOUSE) {
                 gSaveContext.save.entranceIndex =
-                    (LINK_AGE_IN_YEARS == YEARS_CHILD) ? ENTR_LINKS_HOUSE_0 : ENTR_TEMPLE_OF_TIME_7;
+                    (LINK_AGE_IN_YEARS == YEARS_CHILD) ? ENTR_ESCAPE_RM_0 : ENTR_ESCAPE_RM_0;
             } else {
-                gSaveContext.save.entranceIndex = ENTR_LINKS_HOUSE_0;
+                gSaveContext.save.entranceIndex = ENTR_ESCAPE_RM_0;
             }
             break;
     }

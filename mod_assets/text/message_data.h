@@ -1078,7 +1078,10 @@ DEFINE_MESSAGE(0x0036, TEXTBOX_TYPE_BLUE, TEXTBOX_POS_BOTTOM,
 UNSKIPPABLE  ITEM_ICON("\x0A")  QUICKTEXT_ENABLE "You found the " COLOR(BLUE) "Roc's Feather" COLOR(DEFAULT) "!" QUICKTEXT_DISABLE "\n"
 "You feel lighter already! Equip\n"
 "it to " COLOR(YELLOW) "[C]" COLOR(DEFAULT) " to jump with a\n"
-"gust of wind, even in the air!"
+"gust of wind!"
+BOX_BREAK
+UNSKIPPABLE  ITEM_ICON("\x0A")  "This special feather allows\n"
+"you to jump again in the air!"
 ,
 UNSKIPPABLE  ITEM_ICON("\x0A")  QUICKTEXT_ENABLE "Der " COLOR(RED) "Fanghaken!" COLOR(DEFAULT)  QUICKTEXT_DISABLE "\n"
 "Im " COLOR(YELLOW) "Gegenstands-Menü" COLOR(DEFAULT) " kannst\n"
@@ -1148,7 +1151,7 @@ ITEM_ICON("\x00") "Restez immobile et appuyez \n"
 )
 
 DEFINE_MESSAGE(0x0038, TEXTBOX_TYPE_BLUE, TEXTBOX_POS_BOTTOM,
-UNSKIPPABLE  ITEM_ICON("\x11")  QUICKTEXT_ENABLE "You found the " COLOR(RED) "Megaton Hammer" COLOR(DEFAULT) "!" QUICKTEXT_DISABLE "\n"
+ITEM_ICON("\x11")  QUICKTEXT_ENABLE "You found the " COLOR(RED) "Megaton Hammer" COLOR(DEFAULT) "!" QUICKTEXT_DISABLE "\n"
 "Press " COLOR(YELLOW) "[C]" COLOR(DEFAULT) " to smash and break \n"
 "junk! It's so heavy, you need to \n"
 "use two hands to swing it!"
@@ -1816,11 +1819,11 @@ UNSKIPPABLE  ITEM_ICON("\x4B")  QUICKTEXT_ENABLE "Vous changez votre carquois \n
 )
 
 DEFINE_MESSAGE(0x0058, TEXTBOX_TYPE_BLUE, TEXTBOX_POS_BOTTOM,
-UNSKIPPABLE  ITEM_ICON("\x4D")  QUICKTEXT_ENABLE "You found a " COLOR(RED) "Bomb Bag" COLOR(DEFAULT) "!" QUICKTEXT_DISABLE "\n"
+ITEM_ICON("\x4D")  QUICKTEXT_ENABLE "You found a " COLOR(RED) "Bomb Bag" COLOR(DEFAULT) "!" QUICKTEXT_DISABLE "\n"
 "This bomb-holding bag is made \n"
 "from a Dodongo's stomach!"
 BOX_BREAK
-UNSKIPPABLE  ITEM_ICON("\x02")  QUICKTEXT_ENABLE "You found " COLOR(RED) "20 Bombs" COLOR(DEFAULT) " inside!" QUICKTEXT_DISABLE "\n"
+ITEM_ICON("\x02")  QUICKTEXT_ENABLE "You found " COLOR(RED) "20 Bombs" COLOR(DEFAULT) " inside!" QUICKTEXT_DISABLE "\n"
 "Now you can set Bombs to " COLOR(YELLOW) "[C]\n"
 COLOR(DEFAULT) "and blow stuff up! What a lucky \n"
 "guy!"
@@ -7787,7 +7790,9 @@ BOX_BREAK
 
 // Message ID 68
 DEFINE_MESSAGE(0x0244, TEXTBOX_TYPE_BLUE, TEXTBOX_POS_VARIABLE,
-"Strike the blue statue"
+"The Withering Mind\n"
+"Version 1.1\n"
+"(Minor bug fixes)"
 ,
 "german"
 ,

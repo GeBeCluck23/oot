@@ -28,14 +28,6 @@ s16 escape_rm_room_9_header00_objectList[LENGTH_ESCAPE_RM_ROOM_9_HEADER00_OBJECT
 };
 
 ActorEntry escape_rm_room_9_header00_actorList[LENGTH_ESCAPE_RM_ROOM_9_HEADER00_ACTORLIST] = {
-    // Custom Actor
-    {
-        /* Actor ID   */ ACTOR_EN_ZOL,
-        /* Position   */ { 3508, 745, 1447 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0201
-    },
-
     // Checkable Spot
     {
         /* Actor ID   */ ACTOR_EN_WONDER_TALK2,
@@ -50,6 +42,14 @@ ActorEntry escape_rm_room_9_header00_actorList[LENGTH_ESCAPE_RM_ROOM_9_HEADER00_
         /* Position   */ { 4038, 445, 1662 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(21.237), DEG_TO_BINANG(0.000) },
         /* Parameters */ 0x47AD
+    },
+
+    // Custom Actor
+    {
+        /* Actor ID   */ ACTOR_EN_ZOL,
+        /* Position   */ { 3508, 745, 1447 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0201
     },
 };
 
