@@ -29,12 +29,12 @@ s16 escape_rm_room_8_header00_objectList[LENGTH_ESCAPE_RM_ROOM_8_HEADER00_OBJECT
 };
 
 ActorEntry escape_rm_room_8_header00_actorList[LENGTH_ESCAPE_RM_ROOM_8_HEADER00_ACTORLIST] = {
-    // Checkable Spot
+    // Breakable Pot
     {
-        /* Actor ID   */ ACTOR_EN_WONDER_TALK2,
-        /* Position   */ { 2378, 447, 2095 },
-        /* Rotation   */ { DEG_TO_BINANG(359.231), DEG_TO_BINANG(104.854), DEG_TO_BINANG(359.736) },
-        /* Parameters */ 0x900A
+        /* Actor ID   */ ACTOR_OBJ_TSUBO,
+        /* Position   */ { 2408, 403, 1762 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(281.162), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0003
     },
 
     // Dungeon Switches
@@ -47,18 +47,18 @@ ActorEntry escape_rm_room_8_header00_actorList[LENGTH_ESCAPE_RM_ROOM_8_HEADER00_
 
     // Custom Actor
     {
-        /* Actor ID   */ ACTOR_EN_ZOL,
-        /* Position   */ { 2349, 401, 1780 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
+        /* Actor ID   */ ACTOR_RAT,
+        /* Position   */ { 2518, 405, 1746 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(268.726), DEG_TO_BINANG(0.000) },
         /* Parameters */ 0x0000
     },
 
-    // Breakable Pot
+    // Checkable Spot
     {
-        /* Actor ID   */ ACTOR_OBJ_TSUBO,
-        /* Position   */ { 2408, 403, 1762 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(281.162), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0003
+        /* Actor ID   */ ACTOR_EN_WONDER_TALK2,
+        /* Position   */ { 2378, 447, 2095 },
+        /* Rotation   */ { DEG_TO_BINANG(359.231), DEG_TO_BINANG(104.854), DEG_TO_BINANG(359.736) },
+        /* Parameters */ 0x900A
     },
 
     // Custom Actor
@@ -71,9 +71,9 @@ ActorEntry escape_rm_room_8_header00_actorList[LENGTH_ESCAPE_RM_ROOM_8_HEADER00_
 
     // Custom Actor
     {
-        /* Actor ID   */ ACTOR_RAT,
-        /* Position   */ { 2518, 405, 1746 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(268.726), DEG_TO_BINANG(0.000) },
+        /* Actor ID   */ ACTOR_EN_ZOL,
+        /* Position   */ { 2349, 401, 1780 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
         /* Parameters */ 0x0000
     },
 };

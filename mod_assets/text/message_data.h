@@ -7791,7 +7791,7 @@ BOX_BREAK
 // Message ID 68
 DEFINE_MESSAGE(0x0244, TEXTBOX_TYPE_BLUE, TEXTBOX_POS_VARIABLE,
 "The Withering Mind\n"
-"Version 1.1\n"
+"Version 1.2\n"
 "(Minor bug fixes)"
 ,
 "german"

@@ -37,14 +37,6 @@ ActorEntry escape_rm_room_1_header00_actorList[LENGTH_ESCAPE_RM_ROOM_1_HEADER00_
         /* Parameters */ 0xB106
     },
 
-    // Dodongo's Cavern Objects
-    {
-        /* Actor ID   */ ACTOR_BG_BREAKWALL,
-        /* Position   */ { -1078, -40, 342 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(180.000), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x2007
-    },
-
     // Treasure Chest
     {
         /* Actor ID   */ ACTOR_EN_BOX,
@@ -59,6 +51,14 @@ ActorEntry escape_rm_room_1_header00_actorList[LENGTH_ESCAPE_RM_ROOM_1_HEADER00_
         /* Position   */ { -1228, 335, 33 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
         /* Parameters */ 0x8F8A
+    },
+
+    // Dodongo's Cavern Objects
+    {
+        /* Actor ID   */ ACTOR_BG_BREAKWALL,
+        /* Position   */ { -1078, -40, 342 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(180.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x2007
     },
 
     // Dungeon Switches
