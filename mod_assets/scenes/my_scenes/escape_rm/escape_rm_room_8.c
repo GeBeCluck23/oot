@@ -29,12 +29,12 @@ s16 escape_rm_room_8_header00_objectList[LENGTH_ESCAPE_RM_ROOM_8_HEADER00_OBJECT
 };
 
 ActorEntry escape_rm_room_8_header00_actorList[LENGTH_ESCAPE_RM_ROOM_8_HEADER00_ACTORLIST] = {
-    // Breakable Pot
+    // Custom Actor
     {
-        /* Actor ID   */ ACTOR_OBJ_TSUBO,
-        /* Position   */ { 2408, 403, 1762 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(281.162), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0003
+        /* Actor ID   */ ACTOR_RAT,
+        /* Position   */ { 2518, 405, 1746 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(268.726), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0000
     },
 
     // Dungeon Switches
@@ -47,10 +47,18 @@ ActorEntry escape_rm_room_8_header00_actorList[LENGTH_ESCAPE_RM_ROOM_8_HEADER00_
 
     // Custom Actor
     {
-        /* Actor ID   */ ACTOR_RAT,
-        /* Position   */ { 2518, 405, 1746 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(268.726), DEG_TO_BINANG(0.000) },
+        /* Actor ID   */ ACTOR_EN_ZOL,
+        /* Position   */ { 2349, 401, 1780 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
         /* Parameters */ 0x0000
+    },
+
+    // Breakable Pot
+    {
+        /* Actor ID   */ ACTOR_OBJ_TSUBO,
+        /* Position   */ { 2408, 403, 1762 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(281.162), DEG_TO_BINANG(0.000) },
+        /* Parameters */ 0x0003
     },
 
     // Checkable Spot
@@ -66,14 +74,6 @@ ActorEntry escape_rm_room_8_header00_actorList[LENGTH_ESCAPE_RM_ROOM_8_HEADER00_
         /* Actor ID   */ ACTOR_RAT,
         /* Position   */ { 2645, 407, 1658 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(297.570), DEG_TO_BINANG(0.000) },
-        /* Parameters */ 0x0000
-    },
-
-    // Custom Actor
-    {
-        /* Actor ID   */ ACTOR_EN_ZOL,
-        /* Position   */ { 2349, 401, 1780 },
-        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(90.000), DEG_TO_BINANG(0.000) },
         /* Parameters */ 0x0000
     },
 };

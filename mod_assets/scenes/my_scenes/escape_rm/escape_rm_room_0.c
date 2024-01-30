@@ -28,20 +28,20 @@ s16 escape_rm_room_0_header00_objectList[LENGTH_ESCAPE_RM_ROOM_0_HEADER00_OBJECT
 };
 
 ActorEntry escape_rm_room_0_header00_actorList[LENGTH_ESCAPE_RM_ROOM_0_HEADER00_ACTORLIST] = {
-    // Treasure Chest
-    {
-        /* Actor ID   */ ACTOR_EN_BOX,
-        /* Position   */ { 2, 203, 24 },
-        /* Rotation   */ { 0, 0, 9 },
-        /* Parameters */ 0xB7E9
-    },
-
     // Dungeon Switches
     {
         /* Actor ID   */ ACTOR_OBJ_SWITCH,
         /* Position   */ { 1, 181, 3 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(323.020), DEG_TO_BINANG(0.000) },
         /* Parameters */ 0x0902
+    },
+
+    // Treasure Chest
+    {
+        /* Actor ID   */ ACTOR_EN_BOX,
+        /* Position   */ { 2, 203, 24 },
+        /* Rotation   */ { 0, 0, 9 },
+        /* Parameters */ 0xB7E9
     },
 };
 
